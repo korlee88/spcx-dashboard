@@ -392,12 +392,12 @@ function calculateEnhancedScore(input, cfg = {}) {
   let bi = Math.min(100, Math.max(0, Math.round((avgScore + 5) / 10 * 100)));
   layers.base = bi;
 
-  // ── [14] R25 Optimus/로봇 생산·상업화 부스트 ─────────────────────────────
+  // ── [14] R25 뉴트론 상업 론칭 부스트 ─────────────────────────────
   const hasR25 = topRules.includes('R25');
   const hasR26 = topRules.includes('R26');
   const hasR07 = topRules.includes('R07');
   if (hasR25) {
-    // Optimus 확대는 장기 고강도 긍정 촉매 (+8pt)
+    // 뉴트론 상업 론칭은 장기 고강도 긍정 촉매 (+8pt)
     const before = bi;
     bi = Math.min(100, bi + 8);
     layers.optimusBoost = bi - before;
