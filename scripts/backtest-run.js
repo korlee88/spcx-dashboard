@@ -1,0 +1,406 @@
+/**
+ * 백테스트 데이터 수집 스크립트 (멀티 종목 지원)
+ * 연도별 주간 뉴스 수집 + AI 분석 + 실제 주가 방향 매칭
+ * GitHub Actions에서 workflow_dispatch 또는 cron으로 실행
+ * 매일 실행 시 이미 분석된 주는 skip, 새로 완료된 주만 추가
+ * Node.js 22 내장 fetch 사용
+ *
+ * 환경변수:
+ *   BACKTEST_YEAR — 처리할 연도 (없으면 현재 KST 연도)
+ *   GEMINI_API_KEY — 필수
+ */
+
+const fs            = require('fs');
+const path          = require('path');
+const { execSync }  = require('child_process');
+const { loadMacroData, buildMacroContext, calculateEnhancedScore } = require('./lib/scoring');
+const { loadTickerConfig, loadRulesConfig, buildSystemPrompt } = require('./lib/prompt');
+
+const cfg       = loadTickerConfig();
+const rulesData = loadRulesConfig();
+const TICKER    = cfg.ticker;
+
+const API_KEY = process.env.GEMINI_API_KEY;
+if (!API_KEY) { console.error('❌ GEMINI_API_KEY 환경변수가 없습니다.'); process.exit(1); }
+
+// 현재 KST 연도를 기본값으로
+const nowKst = new Date(Date.now() + 9 * 3600000);
+const YEAR = parseInt(process.env.BACKTEST_YEAR || nowKst.getUTCFullYear(), 10);
+if (isNaN(YEAR) || YEAR < 2020 || YEAR > 2099) {
+  console.error(`❌ 잘못된 BACKTEST_YEAR: ${process.env.BACKTEST_YEAR}`);
+  process.exit(1);
+}
+
+const MODELS     = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+const makeUrl    = m => `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${API_KEY}`;
+const GEMINI_URL = makeUrl(MODELS[0]);
+const DATA_FILE  = path.join(__dirname, '..', 'data', `backtest-results-${YEAR}.json`);
+
+// ─── 시스템 프롬프트 (config/rules.json + config/ticker.json 기반 동적 생성) ──
+
+const SYSTEM_PROMPT = buildSystemPrompt(cfg, rulesData);
+
+// ─── 유틸 ────────────────────────────────────────────────────────────────────
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function gitCommitProgress(label) {
+  try {
+    execSync(`git add ${DATA_FILE}`, { stdio: 'pipe' });
+    const diff = execSync('git diff --staged --name-only', { stdio: 'pipe' }).toString().trim();
+    if (!diff) { console.log(`   ⏭  ${label} — 변경 없음, 커밋 건너뜀`); return; }
+    const nowKST = new Date(Date.now() + 9 * 3600000).toISOString().replace('T',' ').slice(0,16) + ' KST';
+    execSync(`git commit -m "backtest: ${TICKER} ${label} 완료 (${nowKST})"`, { stdio: 'pipe' });
+    execSync('git pull --rebase origin master', { stdio: 'pipe' });
+    execSync('git push', { stdio: 'pipe' });
+    console.log(`   ✅ ${label} 중간 커밋 & 푸시 완료`);
+  } catch (e) {
+    console.warn(`   ⚠  git 커밋 실패 (무시): ${e.message.slice(0,80)}`);
+  }
+}
+
+async function geminiPost(body, retries = 7) {
+  let lastError;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    const modelIdx = Math.min(attempt >= 4 ? 1 : 0, MODELS.length - 1);
+    const url = makeUrl(MODELS[modelIdx]);
+    try {
+      const res = await fetch(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+      if (res.ok) {
+        if (modelIdx > 0) console.log(`   ✅ 폴백 모델 ${MODELS[modelIdx]} 성공`);
+        return res.json();
+      }
+      const e   = await res.json().catch(() => ({}));
+      const msg = e?.error?.message || `HTTP ${res.status}`;
+      const retryable = res.status === 503 || res.status === 429 || res.status === 500 || res.status === 529;
+      if (!retryable) throw new Error(msg);
+      lastError = new Error(msg);
+    } catch (fetchErr) {
+      if (fetchErr.message && !fetchErr.message.includes('geminiPost')) lastError = fetchErr;
+      else throw fetchErr;
+    }
+    if (attempt < retries) {
+      const baseDelay = attempt < 3 ? Math.min(10000 * Math.pow(2, attempt), 60000) : 60000;
+      const delay = baseDelay + Math.random() * 5000;
+      console.warn(`   ⏳ 과부하(${MODELS[modelIdx]}), ${Math.round(delay/1000)}초 후 재시도 (${attempt+1}/${retries})...`);
+      await sleep(delay);
+    }
+  }
+  throw lastError;
+}
+
+// ─── 주가 데이터 (Yahoo Finance 2년 주봉) ────────────────────────────────────
+
+async function fetchAsset2YearWeekly() {
+  const URL1 = `https://query1.finance.yahoo.com/v8/finance/chart/${TICKER}?range=2y&interval=1wk&includePrePost=false`;
+  const URL2 = `https://query2.finance.yahoo.com/v8/finance/chart/${TICKER}?range=2y&interval=1wk&includePrePost=false`;
+
+  function parse(json) {
+    const r = json?.chart?.result?.[0];
+    if (!r) throw new Error('파싱 실패');
+    const ts = r.timestamp || [];
+    const q  = r.indicators?.quote?.[0] || {};
+    return ts.map((t, i) => ({
+      dateStr: new Date(t * 1000).toISOString().split('T')[0],
+      ts:      t * 1000,
+      open:    q.open?.[i]  || q.close?.[i] || 0,
+      high:    q.high?.[i]  || q.close?.[i] || 0,
+      low:     q.low?.[i]   || q.close?.[i] || 0,
+      close:   q.close?.[i] || 0,
+    })).filter(d => d.close > 0 && !isNaN(d.close));
+  }
+
+  for (const url of [URL1, URL2]) {
+    try {
+      const r = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0' } });
+      if (r.ok) { const j = await r.json(); return parse(j); }
+    } catch {}
+  }
+  // allorigins 프록시
+  try {
+    const r = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(URL1));
+    if (r.ok) { const w = await r.json(); return parse(JSON.parse(w.contents || '{}')); }
+  } catch {}
+  throw new Error('Yahoo Finance 주봉 로드 실패');
+}
+
+// weekStart 에 가장 가까운 주봉 캔들 조회
+function getActualMovement(weekStart, prices) {
+  const wTs = new Date(weekStart + 'T00:00:00Z').getTime();
+  let closest = null, minDiff = Infinity;
+  for (const p of prices) {
+    const diff = Math.abs(p.ts - wTs);
+    if (diff < minDiff) { minDiff = diff; closest = p; }
+  }
+  if (!closest || minDiff > 8 * 86400000) return null;
+  const pct = closest.open > 0 ? (closest.close - closest.open) / closest.open * 100 : 0;
+  const actual = pct > 1.5 ? 'bullish' : pct < -1.5 ? 'bearish' : 'neutral';
+  return {
+    pctChange: Math.round(pct * 100) / 100,
+    actual,
+    open:  Math.round(closest.open  * 100) / 100,
+    close: Math.round(closest.close * 100) / 100,
+  };
+}
+
+// ─── 뉴스 수집 (Google Search Grounding) ────────────────────────────────────
+
+async function collectWeekNews(weekStart, weekEnd) {
+  const keyPeopleStr = (cfg.key_people || []).join(' and ');
+  const prompt = `[필수 규칙] title과 summary는 반드시 한국어(Korean)로 작성.\n\nSearch for the 10 most impactful ${cfg.company_en} (${TICKER}) and ${keyPeopleStr} news articles published during the week of ${weekStart} to ${weekEnd} that could have affected ${TICKER} stock price.\nOnly include articles from major outlets: Reuters, Bloomberg, CNBC, Wall Street Journal, Financial Times, Associated Press, MarketWatch, Barron's, Electrek, The Verge, TechCrunch, Forbes, CNN Business.\nReturn ONLY a JSON array of up to 10 items:\n[{"id":1,"title":"(한국어 번역 제목)","summary":"(한국어 2~3문장 요약)","source":"Reuters","date":"${weekStart}","category":"Earnings|Delivery|Product|Competition|Regulatory|Macro|Energy|Market|Legal"}]\ntitle·summary는 반드시 한국어. Return ONLY the JSON array, no other text.`;
+
+  const data = await geminiPost({
+    tools: [{ google_search: {} }],
+    contents: [{ role: 'user', parts: [{ text: prompt }] }],
+    generationConfig: { maxOutputTokens: 4096, temperature: 0.1, thinkingConfig: { thinkingBudget: 0 } },
+  });
+
+  const parts = data.candidates?.[0]?.content?.parts || [];
+  const raw   = parts.filter(p => !p.thought).map(p => p.text || '').join('') || parts[0]?.text || '';
+  const clean = raw.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+  const s = clean.indexOf('['), e = clean.lastIndexOf(']');
+  if (s === -1 || e === -1) return [];
+  const items = JSON.parse(clean.slice(s, e + 1));
+  return items.slice(0, 10).map((n, i) => ({ ...n, id: `${weekStart}-${i}` }));
+}
+
+// ─── 개별 뉴스 분석 ──────────────────────────────────────────────────────────
+
+async function analyzeNewsItem(newsItem) {
+  const userContent = `Analyze this ${cfg.company_en}-related news for ${TICKER} stock impact:\n\nTitle: ${newsItem.title}\n\nSummary: ${newsItem.summary}\n\nSource: ${newsItem.source} | Date: ${newsItem.date} | Category: ${newsItem.category}`;
+  const data = await geminiPost({
+    system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+    contents: [{ role: 'user', parts: [{ text: userContent }] }],
+    generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 600, temperature: 0.2, thinkingConfig: { thinkingBudget: 0 } },
+  });
+  const parts = data.candidates?.[0]?.content?.parts || [];
+  const raw   = parts.filter(p => !p.thought).map(p => p.text || '').join('') || parts[0]?.text || '';
+  const clean = raw.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
+  const m = clean.match(/\{[\s\S]*\}/);
+  if (!m) throw new Error('JSON 파싱 실패: ' + raw.slice(0, 80));
+  return JSON.parse(m[0]);
+}
+
+// ─── 주간 일괄 분석 ──────────────────────────────────────────────────────────
+
+async function analyzeWeekBatch(newsItems, macroCtx = null) {
+  const analyses = [];
+  let failCount  = 0;
+  for (let i = 0; i < newsItems.length; i++) {
+    try {
+      const r = await analyzeNewsItem(newsItems[i]);
+      analyses.push(r);
+      const dir = r.direction === 'bullish' ? '📈' : r.direction === 'bearish' ? '📉' : '➡';
+      const sc  = r.impact_score;
+      console.log(`      [${String(i+1).padStart(2,'0')}/${newsItems.length}] ${dir} ${sc >= 0 ? '+' : ''}${sc}  ${newsItems[i].title.slice(0, 50)}`);
+    } catch (e) {
+      failCount++;
+      console.warn(`      [${String(i+1).padStart(2,'0')}/${newsItems.length}] ⚠ 분석 실패: ${e.message.slice(0, 60)}`);
+    }
+    if (i < newsItems.length - 1) await sleep(800);
+  }
+  if (analyses.length === 0) return null;
+
+  const scores   = analyses.map(a => a.impact_score || 0);
+  const avgScore = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length * 10) / 10;
+  const bullish  = analyses.filter(a => a.direction === 'bullish').length;
+  const bearish  = analyses.filter(a => a.direction === 'bearish').length;
+  const ruleCnt  = {};
+  analyses.forEach(a => (a.triggered_rules || []).forEach(r => { ruleCnt[r] = (ruleCnt[r] || 0) + 1; }));
+  const topRules = Object.entries(ruleCnt).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([r]) => r);
+
+  // ── 다층 강화 채점 모델 v5.0 ──────────────────────────────────────────
+  const enhanced = calculateEnhancedScore({ avgScore, topRules, bullish, bearish, macroCtx }, cfg);
+  return {
+    avgScore,
+    buyIndex:  enhanced.buyIndex,
+    direction: enhanced.direction,
+    bullish, bearish,
+    neutral:   analyses.length - bullish - bearish,
+    topRules,
+    failCount,
+    scoringLayers: enhanced.layers,
+    macroCtx,
+    modelVersion: '2.0',
+  };
+}
+
+// ─── 주 목록 생성 (연도별, 완료된 주만) ──────────────────────────────────────
+
+function getFirstMondayOfYear(year) {
+  const jan1 = new Date(`${year}-01-01T00:00:00Z`);
+  const dow  = jan1.getUTCDay();
+  const daysToAdd = dow === 0 ? 1 : (8 - dow) % 7;
+  return new Date(jan1.getTime() + daysToAdd * 86400000);
+}
+
+function getCompletedWeeksForYear(year) {
+  const weeks = [];
+  let d = getFirstMondayOfYear(year);
+  const yearEnd = new Date(`${year}-12-31T23:59:59Z`);
+  const now = new Date();
+  while (d <= yearEnd) {
+    const weekEndDate = new Date(d.getTime() + 6 * 86400000);
+    if (weekEndDate >= now) break;
+    const ws = d.toISOString().split('T')[0];
+    const we = weekEndDate.toISOString().split('T')[0];
+    const mo = d.getUTCMonth() + 1;
+    const q  = mo <= 3 ? 'q1' : mo <= 6 ? 'q2' : mo <= 9 ? 'q3' : 'q4';
+    weeks.push({ weekStart: ws, weekEnd: we, quarter: q });
+    d = new Date(d.getTime() + 7 * 86400000);
+  }
+  return weeks;
+}
+
+// ─── 메인 ────────────────────────────────────────────────────────────────────
+
+async function main() {
+  const nowKST = new Date(Date.now() + 9 * 3600000);
+  const kstStr = nowKST.toISOString().replace('T', ' ').slice(0, 16) + ' KST';
+
+  console.log(`\n🔬 ${YEAR}년 백테스트 시작: ${kstStr}`);
+  console.log('━'.repeat(60));
+
+  // ── 1. 기존 데이터 로드 (중단 후 재시작 지원) ──
+  let db = { year: YEAR, weeks: [], generatedAt: null };
+  if (fs.existsSync(DATA_FILE)) {
+    try {
+      db = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
+      console.log(`   ♻  기존 데이터 ${db.weeks?.length || 0}주 로드 (이어서 진행)`);
+    } catch {}
+  }
+  const doneSet = new Set((db.weeks || []).map(w => w.weekStart));
+
+  // ── 2. 주 목록 생성 (완료된 주만) ──
+  const allWeeks = getCompletedWeeksForYear(YEAR);
+  if (allWeeks.length === 0) {
+    console.log(`   ⏭  ${YEAR}년에 완료된 주가 아직 없음 — 종료`);
+    return;
+  }
+  const pending = allWeeks.filter(w => !doneSet.has(w.weekStart));
+  if (pending.length === 0) {
+    console.log(`   ✅ 처리할 새 주 없음 — ${doneSet.size}/${allWeeks.length}주 이미 완료. 종료.`);
+    return;
+  }
+
+  // ── 3. 주가 데이터 로드 ──
+  console.log(`\n📈 Yahoo Finance ${TICKER} 2년 주봉 로드 중...`);
+  const prices = await fetchAsset2YearWeekly();
+  console.log(`   ✅ ${prices.length}개 주봉 로드 완료`);
+
+  // ── 4. 매크로 데이터 로드 ──
+  console.log(`\n📊 매크로 데이터 로드 중 (SPY/QQQ/VIX/${TICKER})...`);
+  let macroData = null;
+  try {
+    macroData = await loadMacroData(cfg);
+    const assetLen = (macroData.asset || macroData.tsla || []).length;
+    console.log(`   ✅ SPY:${macroData.spy.length}, QQQ:${macroData.qqq.length}, VIX:${macroData.vix.length}, ${TICKER}:${assetLen} 주봉`);
+  } catch (e) {
+    console.warn(`   ⚠ 매크로 데이터 로드 실패 — 기본 채점만 적용: ${e.message}`);
+  }
+
+  console.log(`\n📅 처리 예정: ${pending.length}주 (완료: ${doneSet.size}주 / 전체: ${allWeeks.length}주)\n`);
+
+  const results = [...(db.weeks || [])];
+  let lastCommittedQuarter = null;
+
+  for (let i = 0; i < pending.length; i++) {
+    const { weekStart, weekEnd, quarter } = pending[i];
+    const label = `[${String(i + 1).padStart(2, '0')}/${pending.length}] ${weekStart} (${quarter.toUpperCase()})`;
+    console.log(`\n${label}`);
+    console.log(`   📰 뉴스 수집 중...`);
+
+    let newsItems = [], analysis = null, error = null;
+    try {
+      newsItems = await collectWeekNews(weekStart, weekEnd);
+      console.log(`   ✅ ${newsItems.length}건 수집`);
+    } catch (e) {
+      error = '뉴스 수집 실패: ' + e.message;
+      console.error(`   ❌ ${error}`);
+    }
+
+    if (newsItems.length > 0) {
+      console.log(`   🔍 AI 분석 중...`);
+      try {
+        const macroCtx = macroData ? buildMacroContext(macroData, weekStart, cfg) : null;
+        analysis = await analyzeWeekBatch(newsItems, macroCtx);
+      } catch (e) {
+        error = 'AI 분석 실패: ' + e.message;
+        console.error(`   ❌ ${error}`);
+      }
+    }
+
+    const movement = getActualMovement(weekStart, prices);
+    const match    = (analysis && movement) ? (analysis.direction === movement.actual) : null;
+    const strong   = analysis ? Math.abs(analysis.buyIndex - 50) > 20 : false;
+
+    const mvStr = movement ? `${movement.pctChange > 0 ? '+' : ''}${movement.pctChange}% ($${movement.open}→$${movement.close})` : '데이터없음';
+    const aiStr = analysis ? `매수지수 ${analysis.buyIndex} (${analysis.direction})` : '분석없음';
+    const matchStr = match === true ? '✅ 일치' : match === false ? '❌ 불일치' : '—';
+    console.log(`   주가: ${mvStr}  AI: ${aiStr}  ${matchStr}`);
+
+    results.push({
+      weekStart, weekEnd, quarter,
+      news: newsItems.map(n => ({ title: n.title, source: n.source, category: n.category })),
+      newsCount: newsItems.length,
+      analysis,
+      movement,
+      match,
+      strongSignal: strong,
+      error: error || null,
+    });
+
+    // 중간 저장 (재시작 대비)
+    db.weeks       = results.sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+    db.generatedAt = kstStr;
+    fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
+    fs.writeFileSync(DATA_FILE, JSON.stringify(db, null, 2), 'utf-8');
+
+    // 분기가 바뀌는 시점 또는 마지막 주에 중간 커밋 (앱에서 진행상황 확인 가능)
+    const nextQuarter = pending[i + 1]?.quarter;
+    const isLastWeek  = (i === pending.length - 1);
+    if (isLastWeek || (nextQuarter && nextQuarter !== quarter && lastCommittedQuarter !== quarter)) {
+      console.log(`\n📤 ${quarter.toUpperCase()} 완료 — 중간 커밋 중...`);
+      gitCommitProgress(`${YEAR} ${quarter.toUpperCase()}`);
+      lastCommittedQuarter = quarter;
+    }
+
+    if (i < pending.length - 1) await sleep(2000); // 요청 간격 2초
+  }
+
+  // ── 4. 통계 요약 ──
+  const analyzed  = results.filter(r => r.analysis && r.movement);
+  const matched   = analyzed.filter(r => r.match).length;
+  const accuracy  = analyzed.length ? Math.round(matched / analyzed.length * 100) : 0;
+  const strongR   = analyzed.filter(r => r.strongSignal);
+  const strongAcc = strongR.length ? Math.round(strongR.filter(r => r.match).length / strongR.length * 100) : 0;
+  const avgScore  = analyzed.length
+    ? Math.round(analyzed.reduce((s, r) => s + (r.analysis?.avgScore || 0), 0) / analyzed.length * 10) / 10
+    : 0;
+
+  // 상위 룰
+  const ruleCnt = {};
+  results.forEach(r => (r.analysis?.topRules || []).forEach(rule => { ruleCnt[rule] = (ruleCnt[rule] || 0) + 1; }));
+  const topRules = Object.entries(ruleCnt).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+  // 최종 저장
+  db.year        = YEAR;
+  db.weeks       = results.sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+  db.generatedAt = kstStr;
+  db.stats = { totalWeeks: results.length, analyzedWeeks: analyzed.length, accuracy, strongAccuracy: strongAcc, avgScore };
+  fs.writeFileSync(DATA_FILE, JSON.stringify(db, null, 2), 'utf-8');
+
+  console.log('\n' + '━'.repeat(60));
+  console.log(`✅ ${YEAR}년 백테스트 완료 | ${kstStr}`);
+  console.log(`   총 ${results.length}주 처리 (분석 ${analyzed.length}주)`);
+  console.log(`   방향 정확도: ${accuracy}%  (${matched}/${analyzed.length}건)`);
+  console.log(`   강한신호 정확도: ${strongAcc}%  (${strongR.length}건)`);
+  console.log(`   평균 AI 점수: ${avgScore >= 0 ? '+' : ''}${avgScore}`);
+  console.log(`   상위 룰: ${topRules.map(([r, c]) => `${r}(${c})`).join(', ')}`);
+  console.log(`   저장: ${DATA_FILE}\n`);
+}
+
+main().catch(e => {
+  console.error('\n❌ 치명적 오류:', e.message);
+  process.exit(1);
+});
