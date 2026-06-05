@@ -17,7 +17,7 @@ jobs:
   analyze:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # data/auto-sessions.json 커밋 권한
+      contents: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
