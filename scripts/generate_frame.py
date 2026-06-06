@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""TSLA 영상용 프레임 템플릿 이미지를 Nano Banana로 1회 생성.
+"""영상용 프레임 템플릿 이미지를 Nano Banana로 1회 생성 (종목 비종속).
 
 용도:
-  각 씬에 공통으로 깔리는 Tesla-themed 외곽 프레임/보더 디자인.
+  각 씬에 공통으로 깔리는 하이테크 외곽 프레임/보더 디자인.
   중앙 영역은 투명하게 마스킹되어, 기존 씬 콘텐츠(헤더·사진·카드)가
   그대로 보이고 가장자리만 통일된 브랜드 룩으로 장식된다.
 
@@ -28,16 +28,16 @@ BORDER_PX   = 90    # 가장자리 보더 두께 (px)
 CORNER_R    = 60    # 중앙 투명 영역의 모서리 라운드 반경
 
 FRAME_PROMPT = """
-A futuristic Tesla-inspired decorative frame border design, vertical 9:16, ultra-high resolution.
+A futuristic high-tech decorative frame border design, vertical 9:16, ultra-high resolution.
 The image must show ONLY the outer border/frame decoration around the edges.
 The CENTER 80% area should be a flat solid dark navy color (#0a0e1a) — completely empty, no content.
 
 Border decoration features (only along the edges, ~90px wide):
-- Top edge: glowing cyan neon line with subtle electric circuit traces, hint of a Tesla T-shape silhouette
+- Top edge: glowing cyan neon line with subtle electric circuit traces, abstract tech motif
 - Bottom edge: futuristic dashboard accent bar with magenta-cyan gradient glow
 - Left and right edges: thin vertical neon glow lines, subtle hexagonal tech pattern
 - Four corners: small triangular tech accents with glowing edges
-- Overall style: cyberpunk, electric vehicle aesthetic, neon cyan + magenta + electric purple highlights
+- Overall style: cyberpunk, high-tech aesthetic, neon cyan + magenta + electric purple highlights
 - Background of border area: deep navy/black with subtle starfield or grid texture
 
 Strict requirements:

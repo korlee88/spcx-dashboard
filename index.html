@@ -145,19 +145,20 @@ CONSERVATIVE SCORING RULES (mandatory):
 4. SELF-CHECK: Before assigning ±3 or higher, confirm: "Does this article contain officially published, quantified data?" If NO → reduce to ±2.
 
 Per-rule CAPS (hard limits regardless of context):
-- R08 (Musk SNS/DOGE): MAX ±2
-- R09 (subsidy reduction): MAX ±2 unless specific law confirmed
-- R13 (FSD/new product): MAX ±3; ±4 only if hardware shipping with date confirmed
-- R17 (analyst upgrade/downgrade): MAX ±2
-- R18 (fed rate signal): MAX ±1
-- R19 (Musk positive statement): MAX ±2
-- R20 (China sales): MAX ±2 unless official quarterly data published
-- R22 (short seller report): MAX ±2
-- R23 (recession fear): MAX -1
-- R24 (Musk ventures spillover): MAX ±2
-- R25 (Optimus/robot scale-up): MAX +4; +3 if confirmed ramp plan, +4 only if shipment/B2B contract confirmed
-  NOTE: R25+R07 together → score R25 as +3~+4, score R07 as -1 only (robot pivot overrides shutdown penalty)
-- R26 (vehicle production cut for robot transition): -1 to -2 standalone; score 0 if R25 present
+- R08 (Peter Beck SNS controversy): MAX ±2
+- R09 (dilutive equity raise): MAX ±3; ±4 only if >10% shares diluted
+- R12 (space budget cuts): MAX -2 unless specific program cancellation confirmed
+- R14 (launch success milestone): MAX +3; +4 only if reusable catch or historic first confirmed
+- R18 (Neutron milestone): MAX +3; +4 only if engine qualification or launch date confirmed
+- R20 (analyst upgrade/downgrade): MAX ±2
+- R21 (fed rate signal): MAX +1
+- R22 (CEO positive statement): MAX +2
+- R23 (new partnership): MAX +2 unless constellation contract value >$100M confirmed
+- R24 (Peter Beck ventures risk): MAX ±2
+- R25 (Neutron commercial launch): MAX +4; +3 if manifest slot confirmed, +4 only if first commercial launch date announced
+  NOTE: R25 is BULLISH even when co-occurring with R07 (manifest slip for Neutron prep).
+        When R25+R07 together: score R25 as +3~+4, score R07 as -1 only (preparation context overrides delay penalty)
+- R26 (Electron reduction for Neutron focus): score -1 to -2 standalone; score 0 if R25 present (transition rationale neutralizes)
 
 DIRECTION: bullish if score>0, bearish if score<0, neutral ONLY if score=0.
 CRITICAL: Return ONLY the raw JSON object. No markdown, no explanation, no extra text.`;
@@ -719,9 +720,10 @@ async function getDriveAppDataSize(token) {
 
 // ─── 앱 버전 ──────────────────────────────────────────────────────────────────
 const APP_VERSION = {
-  version: '1.0.0',
+  version: '1.0.1',
   date: '2026-06-05 KST',
   changelog: [
+    { v: '1.0.1', date: '2026-06-05 KST', label: '마이그레이션 잔재 정리 — RULE_LABELS·매수지수 분해 라벨·핵심인물(피터백) UI를 RKLB로 정정 · 영상 이미지 프롬프트 config 자동적응화 · 마이그레이션 플레이북(MIGRATION.md)+감사도구 추가' },
     { v: '1.0.0', date: '2026-06-05 KST', label: 'RKLB 마이그레이션 초기 릴리즈 (from tsla-dashboard v2.6.0) · scoring v5.0 · R01~R26 우주·발사체 특화 규칙 · Peter Beck 키맨 신호' },
   ],
 };
@@ -1324,7 +1326,7 @@ ${trendSection}
 ${calSection}
 
 ## Chain-of-Thought Instructions (think step by step)
-Step 1 — News Signal: Analyze the news impact scores below. Weight Earnings/Delivery news 1.5x vs Market/Musk news.
+Step 1 — News Signal: Analyze the news impact scores below. Weight Earnings/Contract news 1.5x vs Market/Leadership news.
 Step 2 — Macro Context: If VIX > 30, reduce technical signal confidence by 20% and emphasize macro direction.
 Step 3 — Confirmation Check: Does the buy_index align with at least 2 independent signals (news + macro, news + RSI, etc.)?
 Step 4 — Cautionary Flag: If bullish signal but RSI > 75, flag "Cautionary Bull" in signal_state. If bearish but RSI < 30, flag "Cautionary Bear".
@@ -2885,7 +2887,7 @@ function SignalPage({ forecast, forecastLoading, forecastError, onRetryForecast,
   const signalToBi = { '적극매수': 88, '매수': 72, '관망': 50, '매도': 30, '적극매도': 12 };
 
   // ── 종합 합성 점수 (매수지수 60% : AI 전망 40%) ──────────────────────────
-  // 매수지수 = 모든 보조신호(YouTube·머스크X·구글트렌드 포함) 현재 감성 종합 스냅샷.
+  // 매수지수 = 모든 보조신호(YouTube·피터백X·구글트렌드 포함) 현재 감성 종합 스냅샷.
   // AI 전망 = 미래 방향 예측. 두 축을 가중 평균해 단일 "종합 매매 신호"를 도출한다.
   const SIGNAL_STATE_BI = {
     strong_bull: 90, cautionary_bull: 70, bull: 67,
@@ -3094,7 +3096,7 @@ function SignalPage({ forecast, forecastLoading, forecastError, onRetryForecast,
               </p>
               {tip && <p className="text-xs text-gray-600 mt-1">{tip}</p>}
               <p className="text-xs text-gray-700 mt-1.5 border-t pt-1.5" style={{ borderColor: msgColor + '20' }}>
-                매수지수 = 보조신호(YouTube·머스크X·트렌드) 포함 현재 감성 스냅샷 &nbsp;·&nbsp; 투자 전망 = 미래 방향 AI 예측 — 상단 <span className="text-gray-500">종합 매매 신호</span>는 두 지표를 <span className="text-gray-500">매수지수 60% : 전망 40%</span>로 합성한 값입니다.
+                매수지수 = 보조신호(YouTube·피터백X·트렌드) 포함 현재 감성 스냅샷 &nbsp;·&nbsp; 투자 전망 = 미래 방향 AI 예측 — 상단 <span className="text-gray-500">종합 매매 신호</span>는 두 지표를 <span className="text-gray-500">매수지수 60% : 전망 40%</span>로 합성한 값입니다.
               </p>
             </div>
           </div>
@@ -3736,7 +3738,7 @@ function VideoScriptPage({ onBack }) {
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">매수지수 구성 분해</p>
           <div className="space-y-1.5">
             {Object.entries(sc.meta.scoring_breakdown).filter(([k]) => k !== 'total').map(([k, v]) => {
-              const labels = { base: '기본 뉴스', optimus_boost: '🤖 옵티머스 부스트', macd_cross: '📊 MACD 크로스', musk_x: '🐦 머스크 X', google_trends: '🔍 구글 트렌드', youtube: '📺 YouTube' };
+              const labels = { base: '기본 뉴스', optimus_boost: '🚀 뉴트론 부스트', macd_cross: '📊 MACD 크로스', musk_x: '🐦 피터백 X', google_trends: '🔍 구글 트렌드', youtube: '📺 YouTube' };
               const col = v > 0 ? '#22c55e' : v < 0 ? '#ef4444' : '#9ca3af';
               return (
                 <div key={k} className="flex items-center gap-2">
@@ -3918,12 +3920,12 @@ function VideoScriptPage({ onBack }) {
         </div>
       )}
 
-      {/* 머스크 X / YouTube 요약 */}
+      {/* 피터백 X / YouTube 요약 */}
       {sc.meta && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
           {sc.meta.musk_x_summary && (
             <div className="rounded-xl border p-3" style={{ background: '#1C1F26', borderColor: '#2A2D35' }}>
-              <p className="text-xs font-semibold text-blue-400 mb-1">🐦 머스크 X 동향</p>
+              <p className="text-xs font-semibold text-blue-400 mb-1">🐦 피터백 X 동향</p>
               <p className="text-xs text-gray-400 leading-relaxed">{sc.meta.musk_x_summary}</p>
             </div>
           )}
@@ -5615,13 +5617,13 @@ function BacktestPage({ apiKey }) {
 
   // 룰 설명 맵
   const RULE_LABELS = {
-    R01:'인도량 미달(>5%)', R02:'EPS 미달(>10%)', R03:'가이던스 하향', R04:'리콜(>50K)',
+    R01:'발사 실패', R02:'EPS 미스', R03:'가이던스 하향', R04:'발사대 사고/화재',
     R05:'SEC/DOJ 조사', R06:'경쟁사 대형 계약', R07:'발사 장기 연기', R08:'피터 백 SNS 논란',
-    R09:'보조금 축소', R10:'가격 인하(>5%)', R11:'인도량 초과(>5%)', R12:'EPS 초과(>10%)',
+    R09:'대규모 유상증자', R10:'주요 계약 취소/손실', R11:'공매도 보고서', R12:'우주 예산 삭감',
     R13:'경기침체 우려', R14:'발사 성공 (마일스톤)', R15:'EPS 비트', R16:'대형 정부 계약',
-    R17:'목표가 상향(>20%)', R18:'연준 금리 인하 신호', R19:'머스크 자사주매입/호재', R20:'중국 판매 성장',
-    R21:'주요 소송 승리', R22:'공매도 리포트', R23:'경기침체 우려', R24:'머스크 사업 리스크',
-    R25:'Optimus/로봇 생산 확대', R26:'차량생산 조정(로봇 전환)',
+    R17:'대형 상업 계약', R18:'뉴트론 마일스톤', R19:'우주 시스템 수주', R20:'목표가 상향',
+    R21:'금리 인하 신호', R22:'CEO/내부자 매수', R23:'신시장/파트너십', R24:'피터 백 사업 리스크',
+    R25:'뉴트론 상업 론칭', R26:'소형 발사 사업 재편',
   };
 
   return (
@@ -5910,7 +5912,7 @@ function BacktestPage({ apiKey }) {
                   {topRulesAll.some(([r]) => r === 'R08' || r === 'R24') && (
                     <li className="flex gap-2">
                       <span className="text-orange-400 shrink-0 font-bold">③</span>
-                      머스크 SNS/DOGE 관련 룰(R08/R24)이 자주 발동됩니다. 단기 감성과 장기 주가의 괴리를 고려한 가중치 하향 조정을 권장합니다.
+                      피터 백 SNS 관련 룰(R08/R24)이 자주 발동됩니다. 단기 감성과 장기 주가의 괴리를 고려한 가중치 하향 조정을 권장합니다.
                     </li>
                   )}
                   {topRulesAll.some(([r]) => r === 'R01' || r === 'R11') && (
@@ -6716,7 +6718,7 @@ function App() {
         <p className="font-semibold text-gray-400 mb-2">판정 가중치 조정 가이드</p>
         <ul className="space-y-1">
           <li>📊 <strong className="text-gray-400">실적 발표 시즌:</strong> R02(실적 미스) 가중치 ×1.5 적용 권장</li>
-          <li>📱 <strong className="text-gray-400">머스크 SNS 활성화 기간:</strong> R08(SNS 논란) 임계값 낮춤 권장</li>
+          <li>📱 <strong className="text-gray-400">피터 백 SNS 활성화 기간:</strong> R08(SNS 논란) 임계값 낮춤 권장</li>
           <li>⚖️ <strong className="text-gray-400">규제 불확실성 높을 때:</strong> R05, R17 confidence → medium으로 하향 권장</li>
         </ul>
       </div>

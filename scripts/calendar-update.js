@@ -1,5 +1,5 @@
 /**
- * 테슬라 캘린더 자동 업데이트 스크립트
+ * 캘린더 자동 업데이트 스크립트 (종목: config/ticker.json 기반)
  * GitHub Actions에서 매주 월요일 KST 09:00 (UTC 00:00) 실행
  * Node.js 22 내장 fetch 사용 (별도 패키지 불필요)
  */

@@ -218,7 +218,7 @@ def search_movement_reason(summary):
         week_end   = summary.get("week_end", "")
         price      = summary.get("latest_price", "")
         q = (
-            f"테슬라 TSLA 주가 {week_start}~{week_end} 기간 {direction} 주요 원인 분석. "
+            f"{COMPANY_KO} {TICKER} 주가 {week_start}~{week_end} 기간 {direction} 주요 원인 분석. "
             f"현재 주가 ${price}, 변동률 {sign}{tcp}%. "
             f"검색 결과를 바탕으로 핵심 원인 2~3가지를 각 15자 이내 한국어로 작성. "
             f"형식: '원인1 / 원인2 / 원인3'"
@@ -360,7 +360,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 주간 데이터를 바탕으로 You
 • 씬 0: 4줄 / 씬 1: 6줄 / 씬 2: 4줄 (한 줄 30자 이내 권장)
 
 === 핵심 강조 표시 (반드시 준수) ===
-• 각 줄에서 가장 중요한 핵심 글귀(수치·키워드) 1개를 *별표*로 감싼다. 예시: 이번 주 테슬라가 *12% 급등*했어요
+• 각 줄에서 가장 중요한 핵심 글귀(수치·키워드) 1개를 *별표*로 감싼다. 예시: 이번 주 주가가 *12% 급등*했어요
 • 한 줄에 강조는 최대 1~2개만. 문장 전체를 감싸지 말고 핵심 수치/단어만 감싼다
 • 별표로 감싼 부분은 화면에서 강조색(골드)으로 표시되니, 정말 눈에 띄어야 할 수치·키워드에만 사용한다
 
@@ -434,9 +434,9 @@ SCENE_2:
 {company_ko}·{industry_ko} 관련 시각 요소 포함. 씬별 색감 지정.
 ※ 씬 0·1은 16:9 landscape (horizontal strip), 씬 2는 9:16 vertical (full screen) — 프롬프트에 비율 명시.
 
-IMAGE_PROMPT_0: [씬0 — 16:9 landscape · 서울 한강 야경 배경 테슬라 자율주행 전기차, 남산타워·63빌딩·롯데타워 도심 스카이라인, K-tech 첨단 도시 보라빛 미래적 분석 분위기, Korean futuristic city Seoul skyline Tesla purple violet tech analytics, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_1: [씬1 — 16:9 landscape · 한강 반포 다리 초록빛 성장 상승 이미지, 서울 테슬라 전기차 충전·고속 주행, K-tech 친환경 인프라 밝고 활기찬 분위기, Korean city Seoul Tesla green growth bullish energy vibrant, sunlit modern bridge electric vehicle charging, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_2: [씬2 — 9:16 vertical · 한국 미래 도시: 한강 야경·서울 스카이라인·광화문 광장 배경의 자율주행 테슬라 차량·옵티머스 로봇, 첨단 K-tech 도시 풍경, 마젠타·골드빛 영감적 미래 무드, 황금빛 태양·별빛·반짝임, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape · 서울 한강 야경 배경 {company_ko} {industry_ko} 핵심 비주얼, 남산타워·63빌딩·롯데타워 도심 스카이라인, K-tech 첨단 도시 보라빛 미래적 분석 분위기, Korean futuristic city Seoul skyline purple violet tech analytics, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape · 한강 다리 초록빛 성장 상승 이미지, 서울 도심 배경 {company_ko} {industry_ko} 역동적 비주얼, K-tech 인프라 밝고 활기찬 분위기, Korean city Seoul green growth bullish energy vibrant, sunlit modern skyline, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_2: [씬2 — 9:16 vertical · 한국 미래 도시: 한강 야경·서울 스카이라인·광화문 광장 배경 {company_ko} {industry_ko} 상징 비주얼, 첨단 K-tech 도시 풍경, 마젠타·골드빛 영감적 미래 무드, 황금빛 태양·별빛·반짝임, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
 
 
 def _build_prompt(summary):
@@ -1671,7 +1671,7 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
     for scene in scenes:
         idx      = scene["index"]
         bg_path  = out_dir / f"bg_{idx:02d}.jpg"
-        articles = SCENE_WIKI_ARTICLES[idx] if idx < len(SCENE_WIKI_ARTICLES) else ["Tesla, Inc."]
+        articles = SCENE_WIKI_ARTICLES[idx] if idx < len(SCENE_WIKI_ARTICLES) else [TICKER_CONFIG.get("company_en", TICKER)]
 
         if idx not in BG_SCENES:
             bg_paths[idx] = None

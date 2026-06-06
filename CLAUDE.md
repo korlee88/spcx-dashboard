@@ -105,6 +105,36 @@ RKLB 우주·발사체 산업에 맞게 R01~R26 규칙 전면 재설계:
 
 ---
 
+## 다음 종목으로 마이그레이션 (중요)
+
+> **전체 절차는 [`MIGRATION.md`](MIGRATION.md) 플레이북을 따른다.** 아래는 핵심 요약.
+
+### Config 기반 원칙
+이 저장소는 **config 기반 멀티 종목 템플릿**이다. 종목을 바꾸는 작업의 대부분은
+코드가 아니라 **`config/ticker.json`(메타데이터) + `config/rules.json`(26규칙)** 값 교체다.
+
+- **자동 (손댈 것 없음)**: `scripts/*` 전부, `.github/workflows/*` 전부.
+  Node/Python이 config를 읽고, `index.html`도 런타임에 두 config를 `fetch`해 프롬프트·규칙을 생성한다.
+- **수동 (직접 치환)**: `index.html`의 하드코딩 표면 — `gCfg` fallback, `SYSTEM_PROMPT` fallback,
+  `RULE_LABELS` 맵(★config 미사용·자주 누락★), 매수지수 분해 라벨, 핵심인물 UI 라벨, `rklb_` 캐시키, 산문.
+
+### 보존해야 할 레거시 내부 키 (변경 금지)
+사용자에게 보이지 않고 동작은 종목 무관이며, 과거 데이터 호환·producer↔consumer 계약 때문에 **그대로 둔다**:
+- `macroData.tsla`/`byd`, `prevTslaChg`, `tslaTrend3w`, `latestTslaPrice` (저장 데이터 alias)
+- `muskX*`, `musk_x`, `optimusBoost`, `optimus_boost`, `newsCategories.Musk`, `catMuskDamp` (내부 변수·스키마 키)
+
+### 검증
+마이그레이션 후 반드시 감사 도구 실행 (잔재 + config 정합성 + RULE_LABELS 누락 자동 점검):
+```bash
+bash scripts/migration-audit.sh RKLB "Rocket Lab" 로켓랩 뉴트론 "Peter Beck" 피터백 ASTS
+```
+
+### GitHub 설정 함정 (Actions가 안 보일 때)
+- **기본 브랜치**가 워크플로우 있는 브랜치(`master`)인지 — Actions는 기본 브랜치 워크플로만 인식.
+- **Settings → Actions → General → "Allow all actions"** 활성화 여부.
+
+---
+
 ## GitHub Secrets 필수 설정
 
 | Secret | 용도 |
@@ -148,6 +178,7 @@ TSLA의 Optimus 규칙(R25)과 동일한 구조:
 
 | 버전 | 날짜 | 주요 변경 |
 |------|------|---------|
+| **v1.0.1** | 2026-06-05 KST | 마이그레이션 잔재 정리(RULE_LABELS·UI 라벨·영상 프롬프트 RKLB화) · 영상 이미지 프롬프트 config 자동적응 · 마이그레이션 플레이북(MIGRATION.md)+감사도구 추가 |
 | **v1.0.0** | 2026-06-05 KST | RKLB 마이그레이션 초기 릴리즈 (from tsla-dashboard v2.6.0) |
 
 > 버전 업데이트 시 `index.html`의 `APP_VERSION` 상수와 이 표를 함께 수정할 것.
