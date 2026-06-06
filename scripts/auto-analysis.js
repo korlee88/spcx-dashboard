@@ -17,11 +17,11 @@ const COMPANY_KO = cfg.company_ko;
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) { console.error('❌ GEMINI_API_KEY 환경변수가 없습니다.'); process.exit(1); }
 
-// 기본 모델 + 과부하 시 폴백 모델
+// 기본 모델 + 과부하 시 폴백 모델 (모두 v1beta 지원)
 const MODELS = [
   'gemini-2.5-flash',
   'gemini-2.0-flash',
-  'gemini-1.5-flash',
+  'gemini-2.0-flash-lite',
 ];
 const makeUrl = m => `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${API_KEY}`;
 const GEMINI_URL = makeUrl(MODELS[0]); // 기본값 (하위 호환용)
@@ -44,7 +44,7 @@ function getTopRules(analyses) {
 
 async function geminiPost(body, retries = 7) {
   let lastError;
-  // 모델 순서: 0-3회→gemini-2.5-flash, 4-5회→gemini-2.0-flash, 6+회→gemini-1.5-flash
+  // 모델 순서: 0-3회→gemini-2.5-flash, 4-5회→gemini-2.0-flash, 6+회→gemini-2.0-flash-lite
   for (let attempt = 0; attempt <= retries; attempt++) {
     const modelIdx = attempt < 4 ? 0 : attempt < 6 ? 1 : 2;
     const model = MODELS[modelIdx];
