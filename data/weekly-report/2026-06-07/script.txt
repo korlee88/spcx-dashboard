@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+현재 주가는 *$111.02*, 보합세예요
+사상 최대 *수주잔고* 확보 소식이 나왔어요
+Anduril과 *3천만 달러* 계약도 체결됐죠
+이번주는 특별한 리스크가 *없네요*
+
+SCENE_1_TITLE: 역대급
+SCENE_1:
+카테고리: 익명 고객과 *사상 최대* 발사 계약
+   ↳ 배경: 뉴트론 *5기*·일렉트론 *3기* 패키지예요
+   ↳ 데이터: 1분기 *모든 가이던스* 초과 달성했죠
+   ↳ 임팩트: 분기 *사상 최고 매출*을 기록했어요
+   ↳ 비교: 기존보다 큰 *역대 최대* 수주잔고예요
+   ↳ 뉴트론 상업화에 힘이 실리는 분위기네요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+6월 10일 *HASTE Curveball* 발사 예정이에요
+극초음속 미션 *성공 여부*가 관전 포인트죠
+누적 *+1.0%*, *$112* 도달이 예상돼요
+*4일 상승*·*1일 하락* 흐름이 점쳐져요
+발사 지연이나 기상 변수는 살펴봐야 해요
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A breathtaking cinematic view of Seoul's Han River night skyline featuring N Seoul Tower, 63 Building, and Lotte World Tower bathed in deep purple and violet hues, with a sleek Rocket Lab Neutron rocket silhouette rising subtly in the background, glowing city lights creating beautiful bokeh effects, K-tech futuristic analytics atmosphere, holographic data streams floating softly, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant sunlit panorama of Seoul's Han River bridges glowing in fresh green bullish tones, modern skyline with dynamic Rocket Lab Electron and Neutron rockets ascending energetically into a bright sky, K-tech infrastructure radiating optimism and growth, lush riverside parks, upward-trending light trails symbolizing market momentum, vibrant emerald and lime accents, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A majestic vertical composition of futuristic Korean cityscape blending Han River night view, Seoul skyline, and Gwanghwamun Square, with iconic Rocket Lab launch vehicle soaring upward through magenta and gold infused skies, golden sunlight breaking through clouds, sparkling stars and shimmering particles, inspirational forward-looking mood, advanced K-tech urban landscape, cinematic depth, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
