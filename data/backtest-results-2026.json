@@ -407,16 +407,136 @@
       "match": null,
       "strongSignal": false,
       "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 23.493912585s."
+    },
+    {
+      "weekStart": "2026-06-01",
+      "weekEnd": "2026-06-07",
+      "quarter": "q2",
+      "news": [
+        {
+          "title": "Rocket Lab, Synspective와 10회 추가 발사 계약 체결로 Electron 프로그램 최대 고객 확보",
+          "source": "Stocktwits",
+          "category": "Delivery"
+        },
+        {
+          "title": "Rocket Lab 주가 3개월 만에 72% 급등, 지속 가능할까?",
+          "source": "Vertex AI Search",
+          "category": "Market"
+        },
+        {
+          "title": "Rocket Lab, 30억 달러 규모의 주식 발행 프로그램 등록으로 투자자 우려",
+          "source": "TheStreet",
+          "category": "Market"
+        },
+        {
+          "title": "Stifel 분석가, Rocket Lab 목표 주가 상향 조정",
+          "source": "TipRanks",
+          "category": "Market"
+        },
+        {
+          "title": "Rocket Lab, 새로운 GEO 방위 계약으로 위험 프로필 재정의?",
+          "source": "Simply Wall St",
+          "category": "Delivery"
+        },
+        {
+          "title": "Rocket Lab, 미국 우주 방위 핵심 역할 시사하며 주가 상승",
+          "source": "Stocktwits",
+          "category": "Market"
+        },
+        {
+          "title": "Rocket Lab, Rutherford 엔진 생산 이정표 달성",
+          "source": "Stocktwits",
+          "category": "Product"
+        },
+        {
+          "title": "Rocket Lab, Neutron 로켓 수요 강세 지속",
+          "source": "Stocktwits",
+          "category": "Product"
+        },
+        {
+          "title": "Rocket Lab, 2026년 1분기 실적 호조 및 긍정적인 2분기 가이던스 발표",
+          "source": "TheStreet",
+          "category": "Earnings"
+        },
+        {
+          "title": "Rocket Lab, 긍정적인 조정 EBITDA 달성 예상",
+          "source": "YouTube",
+          "category": "Earnings"
+        }
+      ],
+      "newsCount": 10,
+      "analysis": {
+        "avgScore": 2,
+        "buyIndex": 53,
+        "direction": "bullish",
+        "bullish": 1,
+        "bearish": 0,
+        "neutral": 0,
+        "topRules": [
+          "R20"
+        ],
+        "failCount": 9,
+        "scoringLayers": {
+          "base": 70,
+          "strongAmp": 2,
+          "macroOverlay": -7,
+          "rsiOverbought": -4,
+          "macdTrend": 1,
+          "bbHigh": -3,
+          "trendFilter": -6
+        },
+        "macroCtx": {
+          "spyChg": -2.36,
+          "qqqChg": -4.34,
+          "vixClose": 21.510000228881836,
+          "wtiChg": 2.31,
+          "cnyChg": 0.11,
+          "competitorChg": -13.87,
+          "competitorRelStrength": -2.98,
+          "prevAssetChg": 1.07,
+          "assetTrend3w": 36.3,
+          "rsi": 84.1,
+          "macd": {
+            "macd": 16.199603542198346,
+            "signal": 11.1075092138204,
+            "hist": 5.0920943283779465,
+            "crossover": null,
+            "trend": "bullish"
+          },
+          "bb": {
+            "upper": 133.91,
+            "middle": 85.7,
+            "lower": 37.49,
+            "pos": 0.753
+          },
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": -13.87,
+          "bydRelStrength": -2.98,
+          "prevTslaChg": 1.07,
+          "tslaTrend3w": 36.3
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": {
+        "pctChange": -16.85,
+        "actual": "bearish",
+        "open": 132.38,
+        "close": 110.08
+      },
+      "match": false,
+      "strongSignal": false,
+      "error": null
     }
   ],
   "lastUpdated": "",
-  "generatedAt": "2026-06-06 04:40 KST",
+  "generatedAt": "2026-06-09 05:26 KST",
   "year": 2026,
   "stats": {
-    "totalWeeks": 21,
-    "analyzedWeeks": 0,
+    "totalWeeks": 22,
+    "analyzedWeeks": 1,
     "accuracy": 0,
     "strongAccuracy": 0,
-    "avgScore": 0
+    "avgScore": 2
   }
 }
