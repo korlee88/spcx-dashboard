@@ -668,41 +668,75 @@ def render_lines(draw, text, x, y, font, fill, max_px, line_gap=8):
     return y
 
 
-def fetch_wiki_image(article: str, out_path: Path) -> bool:
-    """Wikipedia 기사 대표 이미지를 다운로드. 실패하거나 세로(로고) 이미지면 False 반환."""
+def _is_usable_photo(raw: bytes) -> bool:
+    """배경으로 쓸 만한 사진인지 검사 — 아주 작은 아이콘/로고·극단적 슬리버만 거부.
+    로켓처럼 세로로 긴 사진은 허용(씬 합성 시 cover-crop)."""
     from PIL import Image as _PILImg
     import io as _io
+    try:
+        pimg = _PILImg.open(_io.BytesIO(raw))
+        pw, ph = pimg.size
+        if min(pw, ph) < 150:                        # 너무 작은 아이콘/로고
+            return False
+        if max(pw, ph) / max(min(pw, ph), 1) > 4.0:  # 배너/슬리버 거부
+            return False
+        return True
+    except Exception:
+        return True   # 검증 불가 시 일단 허용
+
+
+def fetch_wiki_image(article: str, out_path: Path) -> bool:
+    """Wikipedia 기사 대표 이미지를 다운로드. (REST summary 우선 → pageimages 폴백)
+    로켓 등 세로형 사진도 허용하고, 아주 작은 아이콘·슬리버만 거부한다."""
     headers = {"User-Agent": f"{TICKER}-Dashboard/2.0 (github.com/{REPO})"}
+    candidates = []
+    # 1) REST summary — 기사 대표(hero) 이미지. originalimage가 고화질
+    try:
+        title_enc = urllib.parse.quote(article.replace(" ", "_"))
+        req = urllib.request.Request(
+            f"https://en.wikipedia.org/api/rest_v1/page/summary/{title_enc}",
+            headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as r:
+            summ = json.loads(r.read())
+        for key in ("originalimage", "thumbnail"):
+            src = (summ.get(key) or {}).get("source", "")
+            if src:
+                candidates.append(src)
+    except Exception:
+        pass
+    # 2) pageimages 폴백
     try:
         params = urllib.parse.urlencode({
             "action": "query", "titles": article,
-            "prop": "pageimages", "pithumbsize": "1280",
-            "format": "json",
+            "prop": "pageimages", "pithumbsize": "1280", "format": "json",
         })
         req = urllib.request.Request(
             f"https://en.wikipedia.org/w/api.php?{params}", headers=headers)
         with urllib.request.urlopen(req, timeout=15) as r:
             data = json.loads(r.read())
-        pages = data.get("query", {}).get("pages", {})
-        for p in pages.values():
-            img_url = p.get("thumbnail", {}).get("source", "")
-            if img_url:
-                req2 = urllib.request.Request(img_url, headers=headers)
-                with urllib.request.urlopen(req2, timeout=15) as r2:
-                    raw = r2.read()
-                # 세로 비율(로고/아이콘) 이미지 거부 — 가로형만 허용
-                try:
-                    pimg = _PILImg.open(_io.BytesIO(raw))
-                    pw, ph = pimg.size
-                    if ph > pw * 1.2:   # 세로가 가로보다 20% 이상 크면 로고 가능성
-                        print(f"   ⚠ 세로형 이미지 skip ({article}: {pw}×{ph})", file=sys.stderr)
-                        return False
-                except Exception:
-                    pass
-                out_path.write_bytes(raw)
-                return True
-    except Exception as e:
-        print(f"   ⚠ 배경 이미지 다운로드 실패 ({article}): {e}", file=sys.stderr)
+        for p in data.get("query", {}).get("pages", {}).values():
+            src = p.get("thumbnail", {}).get("source", "")
+            if src:
+                candidates.append(src)
+    except Exception:
+        pass
+    # 후보를 순서대로 시도
+    seen = set()
+    for url in candidates:
+        if url in seen:
+            continue
+        seen.add(url)
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=15) as r:
+                raw = r.read()
+        except Exception as e:
+            print(f"   ⚠ 이미지 다운로드 실패 ({article}): {e}", file=sys.stderr)
+            continue
+        if _is_usable_photo(raw):
+            out_path.write_bytes(raw)
+            return True
+        print(f"   ⚠ 부적합 이미지 skip ({article})", file=sys.stderr)
     return False
 
 
@@ -1690,10 +1724,24 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
 
         # 2순위: Wikipedia
         ok = fetch_wiki_image_with_fallback(articles, bg_path)
-        bg_paths[idx] = bg_path if ok else None
-        status = "✅" if ok else "⚠ 실패(기본 배경 사용)"
-        label  = (articles[0] if isinstance(articles, list) else articles)[:20]
-        print(f"      씬{idx} [Wikipedia: {label}] {status}")
+        if ok:
+            bg_paths[idx] = bg_path
+            label = (articles[0] if isinstance(articles, list) else articles)[:20]
+            print(f"      씬{idx} [Wikipedia: {label}] ✅")
+            continue
+
+        # 3순위: 로컬 정적 배경 (data/scene-backgrounds/ — config scene_static_bg_files)
+        static = SCENE_STATIC_BG[idx] if idx < len(SCENE_STATIC_BG) else None
+        if static and Path(static).exists():
+            import shutil
+            shutil.copyfile(static, bg_path)
+            bg_paths[idx] = bg_path
+            print(f"      씬{idx} [정적 배경: {Path(static).name}] ✅")
+            continue
+
+        # 최종: 기본 다크 배경
+        bg_paths[idx] = None
+        print(f"      씬{idx} ⚠ 이미지 없음 → 기본 배경 사용", file=sys.stderr)
 
     for scene in scenes:
         idx  = scene["index"]

@@ -6,6 +6,7 @@ google-auth-httplib2
 gspread
 Pillow
 edge-tts
+pydub
 moviepy
 numpy
 pytrends

@@ -1,5 +1,6 @@
 /**
  * 캘린더 자동 업데이트 스크립트 (종목: config/ticker.json 기반)
+ * 최근 지난 30일 ~ 향후 3개월 이벤트 수집 (과거 이벤트도 포함)
  * GitHub Actions에서 매주 월요일 KST 09:00 (UTC 00:00) 실행
  * Node.js 22 내장 fetch 사용 (별도 패키지 불필요)
  */
@@ -49,6 +50,9 @@ async function geminiPost(body, retries = 4) {
 async function fetchCalendarEvents() {
   const nowKST  = new Date(Date.now() + 9 * 60 * 60 * 1000);
   const today   = nowKST.toISOString().split('T')[0];
+  const startDate = new Date(nowKST);
+  startDate.setDate(startDate.getDate() - 30);   // 최근 지난 이벤트(앞)도 포함
+  const startStr = startDate.toISOString().split('T')[0];
   const endDate = new Date(nowKST);
   endDate.setMonth(endDate.getMonth() + 3);
   const endStr  = endDate.toISOString().split('T')[0];
@@ -57,7 +61,7 @@ async function fetchCalendarEvents() {
 
   const prompt = `[필수 규칙] title과 description은 반드시 한국어(Korean)로 작성. titleEn과 source만 영어 유지.
 
-Today is ${today} (KST). Search for ALL confirmed and expected ${cfg.company_en} (${TICKER}) corporate events from ${today} to ${endStr}.
+Today is ${today} (KST). Search for ALL ${cfg.company_en} (${TICKER}) corporate events from ${startStr} to ${endStr} — including recent events that ALREADY occurred in the past 30 days (${startStr} ~ ${today}) as well as upcoming/expected ones.
 
 Search sources: SEC EDGAR (8-K filings, DEF 14A), ${cfg.company_en} press releases, Bloomberg, Reuters, CNBC, MarketWatch.
 
@@ -85,7 +89,8 @@ Return ONLY a JSON array (no markdown, no explanation):
 Rules:
 - category must be one of: ${categories.join(', ')}
 - confirmed=true ONLY if officially announced by ${cfg.company_en} or SEC filing
-- confirmed=false for analyst estimates or widely expected but unconfirmed dates
+- confirmed=true for past events that already occurred (${startStr} ~ ${today})
+- confirmed=false for analyst estimates or widely expected but unconfirmed FUTURE dates
 - importance=high: 실적발표, 주주총회, 주요 제품출시${categories.includes('인도량발표') ? ', 인도량발표' : ''}
 - importance=medium: 컨퍼런스, 규제
 - importance=low: minor announcements, speculative
@@ -120,6 +125,8 @@ Rules:
 async function main() {
   const nowKST  = new Date(Date.now() + 9 * 60 * 60 * 1000);
   const kstStr  = nowKST.toISOString().replace('T', ' ').slice(0, 16) + ' KST';
+  const startDate = new Date(nowKST);
+  startDate.setDate(startDate.getDate() - 30);
   const endDate = new Date(nowKST);
   endDate.setMonth(endDate.getMonth() + 3);
 
@@ -145,7 +152,7 @@ async function main() {
   // 3. 파일 저장
   const db = {
     lastUpdated:  kstStr,
-    generatedFor: `${nowKST.toISOString().slice(0, 7)} ~ ${endDate.toISOString().slice(0, 7)}`,
+    generatedFor: `${startDate.toISOString().slice(0, 7)} ~ ${endDate.toISOString().slice(0, 7)}`,
     events,
   };
 
