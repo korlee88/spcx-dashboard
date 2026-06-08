@@ -1,6 +1,259 @@
 {
   "sessions": [
     {
+      "id": "auto-1780935310352",
+      "date": "2026-06-09",
+      "displayDate": "2026.06.09",
+      "kstTime": "00:26",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 3,
+      "news": [
+        {
+          "id": 1780932458302,
+          "title": "로켓랩, 1분기 매출 2억 3백만 달러 기록하며 예상치 상회",
+          "summary": "로켓랩은 2026년 1분기 매출이 전년 대비 63.5% 증가한 2억 3백만 달러를 기록했다고 발표했습니다. 비일반회계기준(non-GAAP) 총 마진은 43%로 예상치를 초과 달성했습니다. 총 수주잔고는 전년 대비 108% 증가한 22억 달러를 기록했습니다.",
+          "source": "Investing.com",
+          "date": "2026-05-08",
+          "category": "Earnings"
+        },
+        {
+          "id": 1780932458303,
+          "title": "로켓랩, 2분기 매출 가이던스 2억 2천 5백만 달러에서 2억 4천만 달러 제시",
+          "summary": "로켓랩은 2026년 2분기 매출 가이던스를 2억 2천 5백만 달러에서 2억 4천만 달러로 제시했습니다. 일반회계기준(GAAP) 마진은 33%~35%, 비일반회계기준(non-GAAP) 마진은 38%~40%로 예상했습니다.",
+          "source": "Investing.com",
+          "date": "2026-05-08",
+          "category": "Earnings"
+        },
+        {
+          "id": 1780932458304,
+          "title": "로켓랩 CEO 피터 벡, 회사 주식 76만 6천 달러 상당 매각",
+          "summary": "로켓랩 CEO 피터 벡은 2025년 11월 24일, 76만 6천 5백 6십 9달러 상당의 회사 보통주를 매각했습니다. 매각 가격은 주당 40.0247달러에서 41.3495달러 사이였습니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780932458305,
+          "title": "로켓랩, 2025년 18회 발사 성공으로 연간 기록 경신",
+          "summary": "로켓랩은 2025년에 18회의 Electron 로켓 발사를 성공적으로 수행하며 연간 기록을 경신했습니다. 100%의 임무 성공률을 유지했습니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780932458306,
+          "title": "로켓랩, 일본 JAXA의 RAISE-4 위성 발사 임무 수주",
+          "summary": "로켓랩은 일본 우주항공연구개발기구(JAXA)의 RAISE-4 우주선 발사를 위한 첫 전용 임무를 수주했다고 발표했습니다. 이 임무는 뉴질랜드 발사장에서 진행될 예정입니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780932458307,
+          "title": "니덤, 로켓랩에 '매수' 등급 유지 및 목표 주가 63달러 제시",
+          "summary": "니덤은 로켓랩에 대한 '매수' 등급을 유지하고 목표 주가를 63달러로 제시했습니다. 이는 회사의 매출 성장과 총 마진 확대에 대한 진전을 근거로 합니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780932458308,
+          "title": "캔터 피츠제럴드, 로켓랩 목표 주가 72달러로 상향 조정 및 '비중 확대' 등급 유지",
+          "summary": "캔터 피츠제럴드는 로켓랩의 목표 주가를 72달러로 상향 조정하고 '비중 확대' 등급을 유지했습니다. 이는 회사의 강력한 3분기 실적과 수주잔고 증가에 따른 것입니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780932458309,
+          "title": "로켓랩, 3분기에 4회 발사 성공",
+          "summary": "로켓랩은 3분기에 4회의 발사를 성공적으로 완료했습니다. 연말까지 20회 이상의 발사를 목표로 하고 있습니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780932458310,
+          "title": "로켓랩, Electron 미션 48시간 만에 새로운 미션 발표하며 빠른 발사 전환 능력 강조",
+          "summary": "로켓랩은 이전 Electron 미션 성공 후 단 48시간 만에 새로운 Electron 미션을 발표하며 빠른 발사 전환 능력을 강조했습니다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780932458311,
+          "title": "로켓랩, 2025년 12월 15일 내부자 주식 매각 1억 4천 1백만 달러",
+          "summary": "로켓랩의 이사 겸 CEO인 피터 벡은 2025년 12월 15일, 로켓랩(RKLB) 주식 2,500,000주를 1억 4천 1백 1십만 5천 4백 9십 6달러에 매각했습니다.",
+          "source": "Perplexity",
+          "date": "2025-12-17",
+          "category": "Market"
+        }
+      ],
+      "analyses": {
+        "1780932458302": {
+          "impact_score": 3,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R15"
+          ],
+          "reasoning": "로켓랩이 1분기 매출과 총 마진에서 시장 예상치를 상회하고 수주잔고가 크게 증가하여 긍정적인 실적을 발표했습니다.",
+          "key_factors": [
+            "매출 예상치 상회",
+            "총 마진 예상치 초과",
+            "수주잔고 108% 증가"
+          ]
+        },
+        "1780932458305": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R14"
+          ],
+          "reasoning": "로켓랩이 2025년에 18회의 Electron 로켓 발사를 성공적으로 수행하며 연간 기록을 경신하고 100% 임무 성공률을 유지한 것은 긍정적인 운영 성과를 나타냅니다.",
+          "key_factors": [
+            "Electron 발사 성공률",
+            "연간 발사 기록 경신"
+          ]
+        },
+        "1780932458306": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R17"
+          ],
+          "reasoning": "로켓랩이 일본 JAXA의 RAISE-4 위성 발사 임무를 수주하여 중요한 정부 기관 고객과의 계약을 확보하고 백로그를 강화했습니다.",
+          "key_factors": [
+            "JAXA 계약",
+            "전용 임무 수주"
+          ]
+        }
+      },
+      "avgScore": 2.3,
+      "buyIndex": 84,
+      "direction": "bullish",
+      "topRules": [
+        "R15",
+        "R14",
+        "R17"
+      ],
+      "bullish": 3,
+      "bearish": 0,
+      "neutral": 0,
+      "muskXSentiment": {
+        "posts": [],
+        "overall_sentiment": "neutral",
+        "sentiment_score": 0,
+        "post_count": 0,
+        "reasoning": "지난 7일 동안 Peter Beck의 RKLB 주식 관련 게시물을 찾을 수 없었습니다. 검색 결과는 주로 Peter Beck의 과거 주식 거래 및 Rocket Lab USA에 대한 전반적인 시장 심리에 대한 뉴스 기사였습니다."
+      },
+      "googleTrends": {
+        "current_score": null,
+        "week_avg": null,
+        "trend": "falling",
+        "spike": false,
+        "top_queries": [],
+        "reasoning": "Google Trends 데이터에 직접 접근할 수 없어 정확한 점수를 제공할 수 없지만, 최근 뉴스 기사들을 종합해 볼 때 Rocket Lab USA의 검색 관심도는 하락세에 있으며, 이는 주로 SpaceX IPO 관련 시장 변동성과 일부 내부자 매도 소식에 기인한 것으로 보입니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 1.09,
+        "velocity_label": "보합 (×1.1)",
+        "reason": "조회수 속도 보합 (×1.1) | 최근 3일 112,363회 / 이전 4~7일 102,705회 | 총 215,068회 (37개 영상)",
+        "video_count": 37,
+        "total_views": 215068,
+        "hot_views": 112363,
+        "baseline_views": 102705,
+        "top_videos": [
+          {
+            "title": "The Rocket Launch Nobody Was Expecting | This Week in Spaceflight",
+            "channel": "NASASpaceflight",
+            "publishedAt": "2026-06-06T00:00:07Z",
+            "viewCount": 73510
+          },
+          {
+            "title": "Rocket Lab’s Electron: A Sexy, Sleek Launch#rocketlab #electron #rocket launch",
+            "channel": "SkySpace Brief",
+            "publishedAt": "2026-06-05T08:03:27Z",
+            "viewCount": 23729
+          },
+          {
+            "title": "Breathtaking drone view of Rocket Lab launch!",
+            "channel": "The Space Road",
+            "publishedAt": "2026-06-06T02:30:39Z",
+            "viewCount": 21334
+          },
+          {
+            "title": "Drone view of Rocket Lab Electron liftoff on March 21, 2026!",
+            "channel": "The Space Road",
+            "publishedAt": "2026-06-01T22:30:19Z",
+            "viewCount": 18446
+          },
+          {
+            "title": "Closing Bell: Nvidia Jumps, Rocket Labs Slides, Hewlett Packard Enterprise Soars After Earnings...",
+            "channel": "Bloomberg Podcasts",
+            "publishedAt": "2026-06-01T21:49:32Z",
+            "viewCount": 15828
+          }
+        ],
+        "collected_at": "2026-06-08T15:26:42Z"
+      },
+      "newsCategories": {
+        "total": 3,
+        "Earnings": 1,
+        "Delivery": 2
+      },
+      "macroCtx": {
+        "spyChg": -0.09,
+        "qqqChg": 0.3,
+        "vixClose": 18.239999771118164,
+        "wtiChg": -1.47,
+        "cnyChg": 0.25,
+        "competitorChg": -4.14,
+        "competitorRelStrength": 3.36,
+        "prevAssetChg": -16.85,
+        "assetTrend3w": -17.08,
+        "rsi": 64.8,
+        "macd": {
+          "macd": 15.903049171847243,
+          "signal": 12.06661720542577,
+          "hist": 3.8364319664214737,
+          "crossover": null,
+          "trend": "bullish"
+        },
+        "bb": {
+          "upper": 136.66,
+          "middle": 86.94,
+          "lower": 37.21,
+          "pos": 0.769
+        },
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -4.14,
+        "bydRelStrength": 3.36,
+        "prevTslaChg": -16.85,
+        "tslaTrend3w": -17.08
+      },
+      "scoringLayers": {
+        "base": 73,
+        "strongAmp": 2,
+        "catFinancial": 3,
+        "meanReversion": 10,
+        "macdTrend": 1,
+        "bbHigh": -3,
+        "googleTrends": -1,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 113.67,
+      "latestTslaPrice": 113.67,
+      "dailyForecasts": [],
+      "modelVersion": "3.1",
+      "timestamp": 1780935310352
+    },
+    {
       "id": "auto-1780916640009",
       "date": "2026-06-08",
       "displayDate": "2026.06.08",
@@ -859,5 +1112,5 @@
       "timestamp": 1780677511937
     }
   ],
-  "lastUpdated": "2026-06-08 20:01 KST"
+  "lastUpdated": "2026-06-09 00:26 KST"
 }
