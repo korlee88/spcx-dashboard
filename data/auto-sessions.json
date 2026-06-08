@@ -1,6 +1,427 @@
 {
   "sessions": [
     {
+      "id": "auto-1780916640009",
+      "date": "2026-06-08",
+      "displayDate": "2026.06.08",
+      "kstTime": "20:01",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1780916517200,
+          "title": "로켓랩, 1분기 실적 예상치 상회 및 기록적인 매출 달성",
+          "summary": "로켓랩은 2026년 1분기 재무 실적을 발표하며 모든 가이던스 지표를 초과 달성했다고 밝혔다. 분기 매출 2억 달러를 기록하며 사상 최고치를 경신했으며, 22억 달러 이상의 수주 잔고를 확보했다.",
+          "source": "StockTitan",
+          "date": "2026-06-08",
+          "category": "Earnings"
+        },
+        {
+          "id": 1780916517201,
+          "title": "로켓랩, Anduril과 3천만 달러 규모 HASTE 극초음속 로켓 발사 계약 체결",
+          "summary": "로켓랩은 Anduril과 3천만 달러 규모의 HASTE 극초음속 테스트 로켓 3회 발사 계약을 체결했다. 첫 번째 임무는 12개월 이내에 예정되어 있으며, 이는 로켓랩의 70개 이상의 발사 수주 잔고 중 상당 부분을 차지한다.",
+          "source": "StockTitan",
+          "date": "2026-06-08",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780916517202,
+          "title": "로켓랩, 로봇 공학 선도 기업 Motiv Space Systems 인수 예정",
+          "summary": "로켓랩은 로봇 공학 및 정밀 메커니즘 전문 기업인 Motiv Space Systems를 인수하기 위한 최종 계약을 체결했다. 이번 인수는 로켓랩의 행성, 국가 안보 및 위성군 수직 통합 목표를 지원할 것으로 예상된다.",
+          "source": "StockTitan",
+          "date": "2026-06-08",
+          "category": "Product"
+        },
+        {
+          "id": 1780916517203,
+          "title": "로켓랩, 익명의 고객과 대규모 Neutron 및 Electron 발사 계약 체결",
+          "summary": "로켓랩은 익명의 고객과 5개의 Neutron 및 3개의 Electron 전용 발사 계약을 체결하며 사상 최대 규모의 발사 계약을 성사시켰다. 이 계약은 2026년부터 2029년까지 예정되어 있으며, 로켓랩의 수주 잔고를 22억 달러 이상으로 늘렸다.",
+          "source": "StockTitan",
+          "date": "2026-06-08",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780916517204,
+          "title": "로켓랩 주가, 최근 3개월간 월스트리트 애널리스트 목표가 상이",
+          "summary": "지난 3개월 동안 14명의 월스트리트 애널리스트들이 제시한 로켓랩(RKLB)의 12개월 목표가는 최고 129.00달러, 평균 101.50달러, 최저 60.00달러로 다양하게 나타났다.",
+          "source": "Google Finance",
+          "date": "2026-06-08",
+          "category": "Market"
+        },
+        {
+          "id": 1780916517205,
+          "title": "로켓랩 CEO 피터 벡, 2025년 11월 RKLB 주식 76만 6천 달러 상당 매각",
+          "summary": "로켓랩 CEO 피터 벡은 2025년 11월 24일, 766,569달러 상당의 보통주를 매각했다. 이는 제한적 주식 단위 부여의 일환으로 획득한 주식과는 별개이다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780916517206,
+          "title": "로켓랩, 2025년 연간 18회 Electron 발사 성공 기록",
+          "summary": "로켓랩은 2025년에 18회의 Electron 발사를 성공적으로 수행하며 연간 기록을 세웠고, 100% 임무 성공률을 유지했다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        },
+        {
+          "id": 1780916517207,
+          "title": "니덤, 로켓랩에 '매수' 의견 유지 및 목표가 63달러 제시",
+          "summary": "니덤은 로켓랩의 매출 성장과 총 마진 확대에 대한 진전을 언급하며 '매수' 등급을 재확인하고 목표 주가를 63달러로 유지했다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780916517208,
+          "title": "캔터 피츠제럴드, 로켓랩 목표가 72달러로 상향 조정 및 '비중 확대' 의견 유지",
+          "summary": "캔터 피츠제럴드는 로켓랩의 3분기 실적 호조와 수주 잔고 증가에 따라 목표 주가를 72달러로 상향 조정하고 '비중 확대' 등급을 유지했다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Market"
+        },
+        {
+          "id": 1780916517209,
+          "title": "로켓랩, 2025년 3분기 4회 발사 성공 및 연말까지 20회 이상 발사 목표",
+          "summary": "로켓랩은 2025년 3분기에 4회의 발사를 성공적으로 완료했으며, 연말까지 20회 이상의 발사를 목표로 하고 있다.",
+          "source": "Investing.com",
+          "date": "2025-11-25",
+          "category": "Delivery"
+        }
+      ],
+      "analyses": {
+        "1780916517200": {
+          "impact_score": 3,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R15"
+          ],
+          "reasoning": "로켓랩이 1분기 매출 예상치를 초과 달성하고 기록적인 매출과 수주 잔고를 확보하여 긍정적인 재무 성과를 보였습니다.",
+          "key_factors": [
+            "1분기 매출 2억 달러 달성",
+            "22억 달러 이상의 수주 잔고 확보",
+            "모든 가이던스 지표 초과 달성"
+          ]
+        },
+        "1780916517201": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R17"
+          ],
+          "reasoning": "로켓랩이 Anduril과 3천만 달러 규모의 HASTE 극초음속 로켓 3회 발사 계약을 체결하여 수주 잔고를 늘리고 미래 수익에 긍정적인 영향을 미칠 것입니다.",
+          "key_factors": [
+            "3천만 달러 계약",
+            "HASTE 극초음속 로켓 발사",
+            "수주 잔고 증가"
+          ]
+        },
+        "1780916517202": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R19"
+          ],
+          "reasoning": "로켓랩의 Motiv Space Systems 인수는 로봇 공학 및 정밀 메커니즘 역량을 강화하여 우주 시스템 부문의 수직 통합 및 성장 목표를 지원할 것입니다.",
+          "key_factors": [
+            "Motiv Space Systems 인수",
+            "로봇 공학 및 정밀 메커니즘 강화",
+            "우주 시스템 부문 성장"
+          ]
+        },
+        "1780916517203": {
+          "impact_score": 4,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R17",
+            "R25"
+          ],
+          "reasoning": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 수주 잔고를 22억 달러 이상으로 늘린 것은 회사의 미래 수익과 뉴트론 로켓의 상업적 성공 가능성을 강력히 시사합니다.",
+          "key_factors": [
+            "대규모 발사 계약",
+            "뉴트론 로켓 상업화",
+            "수주 잔고 증가"
+          ]
+        },
+        "1780916517204": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 지난 3개월간 로켓랩에 대한 월스트리트 애널리스트들의 다양한 목표가를 요약한 것으로, 새로운 정보나 주가에 직접적인 영향을 미칠 만한 구체적인 촉매가 포함되어 있지 않습니다.",
+          "key_factors": [
+            "애널리스트 목표가 범위",
+            "정보의 시기성 부족"
+          ]
+        },
+        "1780916517205": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "로켓랩 CEO 피터 벡의 주식 매각은 투자자들에게 부정적인 신호로 해석될 수 있으며, 이는 내부자 매도에 해당한다.",
+          "key_factors": [
+            "내부자 매도",
+            "CEO 주식 매각"
+          ]
+        },
+        "1780916517206": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R14"
+          ],
+          "reasoning": "로켓랩이 2025년에 18회의 Electron 발사를 성공적으로 완료하고 100% 임무 성공률을 유지하여 운영 역량과 신뢰성을 입증했습니다.",
+          "key_factors": [
+            "18회 Electron 발사 성공",
+            "100% 임무 성공률"
+          ]
+        },
+        "1780916517207": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R20"
+          ],
+          "reasoning": "니덤이 로켓랩에 대한 '매수' 의견을 유지하고 목표가를 63달러로 제시하며 매출 성장과 총 마진 확대에 대한 진전을 언급한 것은 긍정적인 분석가 평가입니다.",
+          "key_factors": [
+            "애널리스트 목표가 유지",
+            "매출 성장",
+            "총 마진 확대"
+          ]
+        },
+        "1780916517208": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R20"
+          ],
+          "reasoning": "캔터 피츠제럴드가 로켓랩의 3분기 실적 호조와 수주 잔고 증가를 이유로 목표 주가를 72달러로 상향 조정하고 '비중 확대' 의견을 유지하여 긍정적인 영향을 미칩니다.",
+          "key_factors": [
+            "애널리스트 목표가 상향 조정",
+            "3분기 실적 호조",
+            "수주 잔고 증가"
+          ]
+        },
+        "1780916517209": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 미래의 발사 목표를 언급하고 있지만, 이미 알려진 정보이거나 구체적인 새로운 계약 또는 재정적 영향이 없어 주가에 미치는 영향은 중립적입니다.",
+          "key_factors": [
+            "미래 발사 목표",
+            "구체적인 신규 정보 부재"
+          ]
+        }
+      },
+      "avgScore": 1.6,
+      "buyIndex": 72,
+      "direction": "bullish",
+      "topRules": [
+        "R17",
+        "R20",
+        "R15",
+        "R19",
+        "R25"
+      ],
+      "bullish": 7,
+      "bearish": 1,
+      "neutral": 2,
+      "muskXSentiment": {
+        "posts": [
+          {
+            "date": "2026-06-05",
+            "content": "2026년 1분기 실적 발표에서 Rocket Lab의 매출은 전년 대비 63.5% 증가한 2억 350만 달러를 기록하며 예상치를 상회했습니다. 수주 잔고는 22억 달러로 전 분기 대비 20.2% 증가했습니다. Peter Beck은 18개의 추적 계층 Tranche 3 위성에 대한 8억 1,600만 달러 규모의 SDA 계약과 Golden Dome 프로그램에 따른 국방부 우주 기반 요격기 프로그램 선정을 공개했습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-05",
+            "content": "Rocket Lab의 중형 발사체인 Neutron은 2026년 4분기 데뷔를 목표로 하고 있으며, 이는 Blue Origin의 New Glenn이 지연되는 상황에서 Falcon 9의 유일한 신뢰할 수 있는 단기적인 미국 대안이 될 것입니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-08",
+            "content": "Peter Beck은 지난 6개월 동안 약 251만 주의 RKLB 주식을 매각하여 약 1억 4,200만 달러를 현금화했습니다.",
+            "sentiment": "bearish",
+            "engagement": "high"
+          }
+        ],
+        "overall_sentiment": "neutral",
+        "sentiment_score": 0,
+        "post_count": 3,
+        "reasoning": "Peter Beck의 Rocket Lab에 대한 공개적인 언급은 회사의 긍정적인 재무 성과와 Neutron 로켓의 잠재력을 강조하며 낙관적인 전망을 제시했지만, 최근 상당량의 주식 매각은 투자자들에게 부정적인 신호로 해석될 수 있어 전반적인 정서는 중립적입니다."
+      },
+      "googleTrends": {
+        "current_score": 50,
+        "week_avg": 45,
+        "trend": "rising",
+        "spike": false,
+        "top_queries": [
+          "RKLB stock",
+          "Rocket Lab news",
+          "Neutron rocket"
+        ],
+        "reasoning": "지난주 대비 검색 관심도가 증가했으며, 주식 관련 뉴스와 Neutron 로켓에 대한 관심이 높습니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 1.06,
+        "velocity_label": "보합 (×1.1)",
+        "reason": "조회수 속도 보합 (×1.1) | 최근 3일 108,570회 / 이전 4~7일 102,656회 | 총 211,226회 (37개 영상)",
+        "video_count": 37,
+        "total_views": 211226,
+        "hot_views": 108570,
+        "baseline_views": 102656,
+        "top_videos": [
+          {
+            "title": "The Rocket Launch Nobody Was Expecting | This Week in Spaceflight",
+            "channel": "NASASpaceflight",
+            "publishedAt": "2026-06-06T00:00:07Z",
+            "viewCount": 72369
+          },
+          {
+            "title": "Rocket Lab’s Electron: A Sexy, Sleek Launch#rocketlab #electron #rocket launch",
+            "channel": "SkySpace Brief",
+            "publishedAt": "2026-06-05T08:03:27Z",
+            "viewCount": 23382
+          },
+          {
+            "title": "Breathtaking drone view of Rocket Lab launch!",
+            "channel": "The Space Road",
+            "publishedAt": "2026-06-06T02:30:39Z",
+            "viewCount": 20551
+          },
+          {
+            "title": "Drone view of Rocket Lab Electron liftoff on March 21, 2026!",
+            "channel": "The Space Road",
+            "publishedAt": "2026-06-01T22:30:19Z",
+            "viewCount": 18426
+          },
+          {
+            "title": "Closing Bell: Nvidia Jumps, Rocket Labs Slides, Hewlett Packard Enterprise Soars After Earnings...",
+            "channel": "Bloomberg Podcasts",
+            "publishedAt": "2026-06-01T21:49:32Z",
+            "viewCount": 15774
+          }
+        ],
+        "collected_at": "2026-06-08T11:01:47Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Earnings": 1,
+        "Delivery": 4,
+        "Product": 1,
+        "Market": 4
+      },
+      "macroCtx": {
+        "spyChg": -1.96,
+        "qqqChg": -3.41,
+        "vixClose": 19.59000015258789,
+        "wtiChg": 0.96,
+        "cnyChg": 0.26,
+        "competitorChg": -9.27,
+        "competitorRelStrength": 5.6,
+        "prevAssetChg": -16.85,
+        "assetTrend3w": -17.08,
+        "rsi": 64.8,
+        "macd": {
+          "macd": 15.616644317302615,
+          "signal": 12.009316583275833,
+          "hist": 3.607327734026782,
+          "crossover": null,
+          "trend": "bullish"
+        },
+        "bb": {
+          "upper": 136.12,
+          "middle": 86.76,
+          "lower": 37.4,
+          "pos": 0.736
+        },
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -9.27,
+        "bydRelStrength": 5.6,
+        "prevTslaChg": -16.85,
+        "tslaTrend3w": -17.08
+      },
+      "scoringLayers": {
+        "base": 66,
+        "optimusBoost": 8,
+        "strongAmp": 2,
+        "catFinancial": 3,
+        "macroOverlay": -6,
+        "meanReversion": 10,
+        "macdTrend": 1,
+        "bbHigh": -3,
+        "competitorOutperform": 2,
+        "trendFilter": -12,
+        "googleTrends": 2,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 110.08,
+      "latestTslaPrice": 110.08,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/9(화)",
+          "change_pct": 1.8,
+          "signal": "매수",
+          "basePrice": 110.08,
+          "predictedPrice": 112.06
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/10(수)",
+          "change_pct": 1.2,
+          "signal": "매수",
+          "basePrice": 110.08,
+          "predictedPrice": 111.4
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/11(목)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 110.08,
+          "predictedPrice": 110.85
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/12(금)",
+          "change_pct": -0.5,
+          "signal": "관망",
+          "basePrice": 110.08,
+          "predictedPrice": 109.53
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/15(월)",
+          "change_pct": 1,
+          "signal": "매수",
+          "basePrice": 110.08,
+          "predictedPrice": 111.18
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1780916640009
+    },
+    {
       "id": "auto-1780677511937",
       "date": "2026-06-06",
       "displayDate": "2026.06.06",
@@ -438,5 +859,5 @@
       "timestamp": 1780677511937
     }
   ],
-  "lastUpdated": "2026-06-06 01:36 KST"
+  "lastUpdated": "2026-06-08 20:01 KST"
 }
