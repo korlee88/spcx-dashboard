@@ -125,14 +125,15 @@ def _clean_line(line: str) -> str:
     return line.strip()
 
 
-def build_scene_tts_text(idx: int, lines: list) -> str:
-    """씬별 대본 + 친근한 구어체 브리지 문장으로 나레이션 구성.
+def build_scene_tts_segments(idx: int, lines: list) -> list:
+    """씬별 대본을 '줄 단위 세그먼트' 리스트로 구성.
 
-    옆에서 다정하게 이야기해 주는 톤 — 따뜻하고 자연스러운 말투로 전달한다.
+    옆에서 다정하게 이야기해 주는 톤 — 각 세그먼트는 개별 TTS로 합성되고
+    세그먼트 사이에 ~1초 무음이 삽입되어 줄과 줄 사이가 자연스럽게 끊긴다.
     """
     cleaned = [c for c in (_clean_line(l) for l in lines) if c]
     if not cleaned:
-        return ""
+        return []
 
     if idx == 0:
         # 주간 브리핑 — 4줄(헤드라인·원인·호재·리스크) + 친근한 연결
@@ -140,35 +141,34 @@ def build_scene_tts_text(idx: int, lines: list) -> str:
         reason  = cleaned[1] if len(cleaned) > 1 else ""
         bull    = cleaned[2] if len(cleaned) > 2 else ""
         bear    = cleaned[3] if len(cleaned) > 3 else ""
-        parts = []
-        if head:   parts.append(head)
-        if reason: parts.append("왜 이렇게 움직였는지 같이 볼까요? " + reason)
-        if bull:   parts.append("좋은 소식도 있어요. " + bull)
-        if bear:   parts.append("다만 이런 점은 살짝 걱정되는 부분이죠. " + bear)
-        text = " ".join(parts)
+        segments = []
+        if head:   segments.append(head)
+        if reason: segments.append("왜 이렇게 움직였는지 같이 볼까요? " + reason)
+        if bull:   segments.append("좋은 소식도 있어요. " + bull)
+        if bear:   segments.append("다만 이런 점은 살짝 걱정되는 부분이죠. " + bear)
 
     elif idx == 1:
-        # 호재 심층 — 헤드라인 + 친근한 브리지 + 세부 내용 전체
+        # 호재 심층 — 헤드라인 + 친근한 브리지 + 세부 내용(줄별 분리)
         headline = cleaned[0]
-        details  = " ".join(cleaned[1:])
-        text     = headline
+        details  = cleaned[1:]
+        segments = [headline]
         if details:
-            text += " 조금 더 자세히 들여다볼게요. " + details
+            segments.append("조금 더 자세히 들여다볼게요. " + details[0])
+            segments.extend(details[1:])
 
     elif idx == 2:
         # 클로징(다음주 전망) — 6줄: 일정·시나리오·가격예측·흐름·변수·마무리
         head = cleaned[0] if cleaned else ""
         rest = cleaned[1:]
-        parts = []
+        segments = []
         if head:
-            parts.append("자, 다음 주는 어떨까요? " + head)
-        parts.extend(rest)
-        text = " ".join(parts)
+            segments.append("자, 다음 주는 어떨까요? " + head)
+        segments.extend(rest)
 
     else:
-        text = " ".join(cleaned)
+        segments = cleaned
 
-    return text
+    return [s for s in segments if s and s.strip()]
 
 # ── TTS ───────────────────────────────────────────────────────────────────────
 
@@ -176,6 +176,35 @@ async def gen_audio(text, path):
     import edge_tts
     comm = edge_tts.Communicate(text, VOICE, rate=RATE, pitch=PITCH)
     await comm.save(str(path))
+
+
+async def gen_scene_audio(segments, path, gap_ms=900):
+    """세그먼트별로 TTS한 뒤 gap_ms 무음을 끼워 하나의 mp3로 합성.
+
+    줄과 줄 사이에 ~1초 텀을 둬 바로 이어 읽히는 어색함을 없앤다.
+    pydub/ffmpeg 미가용 등 실패 시 공백으로 이어붙인 단일 TTS로 폴백.
+    """
+    segments = [s for s in segments if s and s.strip()]
+    if not segments:
+        return
+    if len(segments) == 1:
+        await gen_audio(segments[0], path)
+        return
+    try:
+        from pydub import AudioSegment
+        silence = AudioSegment.silent(duration=gap_ms)
+        combined = None
+        for i, seg in enumerate(segments):
+            tmp = path.with_name(f"{path.stem}__seg{i}.mp3")
+            await gen_audio(seg, tmp)
+            piece = AudioSegment.from_file(tmp)
+            combined = piece if combined is None else (combined + silence + piece)
+            try: tmp.unlink()
+            except Exception: pass
+        combined.export(str(path), format="mp3")
+    except Exception as e:
+        print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)
+        await gen_audio(" ".join(segments), path)
 
 # ── 로봇 마스코트 ─────────────────────────────────────────────────────────────
 
@@ -422,11 +451,11 @@ async def process_scene(scene, report_dir):
     title    = scene.get("title", f"씬 {idx}")
     img_path = report_dir / f"scene_{idx:02d}.png"
 
-    # 전체 줄 + 씬별 브리지 문장으로 풍부한 나레이션 구성
-    tts_text = build_scene_tts_text(idx, lines) or title
+    # 줄 단위 세그먼트 + 씬별 브리지 문장 → 세그먼트 사이 ~1초 텀으로 합성
+    segments = build_scene_tts_segments(idx, lines) or [title]
     audio_path = report_dir / f"scene_{idx:02d}.mp3"
-    print(f"   🎙 씬 {idx} [{title[:20]}] 나레이션 생성...")
-    await gen_audio(tts_text, audio_path)
+    print(f"   🎙 씬 {idx} [{title[:20]}] 나레이션 생성... ({len(segments)}개 세그먼트)")
+    await gen_scene_audio(segments, audio_path)
 
     audio = AudioFileClip(str(audio_path))
     dur   = max(audio.duration, MIN_SCENE_SEC)

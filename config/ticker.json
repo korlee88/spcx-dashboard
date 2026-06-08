@@ -15,9 +15,9 @@
   "calendar_event_categories": ["실적발표", "발사일정", "계약발표", "제품출시", "컨퍼런스", "규제", "기타"],
 
   "scene_wiki_articles": [
-    ["Rocket Lab", "Electron (rocket)", "Rocket Lab USA"],
-    ["Neutron (rocket)"],
-    ["Rocket Lab USA", "Mahia Launch Complex"]
+    ["Rocket Lab", "Electron (rocket)", "Rocket Lab USA", "Rocket Launch"],
+    ["Neutron (rocket)", "Rocket Lab", "Electron (rocket)", "Rocket Lab USA"],
+    ["Rocket Lab USA", "Rocket Lab", "Electron (rocket)", "Mahia Launch Complex"]
   ],
 
   "scene_static_bg_files": [
