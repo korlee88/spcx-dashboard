@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+RKLB가 *+2.39%* 올라 $113.67이에요
+*22억 달러* 수주잔고 소식이 힘이 됐죠
+*5+3* 발사 계약, 사상 최대 규모예요
+이번주는 눈에 띄는 리스크가 없네요
+
+SCENE_1_TITLE: 호재
+SCENE_1:
+카테고리: *역대 최대* 발사 계약 체결
+   ↳ 배경: 익명 고객과 *8건* 묶음 계약이에요
+   ↳ 데이터: 뉴트론 *5기*·일렉트론 *3기* 수주
+   ↳ 임팩트: 수주잔고 *22억 달러* 돌파했죠
+   ↳ 비교: *사상 최대* 백로그를 새로 썼어요
+   ↳ 1분기 매출도 예상치를 넘겼다고 해요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+*6/10 HASTE Curveball* 발사가 있어요
+성공 시 *극초음속* 트랙 신뢰가 커지죠
+현재 *$113.67* 부근 흐름이 점쳐져요
+이벤트 전후로 *변동성 확대* 가능성도요
+발사 지연·기상 변수는 체크해 봐요
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A cinematic 16:9 landscape view of Seoul night skyline along the Han River, featuring Namsan Tower, 63 Building and Lotte Tower glowing under a deep purple violet sky, with a sleek Rocket Lab Electron rocket silhouette ascending in the distance, futuristic Korean K-tech analytics atmosphere, soft bokeh of city lights reflecting on the river, holographic data streams floating subtly, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant 16:9 landscape image of a Han River bridge bathed in fresh green bullish light at sunrise, Seoul modern skyline in the background, a dynamic Rocket Lab Neutron rocket lifting off with bright exhaust trails curving upward symbolizing growth, energetic K-tech infrastructure mood, sunlit glass towers reflecting golden green hues, optimistic and uplifting atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A breathtaking 9:16 vertical composition of a futuristic Korean cityscape blending Han River night view, Seoul skyline and Gwanghwamun square, with a luminous Rocket Lab rocket soaring through magenta and gold cosmic clouds, advanced K-tech metropolis ambiance, glowing golden sun rays, sparkling stars and shimmering particles drifting across the sky, inspirational futuristic mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

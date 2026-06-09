@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-06-09",
+  "generated_by": "Claude Opus 4",
+  "title": "RKLB가 *+2.39%* 올라 $113.67이에요",
+  "subtitle": "2026-06-06 ~ 2026-06-09 · 로켓랩, 익명의 고객과 대규모 Neutron 및 Ele",
+  "summary": {
+    "week_start": "2026-06-06",
+    "week_end": "2026-06-09",
+    "session_count": 3,
+    "buy_indices": [
+      84,
+      72,
+      76
+    ],
+    "avg_buy_index": 77,
+    "latest_buy_index": 84,
+    "price_start": 111.02,
+    "price_end": 113.67,
+    "latest_price": 113.67,
+    "today_price": 113.67,
+    "today_change_pct": 3.26,
+    "week_change_pct": 2.39,
+    "biggest_impact": {
+      "title": "로켓랩, 익명의 고객과 대규모 Neutron 및 Electron 발사 계약 체결",
+      "score": 4,
+      "reason": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 수주 잔고를 22억 달러 이상으로 늘린 것은 회사의 미래 수익과 뉴트론 로켓의 상업적 성공 가능성을 강력히 시사합니다.",
+      "source": "StockTitan",
+      "date": "2026-06-08",
+      "category": "Delivery",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "로켓랩, 익명의 고객과 대규모 Neutron 및 Electron 발사 계약 체결",
+        "score": 4,
+        "reason": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 수주 잔고를 22억 달러 이상으로 늘린 것은 회사의 미래 수익과 뉴트론 로켓의 상업적 성공 가능성을 강력히 시사합니다.",
+        "source": "StockTitan",
+        "date": "2026-06-08",
+        "category": "Delivery"
+      },
+      {
+        "title": "로켓랩, 익명의 고객과 뉴트론 및 일렉트론 발사 계약 체결: 사상 최대 규모",
+        "score": 4,
+        "reason": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 사상 최대 규모의 수주잔고를 확보하고 뉴트론의 상업적 발사 일정을 확정하며 상당한 긍정적 영향을 미쳤습니다.",
+        "source": "StockTitan",
+        "date": "2026-06-05",
+        "category": "Delivery"
+      },
+      {
+        "title": "로켓랩, 1분기 실적 예상치 상회 및 기록적인 매출 달성",
+        "score": 3,
+        "reason": "로켓랩이 1분기 매출 예상치를 초과 달성하고 기록적인 매출과 수주 잔고를 확보하여 긍정적인 재무 성과를 보였습니다.",
+        "source": "StockTitan",
+        "date": "2026-06-08",
+        "category": "Earnings"
+      }
+    ],
+    "top_bearish": [],
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-06-09",
+        113.67
+      ],
+      [
+        "2026-06-08",
+        110.08
+      ],
+      [
+        "2026-06-06",
+        111.02
+      ]
+    ],
+    "overall_signal": "긍정",
+    "trends": null,
+    "next_events": [
+      {
+        "date": "2026-06-10",
+        "title": "HASTE | Curveball 발사",
+        "titleEn": "HASTE | Curveball Launch",
+        "category": "발사일정",
+        "categoryEn": "Launch Schedule",
+        "time": "21:00",
+        "timezone": "PDT",
+        "confirmed": true,
+        "source": "RocketLabUSA.com",
+        "sourceUrl": "https://rocketlabcorp.com/missions/next-mission",
+        "description": "Rocket Lab은 Wallops Island Launch Site에서 HASTE | Curveball 임무를 Electron 로켓으로 발사할 예정입니다.",
+        "importance": "medium",
+        "id": "cal-2026-06-10-haste-curveball-launch"
+      }
+    ],
+    "movement_reason": null
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "이번주",
+      "lines": [
+        "RKLB가 *+2.39%* 올라 $113.67이에요",
+        "*22억 달러* 수주잔고 소식이 힘이 됐죠",
+        "*5+3* 발사 계약, 사상 최대 규모예요",
+        "이번주는 눈에 띄는 리스크가 없네요"
+      ],
+      "body": "RKLB가 *+2.39%* 올라 $113.67이에요\n*22억 달러* 수주잔고 소식이 힘이 됐죠\n*5+3* 발사 계약, 사상 최대 규모예요\n이번주는 눈에 띄는 리스크가 없네요"
+    },
+    {
+      "index": 1,
+      "title": "호재",
+      "lines": [
+        "카테고리: *역대 최대* 발사 계약 체결",
+        "↳ 배경: 익명 고객과 *8건* 묶음 계약이에요",
+        "↳ 데이터: 뉴트론 *5기*·일렉트론 *3기* 수주",
+        "↳ 임팩트: 수주잔고 *22억 달러* 돌파했죠",
+        "↳ 비교: *사상 최대* 백로그를 새로 썼어요",
+        "↳ 1분기 매출도 예상치를 넘겼다고 해요"
+      ],
+      "body": "카테고리: *역대 최대* 발사 계약 체결\n   ↳ 배경: 익명 고객과 *8건* 묶음 계약이에요\n   ↳ 데이터: 뉴트론 *5기*·일렉트론 *3기* 수주\n   ↳ 임팩트: 수주잔고 *22억 달러* 돌파했죠\n   ↳ 비교: *사상 최대* 백로그를 새로 썼어요\n   ↳ 1분기 매출도 예상치를 넘겼다고 해요"
+    },
+    {
+      "index": 2,
+      "title": "다음주",
+      "lines": [
+        "*6/10 HASTE Curveball* 발사가 있어요",
+        "성공 시 *극초음속* 트랙 신뢰가 커지죠",
+        "현재 *$113.67* 부근 흐름이 점쳐져요",
+        "이벤트 전후로 *변동성 확대* 가능성도요",
+        "발사 지연·기상 변수는 체크해 봐요",
+        "함께해 주셔서 감사해요"
+      ],
+      "body": "*6/10 HASTE Curveball* 발사가 있어요\n성공 시 *극초음속* 트랙 신뢰가 커지죠\n현재 *$113.67* 부근 흐름이 점쳐져요\n이벤트 전후로 *변동성 확대* 가능성도요\n발사 지연·기상 변수는 체크해 봐요\n함께해 주셔서 감사해요"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic 16:9 landscape view of Seoul night skyline along the Han River, featuring Namsan Tower, 63 Building and Lotte Tower glowing under a deep purple violet sky, with a sleek Rocket Lab Electron rocket silhouette ascending in the distance, futuristic Korean K-tech analytics atmosphere, soft bokeh of city lights reflecting on the river, holographic data streams floating subtly, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant 16:9 landscape image of a Han River bridge bathed in fresh green bullish light at sunrise, Seoul modern skyline in the background, a dynamic Rocket Lab Neutron rocket lifting off with bright exhaust trails curving upward symbolizing growth, energetic K-tech infrastructure mood, sunlit glass towers reflecting golden green hues, optimistic and uplifting atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A breathtaking 9:16 vertical composition of a futuristic Korean cityscape blending Han River night view, Seoul skyline and Gwanghwamun square, with a luminous Rocket Lab rocket soaring through magenta and gold cosmic clouds, advanced K-tech metropolis ambiance, glowing golden sun rays, sparkling stars and shimmering particles drifting across the sky, inspirational futuristic mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
