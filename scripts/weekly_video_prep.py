@@ -91,10 +91,15 @@ def summarize(sessions):
     if not sessions:
         return None
 
+    def _price(s):
+        # 범용 필드(latestPrice) 우선, 구버전 alias(latestTslaPrice) 폴백
+        return s.get("latestPrice") if s.get("latestPrice") is not None else s.get("latestTslaPrice")
+
     buy_indices = [s["buyIndex"] for s in sessions if s.get("buyIndex") is not None]
-    prices      = [s["latestTslaPrice"] for s in sessions if s.get("latestTslaPrice")]
+    prices      = [_price(s) for s in sessions if _price(s)]
 
     bullish, bearish = [], []
+    total_analyzed = 0
     for s in sessions:
         news_map = {str(n["id"]): n for n in s.get("news", [])}
         for nid, a in (s.get("analyses") or {}).items():
@@ -102,6 +107,7 @@ def summarize(sessions):
             title = n.get("title", "")
             if not title:
                 continue
+            total_analyzed += 1
             score    = a.get("impact_score", 0) or 0
             dir_     = a.get("direction", "")
             reason   = a.get("reasoning", "")
@@ -111,9 +117,26 @@ def summarize(sessions):
             if dir_ == "bullish" and score >= 2:
                 bullish.append({"title": title, "score": score, "reason": reason,
                                 "source": source, "date": date, "category": category})
-            elif dir_ == "bearish" and score <= -2:
+            elif dir_ == "bearish" and score <= -1:   # 경미한 리스크(-1)도 포착 (발사 지연·규제 등)
                 bearish.append({"title": title, "score": score, "reason": reason,
                                 "source": source, "date": date, "category": category})
+
+    # ── 중복 뉴스 제거 (여러 세션에 같은 뉴스가 반복 등장) ──
+    def _dedup(items):
+        seen, out = {}, []
+        for it in items:
+            key = re.sub(r"[\s\W]+", "", it["title"]).lower()[:24]
+            prev = seen.get(key)
+            if prev is None:
+                seen[key] = it
+                out.append(it)
+            elif abs(it["score"]) > abs(prev["score"]):
+                out[out.index(prev)] = it   # 같은 뉴스면 점수 큰 쪽 유지
+                seen[key] = it
+        return out
+
+    bullish = _dedup(bullish)
+    bearish = _dedup(bearish)
 
     # 최신 뉴스가 같은 점수라면 우선 노출 (recency 가중치)
     def _bull_sort_key(n):
@@ -133,7 +156,7 @@ def summarize(sessions):
     seen_dates = {}
     for s in sessions:
         date = s.get("date", "")
-        price = s.get("latestTslaPrice")
+        price = _price(s)
         if date and price and date not in seen_dates:
             seen_dates[date] = price
     # 날짜 내림차순 정렬 후 최근 5일
@@ -184,18 +207,21 @@ def summarize(sessions):
         "week_start":      sessions[-1].get("date", ""),
         "week_end":        sessions[0].get("date", ""),
         "session_count":   len(sessions),
+        "total_analyzed":  total_analyzed,
+        "bullish_count":   len(bullish),
+        "bearish_count":   len(bearish),
         "buy_indices":     buy_indices,
         "avg_buy_index":   avg_bi,
         "latest_buy_index": buy_indices[0] if buy_indices else None,
         "price_start":     prices[-1] if prices else None,
         "price_end":       prices[0]  if prices else None,
-        "latest_price":    latest.get("latestTslaPrice"),
-        "today_price":     latest.get("latestTslaPrice"),
+        "latest_price":    _price(latest),
+        "today_price":     _price(latest),
         "today_change_pct": today_change_pct,
         "week_change_pct": week_change_pct,
         "biggest_impact":  biggest_impact,
-        "top_bullish":     bullish[:3],
-        "top_bearish":     bearish[:3],
+        "top_bullish":     bullish[:5],
+        "top_bearish":     bearish[:5],
         "forecasts":       latest.get("dailyForecasts", [])[:5],
         "daily_prices":    daily_prices,
         "overall_signal":  overall_signal,
@@ -367,6 +393,8 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 주간 데이터를 바탕으로 You
 === 주간 데이터 ({week_start} ~ {week_end}) ===
 - {ticker} 현재 주가: ${price}
 - 1주 전 대비 변동률: {week_change_pct_str}
+- 이번주 분석 규모: {analysis_scale_str}
+- 매수 참고지수 추이: {buy_index_trend_str}
 - 주가 변동 원인: {movement_reason_str}
 - 검색량 트렌드: {trends_str}
 - 다음주 예정 이벤트: {next_events_str}
@@ -376,14 +404,15 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 주간 데이터를 바탕으로 You
 {b_txt}
 - 주요 리스크 (점수 표기 금지, 내용만 활용):
 {r_txt}
+{risk_guidance}
 
 === 씬 구성 (총 3씬) ===
 
 【씬 0 — 주간 브리핑】 (4줄, 한 줄 30자 이내, 핵심 정보만 응축)
-- 줄1: 1주 전 대비 변동률·현재 주가로 이번주 흐름 요약 (30자 이내, 수치 필수)
+- 줄1: 분석 규모로 신뢰감 주는 요약 — "이번주 {ticker} 뉴스 N건을 분석했어요" 식으로 분석 규모 언급 + 변동률·현재 주가 (30자 이내, 수치 필수)
 - 줄2: 주가 변동 원인 핵심 한 줄 (movement_reason 활용, 30자 이내, 수치 포함)
 - 줄3: 이번주 가장 큰 호재 핵심 한 줄 (30자 이내, 수치 포함, 점수 금지)
-- 줄4: 이번주 가장 큰 리스크 한 줄 (30자 이내, 수치 포함, 점수 금지)
+- 줄4: 이번주 가장 큰 리스크 한 줄 (30자 이내, 수치 포함, 점수 금지). ※ 뚜렷한 악재가 없으면 "리스크가 없다"고 단정하지 말고, 위 '주의 깊게 볼 변수'를 활용해 구조적 리스크(고변동성·밸류에이션 부담·발사 일정 변수 등)를 한 줄로 짚어줄 것
 
 【씬 1 — 호재 심층 분석 (BEST 1건)】 (6줄, 한 줄 30자 이내, 모든 줄에 수치 필수)
 - 줄1: "카테고리: 호재 핵심 (25자 이내)"
@@ -484,6 +513,39 @@ def _build_prompt(summary):
     # 다음주 가격 예측 요약 (dailyForecasts 기반, 매매신호 단어 제외)
     next_week_str = build_next_week_outlook(summary.get("forecasts", []))
 
+    # ── 분석 규모 (영상에 "N건 분석" 신뢰감 부여) ──
+    total = summary.get("total_analyzed", 0)
+    bull_n = summary.get("bullish_count", 0)
+    bear_n = summary.get("bearish_count", 0)
+    if total:
+        analysis_scale_str = (
+            f"총 {total}건 뉴스 분석 (호재 {bull_n}건 · 리스크 {bear_n}건), "
+            f"{summary.get('session_count', 0)}개 세션 종합"
+        )
+    else:
+        analysis_scale_str = "분석 데이터 수집 중"
+
+    # ── 매수 참고지수 추이 (예: 76 → 72 → 84) ──
+    bis = summary.get("buy_indices") or []
+    if bis:
+        # buy_indices는 최신순이므로 시간순(과거→현재)으로 뒤집어 표시
+        trend = " → ".join(str(b) for b in reversed(bis))
+        buy_index_trend_str = (
+            f"{trend} (평균 {summary.get('avg_buy_index')}, 시그널 {summary.get('overall_signal','')})"
+        )
+    else:
+        buy_index_trend_str = "데이터 없음"
+
+    # ── 리스크 가이던스: 뚜렷한 악재가 없을 때 구조적 리스크로 보완 ──
+    if bear_n == 0:
+        risk_guidance = (
+            f"- 주의 깊게 볼 변수 (뚜렷한 악재가 없을 때 활용): "
+            f"{INDUSTRY_KO} 산업 특유의 고변동성, 단기 급등에 따른 밸류에이션 부담, "
+            f"발사·생산 일정 지연 가능성, 거시 금리·우주 섹터 투자심리 변화"
+        )
+    else:
+        risk_guidance = ""
+
     return SCRIPT_PROMPT_TEMPLATE.format(
         ticker=TICKER,
         company_ko=COMPANY_KO,
@@ -498,6 +560,9 @@ def _build_prompt(summary):
         trends_str=trends_str,
         next_events_str=next_events_str,
         next_week_str=next_week_str,
+        analysis_scale_str=analysis_scale_str,
+        buy_index_trend_str=buy_index_trend_str,
+        risk_guidance=risk_guidance,
     )
 
 
@@ -516,7 +581,7 @@ def generate_script_gemini(prompt):
     from google import genai
     client = genai.Client(api_key=GEMINI_API_KEY)
     response = client.models.generate_content(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         contents=prompt,
     )
     return response.text
