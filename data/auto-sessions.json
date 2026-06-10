@@ -1,6 +1,397 @@
 {
   "sessions": [
     {
+      "id": "auto-1781061842878",
+      "date": "2026-06-10",
+      "displayDate": "2026.06.10",
+      "kstTime": "12:23",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1781061813697,
+          "title": "로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
+          "summary": "로켓랩 USA는 미사일 방어 솔루션이 우주개발청(SDA)의 시스템 요구사항 검토를 통과했다고 발표한 후 수요일에 52주 최고가인 151달러를 기록했습니다. 이 시스템은 SDA 프로그램의 기술적 기반으로 선정되어 이전에 수주한 5억 1,500만 달러 계약 외에 8억 1,600만 달러 규모의 계약을 확보하는 데 도움이 되었습니다.",
+          "source": "Stocktwits",
+          "date": "2026-06-08",
+          "category": "Product"
+        },
+        {
+          "id": 1781061813698,
+          "title": "로켓랩 주가, 피터 벡의 엔드 투 엔드 우주 비전 발표 후 3.24% 반등",
+          "summary": "로켓랩(RKLB) 주가는 변동성이 큰 한 주를 보낸 후 오늘 3.24% 반등하여 113.65달러에 거래되었습니다. 이는 최근 고점에서의 급락 이후 투자자들의 관심을 다시 불러일으키는 신호입니다. RSI, ADX, MACD, MA-50 등 주간 기술적 모멘텀은 모두 강세이며, 단기적인 가격 상승 가능성이 높습니다.",
+          "source": "MarketBeat",
+          "date": "2026-06-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781061813699,
+          "title": "로켓랩, 1분기 매출 63% 급증 및 기록적인 수주잔고 달성",
+          "summary": "로켓랩은 2026년 1분기에 63%의 매출 성장을 기록했으며, 기록적인 22억 달러의 수주잔고를 달성했습니다. 이는 전 분기 대비 20.2% 증가한 수치이며, 1분기에만 31건의 신규 계약을 체결하여 2025년 전체 계약 건수를 넘어섰습니다.",
+          "source": "YouTube",
+          "date": "2026-05-09",
+          "category": "Earnings"
+        },
+        {
+          "id": 1781061813700,
+          "title": "로켓랩, 미 우주군 위성 계약 수주로 주가 상승",
+          "summary": "로켓랩(RKLB) 주가는 미 우주군으로부터 18개의 위성을 설계하고 제작하는 계약을 수주한 후 초기 거래에서 상승했습니다. 이 계약은 회사 역사상 단일 최대 계약이며, 추가 하위 시스템 기회를 포함하면 총 계약 가치가 약 10억 달러에 달할 수 있습니다.",
+          "source": "Bloomberg",
+          "date": "2025-12-22",
+          "category": "Delivery"
+        },
+        {
+          "id": 1781061813701,
+          "title": "로켓랩, 우주 시스템 부문에서 매출의 대부분 창출",
+          "summary": "로켓랩은 로켓 발사 서비스보다 위성 구축, 부품 제조, 소프트웨어 인프라를 포함하는 우주 시스템 부문에서 두 배 이상의 매출을 올리고 있습니다. 이는 회사의 사업 모델이 단순한 발사 서비스 제공을 넘어 우주 경제의 제조 허브로 확장되고 있음을 보여줍니다.",
+          "source": "YouTube",
+          "date": "2026-05-09",
+          "category": "Product"
+        },
+        {
+          "id": 1781061813702,
+          "title": "로켓랩, 현금 보유액 14억 8천만 달러로 강력한 유동성 확보",
+          "summary": "로켓랩은 2026년 1분기 말 기준 14억 8천만 달러의 현금, 현금 등가물 및 시장성 있는 유가증권을 보유하고 있습니다. 이는 총 20억 달러 이상의 유동성을 확보하고 있음을 의미하며, 이는 항공우주 기업의 생존에 중요한 안전망 역할을 합니다.",
+          "source": "YouTube",
+          "date": "2026-05-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781061813703,
+          "title": "로켓랩, 애널리스트 컨센서스 '보통 매수' 등급 유지",
+          "summary": "로켓랩은 '보통 매수' 컨센서스 등급을 유지하고 있으며, 평균 등급 점수는 2.80입니다. 이는 3개의 강력 매수, 11개의 매수, 5개의 보류, 1개의 매도 등급을 기반으로 합니다. 애널리스트들은 로켓랩의 주식에 대해 강한 관심을 보이고 있습니다.",
+          "source": "MarketBeat",
+          "date": "2026-06-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781061813704,
+          "title": "로켓랩, 단기적으로 약세 압력에도 불구하고 중장기적으로 강세 유지",
+          "summary": "로켓랩(RKLB)은 현재 113.65달러에 거래되고 있으며, MA-20(127.97달러)보다 낮지만 MA-50(97.09달러) 및 MA-200(71.36달러)보다는 높은 위치에 있습니다. 이는 단기적으로 약세 압력을 시사하지만, 중장기적인 추세는 여전히 강세를 지지합니다.",
+          "source": "MarketBeat",
+          "date": "2026-06-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781061813705,
+          "title": "로켓랩, 미사일 방어 위성군 이정표 달성",
+          "summary": "로켓랩은 미사일 방어 위성군을 위한 시스템 요구사항 검토를 통과하며 중요한 이정표를 달성했습니다. 이는 회사가 국방 및 정부 고객을 위한 맞춤형 발사 및 임무 솔루션을 제공하는 데 있어 핵심적인 역할을 수행하고 있음을 보여줍니다.",
+          "source": "MarketWatch",
+          "date": "2026-05-27",
+          "category": "Product"
+        },
+        {
+          "id": 1781061813706,
+          "title": "로켓랩, Motiv Space Systems 인수 완료로 화성 입증 로봇 기술 추가",
+          "summary": "로켓랩은 Motiv Space Systems 인수를 완료하여 화성에서 입증된 로봇 기술 역량을 추가했습니다. 이는 회사의 위성 제조 및 우주 시스템 역량을 강화하고, 엔드 투 엔드 솔루션 제공 능력을 확장합니다.",
+          "source": "MarketWatch",
+          "date": "2026-05-27",
+          "category": "Product"
+        }
+      ],
+      "analyses": {
+        "1781061813697": {
+          "impact_score": 4,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R16",
+            "R19"
+          ],
+          "reasoning": "로켓랩이 미사일 방어 솔루션으로 우주개발청(SDA)의 시스템 요구사항 검토를 통과하고 8억 1,600만 달러 규모의 추가 계약을 확보하여 상당한 매출 증가와 주가 상승을 이끌었습니다.",
+          "key_factors": [
+            "미사일 방어 솔루션의 SDA 시스템 요구사항 검토 통과",
+            "8억 1,600만 달러 규모의 추가 계약 확보",
+            "52주 최고가 기록"
+          ]
+        },
+        "1781061813698": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 피터 벡의 우주 비전 발표 이후 주가 반등과 기술적 지표의 강세를 언급하지만, 이는 이미 알려진 정보이거나 직접적인 기업 운영 변화가 아닌 시장 반응에 대한 분석이므로 RKLB 주가에 대한 새로운 촉매제가 아닙니다.",
+          "key_factors": [
+            "기술적 분석",
+            "시장 반응"
+          ]
+        },
+        "1781061813699": {
+          "impact_score": 3,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R17",
+            "R19"
+          ],
+          "reasoning": "로켓랩의 1분기 매출 63% 급증과 22억 달러의 기록적인 수주잔고 달성은 회사의 강력한 성장과 미래 수익성에 대한 긍정적인 신호입니다.",
+          "key_factors": [
+            "매출 63% 급증",
+            "22억 달러 수주잔고 달성",
+            "31건의 신규 계약 체결"
+          ]
+        },
+        "1781061813700": {
+          "impact_score": 4,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R16",
+            "R19"
+          ],
+          "reasoning": "로켓랩이 미 우주군으로부터 10억 달러 규모의 18개 위성 설계 및 제작 계약을 수주하여 회사 역사상 최대 단일 계약을 확보함으로써 주가에 긍정적인 영향을 미쳤습니다.",
+          "key_factors": [
+            "미 우주군 계약",
+            "10억 달러 규모",
+            "18개 위성 설계 및 제작"
+          ]
+        },
+        "1781061813701": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R19"
+          ],
+          "reasoning": "로켓랩이 로켓 발사 서비스보다 우주 시스템 부문에서 더 많은 매출을 창출하고 있다는 소식은 회사의 다각화된 사업 모델과 성장 잠재력을 보여주며 긍정적입니다.",
+          "key_factors": [
+            "우주 시스템 부문 매출 우위",
+            "사업 모델 다각화"
+          ]
+        },
+        "1781061813702": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "로켓랩의 상당한 현금 보유액은 회사의 재정적 안정성과 장기적인 운영 및 성장 계획을 지원하는 긍정적인 신호입니다.",
+          "key_factors": [
+            "현금 보유액",
+            "유동성"
+          ]
+        },
+        "1781061813703": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 애널리스트 컨센서스 등급을 유지하는 것으로, 새로운 정보나 주가에 직접적인 영향을 미치는 변화가 없으므로 중립적입니다.",
+          "key_factors": [
+            "애널리스트 컨센서스 유지",
+            "새로운 정보 부재"
+          ]
+        },
+        "1781061813704": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 로켓랩 주가의 단기 및 중장기 이동평균선 분석을 통해 기술적 추세를 설명하며, 새로운 촉매나 회사 관련 소식이 없어 주가에 직접적인 영향을 미치지 않습니다.",
+          "key_factors": [
+            "기술적 분석",
+            "이동평균선"
+          ]
+        },
+        "1781061813705": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R19"
+          ],
+          "reasoning": "로켓랩이 미사일 방어 위성군 시스템 요구사항 검토를 통과하여 국방 및 정부 고객을 위한 중요한 이정표를 달성했으며, 이는 우주 시스템 부문의 역량을 강화합니다.",
+          "key_factors": [
+            "미사일 방어 위성군",
+            "시스템 요구사항 검토 통과",
+            "국방 및 정부 고객"
+          ]
+        },
+        "1781061813706": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R19"
+          ],
+          "reasoning": "로켓랩이 Motiv Space Systems 인수를 완료하여 화성에서 입증된 로봇 기술을 확보함으로써 위성 제조 및 우주 시스템 역량을 강화하고 엔드 투 엔드 솔루션 제공 능력을 확장할 것입니다.",
+          "key_factors": [
+            "Motiv Space Systems 인수",
+            "화성 입증 로봇 기술 확보",
+            "우주 시스템 역량 강화"
+          ]
+        }
+      },
+      "avgScore": 1.7,
+      "buyIndex": 53,
+      "direction": "bullish",
+      "topRules": [
+        "R19",
+        "R16",
+        "R17"
+      ],
+      "bullish": 7,
+      "bearish": 0,
+      "neutral": 3,
+      "muskXSentiment": {
+        "posts": [],
+        "overall_sentiment": "neutral",
+        "sentiment_score": 0,
+        "post_count": 0,
+        "reasoning": "지난 7일 동안 @PeterBeck의 RKLB 또는 Rocket Lab USA 주식 관련 게시물을 찾을 수 없었습니다."
+      },
+      "googleTrends": {
+        "current_score": 22,
+        "week_avg": 22,
+        "trend": "stable",
+        "spike": false,
+        "top_queries": [
+          "RKLB stock",
+          "Rocket Lab stock price",
+          "Rocket Lab news"
+        ],
+        "reasoning": "지난 7일간 'Rocket Lab USA'의 검색 관심도는 안정적이었으며, 최고점은 22점, 주간 평균도 22점을 기록했습니다. 검색량에 큰 폭의 증가는 없었으며, 관련 인기 검색어는 'RKLB stock', 'Rocket Lab stock price', 'Rocket Lab news'입니다."
+      },
+      "youtubeInterest": {
+        "score": -3,
+        "velocity": 0.1,
+        "velocity_label": "급감 (×0.1)",
+        "reason": "조회수 속도 급감 (×0.1) | 최근 3일 16,829회 / 이전 4~7일 174,495회 | 총 191,324회 (35개 영상)",
+        "video_count": 35,
+        "total_views": 191324,
+        "hot_views": 16829,
+        "baseline_views": 174495,
+        "top_videos": [
+          {
+            "title": "The Rocket Launch Nobody Was Expecting | This Week in Spaceflight",
+            "channel": "NASASpaceflight",
+            "publishedAt": "2026-06-06T00:00:07Z",
+            "viewCount": 77407
+          },
+          {
+            "title": "Rocket Lab’s Electron: A Sexy, Sleek Launch#rocketlab #electron #rocket launch",
+            "channel": "SkySpace Brief",
+            "publishedAt": "2026-06-05T08:03:27Z",
+            "viewCount": 24941
+          },
+          {
+            "title": "Breathtaking drone view of Rocket Lab launch!",
+            "channel": "The Space Road",
+            "publishedAt": "2026-06-06T02:30:39Z",
+            "viewCount": 22352
+          },
+          {
+            "title": "Major Outflows From Top Space Stocks Ahead of SpaceX IPO… RDW, RKLB, PL, LUNR…",
+            "channel": "Will Rich",
+            "publishedAt": "2026-06-04T03:11:40Z",
+            "viewCount": 14777
+          },
+          {
+            "title": "Should You Buy RocketLab Stock Instead of SpaceX at IPO? | RKLB Stock Analysis",
+            "channel": "Parkev Tatevosian, CFA",
+            "publishedAt": "2026-06-04T13:45:34Z",
+            "viewCount": 9607
+          }
+        ],
+        "collected_at": "2026-06-10T03:23:23Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Product": 4,
+        "Market": 4,
+        "Earnings": 1,
+        "Delivery": 1
+      },
+      "macroCtx": {
+        "spyChg": -0.88,
+        "qqqChg": -2.09,
+        "vixClose": 19.8700008392334,
+        "wtiChg": -0.46,
+        "cnyChg": 0.02,
+        "competitorChg": -8.75,
+        "competitorRelStrength": 0.16,
+        "prevAssetChg": -0.89,
+        "assetTrend3w": -19.95,
+        "rsi": 65.5,
+        "macd": {
+          "macd": 15.054269352434972,
+          "signal": 12.663891141104319,
+          "hist": 2.3903782113306526,
+          "crossover": null,
+          "trend": "bullish"
+        },
+        "bb": {
+          "upper": 138.8,
+          "middle": 88.35,
+          "lower": 37.89,
+          "pos": 0.697
+        },
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -8.75,
+        "bydRelStrength": 0.16,
+        "prevTslaChg": -0.89,
+        "tslaTrend3w": -19.95
+      },
+      "scoringLayers": {
+        "base": 67,
+        "macdTrend": 1,
+        "trendFilter": -12,
+        "youtubeInterest": -3
+      },
+      "latestPrice": 108.23,
+      "latestTslaPrice": 108.23,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/11(목)",
+          "change_pct": -1.5,
+          "signal": "매도",
+          "basePrice": 108.23,
+          "predictedPrice": 106.61
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/12(금)",
+          "change_pct": -0.8,
+          "signal": "매도",
+          "basePrice": 108.23,
+          "predictedPrice": 107.36
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/15(월)",
+          "change_pct": 0.2,
+          "signal": "관망",
+          "basePrice": 108.23,
+          "predictedPrice": 108.45
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/16(화)",
+          "change_pct": -0.3,
+          "signal": "관망",
+          "basePrice": 108.23,
+          "predictedPrice": 107.91
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/17(수)",
+          "change_pct": 0.5,
+          "signal": "관망",
+          "basePrice": 108.23,
+          "predictedPrice": 108.77
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781061842878
+    },
+    {
       "id": "auto-1780935310352",
       "date": "2026-06-09",
       "displayDate": "2026.06.09",
@@ -1112,5 +1503,5 @@
       "timestamp": 1780677511937
     }
   ],
-  "lastUpdated": "2026-06-09 00:26 KST"
+  "lastUpdated": "2026-06-10 12:23 KST"
 }

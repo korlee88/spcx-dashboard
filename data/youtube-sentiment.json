@@ -1,43 +1,43 @@
 {
-  "score": -1,
-  "velocity": 1.09,
-  "velocity_label": "보합 (×1.1)",
-  "reason": "조회수 속도 보합 (×1.1) | 최근 3일 112,363회 / 이전 4~7일 102,705회 | 총 215,068회 (37개 영상)",
-  "video_count": 37,
-  "total_views": 215068,
-  "hot_views": 112363,
-  "baseline_views": 102705,
+  "score": -3,
+  "velocity": 0.1,
+  "velocity_label": "급감 (×0.1)",
+  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 16,829회 / 이전 4~7일 174,495회 | 총 191,324회 (35개 영상)",
+  "video_count": 35,
+  "total_views": 191324,
+  "hot_views": 16829,
+  "baseline_views": 174495,
   "top_videos": [
     {
       "title": "The Rocket Launch Nobody Was Expecting | This Week in Spaceflight",
       "channel": "NASASpaceflight",
       "publishedAt": "2026-06-06T00:00:07Z",
-      "viewCount": 73510
+      "viewCount": 77407
     },
     {
       "title": "Rocket Lab’s Electron: A Sexy, Sleek Launch#rocketlab #electron #rocket launch",
       "channel": "SkySpace Brief",
       "publishedAt": "2026-06-05T08:03:27Z",
-      "viewCount": 23729
+      "viewCount": 24941
     },
     {
       "title": "Breathtaking drone view of Rocket Lab launch!",
       "channel": "The Space Road",
       "publishedAt": "2026-06-06T02:30:39Z",
-      "viewCount": 21334
+      "viewCount": 22352
     },
     {
-      "title": "Drone view of Rocket Lab Electron liftoff on March 21, 2026!",
-      "channel": "The Space Road",
-      "publishedAt": "2026-06-01T22:30:19Z",
-      "viewCount": 18446
+      "title": "Major Outflows From Top Space Stocks Ahead of SpaceX IPO… RDW, RKLB, PL, LUNR…",
+      "channel": "Will Rich",
+      "publishedAt": "2026-06-04T03:11:40Z",
+      "viewCount": 14777
     },
     {
-      "title": "Closing Bell: Nvidia Jumps, Rocket Labs Slides, Hewlett Packard Enterprise Soars After Earnings...",
-      "channel": "Bloomberg Podcasts",
-      "publishedAt": "2026-06-01T21:49:32Z",
-      "viewCount": 15828
+      "title": "Should You Buy RocketLab Stock Instead of SpaceX at IPO? | RKLB Stock Analysis",
+      "channel": "Parkev Tatevosian, CFA",
+      "publishedAt": "2026-06-04T13:45:34Z",
+      "viewCount": 9607
     }
   ],
-  "collected_at": "2026-06-08T15:26:42Z"
+  "collected_at": "2026-06-10T03:23:23Z"
 }
