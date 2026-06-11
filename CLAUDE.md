@@ -174,6 +174,25 @@ TSLA의 Optimus 규칙(R25)과 동일한 구조:
 
 ---
 
+## 주간 영상 TTS 설정
+
+`scripts/weekly_video_make.py` 상단 상수로 제어 (tsla-dashboard PR #56과 동일 구조):
+
+| 상수 | 값 | 설명 |
+|------|-----|------|
+| `VOICE` | `ko-KR-SunHiNeural` | edge-tts 음성 (밝은 여성, 친근 튜닝) |
+| `RATE` | `+8%` | 발화 속도 |
+| `PITCH` | `+6Hz` | 음 높이 |
+| `LINE_PAUSE_MS` | `1000` | 대본 줄(세그먼트) 사이 무음 휴지 (ms) |
+
+- `build_scene_tts_segments()`가 씬 대본을 줄 단위 세그먼트 리스트로 분리
+  (씬0: 헤드라인·원인·호재·리스크 각각, 씬1: 헤드라인+세부줄, 씬2: 인트로+나머지줄).
+- `gen_audio()`가 세그먼트마다 edge-tts MP3를 따로 생성한 뒤
+  pydub `AudioSegment.silent(LINE_PAUSE_MS)`를 사이에 끼워 최종 MP3로 합성.
+- pydub/ffmpeg 미가용 시 공백으로 이어붙인 단일 TTS로 폴백 (휴지 없음).
+
+---
+
 ## 앱 버전 히스토리
 
 | 버전 | 날짜 | 주요 변경 |

@@ -19,6 +19,7 @@ REPORT_BASE   = ROOT_DIR / "data" / "weekly-report"
 VOICE         = "ko-KR-SunHiNeural"    # 밝은 여성 — 친근 튜닝 (edge-tts 지원 검증 음성)
 RATE          = "+8%"                   # 대화하듯 자연스러운 속도
 PITCH         = "+6Hz"                  # 살짝 올려 밝고 친근한 톤
+LINE_PAUSE_MS = 1000                    # 대본 줄(세그먼트) 사이 무음 휴지 (ms)
 FPS           = 24
 W, H          = 1080, 1920
 PHOTO_Y       = 500                     # 헤더 아래 사진 시작 Y (prep.py의 HEADER_H와 동일)
@@ -172,14 +173,15 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
 
 # ── TTS ───────────────────────────────────────────────────────────────────────
 
-async def gen_audio(text, path):
+async def _tts(text, path):
+    """단일 텍스트 → edge-tts MP3."""
     import edge_tts
     comm = edge_tts.Communicate(text, VOICE, rate=RATE, pitch=PITCH)
     await comm.save(str(path))
 
 
-async def gen_scene_audio(segments, path, gap_ms=900):
-    """세그먼트별로 TTS한 뒤 gap_ms 무음을 끼워 하나의 mp3로 합성.
+async def gen_audio(segments, path):
+    """세그먼트(줄)별로 TTS한 뒤 LINE_PAUSE_MS 무음을 끼워 하나의 mp3로 합성.
 
     줄과 줄 사이에 ~1초 텀을 둬 바로 이어 읽히는 어색함을 없앤다.
     pydub/ffmpeg 미가용 등 실패 시 공백으로 이어붙인 단일 TTS로 폴백.
@@ -188,15 +190,15 @@ async def gen_scene_audio(segments, path, gap_ms=900):
     if not segments:
         return
     if len(segments) == 1:
-        await gen_audio(segments[0], path)
+        await _tts(segments[0], path)
         return
     try:
         from pydub import AudioSegment
-        silence = AudioSegment.silent(duration=gap_ms)
+        silence = AudioSegment.silent(duration=LINE_PAUSE_MS)
         combined = None
         for i, seg in enumerate(segments):
             tmp = path.with_name(f"{path.stem}__seg{i}.mp3")
-            await gen_audio(seg, tmp)
+            await _tts(seg, tmp)
             piece = AudioSegment.from_file(tmp)
             combined = piece if combined is None else (combined + silence + piece)
             try: tmp.unlink()
@@ -204,7 +206,7 @@ async def gen_scene_audio(segments, path, gap_ms=900):
         combined.export(str(path), format="mp3")
     except Exception as e:
         print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)
-        await gen_audio(" ".join(segments), path)
+        await _tts(" ".join(segments), path)
 
 # ── 로봇 마스코트 ─────────────────────────────────────────────────────────────
 
@@ -451,11 +453,11 @@ async def process_scene(scene, report_dir):
     title    = scene.get("title", f"씬 {idx}")
     img_path = report_dir / f"scene_{idx:02d}.png"
 
-    # 줄 단위 세그먼트 + 씬별 브리지 문장 → 세그먼트 사이 ~1초 텀으로 합성
+    # 줄 단위 세그먼트 + 씬별 브리지 문장 → 세그먼트 사이 LINE_PAUSE_MS 휴지로 합성
     segments = build_scene_tts_segments(idx, lines) or [title]
     audio_path = report_dir / f"scene_{idx:02d}.mp3"
     print(f"   🎙 씬 {idx} [{title[:20]}] 나레이션 생성... ({len(segments)}개 세그먼트)")
-    await gen_scene_audio(segments, audio_path)
+    await gen_audio(segments, audio_path)
 
     audio = AudioFileClip(str(audio_path))
     dur   = max(audio.duration, MIN_SCENE_SEC)
