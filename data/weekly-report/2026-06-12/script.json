@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-06-12",
+  "generated_by": "Claude Opus 4",
+  "title": "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요",
+  "subtitle": "2026-06-06 ~ 2026-06-11 · 로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
+  "summary": {
+    "week_start": "2026-06-06",
+    "week_end": "2026-06-11",
+    "session_count": 5,
+    "total_analyzed": 43,
+    "bullish_count": 25,
+    "bearish_count": 2,
+    "buy_indices": [
+      60,
+      53,
+      84,
+      72,
+      76
+    ],
+    "avg_buy_index": 69,
+    "latest_buy_index": 60,
+    "price_start": 111.02,
+    "price_end": 105.05,
+    "latest_price": 105.05,
+    "today_price": 105.05,
+    "today_change_pct": -2.94,
+    "week_change_pct": -5.38,
+    "biggest_impact": {
+      "title": "로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
+      "score": 4,
+      "reason": "로켓랩이 미사일 방어 솔루션으로 우주개발청(SDA)의 시스템 요구사항 검토를 통과하고 8억 1,600만 달러 규모의 추가 계약을 확보하여 상당한 매출 증가와 주가 상승을 이끌었습니다.",
+      "source": "Stocktwits",
+      "date": "2026-06-08",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
+        "score": 4,
+        "reason": "로켓랩이 미사일 방어 솔루션으로 우주개발청(SDA)의 시스템 요구사항 검토를 통과하고 8억 1,600만 달러 규모의 추가 계약을 확보하여 상당한 매출 증가와 주가 상승을 이끌었습니다.",
+        "source": "Stocktwits",
+        "date": "2026-06-08",
+        "category": "Product"
+      },
+      {
+        "title": "로켓랩, 익명의 고객과 대규모 Neutron 및 Electron 발사 계약 체결",
+        "score": 4,
+        "reason": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 수주 잔고를 22억 달러 이상으로 늘린 것은 회사의 미래 수익과 뉴트론 로켓의 상업적 성공 가능성을 강력히 시사합니다.",
+        "source": "StockTitan",
+        "date": "2026-06-08",
+        "category": "Delivery"
+      },
+      {
+        "title": "로켓랩, 익명의 고객과 뉴트론 및 일렉트론 발사 계약 체결: 사상 최대 규모",
+        "score": 4,
+        "reason": "로켓랩이 익명의 고객과 5개의 뉴트론 및 3개의 일렉트론 발사 계약을 체결하여 사상 최대 규모의 수주잔고를 확보하고 뉴트론의 상업적 발사 일정을 확정하며 상당한 긍정적 영향을 미쳤습니다.",
+        "source": "StockTitan",
+        "date": "2026-06-05",
+        "category": "Delivery"
+      },
+      {
+        "title": "로켓랩, 익명 고객과 다수의 Neutron 및 Electron 발사 계약 체결",
+        "score": 4,
+        "reason": "로켓랩이 익명 고객과 2026년부터 2029년까지 다수의 Neutron 및 Electron 발사 계약을 체결하여 수주잔고가 크게 증가하고 Neutron 로켓의 상업적 발사 일정이 확정되어 긍정적인 영향을 미칩니다.",
+        "source": "StockTitan",
+        "date": "2026-05-27",
+        "category": "Delivery"
+      },
+      {
+        "title": "로켓랩, 미 우주군 위성 계약 수주로 주가 상승",
+        "score": 4,
+        "reason": "로켓랩이 미 우주군으로부터 10억 달러 규모의 18개 위성 설계 및 제작 계약을 수주하여 회사 역사상 최대 단일 계약을 확보함으로써 주가에 긍정적인 영향을 미쳤습니다.",
+        "source": "Bloomberg",
+        "date": "2025-12-22",
+        "category": "Delivery"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "로켓랩, Neutron 로켓 출시 지연 가능성 및 자금 조달 필요성 제기",
+        "score": -2,
+        "reason": "전문가들이 로켓랩의 Neutron 로켓 출시가 1~2년 지연될 수 있다고 예상하며, 이는 추가 자금 조달 필요성으로 이어질 수 있어 부정적인 영향을 미칩니다.",
+        "source": "Bleecker Street Research",
+        "date": "2025-02-25",
+        "category": "Product"
+      },
+      {
+        "title": "로켓랩 CEO 피터 벡, 2025년 11월 RKLB 주식 76만 6천 달러 상당 매각",
+        "score": -1,
+        "reason": "로켓랩 CEO 피터 벡의 주식 매각은 투자자들에게 부정적인 신호로 해석될 수 있으며, 이는 내부자 매도에 해당한다.",
+        "source": "Investing.com",
+        "date": "2025-11-25",
+        "category": "Market"
+      }
+    ],
+    "forecasts": [
+      {
+        "day": 1,
+        "label": "내일",
+        "date": "6/12(금)",
+        "change_pct": -1.2,
+        "signal": "매도",
+        "basePrice": 105.05,
+        "predictedPrice": 103.79
+      },
+      {
+        "day": 2,
+        "label": "D+2",
+        "date": "6/15(월)",
+        "change_pct": -0.7,
+        "signal": "관망",
+        "basePrice": 105.05,
+        "predictedPrice": 104.31
+      },
+      {
+        "day": 3,
+        "label": "D+3",
+        "date": "6/16(화)",
+        "change_pct": 0.2,
+        "signal": "관망",
+        "basePrice": 105.05,
+        "predictedPrice": 105.26
+      },
+      {
+        "day": 4,
+        "label": "D+4",
+        "date": "6/17(수)",
+        "change_pct": 0.4,
+        "signal": "관망",
+        "basePrice": 105.05,
+        "predictedPrice": 105.47
+      },
+      {
+        "day": 5,
+        "label": "D+5",
+        "date": "6/18(목)",
+        "change_pct": 0.1,
+        "signal": "관망",
+        "basePrice": 105.05,
+        "predictedPrice": 105.16
+      }
+    ],
+    "daily_prices": [
+      [
+        "2026-06-11",
+        105.05
+      ],
+      [
+        "2026-06-10",
+        108.23
+      ],
+      [
+        "2026-06-09",
+        113.67
+      ],
+      [
+        "2026-06-08",
+        110.08
+      ],
+      [
+        "2026-06-06",
+        111.02
+      ]
+    ],
+    "overall_signal": "긍정",
+    "trends": null,
+    "next_events": [],
+    "movement_reason": null
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "이번주",
+      "lines": [
+        "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요",
+        "호재 25건에도 차익실현 매물이 나왔더라고요",
+        "*8.16억 달러* 미사일 방어 계약이 큰 호재였죠",
+        "*Neutron 발사 지연* 가능성은 챙겨봐야 해요"
+      ],
+      "body": "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요\n호재 25건에도 차익실현 매물이 나왔더라고요\n*8.16억 달러* 미사일 방어 계약이 큰 호재였죠\n*Neutron 발사 지연* 가능성은 챙겨봐야 해요"
+    },
+    {
+      "index": 1,
+      "title": "호재분석",
+      "lines": [
+        "카테고리: *52주 최고가* 찍은 미사일 방어 계약",
+        "↳ 배경: *SDA* 시스템 검토를 무사히 통과했어요",
+        "↳ 데이터: 추가 계약 규모가 *8.16억 달러*예요",
+        "↳ 임팩트: 주중 한때 *$113.67*까지 올랐답니다",
+        "↳ 비교: 수주잔고가 *22억 달러* 넘게 쌓였어요",
+        "↳ 국방 우주 수요가 계속 늘어나는 분위기네요"
+      ],
+      "body": "카테고리: *52주 최고가* 찍은 미사일 방어 계약\n   ↳ 배경: *SDA* 시스템 검토를 무사히 통과했어요\n   ↳ 데이터: 추가 계약 규모가 *8.16억 달러*예요\n   ↳ 임팩트: 주중 한때 *$113.67*까지 올랐답니다\n   ↳ 비교: 수주잔고가 *22억 달러* 넘게 쌓였어요\n   ↳ 국방 우주 수요가 계속 늘어나는 분위기네요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "별다른 이벤트 없이 *모니터링* 주간이에요",
+        "*Neutron 일정* 관련 코멘트를 잘 봐야겠죠",
+        "다음주 예상가는 *$105*, 변동률 *+0.1%*예요",
+        "*3일 상승·2일 하락* 흐름이 점쳐져요",
+        "*CEO 내부자 매도* 이슈는 신중히 봐주세요",
+        "함께해 주셔서 감사해요, 또 봐요!"
+      ],
+      "body": "별다른 이벤트 없이 *모니터링* 주간이에요\n*Neutron 일정* 관련 코멘트를 잘 봐야겠죠\n다음주 예상가는 *$105*, 변동률 *+0.1%*예요\n*3일 상승·2일 하락* 흐름이 점쳐져요\n*CEO 내부자 매도* 이슈는 신중히 봐주세요\n함께해 주셔서 감사해요, 또 봐요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring N Seoul Tower, 63 Building, and Lotte World Tower, with a sleek Rocket Lab Neutron rocket silhouette ascending through purple violet futuristic clouds, holographic data analytics charts floating above the cityscape, glowing city lights creating soft bokeh, K-tech cyberpunk atmosphere, deep purple and magenta gradients, cinematic wide shot, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant 16:9 landscape scene of Seoul's Han River bridges glowing in fresh green growth light, bullish upward energy radiating across the modern skyline, a powerful Rocket Lab Electron rocket launching dynamically with bright exhaust trails, sunlit modern Korean skyscrapers reflecting optimism, lush green tech infrastructure, vibrant emerald and lime accents, dynamic motion blur, hopeful K-tech atmosphere, cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline with Gwanghwamun Plaza in foreground, a majestic Rocket Lab Neutron rocket symbolically rising into a magenta and gold inspirational sky, golden sun rays piercing through clouds, sparkling stars and shimmering light particles, advanced K-tech urban atmosphere, deep magenta and luxurious gold tones, dreamy inspirational mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

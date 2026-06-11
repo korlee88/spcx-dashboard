@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요
+호재 25건에도 차익실현 매물이 나왔더라고요
+*8.16억 달러* 미사일 방어 계약이 큰 호재였죠
+*Neutron 발사 지연* 가능성은 챙겨봐야 해요
+
+SCENE_1_TITLE: 호재분석
+SCENE_1:
+카테고리: *52주 최고가* 찍은 미사일 방어 계약
+   ↳ 배경: *SDA* 시스템 검토를 무사히 통과했어요
+   ↳ 데이터: 추가 계약 규모가 *8.16억 달러*예요
+   ↳ 임팩트: 주중 한때 *$113.67*까지 올랐답니다
+   ↳ 비교: 수주잔고가 *22억 달러* 넘게 쌓였어요
+   ↳ 국방 우주 수요가 계속 늘어나는 분위기네요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+별다른 이벤트 없이 *모니터링* 주간이에요
+*Neutron 일정* 관련 코멘트를 잘 봐야겠죠
+다음주 예상가는 *$105*, 변동률 *+0.1%*예요
+*3일 상승·2일 하락* 흐름이 점쳐져요
+*CEO 내부자 매도* 이슈는 신중히 봐주세요
+함께해 주셔서 감사해요, 또 봐요!
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring N Seoul Tower, 63 Building, and Lotte World Tower, with a sleek Rocket Lab Neutron rocket silhouette ascending through purple violet futuristic clouds, holographic data analytics charts floating above the cityscape, glowing city lights creating soft bokeh, K-tech cyberpunk atmosphere, deep purple and magenta gradients, cinematic wide shot, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant 16:9 landscape scene of Seoul's Han River bridges glowing in fresh green growth light, bullish upward energy radiating across the modern skyline, a powerful Rocket Lab Electron rocket launching dynamically with bright exhaust trails, sunlit modern Korean skyscrapers reflecting optimism, lush green tech infrastructure, vibrant emerald and lime accents, dynamic motion blur, hopeful K-tech atmosphere, cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline with Gwanghwamun Plaza in foreground, a majestic Rocket Lab Neutron rocket symbolically rising into a magenta and gold inspirational sky, golden sun rays piercing through clouds, sparkling stars and shimmering light particles, advanced K-tech urban atmosphere, deep magenta and luxurious gold tones, dreamy inspirational mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

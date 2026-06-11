@@ -1,0 +1,11 @@
+# RKLB 주간 배경 이미지 프롬프트 — 2026-06-12
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring N Seoul Tower, 63 Building, and Lotte World Tower, with a sleek Rocket Lab Neutron rocket silhouette ascending through purple violet futuristic clouds, holographic data analytics charts floating above the cityscape, glowing city lights creating soft bokeh, K-tech cyberpunk atmosphere, deep purple and magenta gradients, cinematic wide shot, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant 16:9 landscape scene of Seoul's Han River bridges glowing in fresh green growth light, bullish upward energy radiating across the modern skyline, a powerful Rocket Lab Electron rocket launching dynamically with bright exhaust trails, sunlit modern Korean skyscrapers reflecting optimism, lush green tech infrastructure, vibrant emerald and lime accents, dynamic motion blur, hopeful K-tech atmosphere, cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline with Gwanghwamun Plaza in foreground, a majestic Rocket Lab Neutron rocket symbolically rising into a magenta and gold inspirational sky, golden sun rays piercing through clouds, sparkling stars and shimmering light particles, advanced K-tech urban atmosphere, deep magenta and luxurious gold tones, dreamy inspirational mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
