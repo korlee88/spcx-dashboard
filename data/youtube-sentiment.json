@@ -1,43 +1,43 @@
 {
   "score": -3,
-  "velocity": 0.1,
+  "velocity": 0.09,
   "velocity_label": "급감 (×0.1)",
-  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 16,829회 / 이전 4~7일 174,495회 | 총 191,324회 (35개 영상)",
-  "video_count": 35,
-  "total_views": 191324,
-  "hot_views": 16829,
-  "baseline_views": 174495,
+  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 18,509회 / 이전 4~7일 199,086회 | 총 217,595회 (36개 영상)",
+  "video_count": 36,
+  "total_views": 217595,
+  "hot_views": 18509,
+  "baseline_views": 199086,
   "top_videos": [
     {
       "title": "The Rocket Launch Nobody Was Expecting | This Week in Spaceflight",
       "channel": "NASASpaceflight",
       "publishedAt": "2026-06-06T00:00:07Z",
-      "viewCount": 77407
+      "viewCount": 78647
+    },
+    {
+      "title": "SpaceX Launches Falcon 9 with Starlink 10-43",
+      "channel": "NASASpaceflight",
+      "publishedAt": "2026-06-04T11:02:54Z",
+      "viewCount": 35985
     },
     {
       "title": "Rocket Lab’s Electron: A Sexy, Sleek Launch#rocketlab #electron #rocket launch",
       "channel": "SkySpace Brief",
       "publishedAt": "2026-06-05T08:03:27Z",
-      "viewCount": 24941
+      "viewCount": 25077
     },
     {
       "title": "Breathtaking drone view of Rocket Lab launch!",
       "channel": "The Space Road",
       "publishedAt": "2026-06-06T02:30:39Z",
-      "viewCount": 22352
-    },
-    {
-      "title": "Major Outflows From Top Space Stocks Ahead of SpaceX IPO… RDW, RKLB, PL, LUNR…",
-      "channel": "Will Rich",
-      "publishedAt": "2026-06-04T03:11:40Z",
-      "viewCount": 14777
+      "viewCount": 22476
     },
     {
       "title": "Should You Buy RocketLab Stock Instead of SpaceX at IPO? | RKLB Stock Analysis",
       "channel": "Parkev Tatevosian, CFA",
       "publishedAt": "2026-06-04T13:45:34Z",
-      "viewCount": 9607
+      "viewCount": 9851
     }
   ],
-  "collected_at": "2026-06-10T03:23:23Z"
+  "collected_at": "2026-06-11T03:35:38Z"
 }
