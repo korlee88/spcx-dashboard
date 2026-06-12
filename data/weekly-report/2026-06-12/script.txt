@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+뉴스 *53건* 분석, 주가 *+3.39%*예요
+*나스닥100 편입* 발표가 컸어요
+수주잔고 *22억 달러* 돌파했죠
+*30억 달러 증자*는 살짝 아쉬워요
+
+SCENE_1_TITLE: 호재분석
+SCENE_1:
+카테고리: *나스닥100 편입* 호재예요
+   ↳ 배경: *6월 22일* 개장 전 편입돼요
+   ↳ 데이터: 수주잔고 *22억 달러* 돌파
+   ↳ 임팩트: 52주 최고가, *$114.78* 도달
+   ↳ 비교: SDA 계약 *8.16억 달러* 추가
+   ↳ 기관 자금 유입 기대감이 커지네요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+*나스닥100 편입일* 임박했어요
+*기관 매수세* 유입을 지켜봐요
+도달가 *약 $115* 흐름이 점쳐져요
+*2일 상승·3일 하락* 예상돼요
+*뉴트론 발사* 일정 변수도 살펴봐요
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape view of Seoul's Han River night skyline, featuring Namsan Tower, 63 Building, and Lotte Tower glowing under a deep purple violet sky, with a sleek Rocket Lab Electron rocket silhouette ascending in the distance, futuristic Korean K-tech city atmosphere, holographic data analytics overlays softly blending into bokeh city lights, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant 16:9 landscape image of Seoul's Han River bridges bathed in fresh green bullish sunlight, modern skyline rising with energy, a dynamic Rocket Lab Neutron rocket launching with bright exhaust trails over the cityscape, Korean K-tech infrastructure glowing with growth and optimism, lively daytime atmosphere with green tinted clouds and sunbeams, cinematic vibrant composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical futuristic Korean cityscape showing Seoul's Han River night view, illuminated skyline, and Gwanghwamun Plaza glowing under magenta and gold inspirational hues, a majestic Rocket Lab rocket soaring upward through starlit skies with golden sunbursts and sparkling particles, advanced K-tech metropolis ambiance, dreamy aspirational mood with cinematic light rays, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

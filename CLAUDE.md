@@ -180,11 +180,42 @@ RKLB의 Neutron 규칙(R25)과 동일한 구조:
 
 ---
 
+## 주간 영상 TTS 설정
+
+`scripts/weekly_video_make.py` 상단 상수로 제어 (tsla-dashboard PR #56과 동일 구조):
+
+| 상수 | 값 | 설명 |
+|------|-----|------|
+| `VOICE` | `ko-KR-SunHiNeural` | edge-tts 음성 (밝은 여성, 친근 튜닝) |
+| `RATE` | `+8%` | 발화 속도 |
+| `PITCH` | `+6Hz` | 음 높이 |
+| `LINE_PAUSE_MS` | `1000` | 대본 줄(세그먼트) 사이 무음 휴지 (ms) |
+
+- `build_scene_tts_segments()`가 씬 대본을 줄 단위 세그먼트 리스트로 분리
+  (씬0: 헤드라인·원인·호재·리스크 각각, 씬1: 헤드라인+세부줄, 씬2: 인트로+나머지줄).
+- `gen_audio()`가 세그먼트마다 edge-tts MP3를 따로 생성한 뒤
+  pydub `AudioSegment.silent(LINE_PAUSE_MS)`를 사이에 끼워 최종 MP3로 합성.
+- pydub/ffmpeg 미가용 시 공백으로 이어붙인 단일 TTS로 폴백 (휴지 없음).
+
+### 씬 구성 — AI 생성 고지 밴드 (씬 2)
+
+마지막 씬(다음주 전망, idx 2) 이미지 **최하단 118px**에 반투명 다크 밴드(RGBA 10,14,26,205)로
+AI 생성 고지 2줄을 30px 폰트·중앙 정렬·글자색 (170,180,202)으로 표기 (tsla-dashboard PR #58과 동일):
+
+> 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 분석해
+> 핵심 내용을 요약·정리한 영상물입니다
+
+- 위치: `weekly_video_prep.py` `build_scene_image()` 씬 2 분기 끝 (`return _apply_frame_overlay` 직전)
+- **고지 문구는 script.json lines에 절대 넣지 않는다** — 이미지에만 그려서 TTS가 읽지 않게 한다.
+
+---
+
 ## 앱 버전 히스토리
 
 | 버전 | 날짜 | 주요 변경 |
 |------|------|---------|
-| **v1.1.0** | 2026-06-12 KST | SPCX 마이그레이션(from rklb-dashboard v1.0.1) — RULE_LABELS·매수지수 분해 라벨·핵심인물(머스크) UI 전면 교체 · R01~R26 스타십/팰컨/스타링크 특화 규칙 · 캐시키 spcx_ 전환 |
+| **v1.1.0** | 2026-06-12 KST | SPCX 마이그레이션(from rklb-dashboard v1.0.2) — RULE_LABELS·매수지수 분해 라벨·핵심인물(머스크) UI 전면 교체 · R01~R26 스타십/팰컨/스타링크 특화 규칙 · 캐시키 spcx_ 전환 |
+| **v1.0.2** | 2026-06-11 KST | 보안 강화 — CDN 버전 고정+SRI(react/react-dom/babel 프로덕션 전환, tailwind 고정) · YouTube HttpError 로그 키 노출 차단 · GMAIL_TO 로그 제거 |
 | **v1.0.1** | 2026-06-05 KST | 마이그레이션 잔재 정리(RULE_LABELS·UI 라벨·영상 프롬프트 RKLB화) · 영상 이미지 프롬프트 config 자동적응 · 마이그레이션 플레이북(MIGRATION.md)+감사도구 추가 |
 | **v1.0.0** | 2026-06-05 KST | RKLB 마이그레이션 초기 릴리즈 (from tsla-dashboard v2.6.0) |
 

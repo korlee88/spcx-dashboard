@@ -63,7 +63,9 @@ def collect_videos(youtube) -> list[dict]:
                 relevanceLanguage="en",
             ).execute()
         except HttpError as e:
-            print(f"   ⚠ YouTube search 오류 ({query}): {e}", file=sys.stderr)
+            # HttpError 원문에는 key= 쿼리가 포함된 요청 URL이 들어가 공개 Actions 로그로
+            # API 키가 유출될 수 있음 — 상태 코드만 출력
+            print(f"   ⚠ YouTube search 오류 ({query}): HTTP {e.resp.status}", file=sys.stderr)
             continue
 
         for item in response.get("items", []):
@@ -95,7 +97,8 @@ def fetch_statistics(youtube, video_items: list[dict]) -> list[dict]:
                 id=",".join(batch),
             ).execute()
         except HttpError as e:
-            print(f"   ⚠ YouTube videos.list 오류: {e}", file=sys.stderr)
+            # 상동 — key= 포함 URL 유출 방지 위해 상태 코드만 출력
+            print(f"   ⚠ YouTube videos.list 오류: HTTP {e.resp.status}", file=sys.stderr)
             continue
 
         meta = {v["id"]: v for v in video_items}
