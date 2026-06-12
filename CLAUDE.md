@@ -191,6 +191,17 @@ TSLA의 Optimus 규칙(R25)과 동일한 구조:
   pydub `AudioSegment.silent(LINE_PAUSE_MS)`를 사이에 끼워 최종 MP3로 합성.
 - pydub/ffmpeg 미가용 시 공백으로 이어붙인 단일 TTS로 폴백 (휴지 없음).
 
+### 씬 구성 — AI 생성 고지 밴드 (씬 2)
+
+마지막 씬(다음주 전망, idx 2) 이미지 **최하단 118px**에 반투명 다크 밴드(RGBA 10,14,26,205)로
+AI 생성 고지 2줄을 30px 폰트·중앙 정렬·글자색 (170,180,202)으로 표기 (tsla-dashboard PR #58과 동일):
+
+> 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 분석해
+> 핵심 내용을 요약·정리한 영상물입니다
+
+- 위치: `weekly_video_prep.py` `build_scene_image()` 씬 2 분기 끝 (`return _apply_frame_overlay` 직전)
+- **고지 문구는 script.json lines에 절대 넣지 않는다** — 이미지에만 그려서 TTS가 읽지 않게 한다.
+
 ---
 
 ## 앱 버전 히스토리
