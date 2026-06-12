@@ -1,6 +1,6 @@
 {
-  "name": "rklb-dashboard",
+  "name": "spcx-dashboard",
   "version": "1.0.0",
-  "description": "Rocket Lab USA (RKLB) Stock Impact Analysis Dashboard",
-  "homepage": "https://korlee88.github.io/rklb-dashboard"
+  "description": "SpaceX (SPCX) Stock Impact Analysis Dashboard",
+  "homepage": "https://korlee88.github.io/spcx-dashboard"
 }

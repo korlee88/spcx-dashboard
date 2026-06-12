@@ -3,7 +3,7 @@
  *
  * 레이어 구조:
  *   [Base] 원본 매수지수 (avgScore → buyIndex)
- *   [14] R25 종목고유 부스트 (+8pt, R07 동반 시 +5 추가) — RKLB: Neutron
+ *   [14] R25 종목고유 부스트 (+8pt, R07 동반 시 +5 추가) — SPCX: Starship
  *   [1]  R24 단독 발동 노이즈 할인
  *   [2]  강한신호 증폭 (±20 이탈 시 ×1.08 — v5.0: 1.15→1.08 과열억제)
  *   [3]  매크로 오버레이 (SPY+QQQ 평균 × beta — v5.0: cfg.beta_coefficient 사용)
@@ -57,7 +57,7 @@ async function fetchYahooWeekly(symbol) {
  * @param {Object} cfg - ticker.json 설정 (ticker, competitor_ticker 사용)
  */
 async function loadMacroData(cfg = {}) {
-  const ticker     = cfg.ticker            || 'RKLB';
+  const ticker     = cfg.ticker            || 'SPCX';
   const competitorTicker = cfg.competitor_ticker || null;
 
   const [spy, qqq, vix, asset, wti, cny] = await Promise.all([
@@ -88,7 +88,7 @@ async function loadMacroData(cfg = {}) {
  * → 라이브 분석에서만 사용, 백테스트에서는 호출하지 않음.
  * @returns {number|null} ATM IV (예: 0.62 = 62%) 또는 null
  */
-async function fetchOptionsIV(symbol = 'RKLB') {
+async function fetchOptionsIV(symbol = 'SPCX') {
   try {
     const r = await fetch(
       `https://query1.finance.yahoo.com/v7/finance/options/${symbol}`,
@@ -114,7 +114,7 @@ async function fetchOptionsIV(symbol = 'RKLB') {
  * → 라이브 분석에서만 사용, 백테스트 미적용.
  * @returns {number|null} short % of float (예: 0.032 = 3.2%) 또는 null
  */
-async function fetchShortInterest(symbol = 'RKLB') {
+async function fetchShortInterest(symbol = 'SPCX') {
   try {
     const r = await fetch(
       `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${symbol}?modules=defaultKeyStatistics`,
@@ -392,23 +392,23 @@ function calculateEnhancedScore(input, cfg = {}) {
   let bi = Math.min(100, Math.max(0, Math.round((avgScore + 5) / 10 * 100)));
   layers.base = bi;
 
-  // ── [14] R25 뉴트론 상업 론칭 부스트 ─────────────────────────────
+  // ── [14] R25 스타십 상업 운용 부스트 ─────────────────────────────
   const hasR25 = topRules.includes('R25');
   const hasR26 = topRules.includes('R26');
   const hasR07 = topRules.includes('R07');
   if (hasR25) {
-    // 뉴트론 상업 론칭은 장기 고강도 긍정 촉매 (+8pt)
+    // 스타십 상업 운용 개시는 장기 고강도 긍정 촉매 (+8pt)
     const before = bi;
     bi = Math.min(100, bi + 8);
     layers.optimusBoost = bi - before;
-    // R07(공장 셧다운) + R25(로봇 전환 목적) 동시 → R07 부정 효과 상쇄 (+5pt 추가)
+    // R07(스타십 일정 연기) + R25(상업 운용 준비) 동시 → R07 부정 효과 상쇄 (+5pt 추가)
     if (hasR07) {
       const corr = 5;
       bi = Math.min(100, bi + corr);
       layers.optimusR07Offset = corr;
     }
   }
-  // R26 단독(생산 축소, 로봇 전환 언급 없음): 약한 bearish → -3pt
+  // R26 단독(팰컨 축소, 스타십 전환 언급 없음): 약한 bearish → -3pt
   // R26 + R25 동반: 이미 R25 부스트로 상쇄됨 → 추가 조정 없음
   if (hasR26 && !hasR25) {
     const before = bi;
@@ -532,7 +532,7 @@ function calculateEnhancedScore(input, cfg = {}) {
     }
 
     // ── [16] 옵션 IV (라이브 전용 — 백테스트엔 atmIV 없음 → 자동 skip) ───────
-    // 극단적 고변동성 = 불확실성 프리미엄 → 신호 강도 감쇠 (VIX와 유사, RKLB 고유)
+    // 극단적 고변동성 = 불확실성 프리미엄 → 신호 강도 감쇠 (VIX와 유사, SPCX 고유)
     if (macroCtx.atmIV !== null && macroCtx.atmIV !== undefined) {
       if (macroCtx.atmIV > 0.80) {
         const before = bi;
