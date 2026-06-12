@@ -1574,6 +1574,20 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
 
         # CTA 텍스트 없음 (나레이션으로 대체)
 
+        # ── AI 생성 고지 밴드 (최하단) ─────────────────────────────────
+        # 이미지에만 그린다 — script.json lines에 넣으면 TTS가 낭독하므로 금지
+        from PIL import Image as PILImage
+        BAND_H = 118
+        band = PILImage.new("RGBA", (W, H), (0, 0, 0, 0))
+        bd = ImageDraw.Draw(band)
+        bd.rectangle([0, H - BAND_H, W, H], fill=(10, 14, 26, 205))
+        notice_col = (170, 180, 202)
+        bd.text((W // 2, H - BAND_H + 38), "본 영상은 AI 분석 툴로 수집한 뉴스 자료를 분석해",
+                font=f_xs, fill=notice_col, anchor="mm")
+        bd.text((W // 2, H - BAND_H + 80), "핵심 내용을 요약·정리한 영상물입니다",
+                font=f_xs, fill=notice_col, anchor="mm")
+        img = PILImage.alpha_composite(img.convert("RGBA"), band).convert("RGB")
+
         return _apply_frame_overlay(img)
 
     # ── 씬별 헤드라인 텍스트 결정 (MBC 스타일) ──────────────────────────
