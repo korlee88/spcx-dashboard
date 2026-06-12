@@ -1,30 +1,31 @@
 {
   "generated_at": "2026-06-12",
   "generated_by": "Claude Opus 4",
-  "title": "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요",
-  "subtitle": "2026-06-06 ~ 2026-06-11 · 로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
+  "title": "뉴스 *53건* 분석, 주가 *+3.39%*예요",
+  "subtitle": "2026-06-06 ~ 2026-06-12 · 로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
   "summary": {
     "week_start": "2026-06-06",
-    "week_end": "2026-06-11",
-    "session_count": 5,
-    "total_analyzed": 43,
-    "bullish_count": 25,
-    "bearish_count": 2,
+    "week_end": "2026-06-12",
+    "session_count": 6,
+    "total_analyzed": 53,
+    "bullish_count": 29,
+    "bearish_count": 4,
     "buy_indices": [
+      53,
       60,
       53,
       84,
       72,
       76
     ],
-    "avg_buy_index": 69,
-    "latest_buy_index": 60,
+    "avg_buy_index": 66,
+    "latest_buy_index": 53,
     "price_start": 111.02,
-    "price_end": 105.05,
-    "latest_price": 105.05,
-    "today_price": 105.05,
-    "today_change_pct": -2.94,
-    "week_change_pct": -5.38,
+    "price_end": 114.78,
+    "latest_price": 114.78,
+    "today_price": 114.78,
+    "today_change_pct": 9.26,
+    "week_change_pct": 3.39,
     "biggest_impact": {
       "title": "로켓랩, 미사일 방어 솔루션으로 52주 최고가 기록",
       "score": 4,
@@ -79,12 +80,28 @@
     ],
     "top_bearish": [
       {
+        "title": "로켓랩, 30억 달러 규모의 주식 공모 발표",
+        "score": -3,
+        "reason": "로켓랩의 30억 달러 규모 주식 공모 발표는 기존 주주들에게 희석 효과를 가져올 수 있어 부정적입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-05-24",
+        "category": "Market"
+      },
+      {
         "title": "로켓랩, Neutron 로켓 출시 지연 가능성 및 자금 조달 필요성 제기",
         "score": -2,
         "reason": "전문가들이 로켓랩의 Neutron 로켓 출시가 1~2년 지연될 수 있다고 예상하며, 이는 추가 자금 조달 필요성으로 이어질 수 있어 부정적인 영향을 미칩니다.",
         "source": "Bleecker Street Research",
         "date": "2025-02-25",
         "category": "Product"
+      },
+      {
+        "title": "로켓랩 주가, 애널리스트 목표가 대비 하락 위험",
+        "score": -1,
+        "reason": "애널리스트들의 평균 목표가보다 현재 주가가 높아 하락 위험이 있다는 분석은 주가에 부정적인 영향을 미칠 수 있습니다.",
+        "source": "MarketBeat",
+        "date": "2026-06-11",
+        "category": "Market"
       },
       {
         "title": "로켓랩 CEO 피터 벡, 2025년 11월 RKLB 주식 76만 6천 달러 상당 매각",
@@ -99,50 +116,54 @@
       {
         "day": 1,
         "label": "내일",
-        "date": "6/12(금)",
+        "date": "6/15(월)",
         "change_pct": -1.2,
         "signal": "매도",
-        "basePrice": 105.05,
-        "predictedPrice": 103.79
+        "basePrice": 114.78,
+        "predictedPrice": 113.4
       },
       {
         "day": 2,
         "label": "D+2",
-        "date": "6/15(월)",
+        "date": "6/16(화)",
         "change_pct": -0.7,
         "signal": "관망",
-        "basePrice": 105.05,
-        "predictedPrice": 104.31
+        "basePrice": 114.78,
+        "predictedPrice": 113.98
       },
       {
         "day": 3,
         "label": "D+3",
-        "date": "6/16(화)",
-        "change_pct": 0.2,
+        "date": "6/17(수)",
+        "change_pct": 0.1,
         "signal": "관망",
-        "basePrice": 105.05,
-        "predictedPrice": 105.26
+        "basePrice": 114.78,
+        "predictedPrice": 114.89
       },
       {
         "day": 4,
         "label": "D+4",
-        "date": "6/17(수)",
-        "change_pct": 0.4,
+        "date": "6/18(목)",
+        "change_pct": -0.3,
         "signal": "관망",
-        "basePrice": 105.05,
-        "predictedPrice": 105.47
+        "basePrice": 114.78,
+        "predictedPrice": 114.44
       },
       {
         "day": 5,
         "label": "D+5",
-        "date": "6/18(목)",
-        "change_pct": 0.1,
+        "date": "6/19(금)",
+        "change_pct": 0.5,
         "signal": "관망",
-        "basePrice": 105.05,
-        "predictedPrice": 105.16
+        "basePrice": 114.78,
+        "predictedPrice": 115.35
       }
     ],
     "daily_prices": [
+      [
+        "2026-06-12",
+        114.78
+      ],
       [
         "2026-06-11",
         105.05
@@ -158,59 +179,55 @@
       [
         "2026-06-08",
         110.08
-      ],
-      [
-        "2026-06-06",
-        111.02
       ]
     ],
     "overall_signal": "긍정",
     "trends": null,
     "next_events": [],
-    "movement_reason": null
+    "movement_reason": "로켓랩(RKLB) 주가의 2026년 6월 6일부터 2026년 6월 12일 기간 상승의 주요 원인은 다음과 같습니다.\n\n나스닥100 지수 편입 / 스페이스X IPO 후광 효과\n\n자세히 설명하면 다음과 같습니다:\n\n*   **나스닥100 지수 편입**: 로켓랩이 6월 22일 시장 개장 전 나스닥 100 지수에 편입될 것이라는 발표가 6월 11일 또는 12일에 있었으며, 이는 기관 투자자들의 주식 보유를 늘리고 회사에 대한 가시성을 높이는 중요한 요인으로 작용했습니다.\n*   **스페이스X IPO 후광 효과**: 6월 12일로 예정된 스페이스X의 기업공개(IPO)에 대한 기대감이 커지면서 우주 관련 주식 전반에 걸쳐 자금이 유입되는 '후광 효과'가 발생했으며, 로켓랩 역시 이러한 투자자들의 관심 증대에 힘입어 주가가 상승했습니다."
   },
   "scenes": [
     {
       "index": 0,
       "title": "이번주",
       "lines": [
-        "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요",
-        "호재 25건에도 차익실현 매물이 나왔더라고요",
-        "*8.16억 달러* 미사일 방어 계약이 큰 호재였죠",
-        "*Neutron 발사 지연* 가능성은 챙겨봐야 해요"
+        "뉴스 *53건* 분석, 주가 *+3.39%*예요",
+        "*나스닥100 편입* 발표가 컸어요",
+        "수주잔고 *22억 달러* 돌파했죠",
+        "*30억 달러 증자*는 살짝 아쉬워요"
       ],
-      "body": "RKLB 43건 분석, 주가 *-5.38%* 빠진 *$105.05*예요\n호재 25건에도 차익실현 매물이 나왔더라고요\n*8.16억 달러* 미사일 방어 계약이 큰 호재였죠\n*Neutron 발사 지연* 가능성은 챙겨봐야 해요"
+      "body": "뉴스 *53건* 분석, 주가 *+3.39%*예요\n*나스닥100 편입* 발표가 컸어요\n수주잔고 *22억 달러* 돌파했죠\n*30억 달러 증자*는 살짝 아쉬워요"
     },
     {
       "index": 1,
       "title": "호재분석",
       "lines": [
-        "카테고리: *52주 최고가* 찍은 미사일 방어 계약",
-        "↳ 배경: *SDA* 시스템 검토를 무사히 통과했어요",
-        "↳ 데이터: 추가 계약 규모가 *8.16억 달러*예요",
-        "↳ 임팩트: 주중 한때 *$113.67*까지 올랐답니다",
-        "↳ 비교: 수주잔고가 *22억 달러* 넘게 쌓였어요",
-        "↳ 국방 우주 수요가 계속 늘어나는 분위기네요"
+        "카테고리: *나스닥100 편입* 호재예요",
+        "↳ 배경: *6월 22일* 개장 전 편입돼요",
+        "↳ 데이터: 수주잔고 *22억 달러* 돌파",
+        "↳ 임팩트: 52주 최고가, *$114.78* 도달",
+        "↳ 비교: SDA 계약 *8.16억 달러* 추가",
+        "↳ 기관 자금 유입 기대감이 커지네요"
       ],
-      "body": "카테고리: *52주 최고가* 찍은 미사일 방어 계약\n   ↳ 배경: *SDA* 시스템 검토를 무사히 통과했어요\n   ↳ 데이터: 추가 계약 규모가 *8.16억 달러*예요\n   ↳ 임팩트: 주중 한때 *$113.67*까지 올랐답니다\n   ↳ 비교: 수주잔고가 *22억 달러* 넘게 쌓였어요\n   ↳ 국방 우주 수요가 계속 늘어나는 분위기네요"
+      "body": "카테고리: *나스닥100 편입* 호재예요\n   ↳ 배경: *6월 22일* 개장 전 편입돼요\n   ↳ 데이터: 수주잔고 *22억 달러* 돌파\n   ↳ 임팩트: 52주 최고가, *$114.78* 도달\n   ↳ 비교: SDA 계약 *8.16억 달러* 추가\n   ↳ 기관 자금 유입 기대감이 커지네요"
     },
     {
       "index": 2,
-      "title": "다음주전망",
+      "title": "다음주",
       "lines": [
-        "별다른 이벤트 없이 *모니터링* 주간이에요",
-        "*Neutron 일정* 관련 코멘트를 잘 봐야겠죠",
-        "다음주 예상가는 *$105*, 변동률 *+0.1%*예요",
-        "*3일 상승·2일 하락* 흐름이 점쳐져요",
-        "*CEO 내부자 매도* 이슈는 신중히 봐주세요",
-        "함께해 주셔서 감사해요, 또 봐요!"
+        "*나스닥100 편입일* 임박했어요",
+        "*기관 매수세* 유입을 지켜봐요",
+        "도달가 *약 $115* 흐름이 점쳐져요",
+        "*2일 상승·3일 하락* 예상돼요",
+        "*뉴트론 발사* 일정 변수도 살펴봐요",
+        "함께해 주셔서 감사해요"
       ],
-      "body": "별다른 이벤트 없이 *모니터링* 주간이에요\n*Neutron 일정* 관련 코멘트를 잘 봐야겠죠\n다음주 예상가는 *$105*, 변동률 *+0.1%*예요\n*3일 상승·2일 하락* 흐름이 점쳐져요\n*CEO 내부자 매도* 이슈는 신중히 봐주세요\n함께해 주셔서 감사해요, 또 봐요!"
+      "body": "*나스닥100 편입일* 임박했어요\n*기관 매수세* 유입을 지켜봐요\n도달가 *약 $115* 흐름이 점쳐져요\n*2일 상승·3일 하락* 예상돼요\n*뉴트론 발사* 일정 변수도 살펴봐요\n함께해 주셔서 감사해요"
     }
   ],
   "image_prompts": {
-    "0": "A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring N Seoul Tower, 63 Building, and Lotte World Tower, with a sleek Rocket Lab Neutron rocket silhouette ascending through purple violet futuristic clouds, holographic data analytics charts floating above the cityscape, glowing city lights creating soft bokeh, K-tech cyberpunk atmosphere, deep purple and magenta gradients, cinematic wide shot, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "1": "A vibrant 16:9 landscape scene of Seoul's Han River bridges glowing in fresh green growth light, bullish upward energy radiating across the modern skyline, a powerful Rocket Lab Electron rocket launching dynamically with bright exhaust trails, sunlit modern Korean skyscrapers reflecting optimism, lush green tech infrastructure, vibrant emerald and lime accents, dynamic motion blur, hopeful K-tech atmosphere, cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "2": "A stunning 9:16 vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline with Gwanghwamun Plaza in foreground, a majestic Rocket Lab Neutron rocket symbolically rising into a magenta and gold inspirational sky, golden sun rays piercing through clouds, sparkling stars and shimmering light particles, advanced K-tech urban atmosphere, deep magenta and luxurious gold tones, dreamy inspirational mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+    "0": "A breathtaking 16:9 landscape view of Seoul's Han River night skyline, featuring Namsan Tower, 63 Building, and Lotte Tower glowing under a deep purple violet sky, with a sleek Rocket Lab Electron rocket silhouette ascending in the distance, futuristic Korean K-tech city atmosphere, holographic data analytics overlays softly blending into bokeh city lights, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant 16:9 landscape image of Seoul's Han River bridges bathed in fresh green bullish sunlight, modern skyline rising with energy, a dynamic Rocket Lab Neutron rocket launching with bright exhaust trails over the cityscape, Korean K-tech infrastructure glowing with growth and optimism, lively daytime atmosphere with green tinted clouds and sunbeams, cinematic vibrant composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical futuristic Korean cityscape showing Seoul's Han River night view, illuminated skyline, and Gwanghwamun Plaza glowing under magenta and gold inspirational hues, a majestic Rocket Lab rocket soaring upward through starlit skies with golden sunbursts and sparkling particles, advanced K-tech metropolis ambiance, dreamy aspirational mood with cinematic light rays, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
   }
 }
