@@ -1,10 +1,10 @@
-name: 자동 분석 (1일 1회)
+name: 자동 분석 (매일 1회)
 
-# KST(UTC+9) 기준 — 매일 1회 실행 (가벼운 뉴스 수집·분석)
-# 무거운 백테스트만 격일(화/목/토) 유지하여 tsla-dashboard와 쿼터 분산
+# KST(UTC+9) 기준 — 매일 10:00 실행 (tsla-dashboard 08:00 · rklb-dashboard 09:00과 Gemini 쿼터 분산)
+# UTC 01:00 = KST 10:00
 on:
   schedule:
-    - cron: '0 0 * * *'    # 매일 KST 09:00 (UTC 00:00)
+    - cron: '0 1 * * *'    # 매일 KST 10:00
   workflow_dispatch:        # 수동 실행 (테스트용)
 
 jobs:

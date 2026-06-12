@@ -1,6 +1,6 @@
 /**
  * 자동 뉴스 수집 & 분석 스크립트 (멀티 종목 지원)
- * GitHub Actions에서 1일 1회 실행 (매일 KST 09:00)
+ * GitHub Actions에서 1일 1회 실행 (매일 KST 10:00)
  * Node.js 20+ 내장 fetch 사용 (별도 패키지 불필요)
  */
 
@@ -131,7 +131,7 @@ async function analyzeNewsItem(newsItem) {
 // ─── 핵심 인물 X 센티먼트 수집 (Gemini Search Grounding) ─────────────────────
 
 async function collectKeyPersonSentiment(dateStr) {
-  const people    = cfg.key_people || ['Peter Beck'];
+  const people    = cfg.key_people || ['Elon Musk'];
   const handles   = people.map(p => `@${p.replace(/\s+/g, '')}`).join(', ');
   const topics    = `${cfg.ticker}, ${cfg.company_en}, stock`;
   try {
@@ -389,7 +389,7 @@ async function main() {
   if (muskXData && typeof muskXData.sentiment_score === 'number') {
     // -3~+3 → -4~+4pt 범위로 변환 (R08/R24보다 약하게)
     muskXAdj = Math.round(muskXData.sentiment_score * 1.3);
-    console.log(`   🐦 ${(cfg.key_people || ['Peter Beck'])[0]} X 보정: ${muskXAdj >= 0 ? '+' : ''}${muskXAdj}pt (원점수: ${muskXData.sentiment_score})`);
+    console.log(`   🐦 ${(cfg.key_people || ['Elon Musk'])[0]} X 보정: ${muskXAdj >= 0 ? '+' : ''}${muskXAdj}pt (원점수: ${muskXData.sentiment_score})`);
   }
 
   const enhanced = calculateEnhancedScore({ avgScore, topRules, bullish, bearish, macroCtx, newsCategories }, cfg);

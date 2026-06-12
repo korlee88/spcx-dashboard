@@ -32,7 +32,7 @@
       theme: {
         extend: {
           colors: {
-            rklb: { orange: '#FF5733', dark: '#171A20', card: '#1C1F26', border: '#2A2D35' },
+            spcx: { steel: '#71797E', dark: '#0A0E14', card: '#181B22', border: '#2A2D35' },
           },
           animation: {
             'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -91,7 +91,7 @@ function useIsMobile() {
 
 // ─── 상수 ──────────────────────────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `You are a financial analyst specializing in Rocket Lab USA (RKLB) stock impact assessment.
+const SYSTEM_PROMPT = `You are a financial analyst specializing in SpaceX (SPCX) stock impact assessment.
 Analyze the given news and return ONLY valid JSON in this exact format:
 {
   "impact_score": <integer -5 to +5>,
@@ -103,47 +103,47 @@ Analyze the given news and return ONLY valid JSON in this exact format:
 }
 
 Rule reference:
-R01=launch/mission failure(partial or total loss), R02=EPS miss(>10%), R03=revenue/backlog guidance cut, R04=launch pad incident/fire/damage,
-R05=SEC/DOJ/regulatory investigation, R06=competitor(SpaceX/ULA/Ariane) major government contract win, R07=major launch delay(>3 months),
-R08=Peter Beck SNS controversy or negative public statement, R09=large dilutive equity offering(>5% shares), R10=major contract cancellation or customer loss,
-R11=short seller report, R12=government space budget cuts(NASA/DoD/NSSL), R13=recession fear intensification reducing commercial demand,
-R14=successful launch milestone(reusable catch/new record/first of type), R15=EPS beat(>10%), R16=major government contract(NASA/DoD/NSSL/SDA),
-R17=major commercial contract(constellation/LEO/satellite), R18=Neutron rocket development milestone(engine test/stack/pad arrival),
-R19=Space Systems division major contract(spacecraft/photon/components), R20=analyst target upgrade(>20%),
-R21=fed rate cut signal, R22=CEO positive statement or insider share buyback/purchase,
-R23=new market entry or major constellation partnership, R24=Peter Beck/founder ventures risk or negative leadership signal,
-R25=Neutron commercial launch confirmed(first paying customer/manifest slot confirmed),
-R26=Electron manifest reduction/pause for Neutron transition(bullish if paired with R25, bearish offset)
+R01=Starship/Falcon 9 launch or mission failure(partial or total loss, in-flight explosion), R02=EPS miss(>10%), R03=revenue/backlog guidance cut, R04=launch pad incident/fire/damage(Starbase/Cape Canaveral),
+R05=SEC/DOJ/regulatory investigation, R06=competitor(Blue Origin/ULA/Rocket Lab/Amazon Kuiper) major contract win, R07=major Starship schedule delay(>3 months) or manifest slip,
+R08=Elon Musk SNS controversy or negative public statement, R09=large dilutive equity offering(>5% shares) or major lock-up expiration share unlock(post-IPO), R10=major contract cancellation or customer loss,
+R11=short seller report, R12=government space budget cuts(NASA/DoD) directly impacting backlog, R13=recession fear intensification reducing commercial demand,
+R14=successful launch milestone(Starship orbital flight/booster catch/Falcon reuse record), R15=EPS beat(>10%), R16=major government contract(NSSL/HLS/NRO) with confirmed value,
+R17=major Starlink commercial contract or external launch manifest win, R18=Starship development milestone(test flight success/engine qualification/launch license approval),
+R19=Starlink/Starshield subscriber growth or major contract surge, R20=analyst target upgrade(>20%),
+R21=fed rate cut signal(bullish for growth/space sector), R22=CEO positive statement or insider share buyback/purchase,
+R23=new market entry or major partnership announced(point-to-point transport/Moon/Mars), R24=Elon Musk other ventures risk(Tesla/xAI divided attention) or political activity controversy,
+R25=Starship commercial operations confirmed(first paying customer/commercial launch date confirmed),
+R26=Falcon manifest reduction/pause for Starship transition(bullish if paired with R25, bearish offset standalone)
 
 STRICT SCORE GUIDELINES (backtesting: previous scores were systematically too high — apply conservatively):
 
-±5: CATASTROPHIC or HISTORIC only — bankruptcy risk, >30% delivery miss confirmed, historic fraud
+±5: CATASTROPHIC or HISTORIC only — bankruptcy risk, confirmed total mission loss with >30% revenue impact, regulatory shutdown
     Frequency: 1–2 times per year at most. Almost never appropriate.
 
 ±3~4: REQUIRES hard confirmed numbers — NOT speculation, NOT analyst opinion, NOT rumors
-    ✓ Actual quarterly delivery report published (beat/miss >5% vs consensus with official numbers)
+    ✓ Actual launch failure with official confirmation and financial impact
     ✓ Actual EPS reported with verified figures
-    ✓ Factory confirmed shutdown/fire with operational impact
-    ✗ "Expected to beat" / "analysts expect" / "reportedly" → MAX ±2
-    ✗ Analyst upgrades, price target changes → MAX ±2 (use R17, cap at ±2)
+    ✓ Launch pad confirmed damaged with operational timeline impact
+    ✗ "Expected to win" / "analysts expect" / "reportedly" → MAX ±2
+    ✗ Analyst upgrades, price target changes → MAX ±2 (use R20, cap at ±2)
     ✗ Follow-up or repeated story about already-known event → subtract 1 or score 0
     Frequency target: 1–2 items per 10-article batch
 
-±2: Moderate confirmed news with clear, specific Rocket Lab USA impact
-    ✓ Official partnership/deal announced with specific terms
-    ✓ Verified monthly sales data (China CPCA, etc.)
-    ✓ Regulatory decision directly affecting Rocket Lab USA operations
+±2: Moderate confirmed news with clear, specific SpaceX impact
+    ✓ Official contract announced with specific value/terms
+    ✓ Confirmed launch success with verifiable milestone
+    ✓ Regulatory decision directly affecting SPCX operations
     Frequency target: 3–4 items per 10-article batch
 
 ±1: Minor, indirect, or speculative news
     ✓ Analyst commentary/speculation without hard data
-    ✓ Industry trend with RKLB mention
-    ✓ Incremental product/software update
+    ✓ Industry trend with SPCX mention
+    ✓ Incremental development/engineering update
     Frequency target: 3–4 items per 10-article batch
 
 0: Irrelevant, fully priced-in, or pure noise
     ✓ Repeated/rehashed known information (same story >3 days old)
-    ✓ General market commentary without RKLB catalyst
+    ✓ General market commentary without SPCX catalyst
     Frequency target: 1–2 items per 10-article batch
 
 CONSERVATIVE SCORING RULES (mandatory):
@@ -153,60 +153,60 @@ CONSERVATIVE SCORING RULES (mandatory):
 4. SELF-CHECK: Before assigning ±3 or higher, confirm: "Does this article contain officially published, quantified data?" If NO → reduce to ±2.
 
 Per-rule CAPS (hard limits regardless of context):
-- R08 (Peter Beck SNS controversy): MAX ±2
-- R09 (dilutive equity raise): MAX ±3; ±4 only if >10% shares diluted
+- R08 (Elon Musk SNS controversy): MAX ±2
+- R09 (dilutive equity raise/lock-up unlock): MAX ±3; ±4 only if >10% shares diluted
 - R12 (space budget cuts): MAX -2 unless specific program cancellation confirmed
 - R14 (launch success milestone): MAX +3; +4 only if reusable catch or historic first confirmed
-- R18 (Neutron milestone): MAX +3; +4 only if engine qualification or launch date confirmed
+- R18 (Starship milestone): MAX +3; +4 only if orbital success or launch license confirmed
 - R20 (analyst upgrade/downgrade): MAX ±2
 - R21 (fed rate signal): MAX +1
 - R22 (CEO positive statement): MAX +2
-- R23 (new partnership): MAX +2 unless constellation contract value >$100M confirmed
-- R24 (Peter Beck ventures risk): MAX ±2
-- R25 (Neutron commercial launch): MAX +4; +3 if manifest slot confirmed, +4 only if first commercial launch date announced
-  NOTE: R25 is BULLISH even when co-occurring with R07 (manifest slip for Neutron prep).
+- R23 (new partnership): MAX +2 unless contract value >$100M confirmed
+- R24 (Musk other ventures risk): MAX ±2
+- R25 (Starship commercial operations): MAX +4; +3 if commercial launch date confirmed, +4 only if first paying customer/commercial launch confirmed
+  NOTE: R25 is BULLISH even when co-occurring with R07 (Starship schedule slip during commercialization prep).
         When R25+R07 together: score R25 as +3~+4, score R07 as -1 only (preparation context overrides delay penalty)
-- R26 (Electron reduction for Neutron focus): score -1 to -2 standalone; score 0 if R25 present (transition rationale neutralizes)
+- R26 (Falcon reduction for Starship focus): score -1 to -2 standalone; score 0 if R25 present (transition rationale neutralizes)
 
 DIRECTION: bullish if score>0, bearish if score<0, neutral ONLY if score=0.
 CRITICAL: Return ONLY the raw JSON object. No markdown, no explanation, no extra text.`;
 
 const RULES_META = {
-  R01:{cat:'Launch',    label:'발사 실패',           color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
-  R02:{cat:'Earnings',  label:'EPS 미스',             color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
-  R03:{cat:'Earnings',  label:'가이던스 하향',         color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R04:{cat:'Operations',label:'발사대 사고/화재',      color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
-  R05:{cat:'Regulatory',label:'SEC/DOJ 조사',          color:'#dc2626',bg:'rgba(220,38,38,0.15)'},
-  R06:{cat:'Competition',label:'경쟁사 대형 계약',     color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R07:{cat:'Launch',    label:'발사 장기 연기',        color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R08:{cat:'Leadership',label:'피터 백 SNS 논란',     color:'#f59e0b',bg:'rgba(245,158,11,0.15)'},
-  R09:{cat:'Financial', label:'대규모 유상증자',       color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R10:{cat:'Contract',  label:'주요 계약 취소/손실',   color:'#eab308',bg:'rgba(234,179,8,0.15)'},
-  R11:{cat:'Market',    label:'공매도 보고서',         color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R12:{cat:'Regulatory',label:'우주 예산 삭감',        color:'#f97316',bg:'rgba(249,115,22,0.15)'},
-  R13:{cat:'Macro',     label:'경기침체 우려',         color:'#eab308',bg:'rgba(234,179,8,0.15)'},
-  R14:{cat:'Launch',    label:'발사 성공 (마일스톤)',  color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
-  R15:{cat:'Earnings',  label:'EPS 비트',              color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
-  R16:{cat:'Contract',  label:'대형 정부 계약',        color:'#10b981',bg:'rgba(16,185,129,0.15)'},
-  R17:{cat:'Contract',  label:'대형 상업 계약',        color:'#06b6d4',bg:'rgba(6,182,212,0.15)'},
-  R18:{cat:'Product',   label:'뉴트론 마일스톤',       color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
-  R19:{cat:'Product',   label:'우주 시스템 수주',      color:'#06b6d4',bg:'rgba(6,182,212,0.15)'},
-  R20:{cat:'Analyst',   label:'목표가 상향',           color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
-  R21:{cat:'Macro',     label:'금리 인하 신호',        color:'#10b981',bg:'rgba(16,185,129,0.15)'},
-  R22:{cat:'Leadership',label:'CEO/내부자 매수',       color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
-  R23:{cat:'Market',    label:'신시장/파트너십',        color:'#10b981',bg:'rgba(16,185,129,0.15)'},
-  R24:{cat:'Leadership',label:'피터 백 사업 리스크',   color:'#f59e0b',bg:'rgba(245,158,11,0.15)'},
-  R25:{cat:'Product',   label:'뉴트론 상업 론칭',      color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
-  R26:{cat:'Operations',label:'소형 발사 사업 재편',   color:'#9ca3af',bg:'rgba(156,163,175,0.1)'},
+  R01:{cat:'Launch',    label:'발사 실패',             color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
+  R02:{cat:'Earnings',  label:'EPS 미스',               color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
+  R03:{cat:'Earnings',  label:'가이던스 하향',           color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R04:{cat:'Operations',label:'발사대 사고/화재',        color:'#ef4444',bg:'rgba(239,68,68,0.15)'},
+  R05:{cat:'Regulatory',label:'SEC/DOJ 조사',           color:'#dc2626',bg:'rgba(220,38,38,0.15)'},
+  R06:{cat:'Competition',label:'경쟁사 대형 계약',       color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R07:{cat:'Launch',    label:'스타십 일정 장기 연기',   color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R08:{cat:'Leadership',label:'머스크 SNS 논란',        color:'#f59e0b',bg:'rgba(245,158,11,0.15)'},
+  R09:{cat:'Financial', label:'대규모 증자·락업 해제',   color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R10:{cat:'Contract',  label:'주요 계약 취소/손실',     color:'#eab308',bg:'rgba(234,179,8,0.15)'},
+  R11:{cat:'Market',    label:'공매도 보고서',           color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R12:{cat:'Regulatory',label:'우주 예산 삭감',          color:'#f97316',bg:'rgba(249,115,22,0.15)'},
+  R13:{cat:'Macro',     label:'경기침체 우려',           color:'#eab308',bg:'rgba(234,179,8,0.15)'},
+  R14:{cat:'Launch',    label:'발사 성공 (마일스톤)',    color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
+  R15:{cat:'Earnings',  label:'EPS 비트',                color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
+  R16:{cat:'Contract',  label:'대형 정부 계약',          color:'#10b981',bg:'rgba(16,185,129,0.15)'},
+  R17:{cat:'Contract',  label:'스타링크 대형 상업 계약', color:'#06b6d4',bg:'rgba(6,182,212,0.15)'},
+  R18:{cat:'Product',   label:'스타십 마일스톤',         color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
+  R19:{cat:'Product',   label:'스타링크/스타실드 급증',  color:'#06b6d4',bg:'rgba(6,182,212,0.15)'},
+  R20:{cat:'Analyst',   label:'목표가 상향',             color:'#22c55e',bg:'rgba(34,197,94,0.15)'},
+  R21:{cat:'Macro',     label:'금리 인하 신호',          color:'#10b981',bg:'rgba(16,185,129,0.15)'},
+  R22:{cat:'Leadership',label:'CEO/내부자 매수',         color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
+  R23:{cat:'Market',    label:'신시장/파트너십',          color:'#10b981',bg:'rgba(16,185,129,0.15)'},
+  R24:{cat:'Leadership',label:'머스크 사업 리스크',      color:'#f59e0b',bg:'rgba(245,158,11,0.15)'},
+  R25:{cat:'Product',   label:'스타십 상업 운용 개시',   color:'#a78bfa',bg:'rgba(167,139,250,0.2)'},
+  R26:{cat:'Operations',label:'팰컨 축소·스타십 전환',   color:'#9ca3af',bg:'rgba(156,163,175,0.1)'},
 };
 
 // ─── 멀티 종목 설정 로드 (config/ticker.json + config/rules.json) ──────────────
 
 let gCfg = {
-  ticker: 'RKLB', company_en: 'Rocket Lab USA', company_ko: '로켓랩',
-  repo: 'korlee88/rklb-dashboard',
-  beta_coefficient: 2.2, has_delivery_reports: false, earnings_months: [2,5,8,11],
-  key_people: ['Peter Beck'],
+  ticker: 'SPCX', company_en: 'SpaceX', company_ko: '스페이스X',
+  repo: 'korlee88/spcx-dashboard',
+  beta_coefficient: 2.0, has_delivery_reports: false, earnings_months: [2,5,8,11],
+  key_people: ['Elon Musk'],
 };
 let gSystemPrompt = null;  // null → falls back to SYSTEM_PROMPT constant
 let gRulesMeta    = null;  // null → falls back to RULES_META constant
@@ -264,40 +264,40 @@ const CAL_CATEGORY_META = {
 const SAMPLE_NEWS = [
   {
     id: 1,
-    title: 'Rocket Lab Q1 2025 실적 예상치 하회 — 매출 성장 둔화',
-    summary: 'Rocket Lab은 2025년 1분기 매출 1억 2,200만 달러를 기록해 애널리스트 예상치 1억 3,500만 달러를 10% 하회했다. Electron 발사 횟수가 당초 계획보다 2회 적었으며, 우주 시스템 부문 납품 지연이 원인으로 지목됐다.',
-    source: 'Reuters',
+    title: 'SpaceX, 2025년 매출 약 155억 달러 — 스타링크 비중 60% 첫 돌파',
+    summary: 'SpaceX는 2025년 연간 매출이 약 155억 달러로 전년 대비 약 50% 성장했다고 밝혔다. 스타링크 매출이 처음으로 전체의 60%를 넘어섰으며, 발사 서비스 매출은 팰컨9 재사용 효율화로 마진이 개선됐다.',
+    source: 'Bloomberg',
     date: '2025-05-08',
     category: 'Earnings',
   },
   {
     id: 2,
-    title: 'NASA, Rocket Lab에 ESCAPADE 화성 임무 최종 승인',
-    summary: 'NASA가 Rocket Lab의 Electron 로켓으로 수행할 ESCAPADE 화성 임무를 최종 승인했다. 계약 규모는 약 7,900만 달러이며 2025년 10월 발사 예정이다. Peter Beck CEO는 "소형 로켓으로 행성 간 임무가 가능함을 증명할 것"이라고 밝혔다.',
+    title: 'NASA, SpaceX와 아르테미스 후속 HLS 달 착륙선 임무 계약 체결',
+    summary: 'NASA가 SpaceX의 스타십 기반 HLS(Human Landing System)를 활용한 아르테미스 후속 유인 달 착륙 임무 계약을 체결했다고 발표했다. 계약 규모는 수십억 달러 수준이며, 2020년대 후반 임무에 투입될 예정이다.',
     source: 'NASA',
     date: '2025-04-15',
     category: 'Contract',
   },
   {
     id: 3,
-    title: 'Electron 로켓 부스터 해양 회수 22번째 성공 — 재사용 마일스톤',
-    summary: 'Rocket Lab이 Electron 로켓 1단부 22번째 해양 회수에 성공했다. 부스터는 복구 후 점검을 거쳐 재사용 가능 여부를 평가할 예정이다. 재사용 성공 시 발사 비용이 최대 30% 절감될 것으로 전망된다.',
-    source: 'Rocket Lab IR',
+    title: '스타십 10차 시험비행 — 궤도 진입 및 슈퍼헤비 부스터 캐치 동시 성공',
+    summary: 'SpaceX의 스타십이 10차 시험비행에서 궤도 진입과 슈퍼헤비 부스터의 발사대 캐치(착수)에 동시 성공했다. 머스크 CEO는 "완전하고 신속한 재사용을 향한 핵심 마일스톤"이라고 평가했다.',
+    source: 'SpaceX',
     date: '2025-04-22',
     category: 'Launch',
   },
   {
     id: 4,
-    title: 'SpaceX Falcon 9, Rocket Lab 상업 고객 3곳 계약 선점',
-    summary: 'SpaceX가 Rocket Lab의 주요 상업 고객 3곳과 멀티미션 계약을 체결했다고 알려졌다. 가격 경쟁력에서 SpaceX가 앞선다는 분석이 제기됐으며, Rocket Lab은 "전용 발사 서비스 수요는 여전히 강하다"고 반박했다.',
+    title: '블루오리진 뉴글렌, 대형 위성 발사 계약 추가 수주 — 발사 시장 경쟁 심화',
+    summary: '블루오리진이 뉴글렌 로켓으로 대형 위성 발사 계약을 추가로 수주했다고 알려졌다. 업계에서는 SpaceX의 발사 시장 점유율 독점 구도에 균열이 생길 수 있다는 분석이 제기됐으나, SpaceX는 "팰컨9 발사 빈도 우위는 압도적"이라고 반박했다.',
     source: 'Space News',
     date: '2025-04-10',
     category: 'Competition',
   },
   {
     id: 5,
-    title: '연준, 2025년 하반기 금리 인하 3회 시사 — 성장주 랠리',
-    summary: '제롬 파월 연준 의장이 2025년 4월 FOMC에서 하반기 3회 25bp 인하를 예고했다. 금리 민감 성장주인 Rocket Lab 등 우주 스타트업 주가가 일제히 강세를 보였다. 할인율 하락으로 미래 현금흐름 가치가 높아지는 효과다.',
+    title: '연준, 2025년 하반기 금리 인하 3회 시사 — 우주·성장주 랠리',
+    summary: '제롬 파월 연준 의장이 2025년 4월 FOMC에서 하반기 3회 25bp 인하를 예고했다. 금리 민감 성장주인 SpaceX 등 우주 기업 주가가 일제히 강세를 보였다. 할인율 하락으로 미래 현금흐름 가치가 높아지는 효과다.',
     source: 'WSJ',
     date: '2025-04-17',
     category: 'Macro',
@@ -332,8 +332,8 @@ function confidenceDot(c) {
 
 // ─── 캐시 유틸 ────────────────────────────────────────────────────────────
 
-const CACHE_KEY      = 'rklb_analysis_cache_v1';
-const NEWS_LIST_KEY  = 'rklb_last_news_v1';  // 마지막 수집 뉴스 영구 저장
+const CACHE_KEY      = 'spcx_analysis_cache_v1';
+const NEWS_LIST_KEY  = 'spcx_last_news_v1';  // 마지막 수집 뉴스 영구 저장
 
 function loadCache() {
   try { return JSON.parse(localStorage.getItem(CACHE_KEY) || '{}'); } catch { return {}; }
@@ -690,7 +690,7 @@ function RuleEnginePanel({ open, onToggle }) {
 
 // ─── API 사용량 추적 ─────────────────────────────────────────────────────────
 
-const API_USAGE_KEY = 'rklb_api_usage_v1';
+const API_USAGE_KEY = 'spcx_api_usage_v1';
 
 function getApiUsage() {
   try {
@@ -728,9 +728,10 @@ async function getDriveAppDataSize(token) {
 
 // ─── 앱 버전 ──────────────────────────────────────────────────────────────────
 const APP_VERSION = {
-  version: '1.0.2',
-  date: '2026-06-11 KST',
+  version: '1.1.0',
+  date: '2026-06-12 KST',
   changelog: [
+    { v: '1.1.0', date: '2026-06-12 KST', label: 'SPCX 마이그레이션 (from rklb-dashboard v1.0.2) · RULE_LABELS·매수지수 분해 라벨·핵심인물(머스크) UI 전면 교체 · R01~R26 스타십/팰컨/스타링크 특화 규칙 · 캐시키 spcx_ 전환' },
     { v: '1.0.2', date: '2026-06-11 KST', label: '보안 강화 — CDN 스크립트 버전 고정+SRI(react/react-dom/babel 프로덕션 빌드 전환, tailwind 버전 고정) · YouTube 수집 에러 로그의 API 키 노출 경로 차단 · Gmail 수신자 주소 로그 출력 제거' },
     { v: '1.0.1', date: '2026-06-05 KST', label: '마이그레이션 잔재 정리 — RULE_LABELS·매수지수 분해 라벨·핵심인물(피터백) UI를 RKLB로 정정 · 영상 이미지 프롬프트 config 자동적응화 · 마이그레이션 플레이북(MIGRATION.md)+감사도구 추가' },
     { v: '1.0.0', date: '2026-06-05 KST', label: 'RKLB 마이그레이션 초기 릴리즈 (from tsla-dashboard v2.6.0) · scoring v5.0 · R01~R26 우주·발사체 특화 규칙 · Peter Beck 키맨 신호' },
@@ -739,8 +740,8 @@ const APP_VERSION = {
 
 // ─── 자동 세션 로드 (GitHub repo data/auto-sessions.json) ────────────────────
 
-let AUTO_SESSIONS_URL  = 'https://raw.githubusercontent.com/korlee88/rklb-dashboard/master/data/auto-sessions.json';
-let CALENDAR_DATA_URL  = 'https://raw.githubusercontent.com/korlee88/rklb-dashboard/master/data/calendar.json';
+let AUTO_SESSIONS_URL  = 'https://raw.githubusercontent.com/korlee88/spcx-dashboard/master/data/auto-sessions.json';
+let CALENDAR_DATA_URL  = 'https://raw.githubusercontent.com/korlee88/spcx-dashboard/master/data/calendar.json';
 const BACKTEST_START_YEAR = 2025;
 const BACKTEST_YEARS = (() => {
   const currentYear = new Date(Date.now() + 9 * 3600000).getUTCFullYear();
@@ -749,8 +750,8 @@ const BACKTEST_YEARS = (() => {
 })();
 const DEFAULT_BACKTEST_YEAR = BACKTEST_YEARS[BACKTEST_YEARS.length - 1];
 const backtestUrl = (year) => `https://raw.githubusercontent.com/${gCfg.repo}/master/data/backtest-results-${year}.json`;
-let PRICE_CACHE_KEY    = 'rklb_price_cache_v2';
-let DAILY_CACHE_KEY    = 'rklb_daily_cache_v1';
+let PRICE_CACHE_KEY    = 'spcx_price_cache_v2';
+let DAILY_CACHE_KEY    = 'spcx_daily_cache_v1';
 const backtestCacheKey = (year) => `${gCfg.ticker.toLowerCase()}_backtest_v3_${year}`;
 function loadBacktest(year)       { try { return JSON.parse(localStorage.getItem(backtestCacheKey(year)) || 'null'); } catch { return null; } }
 function saveBacktest(year, data) { try { localStorage.setItem(backtestCacheKey(year), JSON.stringify({ ...data, savedAt: Date.now() })); } catch {} }
@@ -819,7 +820,7 @@ function mergeWithAutoSessions(localSessions, autoSessions) {
 
 // ─── DB (localStorage) ────────────────────────────────────────────────────
 
-const NEWS_DB_KEY = 'rklb_news_db_v1';
+const NEWS_DB_KEY = 'spcx_news_db_v1';
 
 function getNewsDB() {
   try { return JSON.parse(localStorage.getItem(NEWS_DB_KEY) || '{"sessions":[]}'); }
@@ -863,8 +864,8 @@ function getTopRules(analyses) {
 
 // ─── Google Drive 동기화 유틸리티 ────────────────────────────────────────
 
-const DRIVE_FILE_NAME = 'rklb_sessions.json';
-const DRIVE_CLIENT_ID_KEY = 'rklb_drive_client_id';
+const DRIVE_FILE_NAME = 'spcx_sessions.json';
+const DRIVE_CLIENT_ID_KEY = 'spcx_drive_client_id';
 
 // GAPI 클라이언트 초기화 (1회)
 let _gapiReady = false;
@@ -980,7 +981,7 @@ async function collectTodayNews(apiKey) {
 
 // ─── 실시간 주봉 (Yahoo Finance v8 → 다중 프록시 폴백) ────────────────────
 
-async function fetchRKLBWeeklyData() {
+async function fetchSPCXWeeklyData() {
   const YF = `https://query1.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=1y&interval=1wk&includePrePost=false`;
   const YF2 = `https://query2.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=1y&interval=1wk&includePrePost=false`;
 
@@ -1042,7 +1043,7 @@ async function fetchRKLBWeeklyData() {
   throw new Error('주가 데이터를 불러올 수 없습니다 (네트워크 오류)');
 }
 
-// Gemini Google Search로 현재 RKLB 주가만 가져오는 폴백
+// Gemini Google Search로 현재 SPCX 주가만 가져오는 폴백
 async function fetchPriceViaGemini(apiKey) {
   if (!apiKey) throw new Error('API 키 없음');
   const today = new Date().toISOString().split('T')[0];
@@ -1060,7 +1061,7 @@ async function fetchPriceViaGemini(apiKey) {
 
 // ─── 예측 정확도 추적 (Prediction Accuracy Tracker) ──────────────────────────
 
-const PRED_ACCURACY_KEY = 'rklb_pred_accuracy_v1';
+const PRED_ACCURACY_KEY = 'spcx_pred_accuracy_v1';
 
 // 주말(토·일)이면 다음 월요일로 보정 — 거래일 기준 D+N 계산용
 function toNextTradingDate(date) {
@@ -1213,7 +1214,7 @@ function seedAccuracyFromAutoSessions(autoSessions) {
       if (targetDate < cutoff) return; // 너무 오래된 것 제외
       // 중복 방지
       if (db.records.some(r => r.forecastDate === forecastDate && r.targetDate === targetDate && r.source === 'auto')) return;
-      const basePrice = df.basePrice ?? session.latestPrice ?? session.latestRklbPrice ?? null;
+      const basePrice = df.basePrice ?? session.latestPrice ?? session.latestTslaPrice ?? null;
       const predictedPrice = df.predictedPrice ?? (
         basePrice != null && df.change_pct != null
           ? Math.round(basePrice * (1 + df.change_pct / 100) * 100) / 100
@@ -1247,7 +1248,7 @@ function seedAccuracyFromAutoSessions(autoSessions) {
 
 // ─── 포캐스트 API ──────────────────────────────────────────────────────────
 
-const FORECAST_CACHE_KEY = 'rklb_forecast_cache_v1';
+const FORECAST_CACHE_KEY = 'spcx_forecast_cache_v1';
 
 function makeForecastPrompt(currentPrice, calendarEvents = [], scoringCtx = null, recentBuyIndexes = []) {
   const dayNames = ['일','월','화','수','목','금','토'];
@@ -1350,7 +1351,7 @@ Step 6 — Anti-Bias: Check the confirmation bias list before finalizing.
 □ Is current price $${currentPrice} USD realistic vs recent history?
 
 ## Output Format
-Current RKLB price: $${currentPrice} USD
+Current ${gCfg.ticker} price: $${currentPrice} USD
 Return ONLY valid JSON in this exact format:
 {
   "current_price": ${currentPrice},
@@ -1417,7 +1418,7 @@ function aggregateMonthly(weeklyData) {
 }
 
 // ─── 일봉 데이터 fetch (3개월) ──────────────────────────────────────────────
-async function fetchRKLBDailyData() {
+async function fetchSPCXDailyData() {
   const BASE = `https://query1.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=3mo&interval=1d&includePrePost=false`;
   const BASE2 = `https://query2.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=3mo&interval=1d&includePrePost=false`;
 
@@ -1447,7 +1448,7 @@ async function fetchRKLBDailyData() {
 
 // ─── 백테스트용 함수들 ──────────────────────────────────────────────────────
 
-async function fetchRKLB2YearWeekly() {
+async function fetchSPCX2YearWeekly() {
   const BASE  = `https://query1.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=2y&interval=1wk&includePrePost=false`;
   const BASE2 = `https://query2.finance.yahoo.com/v8/finance/chart/${gCfg.ticker}?range=2y&interval=1wk&includePrePost=false`;
   function parse(json) {
@@ -1628,7 +1629,7 @@ function WeeklyCandlestickChart({ data }) {
       if (cached?.length) { setDailyData(cached); return; }
     }
     setDailyLoading(true); setDailyError(null);
-    fetchRKLBDailyData()
+    fetchSPCXDailyData()
       .then(items => {
         setDailyData(items);
         saveDailyCache(items); // localStorage에 저장
@@ -1844,7 +1845,7 @@ function PredAccuracyCard({ dailyData, autoSessions }) {
   // 일봉 데이터 자체 로드 (3개월치) — prop이 없거나 주봉만 있을 때 직접 fetch
   React.useEffect(() => {
     setLoadingD(true);
-    fetchRKLBDailyData()
+    fetchSPCXDailyData()
       .then(d => setOwnDaily(d))
       .catch(() => {})
       .finally(() => setLoadingD(false));
@@ -2896,7 +2897,7 @@ function SignalPage({ forecast, forecastLoading, forecastError, onRetryForecast,
   const signalToBi = { '적극매수': 88, '매수': 72, '관망': 50, '매도': 30, '적극매도': 12 };
 
   // ── 종합 합성 점수 (매수지수 60% : AI 전망 40%) ──────────────────────────
-  // 매수지수 = 모든 보조신호(YouTube·피터백X·구글트렌드 포함) 현재 감성 종합 스냅샷.
+  // 매수지수 = 모든 보조신호(YouTube·머스크X·구글트렌드 포함) 현재 감성 종합 스냅샷.
   // AI 전망 = 미래 방향 예측. 두 축을 가중 평균해 단일 "종합 매매 신호"를 도출한다.
   const SIGNAL_STATE_BI = {
     strong_bull: 90, cautionary_bull: 70, bull: 67,
@@ -3105,7 +3106,7 @@ function SignalPage({ forecast, forecastLoading, forecastError, onRetryForecast,
               </p>
               {tip && <p className="text-xs text-gray-600 mt-1">{tip}</p>}
               <p className="text-xs text-gray-700 mt-1.5 border-t pt-1.5" style={{ borderColor: msgColor + '20' }}>
-                매수지수 = 보조신호(YouTube·피터백X·트렌드) 포함 현재 감성 스냅샷 &nbsp;·&nbsp; 투자 전망 = 미래 방향 AI 예측 — 상단 <span className="text-gray-500">종합 매매 신호</span>는 두 지표를 <span className="text-gray-500">매수지수 60% : 전망 40%</span>로 합성한 값입니다.
+                매수지수 = 보조신호(YouTube·머스크X·트렌드) 포함 현재 감성 스냅샷 &nbsp;·&nbsp; 투자 전망 = 미래 방향 AI 예측 — 상단 <span className="text-gray-500">종합 매매 신호</span>는 두 지표를 <span className="text-gray-500">매수지수 60% : 전망 40%</span>로 합성한 값입니다.
               </p>
             </div>
           </div>
@@ -3747,7 +3748,7 @@ function VideoScriptPage({ onBack }) {
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">매수지수 구성 분해</p>
           <div className="space-y-1.5">
             {Object.entries(sc.meta.scoring_breakdown).filter(([k]) => k !== 'total').map(([k, v]) => {
-              const labels = { base: '기본 뉴스', optimus_boost: '🚀 뉴트론 부스트', macd_cross: '📊 MACD 크로스', musk_x: '🐦 피터백 X', google_trends: '🔍 구글 트렌드', youtube: '📺 YouTube' };
+              const labels = { base: '기본 뉴스', optimus_boost: '🚀 스타십 부스트', macd_cross: '📊 MACD 크로스', musk_x: '🐦 머스크 X', google_trends: '🔍 구글 트렌드', youtube: '📺 YouTube' };
               const col = v > 0 ? '#22c55e' : v < 0 ? '#ef4444' : '#9ca3af';
               return (
                 <div key={k} className="flex items-center gap-2">
@@ -3929,12 +3930,12 @@ function VideoScriptPage({ onBack }) {
         </div>
       )}
 
-      {/* 피터백 X / YouTube 요약 */}
+      {/* 머스크 X / YouTube 요약 */}
       {sc.meta && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
           {sc.meta.musk_x_summary && (
             <div className="rounded-xl border p-3" style={{ background: '#1C1F26', borderColor: '#2A2D35' }}>
-              <p className="text-xs font-semibold text-blue-400 mb-1">🐦 피터백 X 동향</p>
+              <p className="text-xs font-semibold text-blue-400 mb-1">🐦 머스크 X 동향</p>
               <p className="text-xs text-gray-400 leading-relaxed">{sc.meta.musk_x_summary}</p>
             </div>
           )}
@@ -4122,7 +4123,7 @@ function MobileDashboard({
         style={{ background: 'rgba(13,15,20,0.95)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #1C1F26' }}>
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded flex items-center justify-center font-black text-white text-sm shrink-0"
-            style={{ background: '#E31937' }}>T</div>
+            style={{ background: '#E31937' }}>S</div>
           <div>
             <p className="text-sm font-bold text-white leading-tight tracking-tight">{gCfg.ticker} 주가 영향 분석</p>
             <p className="text-xs text-gray-600 leading-tight">
@@ -4309,7 +4310,7 @@ function MobileDashboard({
 }
 
 // ─── 캘린더 이벤트 코멘트 (localStorage) ─────────────────────────────────
-const CAL_COMMENTS_KEY = 'rklb_cal_comments_v1';
+const CAL_COMMENTS_KEY = 'spcx_cal_comments_v1';
 function loadCalComments() {
   try { return JSON.parse(localStorage.getItem(CAL_COMMENTS_KEY) || '{}'); } catch { return {}; }
 }
@@ -4406,7 +4407,7 @@ function CalendarPage({ onBack, desktopMode }) {
         <div className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3"
           style={{ background: 'rgba(13,15,20,0.97)', borderBottom: '1px solid #2A2D35', backdropFilter: 'blur(8px)' }}>
           <button onClick={onBack} className="text-gray-400 text-sm">← 뒤로</button>
-          <h1 className="text-base font-bold text-white flex-1">📅 로켓랩 캘린더</h1>
+          <h1 className="text-base font-bold text-white flex-1">📅 스페이스X 캘린더</h1>
           {lastUpdated && <span className="text-xs text-gray-600">{lastUpdated.slice(0,10)}</span>}
         </div>
       )}
@@ -4417,7 +4418,7 @@ function CalendarPage({ onBack, desktopMode }) {
         {(!isMobile || desktopMode) && (
           <div className="flex items-start justify-between mb-5">
             <div>
-              <h2 className="text-xl font-bold text-white">📅 로켓랩 이벤트 캘린더</h2>
+              <h2 className="text-xl font-bold text-white">📅 스페이스X 이벤트 캘린더</h2>
               <p className="text-xs text-gray-500 mt-0.5">
                 {lastUpdated ? `마지막 업데이트: ${lastUpdated}` : '매주 월요일 KST 09:00 자동 업데이트'}
               </p>
@@ -5552,7 +5553,7 @@ function BacktestPage({ apiKey }) {
   // 주가 2년 주봉 로드
   React.useEffect(() => {
     setPricesLoading(true);
-    fetchRKLB2YearWeekly()
+    fetchSPCX2YearWeekly()
       .then(items => setBtPrices(items))
       .catch(e => setBtError('주가 데이터 로드 실패: ' + e.message))
       .finally(() => setPricesLoading(false));
@@ -5563,7 +5564,7 @@ function BacktestPage({ apiKey }) {
     if (!btPrices) { alert('주가 데이터를 불러오는 중입니다. 잠시 후 시도해주세요.'); return; }
     setRunning(true); stopRef.current = false; setBtError(null);
     setProgress({ current: 0, total: 0, phase: '매크로 데이터 로드 중', week: '' });
-    // 매크로 데이터 로드 (SPY/QQQ/VIX/RKLB) — 한 번만
+    // 매크로 데이터 로드 (SPY/QQQ/VIX/SPCX) — 한 번만
     const macroData = await loadMacroDataBrowser();
     const weeks = getWeeksForYear(selectedYear, selectedRange);
     setProgress({ current: 0, total: weeks.length, phase: '초기화', week: '' });
@@ -5627,12 +5628,12 @@ function BacktestPage({ apiKey }) {
   // 룰 설명 맵
   const RULE_LABELS = {
     R01:'발사 실패', R02:'EPS 미스', R03:'가이던스 하향', R04:'발사대 사고/화재',
-    R05:'SEC/DOJ 조사', R06:'경쟁사 대형 계약', R07:'발사 장기 연기', R08:'피터 백 SNS 논란',
-    R09:'대규모 유상증자', R10:'주요 계약 취소/손실', R11:'공매도 보고서', R12:'우주 예산 삭감',
+    R05:'SEC/DOJ 조사', R06:'경쟁사 대형 계약', R07:'스타십 일정 장기 연기', R08:'머스크 SNS 논란',
+    R09:'대규모 증자·락업 해제', R10:'주요 계약 취소/손실', R11:'공매도 보고서', R12:'우주 예산 삭감',
     R13:'경기침체 우려', R14:'발사 성공 (마일스톤)', R15:'EPS 비트', R16:'대형 정부 계약',
-    R17:'대형 상업 계약', R18:'뉴트론 마일스톤', R19:'우주 시스템 수주', R20:'목표가 상향',
-    R21:'금리 인하 신호', R22:'CEO/내부자 매수', R23:'신시장/파트너십', R24:'피터 백 사업 리스크',
-    R25:'뉴트론 상업 론칭', R26:'소형 발사 사업 재편',
+    R17:'스타링크 대형 상업 계약', R18:'스타십 마일스톤', R19:'스타링크/스타실드 급증', R20:'목표가 상향',
+    R21:'금리 인하 신호', R22:'CEO/내부자 매수', R23:'신시장/파트너십', R24:'머스크 사업 리스크',
+    R25:'스타십 상업 운용 개시', R26:'팰컨 축소·스타십 전환',
   };
 
   return (
@@ -5921,7 +5922,7 @@ function BacktestPage({ apiKey }) {
                   {topRulesAll.some(([r]) => r === 'R08' || r === 'R24') && (
                     <li className="flex gap-2">
                       <span className="text-orange-400 shrink-0 font-bold">③</span>
-                      피터 백 SNS 관련 룰(R08/R24)이 자주 발동됩니다. 단기 감성과 장기 주가의 괴리를 고려한 가중치 하향 조정을 권장합니다.
+                      머스크 SNS 관련 룰(R08/R24)이 자주 발동됩니다. 단기 감성과 장기 주가의 괴리를 고려한 가중치 하향 조정을 권장합니다.
                     </li>
                   )}
                   {topRulesAll.some(([r]) => r === 'R01' || r === 'R11') && (
@@ -5974,7 +5975,7 @@ function BacktestPage({ apiKey }) {
                 <div className="mt-4 flex flex-col gap-1 text-xs text-gray-700">
                   <p>1단계 — 주간 TOP 10 뉴스 수집 (Gemini Google Search)</p>
                   <p>2단계 — AI 분석 모델로 매수지수 산출</p>
-                  <p>3단계 — 실제 RKLB 주가 움직임과 방향 비교</p>
+                  <p>3단계 — 실제 {gCfg.ticker} 주가 움직임과 방향 비교</p>
                   <p>4단계 — 정확도 통계 + 모델 강화 인사이트 제공</p>
                 </div>
               </>
@@ -6154,7 +6155,7 @@ function App() {
 
   useEffect(() => {
     try {
-      const s = localStorage.getItem('rklb_api_key'); if (s) { setApiKey(s); setKeyInput(s); }
+      const s = localStorage.getItem('spcx_api_key'); if (s) { setApiKey(s); setKeyInput(s); }
       const d = localStorage.getItem(DRIVE_CLIENT_ID_KEY); if (d) { setDriveClientId(d); setDriveClientIdInput(d); }
       // 이미 저장된 세션이면 sessionId 복원 + 중복 저장 차단
       const saved = loadLastNews();
@@ -6163,7 +6164,7 @@ function App() {
         sessionSavedRef.current = true; // 이미 저장된 세션 → 재저장 안 함
       }
       // 이전에 Drive 연결 이력이 있으면 자동 재연결 시도 (GIS 라이브러리 로드 대기 후)
-      if (d && localStorage.getItem('rklb_drive_auto_connect') === '1') {
+      if (d && localStorage.getItem('spcx_drive_auto_connect') === '1') {
         setTimeout(async () => {
           try {
             await ensureGapi();
@@ -6203,13 +6204,13 @@ function App() {
       const token = await driveRequestToken(driveClientId);
       driveTokenRef.current = token;
       // 다음 방문 시 자동 재연결 허용 플래그 저장
-      try { localStorage.setItem('rklb_drive_auto_connect', '1'); } catch {}
+      try { localStorage.setItem('spcx_drive_auto_connect', '1'); } catch {}
       // 연결 후 Drive → 로컬 병합
       await pullFromDrive(token);
     } catch(e) {
       setDriveError(e.message);
       // 실패 시 자동 재연결 플래그 제거
-      try { localStorage.removeItem('rklb_drive_auto_connect'); } catch {}
+      try { localStorage.removeItem('spcx_drive_auto_connect'); } catch {}
     }
     finally { setDriveSyncing(false); }
   };
@@ -6259,7 +6260,7 @@ function App() {
     }
     // 캐시 만료 또는 없음 → 새로 fetch
     setWeeklyLoading(true); setWeeklyError(null); setPriceFromCache(false);
-    fetchRKLBWeeklyData()
+    fetchSPCXWeeklyData()
       .then(({ items, currentPrice: cp }) => {
         setWeeklyData(items);
         setCurrentPrice(cp);
@@ -6300,7 +6301,7 @@ function App() {
       const cached = deserializeDailyCache(c);
       if (cached?.length) { setDailyData(cached); setDailyLoading(false); return; }
     }
-    fetchRKLBDailyData()
+    fetchSPCXDailyData()
       .then(d => { setDailyData(d); saveDailyCache(d); })
       .catch(() => {})
       .finally(() => setDailyLoading(false));
@@ -6317,7 +6318,7 @@ function App() {
   const saveKey = () => {
     const k = keyInput.trim();
     if (k.length < 20) { alert('올바른 Gemini API 키를 입력하세요 (Google AI Studio에서 발급)'); return; }
-    try { localStorage.setItem('rklb_api_key', k); } catch {}
+    try { localStorage.setItem('spcx_api_key', k); } catch {}
     setApiKey(k);
   };
 
@@ -6488,10 +6489,10 @@ function App() {
     <div className="flex items-center justify-between py-3 px-6"
       style={{ background: 'rgba(13,15,20,0.97)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #1C1F26' }}>
       <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-lg" style={{ background: '#E31937' }}>T</div>
+        <div className="w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-lg" style={{ background: '#E31937' }}>S</div>
         <div>
           <h1 className="text-xl font-bold text-white tracking-tight">{gCfg.ticker} 주가 영향 분석</h1>
-          <p className="text-xs text-gray-500">Rocket Lab / Peter Beck · Rule Engine R01~R26</p>
+          <p className="text-xs text-gray-500">SpaceX / Elon Musk · Rule Engine R01~R26</p>
         </div>
       </div>
       <div className="flex items-center gap-2">
@@ -6727,7 +6728,7 @@ function App() {
         <p className="font-semibold text-gray-400 mb-2">판정 가중치 조정 가이드</p>
         <ul className="space-y-1">
           <li>📊 <strong className="text-gray-400">실적 발표 시즌:</strong> R02(실적 미스) 가중치 ×1.5 적용 권장</li>
-          <li>📱 <strong className="text-gray-400">피터 백 SNS 활성화 기간:</strong> R08(SNS 논란) 임계값 낮춤 권장</li>
+          <li>📱 <strong className="text-gray-400">머스크 SNS 활성화 기간:</strong> R08(SNS 논란) 임계값 낮춤 권장</li>
           <li>⚖️ <strong className="text-gray-400">규제 불확실성 높을 때:</strong> R05, R17 confidence → medium으로 하향 권장</li>
         </ul>
       </div>
