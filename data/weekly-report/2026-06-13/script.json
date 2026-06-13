@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-06-13",
+  "generated_by": "Claude Opus 4",
+  "title": "SPCX 뉴스 *10건 분석*, 현재 *$160.95*예요",
+  "subtitle": "2026-06-13 ~ 2026-06-13 · SpaceX IPO, 공모가 대비 22% 상승 여력 예",
+  "summary": {
+    "week_start": "2026-06-13",
+    "week_end": "2026-06-13",
+    "session_count": 1,
+    "total_analyzed": 10,
+    "bullish_count": 1,
+    "bearish_count": 2,
+    "buy_indices": [
+      53
+    ],
+    "avg_buy_index": 53,
+    "latest_buy_index": 53,
+    "price_start": 160.95,
+    "price_end": 160.95,
+    "latest_price": 160.95,
+    "today_price": 160.95,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "SpaceX IPO, 공모가 대비 22% 상승 여력 예상",
+      "score": 2,
+      "reason": "New Street 분석가가 SpaceX의 IPO 가격 대비 22% 상승 여력을 예상하며 긍정적인 전망을 내놓아 주식 가치 상승에 대한 기대를 높였습니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-06-13",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "SpaceX IPO, 공모가 대비 22% 상승 여력 예상",
+        "score": 2,
+        "reason": "New Street 분석가가 SpaceX의 IPO 가격 대비 22% 상승 여력을 예상하며 긍정적인 전망을 내놓아 주식 가치 상승에 대한 기대를 높였습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-06-13",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "4개 주, SpaceX 등 메가캡 IPO에 유리한 나스닥 및 FTSE 러셀의 규칙 변경에 이의 제기",
+        "score": -1,
+        "reason": "4개 주 투자 책임자들이 SpaceX와 같은 메가캡 IPO에 유리한 나스닥 및 FTSE 러셀의 규칙 변경에 이의를 제기하며 투자자 영향에 대한 우려를 표명했습니다.",
+        "source": "Reuters",
+        "date": "2026-06-11",
+        "category": "Regulatory"
+      },
+      {
+        "title": "SpaceX의 높은 기업 가치, '일론 프리미엄' 시험대에 오를 것",
+        "score": -1,
+        "reason": "일론 머스크의 영향으로 인한 SpaceX의 높은 기업 가치에 대한 분석가들의 우려가 제기되어 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+        "source": "Reuters Videos",
+        "date": "2026-06-10",
+        "category": "Market"
+      }
+    ],
+    "forecasts": [
+      {
+        "day": 1,
+        "label": "내일",
+        "date": "6/15(월)",
+        "change_pct": 0.9,
+        "signal": "매수",
+        "basePrice": 160.95,
+        "predictedPrice": 162.4
+      },
+      {
+        "day": 2,
+        "label": "D+2",
+        "date": "6/15(월)",
+        "change_pct": 0.7,
+        "signal": "관망",
+        "basePrice": 160.95,
+        "predictedPrice": 162.08
+      },
+      {
+        "day": 3,
+        "label": "D+3",
+        "date": "6/16(화)",
+        "change_pct": -0.5,
+        "signal": "관망",
+        "basePrice": 160.95,
+        "predictedPrice": 160.15
+      },
+      {
+        "day": 4,
+        "label": "D+4",
+        "date": "6/17(수)",
+        "change_pct": 1.1,
+        "signal": "매수",
+        "basePrice": 160.95,
+        "predictedPrice": 162.72
+      },
+      {
+        "day": 5,
+        "label": "D+5",
+        "date": "6/18(목)",
+        "change_pct": 0.6,
+        "signal": "관망",
+        "basePrice": 160.95,
+        "predictedPrice": 161.92
+      }
+    ],
+    "daily_prices": [
+      [
+        "2026-06-13",
+        160.95
+      ]
+    ],
+    "overall_signal": "중립",
+    "trends": null,
+    "next_events": [
+      {
+        "date": "2026-06-18",
+        "title": "NRO 정찰 위성군 14번째 배치 발사",
+        "titleEn": "14th Batch of NRO Reconnaissance Satellite Constellation Launch",
+        "category": "발사일정",
+        "categoryEn": "Launch Schedule",
+        "time": null,
+        "timezone": null,
+        "confirmed": true,
+        "source": "RocketLaunch.org",
+        "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNpq5K_qNsvkKy5L9FpyJz5BeswFEk4MeAREEksY0BR1UAaTVm55lvKC0G4dVJfFcoiq0srRve_BHX0oIVdRgFjTEFimq0VVVTBlmFMFjZ0PDhctwSt7TxvXfZZip_ILHXc32fyMBQ0s1w",
+        "description": "SpaceX와 Northrop Grumman이 국가정찰국(NRO)을 위해 구축한 정찰 위성군 중 14번째 배치가 2026년 6월 18일에 발사될 예정입니다.",
+        "importance": "medium",
+        "id": "cal-2026-06-18-14th-batch-of-nro-reconnaissance-satelli"
+      }
+    ],
+    "movement_reason": null
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "이번주",
+      "lines": [
+        "SPCX 뉴스 *10건 분석*, 현재 *$160.95*예요",
+        "이번주 변동률은 *보합세 0.0%*로 잔잔해요",
+        "New Street, IPO가 대비 *22% 상승* 여력 전망",
+        "'*일론 프리미엄*' 고평가 논란이 부담이에요"
+      ],
+      "body": "SPCX 뉴스 *10건 분석*, 현재 *$160.95*예요\n이번주 변동률은 *보합세 0.0%*로 잔잔해요\nNew Street, IPO가 대비 *22% 상승* 여력 전망\n'*일론 프리미엄*' 고평가 논란이 부담이에요"
+    },
+    {
+      "index": 1,
+      "title": "호재분석",
+      "lines": [
+        "카테고리: New Street, *22% 상승* 여력 제시",
+        "↳ 배경: *SpaceX IPO* 후 첫 본격 분석 리포트",
+        "↳ 데이터: 공모가 대비 *22% 업사이드* 제시",
+        "↳ 임팩트: 현재 *$160.95* 추가 상승 기대감",
+        "↳ 비교: 메가캡 IPO 중 *상위권 평가* 받았어요",
+        "↳ 분석가 시선이 우호적이라 눈여겨볼 만해요"
+      ],
+      "body": "카테고리: New Street, *22% 상승* 여력 제시\n   ↳ 배경: *SpaceX IPO* 후 첫 본격 분석 리포트\n   ↳ 데이터: 공모가 대비 *22% 업사이드* 제시\n   ↳ 임팩트: 현재 *$160.95* 추가 상승 기대감\n   ↳ 비교: 메가캡 IPO 중 *상위권 평가* 받았어요\n   ↳ 분석가 시선이 우호적이라 눈여겨볼 만해요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "*6/18 NRO 정찰위성* 14번째 배치 발사예요",
+        "발사 성공이 *투자 심리* 좌우할 포인트죠",
+        "주말 예상가는 *$162, +0.6%* 흐름이 점쳐져요",
+        "*5일 중 4일 상승*, 1일 하락 예측이에요",
+        "4개 주의 *나스닥 규칙* 이의제기가 변수예요",
+        "함께해 주셔서 감사해요"
+      ],
+      "body": "*6/18 NRO 정찰위성* 14번째 배치 발사예요\n발사 성공이 *투자 심리* 좌우할 포인트죠\n주말 예상가는 *$162, +0.6%* 흐름이 점쳐져요\n*5일 중 4일 상승*, 1일 하락 예측이에요\n4개 주의 *나스닥 규칙* 이의제기가 변수예요\n함께해 주셔서 감사해요"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking cinematic Seoul Han River night view with futuristic K-tech cityscape, Namsan Tower, 63 Building, and Lotte Tower glowing in deep purple violet hues, a sleek SpaceX rocket silhouette ascending through the skyline with subtle data analytics holograms floating above the river, bokeh city lights reflecting on water, mysterious analytical mood, Korean futuristic metropolis aesthetic, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo",
+    "1": "A vibrant sunlit Seoul cityscape with Han River bridges glowing in fresh green bullish growth tones, modern skyline bathed in golden morning light, a dynamic SpaceX rocket launching upward leaving a bright trail across the sky, energetic K-tech infrastructure with rising chart motifs subtly integrated into clouds, optimistic uplifting atmosphere, vivid emerald and lime accents, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo",
+    "2": "A stunning vertical composition of futuristic Korean city Seoul at twilight, Han River night view with illuminated skyline, Gwanghwamun Square in foreground, a majestic SpaceX rocket symbol soaring upward through magenta and gold inspirational sky, glowing golden sun rays, twinkling stars and shimmering particles, advanced K-tech cityscape atmosphere, dreamy aspirational future mood, ultra-high resolution, 9:16 vertical full screen, no text, no letters, no watermark, no logo"
+  }
+}

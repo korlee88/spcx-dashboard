@@ -1,0 +1,11 @@
+# SPCX 주간 배경 이미지 프롬프트 — 2026-06-13
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking cinematic Seoul Han River night view with futuristic K-tech cityscape, Namsan Tower, 63 Building, and Lotte Tower glowing in deep purple violet hues, a sleek SpaceX rocket silhouette ascending through the skyline with subtle data analytics holograms floating above the river, bokeh city lights reflecting on water, mysterious analytical mood, Korean futuristic metropolis aesthetic, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant sunlit Seoul cityscape with Han River bridges glowing in fresh green bullish growth tones, modern skyline bathed in golden morning light, a dynamic SpaceX rocket launching upward leaving a bright trail across the sky, energetic K-tech infrastructure with rising chart motifs subtly integrated into clouds, optimistic uplifting atmosphere, vivid emerald and lime accents, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning vertical composition of futuristic Korean city Seoul at twilight, Han River night view with illuminated skyline, Gwanghwamun Square in foreground, a majestic SpaceX rocket symbol soaring upward through magenta and gold inspirational sky, glowing golden sun rays, twinkling stars and shimmering particles, advanced K-tech cityscape atmosphere, dreamy aspirational future mood, ultra-high resolution, 9:16 vertical full screen, no text, no letters, no watermark, no logo

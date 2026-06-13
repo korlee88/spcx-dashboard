@@ -1,0 +1,28 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+SPCX 뉴스 *10건 분석*, 현재 *$160.95*예요
+이번주 변동률은 *보합세 0.0%*로 잔잔해요
+New Street, IPO가 대비 *22% 상승* 여력 전망
+'*일론 프리미엄*' 고평가 논란이 부담이에요
+
+SCENE_1_TITLE: 호재분석
+SCENE_1:
+카테고리: New Street, *22% 상승* 여력 제시
+   ↳ 배경: *SpaceX IPO* 후 첫 본격 분석 리포트
+   ↳ 데이터: 공모가 대비 *22% 업사이드* 제시
+   ↳ 임팩트: 현재 *$160.95* 추가 상승 기대감
+   ↳ 비교: 메가캡 IPO 중 *상위권 평가* 받았어요
+   ↳ 분석가 시선이 우호적이라 눈여겨볼 만해요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+*6/18 NRO 정찰위성* 14번째 배치 발사예요
+발사 성공이 *투자 심리* 좌우할 포인트죠
+주말 예상가는 *$162, +0.6%* 흐름이 점쳐져요
+*5일 중 4일 상승*, 1일 하락 예측이에요
+4개 주의 *나스닥 규칙* 이의제기가 변수예요
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A breathtaking cinematic Seoul Han River night view with futuristic K-tech cityscape, Namsan Tower, 63 Building, and Lotte Tower glowing in deep purple violet hues, a sleek SpaceX rocket silhouette ascending through the skyline with subtle data analytics holograms floating above the river, bokeh city lights reflecting on water, mysterious analytical mood, Korean futuristic metropolis aesthetic, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo
+IMAGE_PROMPT_1: A vibrant sunlit Seoul cityscape with Han River bridges glowing in fresh green bullish growth tones, modern skyline bathed in golden morning light, a dynamic SpaceX rocket launching upward leaving a bright trail across the sky, energetic K-tech infrastructure with rising chart motifs subtly integrated into clouds, optimistic uplifting atmosphere, vivid emerald and lime accents, ultra-high resolution, 16:9 landscape horizontal strip, no text, no letters, no watermark, no logo
+IMAGE_PROMPT_2: A stunning vertical composition of futuristic Korean city Seoul at twilight, Han River night view with illuminated skyline, Gwanghwamun Square in foreground, a majestic SpaceX rocket symbol soaring upward through magenta and gold inspirational sky, glowing golden sun rays, twinkling stars and shimmering particles, advanced K-tech cityscape atmosphere, dreamy aspirational future mood, ultra-high resolution, 9:16 vertical full screen, no text, no letters, no watermark, no logo
