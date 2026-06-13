@@ -1,1 +1,367 @@
-{"sessions":[],"lastUpdated":""}
+{
+  "sessions": [
+    {
+      "id": "auto-1781322349378",
+      "date": "2026-06-13",
+      "displayDate": "2026.06.13",
+      "kstTime": "12:43",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1781322233797,
+          "title": "SpaceX, 나스닥 상장 첫날 19.2% 급등하며 성공적인 데뷔",
+          "summary": "SpaceX는 금요일 나스닥에 주당 150달러로 공식 상장되어 첫 거래일에 19.2% 상승 마감했습니다. 이는 월스트리트의 주요 시장 평균을 끌어올리며 투자자들의 높은 관심을 받았습니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233798,
+          "title": "일론 머스크의 SpaceX IPO, 2.1조 달러 시장 가치 기록하며 AI 관련 기업 상장 촉진 기대",
+          "summary": "CNBC의 짐 크레이머는 SpaceX의 성공적인 데뷔가 새로운 AI 관련 주식 공개를 위한 길을 열고 주식 시장에 긍정적인 분위기를 조성할 수 있다고 언급했습니다. SpaceX는 금요일 주당 161달러로 마감하며 약 2.1조 달러의 시장 가치를 기록했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233799,
+          "title": "4개 주, SpaceX 등 메가캡 IPO에 유리한 나스닥 및 FTSE 러셀의 규칙 변경에 이의 제기",
+          "summary": "뉴욕, 일리노이, 메릴랜드, 오리건 등 4개 주의 투자 책임자들이 나스닥과 FTSE 러셀에 SpaceX와 같은 메가캡 IPO에 유리한 최근 규칙 변경에 대한 세부 정보를 요구했습니다. 이들은 SpaceX의 기록적인 750억 달러 데뷔가 투자자들에게 미칠 영향에 대해 우려를 표명했습니다.",
+          "source": "Reuters",
+          "date": "2026-06-11",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1781322233800,
+          "title": "SpaceX IPO 수요, 소매 투자자들로부터 1000억 달러 초과",
+          "summary": "SpaceX의 IPO 수요가 소매 투자자들로부터 1000억 달러를 넘어섰으며, 주식 배정이 더욱 어려워지고 있습니다. 이는 SpaceX에 대한 시장의 뜨거운 관심을 보여줍니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-13",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233801,
+          "title": "SpaceX, 궤도 AI 컴퓨팅 테스트 내년 말까지 시작 목표",
+          "summary": "소식통에 따르면 SpaceX는 내년 말까지 궤도 AI 컴퓨팅 테스트를 시작하는 것을 목표로 하고 있습니다. 이는 SpaceX가 우주 경제의 다음 인프라 계층을 구축하려는 계획의 일환입니다.",
+          "source": "Reuters",
+          "date": "2026-06-10",
+          "category": "Product"
+        },
+        {
+          "id": 1781322233802,
+          "title": "SpaceX IPO, 공모가 대비 22% 상승 여력 예상",
+          "summary": "New Street는 SpaceX에 대해 낙관적인 전망을 내놓으며, IPO 가격 대비 22%의 상승 여력이 있다고 분석했습니다. 이는 SpaceX의 주식 가치 상승에 대한 긍정적인 신호입니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-13",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233803,
+          "title": "Stack Capital, SpaceX 주식 보유 계획 밝혀",
+          "summary": "캐나다 투자 회사인 Stack Capital Group은 SpaceX 주식이 금요일부터 거래를 시작하면 1,100% 이상의 수익을 기록할 것이라고 밝혔습니다. Stack Capital은 SpaceX 주식을 장기적으로 보유할 계획이라고 전했습니다.",
+          "source": "Stockwatch",
+          "date": "2026-06-10",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233804,
+          "title": "SpaceX IPO, 공매도 투자자들에게는 위험한 베팅",
+          "summary": "로이터 통신에 따르면, SpaceX의 IPO는 높은 가격 대비 매출 배수와 거버넌스 문제로 인해 공매도 투자자들에게 매력적인 대상이 될 수 있지만, 최근 기술 대기업들의 강세장으로 인해 매우 위험한 베팅이 될 수 있습니다.",
+          "source": "Reuters",
+          "date": "2026-06-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233805,
+          "title": "SpaceX의 높은 기업 가치, '일론 프리미엄' 시험대에 오를 것",
+          "summary": "SpaceX의 높은 기업 가치는 '일론 프리미엄'을 시험대에 올릴 것으로 예상됩니다. 일부 분석가들은 SpaceX의 가치 평가가 전문가들이 생각하는 것보다 훨씬 높게 책정될 수 있다고 경고했습니다.",
+          "source": "Reuters Videos",
+          "date": "2026-06-10",
+          "category": "Market"
+        },
+        {
+          "id": 1781322233806,
+          "title": "SpaceX IPO 임박으로 인한 시장 변동성 증가",
+          "summary": "SpaceX의 IPO가 임박하면서 현재 시장 변동성이 커지고 있습니다. 투자자들은 SpaceX의 상장이 전체 시장에 미칠 영향에 주목하고 있습니다.",
+          "source": "Reuters Videos",
+          "date": "2026-06-10",
+          "category": "Market"
+        }
+      ],
+      "analyses": {
+        "1781322233797": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX는 아직 상장되지 않았으므로 이 뉴스는 가상의 시나리오이며 실제 주식에 영향을 미치지 않습니다.",
+          "key_factors": [
+            "가상 시나리오"
+          ]
+        },
+        "1781322233798": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO가 AI 관련 기업 상장을 촉진할 수 있다는 시장 분석가의 추측을 다루고 있으며, SpaceX 자체의 직접적인 사업 성과나 재무 상태에 대한 새로운 정보는 포함하고 있지 않습니다.",
+          "key_factors": [
+            "시장 분석가의 추측",
+            "SpaceX IPO의 간접적 영향"
+          ]
+        },
+        "1781322233799": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "4개 주 투자 책임자들이 SpaceX와 같은 메가캡 IPO에 유리한 나스닥 및 FTSE 러셀의 규칙 변경에 이의를 제기하며 투자자 영향에 대한 우려를 표명했습니다.",
+          "key_factors": [
+            "규제 이의 제기",
+            "IPO 규칙 변경",
+            "투자자 우려"
+          ]
+        },
+        "1781322233800": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "소매 투자자들의 높은 IPO 수요는 SpaceX에 대한 강한 시장 관심과 긍정적인 투자 심리를 나타내지만, 아직 IPO가 확정된 것은 아니므로 영향은 제한적입니다.",
+          "key_factors": [
+            "IPO 수요",
+            "시장 관심"
+          ]
+        },
+        "1781322233801": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R23"
+          ],
+          "reasoning": "SpaceX가 내년 말까지 궤도 AI 컴퓨팅 테스트를 시작하려는 목표는 새로운 시장 진입 및 기술 혁신 가능성을 시사하여 긍정적입니다.",
+          "key_factors": [
+            "궤도 AI 컴퓨팅",
+            "새로운 인프라 계층"
+          ]
+        },
+        "1781322233802": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R20"
+          ],
+          "reasoning": "New Street 분석가가 SpaceX의 IPO 가격 대비 22% 상승 여력을 예상하며 긍정적인 전망을 내놓아 주식 가치 상승에 대한 기대를 높였습니다.",
+          "key_factors": [
+            "New Street analyst report",
+            "22% upside potential"
+          ]
+        },
+        "1781322233803": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "low",
+          "triggered_rules": [],
+          "reasoning": "캐나다 투자 회사의 SpaceX 주식 보유 계획 발표는 긍정적인 투자 심리를 나타내지만, 이는 이미 알려진 정보에 대한 재확인이며 새로운 촉매제가 아닙니다.",
+          "key_factors": [
+            "투자 심리",
+            "장기 보유 계획"
+          ]
+        },
+        "1781322233804": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO 가능성과 공매도 위험에 대한 추측성 분석이며, 현재 SpaceX의 주가에 직접적인 영향을 미 미치지 않습니다.",
+          "key_factors": [
+            "IPO speculation",
+            "short seller risk"
+          ]
+        },
+        "1781322233805": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R24"
+          ],
+          "reasoning": "일론 머스크의 영향으로 인한 SpaceX의 높은 기업 가치에 대한 분석가들의 우려가 제기되어 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "일론 프리미엄",
+            "높은 기업 가치",
+            "분석가 경고"
+          ]
+        },
+        "1781322233806": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "low",
+          "triggered_rules": [],
+          "reasoning": "SpaceX의 IPO 임박 소식은 시장 변동성을 증가시킬 수 있지만, 구체적인 상장 계획이나 재무 정보가 없어 SPCX 주식에 대한 직접적인 영향은 중립적입니다.",
+          "key_factors": [
+            "IPO 임박",
+            "시장 변동성"
+          ]
+        }
+      },
+      "avgScore": 0.3,
+      "buyIndex": 53,
+      "direction": "bullish",
+      "topRules": [
+        "R23",
+        "R20",
+        "R24"
+      ],
+      "bullish": 4,
+      "bearish": 2,
+      "neutral": 4,
+      "muskXSentiment": null,
+      "googleTrends": {
+        "current_score": 100,
+        "week_avg": 85,
+        "trend": "rising",
+        "spike": true,
+        "top_queries": [
+          "SpaceX IPO",
+          "SPCX stock",
+          "Elon Musk Net Worth"
+        ],
+        "reasoning": "SpaceX의 IPO와 관련된 뉴스로 인해 지난 7일 동안 검색 관심도가 크게 상승했으며, 특히 IPO 당일 최고치를 기록했습니다."
+      },
+      "youtubeInterest": {
+        "score": 3,
+        "velocity": 2.72,
+        "velocity_label": "급등 (×2.7)",
+        "reason": "조회수 속도 급등 (×2.7) | 최근 3일 8,684,482회 / 이전 4~7일 3,189,952회 | 총 11,874,434회 (67개 영상)",
+        "video_count": 67,
+        "total_views": 11874434,
+        "hot_views": 8684482,
+        "baseline_views": 3189952,
+        "top_videos": [
+          {
+            "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-12T21:27:06Z",
+            "viewCount": 1295856
+          },
+          {
+            "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
+            "channel": "뇌즙",
+            "publishedAt": "2026-06-10T08:00:03Z",
+            "viewCount": 907835
+          },
+          {
+            "title": "박시동 경제평론가 | 삼성전자 주가 전망 | 스페이스x 삼성전자 | 스페이스x 관련주 | 스페이스x 관련주 한국 | 삼성 테슬라",
+            "channel": "정치인사이드",
+            "publishedAt": "2026-06-11T08:38:27Z",
+            "viewCount": 725419
+          },
+          {
+            "title": "LIVE: Elon Musk’s SpaceX IPO Listing | SpaceX Goes Public On Nasdaq In Record IPO | U.S Stock Market",
+            "channel": "CNBC-TV18",
+            "publishedAt": "2026-06-12T11:10:03Z",
+            "viewCount": 393460
+          },
+          {
+            "title": "Will India Block Starlink? This is what US Report is Saying #Starlink #ElonMusk #PrashantDhawan",
+            "channel": "Career247",
+            "publishedAt": "2026-06-12T11:26:38Z",
+            "viewCount": 386280
+          }
+        ],
+        "collected_at": "2026-06-13T03:43:45Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 8,
+        "Regulatory": 1,
+        "Product": 1
+      },
+      "macroCtx": {
+        "spyChg": 0.14,
+        "qqqChg": 0.52,
+        "vixClose": 17.68000030517578,
+        "wtiChg": -2.71,
+        "cnyChg": -0.03,
+        "competitorChg": -13.23,
+        "competitorRelStrength": 20.53,
+        "prevAssetChg": 19.22,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -13.23,
+        "bydRelStrength": 20.53,
+        "prevTslaChg": 19.22,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 53,
+        "r24Discount": -1,
+        "meanReversion": -8,
+        "competitorOutperform": 2,
+        "googleTrends": 4,
+        "youtubeInterest": 3
+      },
+      "latestPrice": 160.95,
+      "latestTslaPrice": 160.95,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/15(월)",
+          "change_pct": 0.9,
+          "signal": "매수",
+          "basePrice": 160.95,
+          "predictedPrice": 162.4
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/15(월)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 162.08
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/16(화)",
+          "change_pct": -0.5,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 160.15
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/17(수)",
+          "change_pct": 1.1,
+          "signal": "매수",
+          "basePrice": 160.95,
+          "predictedPrice": 162.72
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/18(목)",
+          "change_pct": 0.6,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 161.92
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781322349378
+    }
+  ],
+  "lastUpdated": "2026-06-13 12:43 KST"
+}
