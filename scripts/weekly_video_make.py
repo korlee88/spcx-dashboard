@@ -19,7 +19,9 @@ REPORT_BASE   = ROOT_DIR / "data" / "weekly-report"
 VOICE         = "ko-KR-SunHiNeural"    # 밝은 여성 — 친근 튜닝 (edge-tts 지원 검증 음성)
 RATE          = "+8%"                   # 대화하듯 자연스러운 속도
 PITCH         = "+6Hz"                  # 살짝 올려 밝고 친근한 톤
-LINE_PAUSE_MS = 1000                    # 대본 줄(세그먼트) 사이 무음 휴지 (ms)
+LINE_PAUSE_MS = 600                     # 대본 줄(세그먼트) 사이 무음 휴지 (ms)
+TRIM_DB       = -42.0                    # 이 dBFS 이하를 무음으로 판정 (가장자리 트리밍)
+TRIM_KEEP_MS  = 60                       # 트리밍 후 가장자리에 남길 여유 무음 (ms)
 FPS           = 24
 W, H          = 1080, 1920
 PHOTO_Y       = 500                     # 헤더 아래 사진 시작 Y (prep.py의 HEADER_H와 동일)
@@ -180,17 +182,36 @@ async def _tts(text, path):
     await comm.save(str(path))
 
 
-async def gen_audio(segments, path):
-    """세그먼트(줄)별로 TTS한 뒤 LINE_PAUSE_MS 무음을 끼워 하나의 mp3로 합성.
+def _trim_edge_silence(piece):
+    """edge-tts가 세그먼트 앞/뒤에 붙이는 자체 무음을 잘라낸다 (양쪽 TRIM_KEEP_MS만 유지).
 
-    줄과 줄 사이에 ~1초 텀을 둬 바로 이어 읽히는 어색함을 없앤다.
-    pydub/ffmpeg 미가용 등 실패 시 공백으로 이어붙인 단일 TTS로 폴백.
+    edge-tts는 특히 문장 꼬리에 ~0.5초+ 무음을 덧붙여, 세그먼트 사이 휴지(LINE_PAUSE_MS)와
+    겹치면 체감 텀이 과도해진다. detect_leading_silence로 앞무음을, reverse()로 뒷무음을
+    측정해 가장자리 여유(TRIM_KEEP_MS)만 남기고 제거한다.
+    과도 트리밍 방지: 유효 발화 구간이 100ms 미만이면 원본 그대로 반환.
+    """
+    try:
+        from pydub.silence import detect_leading_silence
+    except Exception:
+        return piece
+    start = detect_leading_silence(piece, silence_threshold=TRIM_DB)
+    end   = len(piece) - detect_leading_silence(piece.reverse(), silence_threshold=TRIM_DB)
+    if end - start < 100:
+        return piece
+    s = max(0, start - TRIM_KEEP_MS)
+    e = min(len(piece), end + TRIM_KEEP_MS)
+    return piece[s:e]
+
+
+async def gen_audio(segments, path):
+    """세그먼트(줄)별로 TTS한 뒤 가장자리 무음을 트리밍하고 LINE_PAUSE_MS 휴지를 끼워 합성.
+
+    edge-tts 자체 꼬리 무음(~0.5초+)을 _trim_edge_silence로 제거한 뒤 일정한 휴지를
+    삽입해 줄 사이 텀을 균일(체감 ~720ms)하게 만든다. 합성 결과 앞 200ms·뒤 300ms
+    여유 무음을 둔다. pydub/ffmpeg 미가용 등 실패 시 공백으로 이어붙인 단일 TTS로 폴백.
     """
     segments = [s for s in segments if s and s.strip()]
     if not segments:
-        return
-    if len(segments) == 1:
-        await _tts(segments[0], path)
         return
     try:
         from pydub import AudioSegment
@@ -199,10 +220,11 @@ async def gen_audio(segments, path):
         for i, seg in enumerate(segments):
             tmp = path.with_name(f"{path.stem}__seg{i}.mp3")
             await _tts(seg, tmp)
-            piece = AudioSegment.from_file(tmp)
+            piece = _trim_edge_silence(AudioSegment.from_file(tmp))
             combined = piece if combined is None else (combined + silence + piece)
             try: tmp.unlink()
             except Exception: pass
+        combined = AudioSegment.silent(duration=200) + combined + AudioSegment.silent(duration=300)
         combined.export(str(path), format="mp3")
     except Exception as e:
         print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)

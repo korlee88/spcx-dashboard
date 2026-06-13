@@ -189,13 +189,20 @@ RKLB의 Neutron 규칙(R25)과 동일한 구조:
 | `VOICE` | `ko-KR-SunHiNeural` | edge-tts 음성 (밝은 여성, 친근 튜닝) |
 | `RATE` | `+8%` | 발화 속도 |
 | `PITCH` | `+6Hz` | 음 높이 |
-| `LINE_PAUSE_MS` | `1000` | 대본 줄(세그먼트) 사이 무음 휴지 (ms) |
+| `LINE_PAUSE_MS` | `600` | 대본 줄(세그먼트) 사이 무음 휴지 (ms) |
+| `TRIM_DB` | `-42.0` | 무음 판정 dBFS (가장자리 트리밍 임계값) |
+| `TRIM_KEEP_MS` | `60` | 트리밍 후 가장자리에 남길 여유 무음 (ms) |
 
 - `build_scene_tts_segments()`가 씬 대본을 줄 단위 세그먼트 리스트로 분리
   (씬0: 헤드라인·원인·호재·리스크 각각, 씬1: 헤드라인+세부줄, 씬2: 인트로+나머지줄).
-- `gen_audio()`가 세그먼트마다 edge-tts MP3를 따로 생성한 뒤
-  pydub `AudioSegment.silent(LINE_PAUSE_MS)`를 사이에 끼워 최종 MP3로 합성.
-- pydub/ffmpeg 미가용 시 공백으로 이어붙인 단일 TTS로 폴백 (휴지 없음).
+- `gen_audio()`가 세그먼트마다 edge-tts MP3를 따로 생성하고 `_trim_edge_silence()`로
+  가장자리 무음을 잘라낸 뒤, pydub `AudioSegment.silent(LINE_PAUSE_MS)`를 사이에 끼워 합성.
+  합성 결과 앞 200ms·뒤 300ms 여유 무음을 덧붙여 export.
+- `_trim_edge_silence()`: `detect_leading_silence`로 앞무음을, `piece.reverse()`로 뒷무음을
+  측정해 양쪽 `TRIM_KEEP_MS`만 남기고 제거 (유효 구간 100ms 미만이면 원본 유지).
+  edge-tts가 꼬리에 ~0.5초+ 자체 무음을 붙여 `LINE_PAUSE_MS`와 겹치면 체감 텀이 과도해지는
+  문제를 해결 — 트리밍 + 600ms로 체감 ~720ms 일정하게 맞춘다.
+- pydub/ffmpeg 미가용 시 공백으로 이어붙인 단일 TTS로 폴백 (휴지·트리밍 없음).
 
 ### 씬 구성 — AI 생성 고지 밴드 (씬 2)
 
