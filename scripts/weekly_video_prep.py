@@ -16,6 +16,7 @@ ROOT_DIR          = Path(__file__).parent.parent
 TICKER_CONFIG     = json.loads((ROOT_DIR / "config" / "ticker.json").read_text(encoding="utf-8"))
 TICKER            = TICKER_CONFIG["ticker"]
 COMPANY_KO        = TICKER_CONFIG["company_ko"]
+COMPANY_EN        = TICKER_CONFIG.get("company_en", TICKER)
 INDUSTRY_KO       = TICKER_CONFIG.get("industry_ko", "")
 BRAND_LABEL       = TICKER_CONFIG["brand_label"]
 REPO              = TICKER_CONFIG["repo"]
@@ -66,6 +67,20 @@ SCENE_ACCENTS = [PURPLE, GREEN, (236, 72, 153)]  # 브리핑/호재/미래비전
 
 SCENE_WIKI_ARTICLES = TICKER_CONFIG["scene_wiki_articles"]
 GOOGLE_TRENDS_KEYWORDS = TICKER_CONFIG.get("google_trends_keywords", [])
+
+
+def scene_visual_subject(idx):
+    """config의 scene_wiki_articles[idx]를 이미지 프롬프트용 영어 비주얼 주제로 변환.
+
+    종목 고유의 핵심 비행체·제품명(예: SpaceX → Falcon 9 / Starship / Starlink)을 명시해
+    LLM이 경쟁사(RKLB 등) 로켓을 대신 그리는 일을 막는다. 항목이 없으면 회사 영문명으로 폴백.
+    """
+    try:
+        arts = SCENE_WIKI_ARTICLES[idx]
+    except (IndexError, TypeError, KeyError):
+        arts = None
+    arts = [a for a in (arts or []) if a]
+    return ", ".join(arts) if arts else COMPANY_EN
 
 SCENE_BG_DIR = ROOT_DIR / "data" / "scene-backgrounds"
 SCENE_STATIC_BG = [
@@ -462,10 +477,11 @@ SCENE_2:
 각 60단어 이상. 반드시 포함: "no text, no letters, no watermark, no logo", "ultra-high resolution".
 {company_ko}·{industry_ko} 관련 시각 요소 포함. 씬별 색감 지정.
 ※ 씬 0·1은 16:9 landscape (horizontal strip), 씬 2는 9:16 vertical (full screen) — 프롬프트에 비율 명시.
+※ 로켓·발사체·위성 등 핵심 비행체는 반드시 {company_en}의 실제 기체(아래 씬별 주제에 명시된 것)만 묘사한다. 경쟁사·타 우주기업의 로켓이나 발사체는 절대 그리지 말 것.
 
-IMAGE_PROMPT_0: [씬0 — 16:9 landscape · 서울 한강 야경 배경 {company_ko} {industry_ko} 핵심 비주얼, 남산타워·63빌딩·롯데타워 도심 스카이라인, K-tech 첨단 도시 보라빛 미래적 분석 분위기, Korean futuristic city Seoul skyline purple violet tech analytics, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_1: [씬1 — 16:9 landscape · 한강 다리 초록빛 성장 상승 이미지, 서울 도심 배경 {company_ko} {industry_ko} 역동적 비주얼, K-tech 인프라 밝고 활기찬 분위기, Korean city Seoul green growth bullish energy vibrant, sunlit modern skyline, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_2: [씬2 — 9:16 vertical · 한국 미래 도시: 한강 야경·서울 스카이라인·광화문 광장 배경 {company_ko} {industry_ko} 상징 비주얼, 첨단 K-tech 도시 풍경, 마젠타·골드빛 영감적 미래 무드, 황금빛 태양·별빛·반짝임, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape · 서울 한강 야경 배경에 {scene0_subject} 핵심 비주얼, 남산타워·63빌딩·롯데타워 도심 스카이라인, K-tech 첨단 도시 보라빛 미래적 분석 분위기, Korean futuristic city Seoul skyline purple violet tech analytics, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape · 한강 다리 초록빛 성장 상승 이미지, 서울 도심 배경에 {scene1_subject} 역동적 비주얼, K-tech 인프라 밝고 활기찬 분위기, Korean city Seoul green growth bullish energy vibrant, sunlit modern skyline, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_2: [씬2 — 9:16 vertical · 한국 미래 도시: 한강 야경·서울 스카이라인·광화문 광장 배경에 {scene2_subject} 상징 비주얼, 첨단 K-tech 도시 풍경, 마젠타·골드빛 영감적 미래 무드, 황금빛 태양·별빛·반짝임, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
 
 
 def _build_prompt(summary):
@@ -549,7 +565,11 @@ def _build_prompt(summary):
     return SCRIPT_PROMPT_TEMPLATE.format(
         ticker=TICKER,
         company_ko=COMPANY_KO,
+        company_en=COMPANY_EN,
         industry_ko=INDUSTRY_KO,
+        scene0_subject=scene_visual_subject(0),
+        scene1_subject=scene_visual_subject(1),
+        scene2_subject=scene_visual_subject(2),
         week_start=summary["week_start"],
         week_end=summary["week_end"],
         price=summary["latest_price"],

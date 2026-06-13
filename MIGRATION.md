@@ -76,7 +76,7 @@ config/rules.json ──┘                                                    (
 | `key_people` | 핵심 인물(SNS 신호) | `["Peter Beck"]` |
 | `has_delivery_reports` | 분기 인도량 발표 종목 여부 | `false` |
 | `earnings_months` | 실적 발표월 | `[2,5,8,11]` |
-| `scene_wiki_articles` | 씬별 위키 이미지 후보 | `[["Rocket Lab",...],...]` |
+| `scene_wiki_articles` | 씬별 위키 이미지 후보 **+ 주간영상 이미지 프롬프트의 기체·제품명** | `[["Rocket Lab",...],...]` |
 | `scene_static_bg_files` | 씬별 고정 배경 (없으면 `null`) | `[null,"bg_scene_02.jpg",null]` |
 | `youtube_search_queries` | 유튜브 관심도 검색어 | `["Rocket Lab RKLB stock",...]` |
 | `google_trends_keywords` | 구글 트렌드 키워드 | `["로켓랩","RKLB",...]` |
@@ -84,6 +84,12 @@ config/rules.json ──┘                                                    (
 
 > `has_delivery_reports: false` → 인도량 발표주 증폭 로직(`isDeliveryWeek`)이 항상 false가 되어
 > 자동으로 비활성화된다. 인도량 보고가 있는 종목(예: 자동차)은 `true`.
+>
+> `scene_wiki_articles`는 위키 배경 이미지 후보일 뿐 아니라 `weekly_video_prep.py`가
+> **주간영상 씬별 이미지 프롬프트의 핵심 기체·제품명**으로도 사용한다(씬0/1/2 순서대로 주입).
+> 따라서 **반드시 해당 종목 자신의 발사체·제품**으로 채운다(예: SpaceX → Falcon 9 / Starship / Starlink).
+> 프롬프트에는 "경쟁사·타사 로켓 금지" 가드레일이 자동 포함되어, 경쟁사 뉴스가 많은 주에도
+> 경쟁사 기체가 배경으로 그려지지 않는다.
 
 ### Phase 2 — `config/rules.json` (산업별 26규칙 재설계) ⭐⭐⭐
 
