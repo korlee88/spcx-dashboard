@@ -728,9 +728,10 @@ async function getDriveAppDataSize(token) {
 
 // ─── 앱 버전 ──────────────────────────────────────────────────────────────────
 const APP_VERSION = {
-  version: '1.1.0',
-  date: '2026-06-12 KST',
+  version: '1.2.0',
+  date: '2026-06-14 KST',
   changelog: [
+    { v: '1.2.0', date: '2026-06-14 KST', label: '주간 영상 BGM 복원 — 원본 합성 배경음(data/bgm.mp3, scripts/make_bgm.py) 커밋해 네트워크 의존 0 · 씬 전환 직후 0.5초 나레이션 딜레이(SCENE_LEAD_MS/SCENE_TAIL_MS) · yt-dlp 의존 제거' },
     { v: '1.1.0', date: '2026-06-12 KST', label: 'SPCX 마이그레이션 (from rklb-dashboard v1.0.2) · RULE_LABELS·매수지수 분해 라벨·핵심인물(머스크) UI 전면 교체 · R01~R26 스타십/팰컨/스타링크 특화 규칙 · 캐시키 spcx_ 전환' },
     { v: '1.0.2', date: '2026-06-11 KST', label: '보안 강화 — CDN 스크립트 버전 고정+SRI(react/react-dom/babel 프로덕션 빌드 전환, tailwind 버전 고정) · YouTube 수집 에러 로그의 API 키 노출 경로 차단 · Gmail 수신자 주소 로그 출력 제거' },
     { v: '1.0.1', date: '2026-06-05 KST', label: '마이그레이션 잔재 정리 — RULE_LABELS·매수지수 분해 라벨·핵심인물(피터백) UI를 RKLB로 정정 · 영상 이미지 프롬프트 config 자동적응화 · 마이그레이션 플레이북(MIGRATION.md)+감사도구 추가' },
