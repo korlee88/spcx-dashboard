@@ -1,1 +1,560 @@
-{"weeks":[],"lastUpdated":""}
+{
+  "weeks": [
+    {
+      "weekStart": "2026-01-05",
+      "weekEnd": "2026-01-11",
+      "quarter": "q1",
+      "news": [
+        {
+          "title": "SpaceX, 월스트리트 상장 임박…알아야 할 것들",
+          "source": "Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 월스트리트 데뷔 후 25% 급등하며 일론 머스크를 최초의 억만장자로 만들다",
+          "source": "Associated Press",
+          "category": "Market"
+        },
+        {
+          "title": "유가 하락과 SpaceX의 월스트리트 데뷔 성공으로 미국 증시 상승",
+          "source": "Associated Press",
+          "category": "Market"
+        },
+        {
+          "title": "규범을 깨는 SpaceX IPO, 월스트리트의 환호와 불안의 원천",
+          "source": "The Economic Times",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX IPO 열풍에 미국 우주 관련 주식 상승",
+          "source": "Reuters",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 기록적인 750억 달러 IPO 이후 첫 거래일 주가 19% 급등",
+          "source": "CBS News",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 나스닥 데뷔 후 주가 11% 상승, 시가총액 2조 달러 육박",
+          "source": "Mint",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX 주식, 첫 거래일 높은 수요로 급등",
+          "source": "WGBH",
+          "category": "Market"
+        },
+        {
+          "title": "일론 머스크의 SpaceX, 블록버스터 IPO 서류 공개",
+          "source": "Al Jazeera",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX 주식, 역사적인 IPO 이후 주식 시장 데뷔에서 19% 상승",
+          "source": "Los Angeles Times",
+          "category": "Market"
+        }
+      ],
+      "newsCount": 10,
+      "analysis": {
+        "avgScore": 0.3,
+        "buyIndex": 52,
+        "direction": "bullish",
+        "bullish": 3,
+        "bearish": 1,
+        "neutral": 6,
+        "topRules": [
+          "R09",
+          "R24"
+        ],
+        "failCount": 0,
+        "scoringLayers": {
+          "base": 53,
+          "r24Discount": -1
+        },
+        "macroCtx": {
+          "spyChg": 1.1,
+          "qqqChg": 1.18,
+          "vixClose": 14.489999771118164,
+          "wtiChg": 2.87,
+          "cnyChg": -0.14,
+          "competitorChg": 13.71,
+          "competitorRelStrength": null,
+          "prevAssetChg": 0,
+          "assetTrend3w": null,
+          "rsi": null,
+          "macd": null,
+          "bb": null,
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": 13.71,
+          "bydRelStrength": null,
+          "prevTslaChg": 0,
+          "tslaTrend3w": null
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": null
+    },
+    {
+      "weekStart": "2026-01-12",
+      "weekEnd": "2026-01-18",
+      "quarter": "q1",
+      "news": [
+        {
+          "title": "SpaceX, 역사적인 IPO로 월스트리트 데뷔 및 일론 머스크 첫 조만장자 등극",
+          "source": "Associated Press",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX IPO, 개인 투자자로부터 700억 달러 이상 주문 유치",
+          "source": "Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 상장 첫날 19% 급등했지만 난관 예상",
+          "source": "Morningstar",
+          "category": "Market"
+        },
+        {
+          "title": "금융 전문가들, SpaceX 주식이 실제 가치의 절반에 불과할 수 있다고 경고",
+          "source": "UNILAD Tech",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 1.8조 달러 가치로 역사적인 IPO 설정: 투자자를 위한 주요 세부 정보",
+          "source": "Live News",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 월스트리트 데뷔 임박: 알아야 할 사항",
+          "source": "BNN Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 상장 첫날 2.1조 달러 가치 기록. 투자자들에게 문제인가?",
+          "source": "Motley Fool",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 주식 급등하며 역사적인 데뷔에서 초기 상장 가격 돌파",
+          "source": "MarketScreener",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 오랫동안 기다려온 기업공개(IPO) 신청, 일론 머스크를 조만장자로 만들 수도",
+          "source": "CNN Business",
+          "category": "Market"
+        },
+        {
+          "title": "Google, SpaceX와의 9억 2천만 달러 규모 AI 계약으로 비밀리에 이득",
+          "source": "UNILAD Tech",
+          "category": "Product"
+        }
+      ],
+      "newsCount": 10,
+      "analysis": {
+        "avgScore": 0.2,
+        "buyIndex": 52,
+        "direction": "neutral",
+        "bullish": 1,
+        "bearish": 1,
+        "neutral": 7,
+        "topRules": [
+          "R20",
+          "R17"
+        ],
+        "failCount": 1,
+        "scoringLayers": {
+          "base": 52
+        },
+        "macroCtx": {
+          "spyChg": 0.14,
+          "qqqChg": -0.17,
+          "vixClose": 15.859999656677246,
+          "wtiChg": 0.75,
+          "cnyChg": -0.16,
+          "competitorChg": 13.32,
+          "competitorRelStrength": null,
+          "prevAssetChg": 0,
+          "assetTrend3w": null,
+          "rsi": null,
+          "macd": null,
+          "bb": null,
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": 13.32,
+          "bydRelStrength": null,
+          "prevTslaChg": 0,
+          "tslaTrend3w": null
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": null
+    },
+    {
+      "weekStart": "2026-01-19",
+      "weekEnd": "2026-01-25",
+      "quarter": "q1",
+      "news": [
+        {
+          "title": "일론 머스크, SpaceX IPO로 세계 최초의 억만장자 등극",
+          "source": "Associated Press",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, IPO 첫날 주가 19% 급등하며 2.2조 달러 가치 기록",
+          "source": "Reuters",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, AI 강국으로의 전환에 베팅하며 IPO 신청",
+          "source": "Reuters",
+          "category": "Product"
+        },
+        {
+          "title": "SpaceX IPO, 우주 경제 가치 재평가 촉발",
+          "source": "Reuters",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 1.75조 달러 이상의 가치로 IPO 준비 중",
+          "source": "Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "일론 머스크, xAI를 SpaceX에 통합하여 기술 제국 구축",
+          "source": "TheStreet",
+          "category": "Product"
+        },
+        {
+          "title": "Starlink, SpaceX 매출의 대부분을 차지하며 성장 동력 역할",
+          "source": "TheStreet",
+          "category": "Earnings"
+        },
+        {
+          "title": "모닝스타, SpaceX IPO '상당히 고평가' 경고",
+          "source": "Morningstar",
+          "category": "Market"
+        },
+        {
+          "title": "테슬라, FSD 가격 인상 발표 후 주가 하락",
+          "source": "MarketWatch",
+          "category": "Product"
+        },
+        {
+          "title": "SpaceX, 2025년 초부터 2026년 3월까지 87억 달러 손실 기록",
+          "source": "Associated Press",
+          "category": "Earnings"
+        }
+      ],
+      "newsCount": 10,
+      "analysis": {
+        "avgScore": 0,
+        "buyIndex": 53,
+        "direction": "neutral",
+        "bullish": 0,
+        "bearish": 0,
+        "neutral": 2,
+        "topRules": [],
+        "failCount": 8,
+        "scoringLayers": {
+          "base": 50,
+          "macroOverlay": 3
+        },
+        "macroCtx": {
+          "spyChg": 1.14,
+          "qqqChg": 2,
+          "vixClose": 16.09000015258789,
+          "wtiChg": 3.49,
+          "cnyChg": 0.06,
+          "competitorChg": -5.12,
+          "competitorRelStrength": null,
+          "prevAssetChg": 0,
+          "assetTrend3w": null,
+          "rsi": null,
+          "macd": null,
+          "bb": null,
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": -5.12,
+          "bydRelStrength": null,
+          "prevTslaChg": 0,
+          "tslaTrend3w": null
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": null
+    },
+    {
+      "weekStart": "2026-01-26",
+      "weekEnd": "2026-02-01",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.272576462s."
+    },
+    {
+      "weekStart": "2026-02-02",
+      "weekEnd": "2026-02-08",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 43.631754887s."
+    },
+    {
+      "weekStart": "2026-02-09",
+      "weekEnd": "2026-02-15",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 10.971131965s."
+    },
+    {
+      "weekStart": "2026-02-16",
+      "weekEnd": "2026-02-22",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 41.922746812s."
+    },
+    {
+      "weekStart": "2026-02-23",
+      "weekEnd": "2026-03-01",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 11.270403264s."
+    },
+    {
+      "weekStart": "2026-03-02",
+      "weekEnd": "2026-03-08",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 39.412578432s."
+    },
+    {
+      "weekStart": "2026-03-09",
+      "weekEnd": "2026-03-15",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.724539334s."
+    },
+    {
+      "weekStart": "2026-03-16",
+      "weekEnd": "2026-03-22",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.251193116s."
+    },
+    {
+      "weekStart": "2026-03-23",
+      "weekEnd": "2026-03-29",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.964119313s."
+    },
+    {
+      "weekStart": "2026-03-30",
+      "weekEnd": "2026-04-05",
+      "quarter": "q1",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 47.515578605s."
+    },
+    {
+      "weekStart": "2026-04-06",
+      "weekEnd": "2026-04-12",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 14.366173102s."
+    },
+    {
+      "weekStart": "2026-04-13",
+      "weekEnd": "2026-04-19",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.301159333s."
+    },
+    {
+      "weekStart": "2026-04-20",
+      "weekEnd": "2026-04-26",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.764995337s."
+    },
+    {
+      "weekStart": "2026-04-27",
+      "weekEnd": "2026-05-03",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 38.132572806s."
+    },
+    {
+      "weekStart": "2026-05-04",
+      "weekEnd": "2026-05-10",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 8.525349698s."
+    },
+    {
+      "weekStart": "2026-05-11",
+      "weekEnd": "2026-05-17",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 40.239775736s."
+    },
+    {
+      "weekStart": "2026-05-18",
+      "weekEnd": "2026-05-24",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 7.824863815s."
+    },
+    {
+      "weekStart": "2026-05-25",
+      "weekEnd": "2026-05-31",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": null,
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 36.808934219s."
+    },
+    {
+      "weekStart": "2026-06-01",
+      "weekEnd": "2026-06-07",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": {
+        "pctChange": 7.3,
+        "actual": "bullish",
+        "open": 150,
+        "close": 160.95
+      },
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 10.120671ms."
+    },
+    {
+      "weekStart": "2026-06-08",
+      "weekEnd": "2026-06-14",
+      "quarter": "q2",
+      "news": [],
+      "newsCount": 0,
+      "analysis": null,
+      "movement": {
+        "pctChange": 7.3,
+        "actual": "bullish",
+        "open": 150,
+        "close": 160.95
+      },
+      "match": null,
+      "strongSignal": false,
+      "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 25.826851868s."
+    }
+  ],
+  "lastUpdated": "",
+  "generatedAt": "2026-06-15 04:50 KST",
+  "year": 2026,
+  "stats": {
+    "totalWeeks": 23,
+    "analyzedWeeks": 0,
+    "accuracy": 0,
+    "strongAccuracy": 0,
+    "avgScore": 0
+  }
+}
