@@ -1,6 +1,414 @@
 {
   "sessions": [
     {
+      "id": "auto-1781416476292",
+      "date": "2026-06-14",
+      "displayDate": "2026.06.14",
+      "kstTime": "14:51",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1781416327016,
+          "title": "SpaceX, 기록적인 IPO로 월스트리트 데뷔 후 주가 급등",
+          "summary": "SpaceX는 금요일 월스트리트 데뷔에서 주당 161달러로 마감하여 약 2.1조 달러의 시장 가치를 기록했습니다. 이는 역사상 가장 큰 규모의 기업공개(IPO) 중 하나로 기록되었습니다. CNBC의 짐 크레이머는 SpaceX의 성공적인 데뷔가 Anthropic과 같은 다른 AI 관련 기업들의 주식 공개를 촉진할 수 있다고 언급했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327017,
+          "title": "SpaceX IPO, 일론 머스크를 세계 최초의 억만장자로 만들다",
+          "summary": "SpaceX의 주가는 월스트리트 데뷔 첫날 19% 급등하여 일론 머스크를 세계 최초의 억만장자로 만들었습니다. 주가는 150달러에 시작하여 161달러에 마감되었으며, 회사 가치는 약 2.1조 달러에 달했습니다. 머스크는 위성과 데이터 센터를 우주에 배치하고 궁극적으로 화성에 식민지를 건설하려는 야망에 자금을 조달하기 위해 SpaceX를 상장한다고 밝혔습니다.",
+          "source": "Associated Press",
+          "date": "2026-06-13",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327018,
+          "title": "SpaceX, 750억 달러 IPO로 세계 최대 규모 기록",
+          "summary": "SpaceX는 750억 달러 규모의 IPO를 통해 기록적인 자금을 조달하며 1.77조 달러의 기업 가치를 달성했습니다. 이는 2000년 이후 미국 역사상 가장 큰 29개 IPO의 총 가치를 합친 것과 맞먹는 규모입니다. 이번 상장은 기관 투자자와 개인 투자자 모두에게 강한 수요를 보였습니다.",
+          "source": "Westfintex",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327019,
+          "title": "SpaceX IPO, AI 관련 기업들의 자본 시장 재개 신호탄",
+          "summary": "Citizens의 금융 기술 연구 책임자인 데빈 라이언은 SpaceX의 성공적인 IPO가 월스트리트가 오랫동안 기다려온 자본 시장 재개의 신호탄이 될 수 있다고 말했습니다. 그는 이번 거래의 성과가 더 넓은 IPO 파이프라인에 중요하며, 소매 브로커들에게도 상당한 파급 효과를 가져올 것이라고 강조했습니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327020,
+          "title": "SpaceX, 기록적인 IPO 이후 첫 거래에서 급등",
+          "summary": "SpaceX의 주가는 금요일 750억 달러 규모의 기록적인 IPO 이후 첫 거래에서 급등했습니다. 주가는 공모가보다 31% 높은 176.52달러까지 치솟았으며, 이는 머스크를 세계 최초의 억만장자로 만들고 회사 시가총액을 2조 달러 이상으로 끌어올렸습니다.",
+          "source": "Bloomberg",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327021,
+          "title": "SpaceX IPO, AI 기업 투자 심리 테스트",
+          "summary": "월스트리트 트레이더들은 SpaceX의 역사적인 데뷔를 앞두고 주식을 상승시켰으며, 이는 인공지능(AI) 관련 기업에 대한 투자자들의 식욕을 시험하는 중요한 계기가 될 것으로 예상됩니다. 공매도 전문가 제임스 채노스는 SpaceX의 기업 가치가 재무적 기본에 근거하기보다는 머스크와 AI에 대한 투자자들의 열기에 의해 주도되고 있다고 주장했습니다.",
+          "source": "Financial Post",
+          "date": "2026-06-11",
+          "category": "Market"
+        },
+        {
+          "id": 1781416327022,
+          "title": "SpaceX, 스타링크 위성 및 재사용 로켓으로 우주 경제 혁신",
+          "summary": "일론 머스크는 수천 개의 스타링크 인터넷 위성을 발사하고 재사용 가능한 로켓을 개척하여 우주 경제를 변화시킴으로써 SpaceX를 세계 최대의 로켓 사업으로 성장시켰습니다. SpaceX의 IPO 신청은 유럽 우주 주식의 상승을 이끌었으며, 이는 우주 부문 전반의 가치 평가를 높일 수 있다는 희망을 불러일으켰습니다.",
+          "source": "Reuters",
+          "date": "2026-05-22",
+          "category": "Product"
+        },
+        {
+          "id": 1781416327023,
+          "title": "SpaceX, AI 소프트웨어 판매를 통한 미래 성장 계획",
+          "summary": "SpaceX는 2조 달러 이상의 가치를 지닌 회사로서, 엔터프라이즈 AI를 포함한 다양한 사업을 통해 미래 성장을 계획하고 있습니다. 회사는 28.5조 달러의 시장 중 26.5조 달러가 엔터프라이즈 AI 시장이라고 주장하며, 스타십(Starship) 로켓의 성공적인 개발이 이러한 계획의 핵심이라고 밝혔습니다.",
+          "source": "Bloomberg",
+          "date": "2026-06-12",
+          "category": "Product"
+        },
+        {
+          "id": 1781416327024,
+          "title": "SpaceX, FAA로부터 연간 10,000회 발사 목표 달성 위한 신뢰성 개선 요구",
+          "summary": "SpaceX는 5년 이내에 연간 10,000회 발사를 목표로 하고 있지만, 연방항공청(FAA)은 이러한 확장을 승인하기 전에 신뢰성 개선이 필요하다고 밝혔습니다. FAA 국장은 SpaceX 사장과 만나 회사의 야심찬 목표에 대해 논의했으며, SpaceX는 2025년에 170회 발사를 수행하여 약 2,500개의 위성을 배치했습니다.",
+          "source": "Reuters",
+          "date": "2026-05-22",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1781416327025,
+          "title": "SpaceX, 스타링크 IPO 가능성 및 군사적 중요성 부각",
+          "summary": "SpaceX의 가치는 주로 스타링크(Starlink)에서 비롯되며, 이는 고속 인터넷 접속을 제공하는 위성군입니다. 별도의 스타링크 IPO가 내년에 이루어질 수 있으며, 이 부문은 소비자 및 군사적 중요성 측면에서 성장하고 있습니다. 스타링크는 최근 북극에서 9개월간의 미군 테스트를 완료하여 우주군과의 잠재적 계약 가능성을 열었습니다.",
+          "source": "Seeking Alpha",
+          "date": "2023-12-07",
+          "category": "Product"
+        }
+      ],
+      "analyses": {
+        "1781416327016": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO에 대한 가상의 시나리오를 다루고 있으며, 실제 SpaceX는 아직 상장되지 않았으므로 현재 주식에 미치는 영향은 없습니다.",
+          "key_factors": [
+            "가상 시나리오",
+            "미상장 기업"
+          ]
+        },
+        "1781416327017": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO와 관련된 가상의 시나리오로, 실제 발생한 사건이 아니므로 현재 SpaceX 주가에 직접적인 영향을 미치지 않습니다.",
+          "key_factors": []
+        },
+        "1781416327018": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO에 대한 과거 정보를 제공하며, 현재 주식에 직접적인 영향을 미칠 새로운 정보나 촉매제가 포함되어 있지 않습니다.",
+          "key_factors": []
+        },
+        "1781416327019": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "low",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 잠재적 IPO가 자본 시장 재개의 신호탄이 될 수 있다는 애널리스트의 추측을 담고 있으며, 이는 SPCX에 대한 긍정적인 시장 심리를 나타내지만 구체적인 IPO 계획이나 확정된 정보는 없습니다.",
+          "key_factors": [
+            "IPO speculation",
+            "market sentiment"
+          ]
+        },
+        "1781416327020": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO 이후 첫 거래에 대한 가상의 시나리오를 다루고 있으며, 현재 SpaceX는 상장되지 않았으므로 주식에 직접적인 영향을 미치지 않습니다.",
+          "key_factors": []
+        },
+        "1781416327021": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R11",
+            "R24"
+          ],
+          "reasoning": "공매도 전문가가 SpaceX의 기업 가치가 AI와 머스크에 대한 투자자들의 열기에 의해 과대평가되었다고 주장하며, 이는 잠재적인 IPO에 대한 부정적인 시각을 제시합니다.",
+          "key_factors": [
+            "공매도 전문가의 부정적 평가",
+            "AI 관련 기업 투자 심리 테스트",
+            "Elon Musk 관련 투자자 열기"
+          ]
+        },
+        "1781416327022": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 기존 성과와 잠재적인 IPO에 대한 긍정적인 언급을 포함하고 있지만, 새로운 구체적인 촉매제나 확정된 재정적 영향을 제공하지 않습니다.",
+          "key_factors": [
+            "스타링크 위성 발사",
+            "재사용 로켓 개척",
+            "IPO 신청 기대감"
+          ]
+        },
+        "1781416327023": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R23"
+          ],
+          "reasoning": "SpaceX가 엔터프라이즈 AI 시장 진출을 통해 미래 성장을 계획하고 있으며, 이는 새로운 시장 진입 가능성을 시사하여 긍정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "엔터프라이즈 AI 시장 진출",
+            "미래 성장 계획"
+          ]
+        },
+        "1781416327024": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "FAA가 SpaceX의 연간 10,000회 발사 목표 달성을 위해 신뢰성 개선을 요구하여 장기적인 확장 계획에 잠재적인 지연을 초래할 수 있습니다.",
+          "key_factors": [
+            "FAA 신뢰성 개선 요구",
+            "장기 발사 목표 달성 지연 가능성"
+          ]
+        },
+        "1781416327025": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R19",
+            "R23"
+          ],
+          "reasoning": "스타링크의 IPO 가능성 언급과 미군과의 성공적인 북극 테스트 완료는 스타링크의 상업적 및 군사적 중요성을 부각시키며 잠재적인 계약 확대를 시사하여 긍정적입니다.",
+          "key_factors": [
+            "Starlink IPO 가능성",
+            "미군과의 북극 테스트 성공",
+            "군사적 중요성 증가"
+          ]
+        }
+      },
+      "avgScore": 0.3,
+      "buyIndex": 58,
+      "direction": "bullish",
+      "topRules": [
+        "R23",
+        "R11",
+        "R24",
+        "R19"
+      ],
+      "bullish": 4,
+      "bearish": 2,
+      "neutral": 4,
+      "muskXSentiment": {
+        "posts": [
+          {
+            "date": "2026-06-12",
+            "content": "SpaceX가 Nasdaq에 SPCX 티커로 상장되었으며, Elon Musk는 SpaceX의 IPO가 역사상 가장 큰 규모라고 언급하며 회사의 성공에 대한 놀라움을 표현했습니다. 그는 SpaceX가 처음에는 성공할 확률이 10% 미만이라고 생각했다고 밝혔습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-12",
+            "content": "Elon Musk는 SpaceX의 IPO를 통해 세계 최초의 억만장자가 되었으며, SpaceX의 주가는 첫 거래일에 19% 상승했습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-12",
+            "content": "Musk는 SpaceX의 목표가 인류를 달, 화성, 그리고 그 너머로 데려가는 것이라고 강조하며, 단순히 소수의 우주비행사가 아닌 모든 사람이 우주로 갈 수 있도록 하는 것이라고 말했습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-12",
+            "content": "SpaceX는 Starlink 위성 29개를 궤도에 추가로 발사했다고 발표했으며, Musk는 이를 리트윗했습니다.",
+            "sentiment": "bullish",
+            "engagement": "medium"
+          },
+          {
+            "date": "2026-06-12",
+            "content": "Musk는 SpaceX의 초기 직원들이 IPO를 통해 백만장자가 된 사례를 리트윗하며 자본주의의 긍정적인 측면을 강조했습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-07",
+            "content": "Musk는 SpaceX의 초기 설립 배경에 대해 언급하며, 처음에는 화성 탐사에 대한 대중의 관심을 높여 NASA 예산을 늘리기 위한 자선적 임무였고 상업적 야망은 없었다고 밝혔습니다.",
+            "sentiment": "neutral",
+            "engagement": "medium"
+          },
+          {
+            "date": "2026-06-07",
+            "content": "Musk는 Falcon 9 로켓이 21개의 Starlink 위성과 2개의 Star Shield 위성을 캘리포니아에서 발사했다고 리트윗했습니다.",
+            "sentiment": "bullish",
+            "engagement": "medium"
+          }
+        ],
+        "overall_sentiment": "bullish",
+        "sentiment_score": 3,
+        "post_count": 7,
+        "reasoning": "지난 7일간 Elon Musk의 X(트위터) 게시물은 SpaceX의 성공적인 IPO, 주가 상승, 그리고 인류의 다행성 목표에 대한 긍정적인 메시지에 집중되어 전반적으로 매우 낙관적인 분위기를 보였습니다."
+      },
+      "googleTrends": {
+        "current_score": 100,
+        "week_avg": 70,
+        "trend": "rising",
+        "spike": true,
+        "top_queries": [
+          "SpaceX IPO",
+          "SpaceX stock",
+          "Elon Musk SpaceX"
+        ],
+        "reasoning": "SpaceX는 지난 7일 동안, 특히 6월 12일 IPO 이후 검색 관심도가 크게 증가하여 최고 인기 점수를 기록했습니다."
+      },
+      "youtubeInterest": {
+        "score": 1,
+        "velocity": 0.8,
+        "velocity_label": "보합 (×0.8)",
+        "reason": "조회수 속도 보합 (×0.8) | 최근 3일 8,474,169회 / 이전 4~7일 10,588,189회 | 총 19,062,358회 (67개 영상)",
+        "video_count": 67,
+        "total_views": 19062358,
+        "hot_views": 8474169,
+        "baseline_views": 10588189,
+        "top_videos": [
+          {
+            "title": "Até perdeu o starlink #carros #automobile #starlink #estrada #transito #carrousado #carrosbrasil",
+            "channel": "Trakcar Consultas",
+            "publishedAt": "2026-06-08T13:00:24Z",
+            "viewCount": 5877880
+          },
+          {
+            "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-12T21:27:06Z",
+            "viewCount": 1298170
+          },
+          {
+            "title": "박시동 경제평론가 | 삼성전자 주가 전망 | 스페이스x 삼성전자 | 스페이스x 관련주 | 스페이스x 관련주 한국 | 삼성 테슬라",
+            "channel": "정치인사이드",
+            "publishedAt": "2026-06-11T08:38:27Z",
+            "viewCount": 1081934
+          },
+          {
+            "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
+            "channel": "뇌즙",
+            "publishedAt": "2026-06-10T08:00:03Z",
+            "viewCount": 937291
+          },
+          {
+            "title": "Will India Block Starlink? This is what US Report is Saying #Starlink #ElonMusk #PrashantDhawan",
+            "channel": "Career247",
+            "publishedAt": "2026-06-12T11:26:38Z",
+            "viewCount": 481166
+          }
+        ],
+        "collected_at": "2026-06-14T05:51:57Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 6,
+        "Product": 3,
+        "Regulatory": 1
+      },
+      "macroCtx": {
+        "spyChg": 0.14,
+        "qqqChg": 0.52,
+        "vixClose": 17.68000030517578,
+        "wtiChg": -2.03,
+        "cnyChg": -0.03,
+        "competitorChg": -13.23,
+        "competitorRelStrength": 20.53,
+        "prevAssetChg": 7.3,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -13.23,
+        "bydRelStrength": 20.53,
+        "prevTslaChg": 7.3,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 53,
+        "r24Discount": -1,
+        "meanReversion": -5,
+        "competitorOutperform": 2,
+        "muskXSentiment": 4,
+        "googleTrends": 4,
+        "youtubeInterest": 1
+      },
+      "latestPrice": 160.95,
+      "latestTslaPrice": 160.95,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/15(월)",
+          "change_pct": 0.9,
+          "signal": "매수",
+          "basePrice": 160.95,
+          "predictedPrice": 162.4
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/16(화)",
+          "change_pct": 1.2,
+          "signal": "매수",
+          "basePrice": 160.95,
+          "predictedPrice": 162.88
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/17(수)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 162.08
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/18(목)",
+          "change_pct": -0.5,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 160.15
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/19(금)",
+          "change_pct": 0.6,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 161.92
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781416476292
+    },
+    {
       "id": "auto-1781322349378",
       "date": "2026-06-13",
       "displayDate": "2026.06.13",
@@ -363,5 +771,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-13 12:43 KST"
+  "lastUpdated": "2026-06-14 14:51 KST"
 }

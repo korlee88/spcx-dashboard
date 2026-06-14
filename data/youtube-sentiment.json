@@ -1,43 +1,43 @@
 {
-  "score": 3,
-  "velocity": 2.72,
-  "velocity_label": "급등 (×2.7)",
-  "reason": "조회수 속도 급등 (×2.7) | 최근 3일 8,684,482회 / 이전 4~7일 3,189,952회 | 총 11,874,434회 (67개 영상)",
+  "score": 1,
+  "velocity": 0.8,
+  "velocity_label": "보합 (×0.8)",
+  "reason": "조회수 속도 보합 (×0.8) | 최근 3일 8,474,169회 / 이전 4~7일 10,588,189회 | 총 19,062,358회 (67개 영상)",
   "video_count": 67,
-  "total_views": 11874434,
-  "hot_views": 8684482,
-  "baseline_views": 3189952,
+  "total_views": 19062358,
+  "hot_views": 8474169,
+  "baseline_views": 10588189,
   "top_videos": [
+    {
+      "title": "Até perdeu o starlink #carros #automobile #starlink #estrada #transito #carrousado #carrosbrasil",
+      "channel": "Trakcar Consultas",
+      "publishedAt": "2026-06-08T13:00:24Z",
+      "viewCount": 5877880
+    },
     {
       "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
       "channel": "오선의 미국 증시 라이브",
       "publishedAt": "2026-06-12T21:27:06Z",
-      "viewCount": 1295856
-    },
-    {
-      "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
-      "channel": "뇌즙",
-      "publishedAt": "2026-06-10T08:00:03Z",
-      "viewCount": 907835
+      "viewCount": 1298170
     },
     {
       "title": "박시동 경제평론가 | 삼성전자 주가 전망 | 스페이스x 삼성전자 | 스페이스x 관련주 | 스페이스x 관련주 한국 | 삼성 테슬라",
       "channel": "정치인사이드",
       "publishedAt": "2026-06-11T08:38:27Z",
-      "viewCount": 725419
+      "viewCount": 1081934
     },
     {
-      "title": "LIVE: Elon Musk’s SpaceX IPO Listing | SpaceX Goes Public On Nasdaq In Record IPO | U.S Stock Market",
-      "channel": "CNBC-TV18",
-      "publishedAt": "2026-06-12T11:10:03Z",
-      "viewCount": 393460
+      "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
+      "channel": "뇌즙",
+      "publishedAt": "2026-06-10T08:00:03Z",
+      "viewCount": 937291
     },
     {
       "title": "Will India Block Starlink? This is what US Report is Saying #Starlink #ElonMusk #PrashantDhawan",
       "channel": "Career247",
       "publishedAt": "2026-06-12T11:26:38Z",
-      "viewCount": 386280
+      "viewCount": 481166
     }
   ],
-  "collected_at": "2026-06-13T03:43:45Z"
+  "collected_at": "2026-06-14T05:51:57Z"
 }
