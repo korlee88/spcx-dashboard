@@ -1,6 +1,304 @@
 {
   "sessions": [
     {
+      "id": "auto-1781507224803",
+      "date": "2026-06-15",
+      "displayDate": "2026.06.15",
+      "kstTime": "15:27",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 5,
+      "news": [
+        {
+          "id": 1781504871668,
+          "title": "SpaceX, 사상 최대 규모의 IPO로 월스트리트 데뷔",
+          "summary": "SpaceX는 6월 12일 금요일 나스닥에 상장되어 주당 161달러에 거래를 마쳤으며, 약 2.1조 달러의 시장 가치를 기록했습니다. 이는 역사상 가장 큰 규모의 기업 공개(IPO)로 기록되었습니다.",
+          "source": "Bloomberg",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781504871669,
+          "title": "일론 머스크, SpaceX IPO 성공으로 세계 최초의 억만장자 등극",
+          "summary": "SpaceX의 성공적인 IPO로 일론 머스크는 세계 최초의 억만장자가 되었습니다. 그의 재산은 SpaceX와 Tesla 지분을 합쳐 약 1.1조 달러로 추정됩니다.",
+          "source": "Associated Press",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781504871670,
+          "title": "SpaceX, IPO 당일 29개의 스타링크 위성 발사",
+          "summary": "SpaceX는 IPO를 통해 주식 시장에 데뷔한 지 불과 한 시간여 만에 플로리다 케이프 커내버럴 우주군 기지에서 29개의 스타링크 위성을 탑재한 팔콘 9 로켓을 성공적으로 발사했습니다.",
+          "source": "The Christian Index",
+          "date": "2026-06-12",
+          "category": "Product"
+        },
+        {
+          "id": 1781504871671,
+          "title": "짐 크레이머, SpaceX IPO가 AI 관련 주식 시장에 긍정적 영향 미칠 것으로 전망",
+          "summary": "CNBC의 짐 크레이머는 SpaceX의 성공적인 IPO가 새로운 AI 관련 주식 공개의 물결을 열고 주식 시장에 더욱 건설적인 배경을 조성하는 데 도움이 될 수 있다고 언급했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781504871672,
+          "title": "SpaceX, 2026년 1분기 대규모 손실 기록",
+          "summary": "SpaceX는 2025년 기록적인 매출에도 불구하고 AI 사업 부문에서 손실을 기록했으며, 2026년 1분기에는 xAI를 흡수하면서 막대한 부채로 인해 더 큰 손실을 보았습니다. 이는 SpaceX가 현금이 빠르게 소진되고 있음을 시사합니다.",
+          "source": "CleanTechnica",
+          "date": "2026-06-07",
+          "category": "Earnings"
+        },
+        {
+          "id": 1781504871673,
+          "title": "SpaceX IPO, 공매도 투자자들에게 위험한 베팅",
+          "summary": "SpaceX의 IPO는 높은 주가수익비율과 거버넌스 문제로 인해 공매도 대상이 될 수 있지만, 시장의 강세장과 개인 투자자들의 높은 관심으로 인해 공매도 투자자들에게는 매우 위험한 베팅이 될 것이라는 분석이 나왔습니다.",
+          "source": "Reuters",
+          "date": "2026-06-09",
+          "category": "Market"
+        },
+        {
+          "id": 1781504871674,
+          "title": "SpaceX, 2026년 중반 1.75조 달러 가치로 IPO 목표",
+          "summary": "SpaceX는 2026년 6월 12일 나스닥 상장을 목표로 약 1.75조 달러의 기업 가치와 750억 달러의 자금 조달을 목표로 했습니다. 이는 사상 최대 규모의 IPO가 될 것으로 예상되었습니다.",
+          "source": "Crypto News",
+          "date": "2026-06-04",
+          "category": "Market"
+        },
+        {
+          "id": 1781504871675,
+          "title": "일론 머스크, SpaceX 상장 결정에 대한 입장 변화",
+          "summary": "일론 머스크는 과거 SpaceX를 상장하지 않겠다고 밝혔지만, 회사의 자금 필요성과 그가 여전히 회사의 의결권을 85% 보유하며 완전한 통제권을 유지할 수 있다는 점이 그의 결정을 바꾸게 된 주요 요인으로 분석됩니다.",
+          "source": "CleanTechnica",
+          "date": "2026-06-07",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1781504871676,
+          "title": "SpaceX, 스타링크 글로벌 네트워크 확장 가속화",
+          "summary": "SpaceX는 6월 14일 새로운 위성 배치를 성공적으로 발사하며 스타링크 글로벌 네트워크 확장을 가속화하고 있습니다. 현재 10,600개 이상의 활성 위성을 보유하고 있으며 전 세계 사용자에게 인터넷 서비스를 제공하고 있습니다.",
+          "source": "Gulf Times",
+          "date": "2026-06-14",
+          "category": "Product"
+        },
+        {
+          "id": 1781504871677,
+          "title": "일본 H3 로켓, SpaceX IPO 당일 성공적인 발사",
+          "summary": "SpaceX의 IPO 당일, 일본은 주력 H3 로켓을 성공적으로 발사했습니다. 이는 이전 임무 실패 이후의 성공적인 복귀를 의미하지만, 일본의 연간 발사 횟수는 SpaceX에 비해 훨씬 적습니다.",
+          "source": "Westfintex",
+          "date": "2026-06-12",
+          "category": "Competition"
+        }
+      ],
+      "analyses": {
+        "1781504871673": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R11"
+          ],
+          "reasoning": "SpaceX의 IPO가 높은 주가수익비율과 거버넌스 문제로 인해 공매도 대상이 될 수 있다는 분석은 잠재적인 투자 위험을 시사합니다.",
+          "key_factors": [
+            "공매도 대상 가능성",
+            "높은 주가수익비율",
+            "거버넌스 문제"
+          ]
+        },
+        "1781504871674": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 2026년 중반에 1.75조 달러 가치로 IPO를 목표로 한다는 소식은 회사에 대한 긍정적인 시장 기대를 반영하며 잠재적인 유동성 증가를 시사합니다.",
+          "key_factors": [
+            "IPO 목표",
+            "기업 가치",
+            "자금 조달"
+          ]
+        },
+        "1781504871675": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "일론 머스크의 SpaceX 상장 가능성 시사 발언은 회사의 자금 조달 능력과 유동성을 향상시킬 수 있어 긍정적입니다.",
+          "key_factors": [
+            "자금 조달 능력 향상",
+            "유동성 증가"
+          ]
+        },
+        "1781504871676": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R17",
+            "R19"
+          ],
+          "reasoning": "SpaceX가 새로운 위성 배치를 성공적으로 발사하여 스타링크 글로벌 네트워크 확장을 가속화하고 활성 위성 수가 증가함에 따라 스타링크 서비스의 성장 잠재력이 강화됩니다.",
+          "key_factors": [
+            "스타링크 네트워크 확장",
+            "위성 발사 성공",
+            "활성 위성 수 증가"
+          ]
+        },
+        "1781504871677": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R06"
+          ],
+          "reasoning": "경쟁사의 성공적인 로켓 발사는 SpaceX의 시장 점유율에 간접적인 부정적 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "경쟁사 발사 성공",
+            "시장 경쟁 심화"
+          ]
+        }
+      },
+      "avgScore": 0.8,
+      "buyIndex": 55,
+      "direction": "bullish",
+      "topRules": [
+        "R11",
+        "R17",
+        "R19",
+        "R06"
+      ],
+      "bullish": 3,
+      "bearish": 2,
+      "neutral": 0,
+      "muskXSentiment": null,
+      "googleTrends": null,
+      "youtubeInterest": {
+        "score": 0,
+        "velocity": 0.42,
+        "velocity_label": "소폭 감소 (×0.4)",
+        "reason": "조회수 속도 소폭 감소 (×0.4) | 최근 3일 6,625,603회 / 이전 4~7일 15,918,525회 | 총 22,544,128회 (72개 영상)",
+        "video_count": 72,
+        "total_views": 22544128,
+        "hot_views": 6625603,
+        "baseline_views": 15918525,
+        "top_videos": [
+          {
+            "title": "Até perdeu o starlink #carros #automobile #starlink #estrada #transito #carrousado #carrosbrasil",
+            "channel": "Trakcar Consultas",
+            "publishedAt": "2026-06-08T13:00:24Z",
+            "viewCount": 6198543
+          },
+          {
+            "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-12T21:27:06Z",
+            "viewCount": 1302078
+          },
+          {
+            "title": "박시동 경제평론가 | 삼성전자 주가 전망 | 스페이스x 삼성전자 | 스페이스x 관련주 | 스페이스x 관련주 한국 | 삼성 테슬라",
+            "channel": "정치인사이드",
+            "publishedAt": "2026-06-11T08:38:27Z",
+            "viewCount": 1254443
+          },
+          {
+            "title": "The SpaceX IPO is a MASSIVE wealth transfer",
+            "channel": "More Perfect Union",
+            "publishedAt": "2026-06-10T21:31:12Z",
+            "viewCount": 1104821
+          },
+          {
+            "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
+            "channel": "뇌즙",
+            "publishedAt": "2026-06-10T08:00:03Z",
+            "viewCount": 945601
+          }
+        ],
+        "collected_at": "2026-06-15T06:27:42Z"
+      },
+      "newsCategories": {
+        "total": 5,
+        "Market": 2,
+        "Regulatory": 1,
+        "Product": 1,
+        "Competition": 1
+      },
+      "macroCtx": {
+        "spyChg": 0.14,
+        "qqqChg": 0.52,
+        "vixClose": 17.68000030517578,
+        "wtiChg": -1.11,
+        "cnyChg": -0.07,
+        "competitorChg": -13.23,
+        "competitorRelStrength": 20.53,
+        "prevAssetChg": 7.3,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -13.23,
+        "bydRelStrength": 20.53,
+        "prevTslaChg": 7.3,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 58,
+        "meanReversion": -5,
+        "competitorOutperform": 2
+      },
+      "latestPrice": 160.95,
+      "latestTslaPrice": 160.95,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/16(화)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 162.08
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/17(수)",
+          "change_pct": 0.3,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 161.43
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/18(목)",
+          "change_pct": -0.2,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 160.63
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/19(금)",
+          "change_pct": 0.6,
+          "signal": "관망",
+          "basePrice": 160.95,
+          "predictedPrice": 161.92
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/22(월)",
+          "change_pct": 0.9,
+          "signal": "매수",
+          "basePrice": 160.95,
+          "predictedPrice": 162.4
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781507224803
+    },
+    {
       "id": "auto-1781416476292",
       "date": "2026-06-14",
       "displayDate": "2026.06.14",
@@ -771,5 +1069,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-14 14:51 KST"
+  "lastUpdated": "2026-06-15 15:27 KST"
 }
