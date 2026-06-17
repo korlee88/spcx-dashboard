@@ -1,43 +1,43 @@
 {
   "score": -1,
-  "velocity": 0.13,
-  "velocity_label": "급감 (×0.1)",
-  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 1,725,143회 / 이전 4~7일 13,629,324회 | 총 15,354,467회 (71개 영상)",
-  "video_count": 71,
-  "total_views": 15354467,
-  "hot_views": 1725143,
-  "baseline_views": 13629324,
+  "velocity": 0.18,
+  "velocity_label": "급감 (×0.2)",
+  "reason": "조회수 속도 급감 (×0.2) | 최근 3일 2,342,919회 / 이전 4~7일 13,181,766회 | 총 15,524,685회 (72개 영상)",
+  "video_count": 72,
+  "total_views": 15524685,
+  "hot_views": 2342919,
+  "baseline_views": 13181766,
   "top_videos": [
     {
       "title": "박시동 경제평론가 | 삼성전자 주가 전망 | 스페이스x 삼성전자 | 스페이스x 관련주 | 스페이스x 관련주 한국 | 삼성 테슬라",
       "channel": "정치인사이드",
       "publishedAt": "2026-06-11T08:38:27Z",
-      "viewCount": 1463781
+      "viewCount": 1539770
     },
     {
       "title": "The SpaceX IPO is a MASSIVE wealth transfer",
       "channel": "More Perfect Union",
       "publishedAt": "2026-06-10T21:31:12Z",
-      "viewCount": 1141329
+      "viewCount": 1163506
+    },
+    {
+      "title": "[26년 06월 16일 화]  트럼프 “이란 합의 공정하고 성공적일 것” ｜ 일본, 기준금리 인상 ｜스페이스X, &#39;커서&#39; 인수｜ -  오선의 미국 증시 라이브",
+      "channel": "오선의 미국 증시 라이브",
+      "publishedAt": "2026-06-16T21:46:27Z",
+      "viewCount": 1007283
     },
     {
       "title": "스페이스X 상장되면 한국 주식 시장으로 돈 몰려오는 진짜 이유 ㄷㄷ 📈#12시에만나요 #이광수대표 #스페이스x #스페이스x상장 #스페이스x관련주 #미국주식 #한국주식 #한국증시반등",
       "channel": "뇌즙",
       "publishedAt": "2026-06-10T08:00:03Z",
-      "viewCount": 951427
-    },
-    {
-      "title": "Will India Block Starlink? This is what US Report is Saying #Starlink #ElonMusk #PrashantDhawan",
-      "channel": "Career247",
-      "publishedAt": "2026-06-12T11:26:38Z",
-      "viewCount": 523310
+      "viewCount": 954930
     },
     {
       "title": "Elon ya te vendió SpaceX  🚀📈 #SpaceX #Starlink #ElonMusk #Bolsa",
       "channel": "InvierteConPepe",
       "publishedAt": "2026-06-12T00:16:07Z",
-      "viewCount": 510070
+      "viewCount": 570196
     }
   ],
-  "collected_at": "2026-06-16T06:35:23Z"
+  "collected_at": "2026-06-17T06:16:40Z"
 }
