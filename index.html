@@ -475,6 +475,49 @@ function RuleBadges({ rules }) {
   );
 }
 
+// ─── 뉴스 출처 신뢰도 (국적 · 신뢰성 등급) ──────────────────────────────────
+// 주요 매체의 국적과 신뢰도(high/mid/low)를 간이 매핑(부분 문자열 매칭).
+// 미확인 출처는 "출처 미확인"으로 표기 — 시청자가 신뢰도를 가늠하도록.
+const SOURCE_INFO = {
+  'reuters': ['영국·글로벌통신', 'high'], 'bloomberg': ['미국', 'high'],
+  'wall street journal': ['미국', 'high'], 'wsj': ['미국', 'high'],
+  'cnbc': ['미국', 'high'], 'financial times': ['영국', 'high'],
+  'associated press': ['미국·통신', 'high'], 'barron': ['미국', 'high'],
+  'space news': ['미국·우주전문', 'high'], 'spacenews': ['미국·우주전문', 'high'],
+  'ars technica': ['미국·기술전문', 'high'],
+  'nasaspaceflight': ['미국·우주전문', 'high'], 'spaceflight now': ['미국·우주전문', 'high'],
+  'space.com': ['미국·우주전문', 'high'], 'teslarati': ['미국·우주전문', 'mid'],
+  'nasa': ['미국·정부기관', 'high'],
+  'sec filing': ['미국·규제기관', 'high'], '연합': ['한국·통신', 'high'],
+  'spacex': ['기업공식(IR)', 'mid'], 'investor relations': ['기업공식(IR)', 'mid'],
+  'forbes': ['미국', 'mid'], 'the verge': ['미국·기술', 'mid'],
+  'marketwatch': ['미국', 'mid'], 'yahoo': ['미국·집계', 'mid'],
+  'investing.com': ['글로벌·집계', 'mid'], 'business insider': ['미국', 'mid'],
+  'benzinga': ['미국', 'mid'], 'seeking alpha': ['미국·기고', 'mid'],
+  'tipranks': ['미국·집계', 'mid'], 'simply wall': ['미국·집계', 'mid'],
+  'zacks': ['미국·리서치', 'mid'], '한국경제': ['한국', 'mid'], '매일경제': ['한국', 'mid'],
+  'motley fool': ['미국·투자콘텐츠', 'low'], 'fool.com': ['미국·투자콘텐츠', 'low'],
+  'investorplace': ['미국·투자콘텐츠', 'low'], 'stocktwits': ['미국·소셜', 'low'],
+};
+const CRED_TIER = { high: ['신뢰 높음', '#22c55e'], mid: ['신뢰 보통', '#f59e0b'], low: ['신뢰 낮음', '#ef4444'] };
+function sourceMeta(name) {
+  if (!name) return null;
+  const n = String(name).toLowerCase();
+  for (const k in SOURCE_INFO) { if (n.includes(k)) return SOURCE_INFO[k]; }
+  return null;
+}
+function SourceTag({ source }) {
+  const m = sourceMeta(source);
+  if (!m) return <span className="text-xs px-1 py-0.5 rounded align-middle" style={{ color: '#6b7280', background: '#252830' }}>출처 미확인</span>;
+  const [country, tier] = m;
+  const [label, color] = CRED_TIER[tier];
+  return (
+    <span className="text-xs px-1 py-0.5 rounded align-middle" style={{ color, background: color + '1a' }} title={`${country} · ${label}`}>
+      {country}·{label}
+    </span>
+  );
+}
+
 // ─── 컴포넌트: NewsCard ────────────────────────────────────────────────────
 
 function NewsCard({ news, result, loading, error, onAnalyze, apiKey }) {
@@ -507,6 +550,7 @@ function NewsCard({ news, result, loading, error, onAnalyze, apiKey }) {
           <p className="text-sm font-semibold text-gray-100 leading-snug truncate">{news.title}</p>
           <div className="flex items-center gap-2 mt-0.5 flex-wrap">
             <span className="text-xs text-gray-500">{news.source}</span>
+            <SourceTag source={news.source} />
             <span className="text-gray-700 text-xs">·</span>
             <span className="text-xs text-gray-500">{news.date}</span>
             <span className="text-xs px-1.5 py-0.5 rounded text-gray-500" style={{ background: '#252830' }}>{news.category}</span>
@@ -728,9 +772,10 @@ async function getDriveAppDataSize(token) {
 
 // ─── 앱 버전 ──────────────────────────────────────────────────────────────────
 const APP_VERSION = {
-  version: '1.2.0',
-  date: '2026-06-14 KST',
+  version: '1.3.0',
+  date: '2026-06-17 KST',
   changelog: [
+    { v: '1.3.0', date: '2026-06-17 KST', label: '뉴스 출처 국적·신뢰도 태그(SourceTag — 우주 전문매체 SpaceNews·NASASpaceflight·Space.com 등 추가) · 주간영상 이미지 프롬프트에 미래 기술·사업계획(image_future_tech_en) 주입 · 호재 씬 머리기호 ↑→✓ 체크 전환 + 본문 폰트 축소(50→46)' },
     { v: '1.2.0', date: '2026-06-14 KST', label: '주간 영상 BGM 복원 — 원본 합성 배경음(data/bgm.mp3, scripts/make_bgm.py) 커밋해 네트워크 의존 0 · 씬 전환 직후 0.5초 나레이션 딜레이(SCENE_LEAD_MS/SCENE_TAIL_MS) · yt-dlp 의존 제거' },
     { v: '1.1.0', date: '2026-06-12 KST', label: 'SPCX 마이그레이션 (from rklb-dashboard v1.0.2) · RULE_LABELS·매수지수 분해 라벨·핵심인물(머스크) UI 전면 교체 · R01~R26 스타십/팰컨/스타링크 특화 규칙 · 캐시키 spcx_ 전환' },
     { v: '1.0.2', date: '2026-06-11 KST', label: '보안 강화 — CDN 스크립트 버전 고정+SRI(react/react-dom/babel 프로덕션 빌드 전환, tailwind 버전 고정) · YouTube 수집 에러 로그의 API 키 노출 경로 차단 · Gmail 수신자 주소 로그 출력 제거' },
@@ -4055,7 +4100,7 @@ function MobileNewsCard({ news, result, loading, error, onAnalyze, apiKey }) {
               style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
               {news.title}
             </p>
-            <p className="text-xs text-gray-600 mt-0.5">{news.source} · {news.category}</p>
+            <p className="text-xs text-gray-600 mt-0.5">{news.source} <SourceTag source={news.source} /> · {news.category}</p>
           </div>
           <span className="shrink-0 text-gray-700 text-xs">{open ? '▲' : '▼'}</span>
         </div>
@@ -5353,7 +5398,7 @@ function TrendPage({ onBack, onPullFromDrive, onPushToDrive, driveSyncing, drive
                           <div key={n.id} className="flex items-start gap-3 p-2.5 rounded" style={{ background: '#1C1F26' }}>
                             <div className="flex-1 min-w-0">
                               <p className="text-xs text-gray-300 font-medium leading-snug">{n.title}</p>
-                              <p className="text-xs text-gray-600 mt-0.5">{n.source} · {n.date} · {n.category}</p>
+                              <p className="text-xs text-gray-600 mt-0.5">{n.source} <SourceTag source={n.source} /> · {n.date} · {n.category}</p>
                             </div>
                             {a && <div className="shrink-0 flex items-center gap-1.5">
                               <span className="text-xs font-bold" style={{ color: a.impact_score >= 0 ? '#22c55e' : '#ef4444' }}>{a.impact_score >= 0 ? '+' : ''}{a.impact_score}</span>
