@@ -1,0 +1,11 @@
+# SPCX 주간 배경 이미지 프롬프트 — 2026-06-19
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring Namsan Tower, 63 Building and Lotte Tower, with a majestic SpaceX Starship fully reusable super-heavy rocket launching skyward trailing brilliant Raptor engine plumes, Starlink satellite internet mega-constellation glowing across the sky, distant Mars colonization vision and lunar landing mission silhouettes, orbital refueling depot, Korean futuristic K-tech city ambiance in deep purple violet analytical mood, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant 16:9 landscape image of Seoul's Han River bridges glowing in fresh green bullish growth light, modern Korean skyline bathed in sunlit optimism, SpaceX Starship rising from Starbase as a fully reusable super-heavy rocket launching with powerful Raptor engines roaring, Starlink satellite internet mega-constellation forming bright trails, Mars colonization base and lunar landing mission imagery on the horizon, orbital refueling scene, K-tech infrastructure energetic dynamic atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical futuristic Korean cityscape showing Han River night view, Seoul skyline and Gwanghwamun Plaza, dominated by a SpaceX Starship fully reusable super-heavy rocket launching vertically with brilliant Raptor engine flames, Starlink satellite internet mega-constellation arcing overhead, Mars colonization vision and lunar landing mission silhouettes, orbital refueling station glowing, advanced K-tech city scenery, inspirational magenta and gold futuristic mood, golden sun rays starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
