@@ -14,11 +14,12 @@ const fs            = require('fs');
 const path          = require('path');
 const { execSync }  = require('child_process');
 const { loadMacroData, buildMacroContext, calculateEnhancedScore } = require('./lib/scoring');
-const { loadTickerConfig, loadRulesConfig, buildSystemPrompt } = require('./lib/prompt');
+const { loadTickerConfig, loadRulesConfig, buildSystemPrompt, ipoFactNote } = require('./lib/prompt');
 
 const cfg       = loadTickerConfig();
 const rulesData = loadRulesConfig();
 const TICKER    = cfg.ticker;
+const IPO_FACT  = ipoFactNote(cfg); // 선택 — Google Search grounding이 가상 상장 전제와 충돌하지 않도록 주입
 
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) { console.error('❌ GEMINI_API_KEY 환경변수가 없습니다.'); process.exit(1); }
@@ -147,7 +148,7 @@ function getActualMovement(weekStart, prices) {
 
 async function collectWeekNews(weekStart, weekEnd) {
   const keyPeopleStr = (cfg.key_people || []).join(' and ');
-  const prompt = `[필수 규칙] title과 summary는 반드시 한국어(Korean)로 작성.\n\nSearch for the 10 most impactful ${cfg.company_en} (${TICKER}) and ${keyPeopleStr} news articles published during the week of ${weekStart} to ${weekEnd} that could have affected ${TICKER} stock price.\nOnly include articles from major outlets: Reuters, Bloomberg, CNBC, Wall Street Journal, Financial Times, Associated Press, MarketWatch, Barron's, Electrek, The Verge, TechCrunch, Forbes, CNN Business.\nReturn ONLY a JSON array of up to 10 items:\n[{"id":1,"title":"(한국어 번역 제목)","summary":"(한국어 2~3문장 요약)","source":"Reuters","date":"${weekStart}","category":"Earnings|Delivery|Product|Competition|Regulatory|Macro|Energy|Market|Legal"}]\ntitle·summary는 반드시 한국어. Return ONLY the JSON array, no other text.`;
+  const prompt = `${IPO_FACT ? IPO_FACT + '\n\n' : ''}[필수 규칙] title과 summary는 반드시 한국어(Korean)로 작성.\n\nSearch for the 10 most impactful ${cfg.company_en} (${TICKER}) and ${keyPeopleStr} news articles published during the week of ${weekStart} to ${weekEnd} that could have affected ${TICKER} stock price.\nOnly include articles from major outlets: Reuters, Bloomberg, CNBC, Wall Street Journal, Financial Times, Associated Press, MarketWatch, Barron's, Electrek, The Verge, TechCrunch, Forbes, CNN Business.\nReturn ONLY a JSON array of up to 10 items:\n[{"id":1,"title":"(한국어 번역 제목)","summary":"(한국어 2~3문장 요약)","source":"Reuters","date":"${weekStart}","category":"Earnings|Delivery|Product|Competition|Regulatory|Macro|Energy|Market|Legal"}]\ntitle·summary는 반드시 한국어. Return ONLY the JSON array, no other text.`;
 
   const data = await geminiPost({
     tools: [{ google_search: {} }],

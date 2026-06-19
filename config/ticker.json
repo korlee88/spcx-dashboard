@@ -4,6 +4,7 @@
   "company_ko": "스페이스X",
   "industry_ko": "우주·발사체",
   "image_future_tech_en": "Starship fully reusable super-heavy rocket launching, Starlink satellite internet mega-constellation, Raptor engines, Mars colonization and lunar landing missions, orbital refueling",
+  "ipo_fact_en": "FACTUAL CONTEXT (ground truth for this analysis, NOT hypothetical): {company_en} ({ticker}) completed its IPO on 2026-06-12 at $135/share and now trades publicly on Nasdaq. This already happened and is REAL. Do NOT describe {company_en} as private/unlisted, do NOT call this IPO or related news a 'hypothetical scenario'(가상 시나리오) or the company '미상장', and do NOT score IPO-related news as impact_score 0/neutral merely because your training data predates the IPO or recalls {company_en} as historically private — that recollection is outdated for this analysis. Evaluate such news on its actual market merits like any other listed company's news.",
   "brand_label": "SPCX WEEKLY",
   "repo": "korlee88/spcx-dashboard",
   "data_source": "yahoo",

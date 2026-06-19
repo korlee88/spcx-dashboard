@@ -19,6 +19,7 @@ COMPANY_KO        = TICKER_CONFIG["company_ko"]
 COMPANY_EN        = TICKER_CONFIG.get("company_en", TICKER)
 INDUSTRY_KO       = TICKER_CONFIG.get("industry_ko", "")
 FUTURE_TECH_EN    = TICKER_CONFIG.get("image_future_tech_en", "")
+IPO_FACT_EN       = TICKER_CONFIG.get("ipo_fact_en", "")
 BRAND_LABEL       = TICKER_CONFIG["brand_label"]
 REPO              = TICKER_CONFIG["repo"]
 
@@ -274,32 +275,52 @@ def summarize(sessions):
 
 
 def search_movement_reason(summary):
-    """Gemini + Google Search grounding으로 이번주 주가 변동 원인 검색."""
+    """이번주 주가 변동 원인 2~3가지 산출.
+
+    기본: Gemini + Google Search grounding으로 실시간 검색(RKLB/TSLA 등 실제 상장 종목).
+    IPO_FACT_EN이 설정된 종목(SPCX처럼 실제 세계와 다른 가상 상장 전제가 있는 경우)은
+    실시간 검색을 쓰지 않는다 — Google 검색 결과는 '실제로는 비상장'이라는 진짜 세계
+    사실을 그대로 반영해 대시보드 전제와 충돌하기 때문. 대신 이미 같은 전제로 분석된
+    summarize()의 top_bullish/top_bearish 뉴스를 근거로 합성한다.
+    """
     if not GEMINI_API_KEY:
         return None
+    tcp  = summary.get("today_change_pct")
+    sign = "+" if tcp and tcp >= 0 else ""
+    direction = "상승" if tcp and tcp >= 0 else "하락"
+    week_start = summary.get("week_start", "")
+    week_end   = summary.get("week_end", "")
+    price      = summary.get("latest_price", "")
     try:
         from google import genai
         from google.genai import types
-        tcp  = summary.get("today_change_pct")
-        sign = "+" if tcp and tcp >= 0 else ""
-        direction = "상승" if tcp and tcp >= 0 else "하락"
-        week_start = summary.get("week_start", "")
-        week_end   = summary.get("week_end", "")
-        price      = summary.get("latest_price", "")
-        q = (
-            f"{COMPANY_KO} {TICKER} 주가 {week_start}~{week_end} 기간 {direction} 주요 원인 분석. "
-            f"현재 주가 ${price}, 변동률 {sign}{tcp}%. "
-            f"검색 결과를 바탕으로 핵심 원인 2~3가지를 각 15자 이내 한국어로 작성. "
-            f"형식: '원인1 / 원인2 / 원인3'"
-        )
-        client   = genai.Client(api_key=GEMINI_API_KEY)
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=q,
-            config=types.GenerateContentConfig(
-                tools=[types.Tool(google_search=types.GoogleSearch())]
-            ),
-        )
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        if IPO_FACT_EN:
+            pool   = (summary.get("top_bearish") or []) + (summary.get("top_bullish") or [])
+            titles = "; ".join(it.get("title", "") for it in pool[:5] if it.get("title"))
+            q = (
+                f"{IPO_FACT_EN}\n\n"
+                f"아래는 이번 주({week_start}~{week_end}) {COMPANY_KO}({TICKER}) 관련 뉴스다 — "
+                f"전부 실제 발생한 사실로 취급할 것:\n{titles}\n\n"
+                f"현재 주가 ${price}, 변동률 {sign}{tcp}%. 위 뉴스에 근거해 이번 주 {direction} "
+                f"핵심 원인 2~3가지를 각 15자 이내 한국어로 작성. 형식: '원인1 / 원인2 / 원인3'. "
+                f"'비상장', '가상 시나리오', '미상장' 같은 표현은 절대 쓰지 말 것."
+            )
+            response = client.models.generate_content(model="gemini-2.5-flash", contents=q)
+        else:
+            q = (
+                f"{COMPANY_KO} {TICKER} 주가 {week_start}~{week_end} 기간 {direction} 주요 원인 분석. "
+                f"현재 주가 ${price}, 변동률 {sign}{tcp}%. "
+                f"검색 결과를 바탕으로 핵심 원인 2~3가지를 각 15자 이내 한국어로 작성. "
+                f"형식: '원인1 / 원인2 / 원인3'"
+            )
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=q,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())]
+                ),
+            )
         text = response.text.strip()
         print(f"   🔍 주가 변동 원인: {text[:80]}")
         return text

@@ -102,6 +102,8 @@ Analyze the given news and return ONLY valid JSON in this exact format:
   "key_factors": ["<factor1>", "<factor2>"]
 }
 
+FACTUAL CONTEXT (ground truth for this analysis, NOT hypothetical): SpaceX (SPCX) completed its IPO on 2026-06-12 at $135/share and now trades publicly on Nasdaq. This already happened and is REAL. Do NOT describe SpaceX as private/unlisted, do NOT call this IPO or related news a 'hypothetical scenario'(가상 시나리오) or the company '미상장', and do NOT score IPO-related news as impact_score 0/neutral merely because your training data predates the IPO or recalls SpaceX as historically private — that recollection is outdated for this analysis. Evaluate such news on its actual market merits like any other listed company's news.
+
 Rule reference:
 R01=Starship/Falcon 9 launch or mission failure(partial or total loss, in-flight explosion), R02=EPS miss(>10%), R03=revenue/backlog guidance cut, R04=launch pad incident/fire/damage(Starbase/Cape Canaveral),
 R05=SEC/DOJ/regulatory investigation, R06=competitor(Blue Origin/ULA/Rocket Lab/Amazon Kuiper) major contract win, R07=major Starship schedule delay(>3 months) or manifest slip,
@@ -207,6 +209,7 @@ let gCfg = {
   repo: 'korlee88/spcx-dashboard',
   beta_coefficient: 2.0, has_delivery_reports: false, earnings_months: [2,5,8,11],
   key_people: ['Elon Musk'],
+  ipo_fact_en: "FACTUAL CONTEXT (ground truth for this analysis, NOT hypothetical): {company_en} ({ticker}) completed its IPO on 2026-06-12 at $135/share and now trades publicly on Nasdaq. This already happened and is REAL. Do NOT describe {company_en} as private/unlisted, do NOT call this IPO or related news a 'hypothetical scenario'(가상 시나리오) or the company '미상장', and do NOT score IPO-related news as impact_score 0/neutral merely because your training data predates the IPO or recalls {company_en} as historically private — that recollection is outdated for this analysis. Evaluate such news on its actual market merits like any other listed company's news.",
 };
 let gSystemPrompt = null;  // null → falls back to SYSTEM_PROMPT constant
 let gRulesMeta    = null;  // null → falls back to RULES_META constant
@@ -215,7 +218,10 @@ function buildSystemPromptBrowser(cfg, rulesData) {
   if (!cfg || !rulesData) return null;
   const sub = (str) => str.replace(/\{company_en\}/g, cfg.company_en).replace(/\{ticker\}/g, cfg.ticker);
   const ruleRef = rulesData.rules.map(r => `${r.id}=${r.desc}`).join(', ');
-  return [sub(rulesData.system_prompt_intro),'','Rule reference:',ruleRef,'',sub(rulesData.scoring_guidelines),'',rulesData.per_rule_caps,'',rulesData.direction_rule].join('\n');
+  const lines = [sub(rulesData.system_prompt_intro)];
+  if (cfg.ipo_fact_en) lines.push('', sub(cfg.ipo_fact_en));
+  lines.push('','Rule reference:',ruleRef,'',sub(rulesData.scoring_guidelines),'',rulesData.per_rule_caps,'',rulesData.direction_rule);
+  return lines.join('\n');
 }
 
 function buildRulesMetaFromCfg(rulesData) {
