@@ -1641,13 +1641,15 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
             ev = next_events[0]
             date_s = ev.get("date", "")
             title_s = strip_emoji(ev.get("title", "")[:30])
-            SLIM_H = 80
+            # 날짜·제목을 한 줄에 같이 배치하면 제목이 길 때(특히 한글 전용 23자급)
+            # 좌측 날짜와 우측 제목이 가운데서 겹친다 — 두 줄로 분리해 항상 여유 확보.
+            SLIM_H = 116
             draw.rounded_rectangle([PAD, SLIM_Y, W - PAD, SLIM_Y + SLIM_H],
                                    radius=14, fill=(38, 22, 62), outline=AMBER, width=2)
-            draw.text((PAD + 20, SLIM_Y + SLIM_H // 2), f"▶ {date_s}",
+            draw.text((PAD + 20, SLIM_Y + 34), f"▶ {date_s}",
                       font=f_sm, fill=AMBER, anchor="lm")
-            draw.text((W - PAD - 20, SLIM_Y + SLIM_H // 2), title_s,
-                      font=f_sm, fill=WHITE, anchor="rm",
+            draw.text((PAD + 20, SLIM_Y + 82), title_s,
+                      font=f_sm, fill=WHITE, anchor="lm",
                       stroke_width=1, stroke_fill=STROKE)
         else:
             # 폴백 자리 비움 (다음 단계 좌표 보존)
