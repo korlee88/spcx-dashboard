@@ -1,16 +1,17 @@
 {
   "generated_at": "2026-06-19",
   "generated_by": "Claude Opus 4",
-  "title": "SPCX 갑자기 *+19.18%* 왜죠?",
-  "subtitle": "2026-06-13 ~ 2026-06-18 · 스페이스X, 사상 최대 규모 IPO로 750억 달러 조",
+  "title": "다들 조정 걱정했는데 *+14.94%* 급등이에요",
+  "subtitle": "2026-06-13 ~ 2026-06-19 · 스페이스X 주가, 커서(Cursor) 인수 계약으로 6",
   "summary": {
     "week_start": "2026-06-13",
-    "week_end": "2026-06-18",
-    "session_count": 6,
-    "total_analyzed": 52,
-    "bullish_count": 14,
-    "bearish_count": 12,
+    "week_end": "2026-06-19",
+    "session_count": 7,
+    "total_analyzed": 62,
+    "bullish_count": 16,
+    "bearish_count": 15,
     "buy_indices": [
+      39,
       47,
       54,
       60,
@@ -18,23 +19,23 @@
       58,
       53
     ],
-    "avg_buy_index": 54,
-    "latest_buy_index": 47,
+    "avg_buy_index": 52,
+    "latest_buy_index": 39,
     "price_start": 160.95,
-    "price_end": 191.82,
-    "latest_price": 191.82,
-    "today_price": 191.82,
-    "today_change_pct": -4.95,
-    "week_change_pct": 19.18,
+    "price_end": 185,
+    "latest_price": 185,
+    "today_price": 185,
+    "today_change_pct": -3.56,
+    "week_change_pct": 14.94,
     "biggest_impact": {
-      "title": "스페이스X, 사상 최대 규모 IPO로 750억 달러 조달 및 머스크 세계 최초 억만장자 등극",
-      "score": 3,
-      "reason": "스페이스X가 사상 최대 규모의 IPO를 통해 750억 달러를 조달하고 1조 7,700억 달러의 가치를 인정받았다는 소식은 회사에 대한 강력한 시장 신뢰와 상당한 자본 유입을 의미하며, 이는 미래 성장과 확장에 긍정적인 영향을 미칠 것입니다.",
-      "source": "Fox Business",
-      "date": "2026-06-14",
-      "category": "Market",
-      "direction_ko": "호재",
-      "emoji": "🚀"
+      "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+      "score": -4,
+      "reason": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+      "source": "Forbes",
+      "date": "2026-06-18",
+      "category": "Acquisition|Market",
+      "direction_ko": "악재",
+      "emoji": "⚠"
     },
     "top_bullish": [
       {
@@ -44,6 +45,14 @@
         "source": "Fox Business",
         "date": "2026-06-14",
         "category": "Market"
+      },
+      {
+        "title": "스페이스X, 2025년 매출 187억 달러 기록 및 AI 도구 인수",
+        "score": 2,
+        "reason": "스페이스X가 2025년에 187억 달러의 매출을 기록하고 600억 달러 규모의 AI 도구를 인수했다는 소식은 회사의 강력한 성장과 AI 분야로의 확장을 보여주며 긍정적인 영향을 미칩니다.",
+        "source": "Pluang",
+        "date": "2026-06-17",
+        "category": "Earnings|Product"
       },
       {
         "title": "스페이스X, 커서(Cursor) 600억 달러 규모 인수 완료",
@@ -68,17 +77,17 @@
         "source": "Gulf Times",
         "date": "2026-06-14",
         "category": "Product"
-      },
-      {
-        "title": "SpaceX IPO, 공모가 대비 22% 상승 여력 예상",
-        "score": 2,
-        "reason": "New Street 분석가가 SpaceX의 IPO 가격 대비 22% 상승 여력을 예상하며 긍정적인 전망을 내놓아 주식 가치 상승에 대한 기대를 높였습니다.",
-        "source": "Seeking Alpha",
-        "date": "2026-06-13",
-        "category": "Market"
       }
     ],
     "top_bearish": [
+      {
+        "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+        "score": -4,
+        "reason": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Acquisition|Market"
+      },
       {
         "title": "스페이스X, IPO 초과 배정 옵션 행사로 조달 금액 862억 달러로 증가",
         "score": -3,
@@ -88,35 +97,27 @@
         "category": "Market"
       },
       {
+        "title": "스페이스X IPO 이후 주가 하락 가능성 경고",
+        "score": -2,
+        "reason": "한 분석가가 스페이스X의 공정 가치가 현재 거래 가격보다 훨씬 낮을 수 있다고 경고하며 주가 하락 가능성을 제기했습니다.",
+        "source": "Business Insider",
+        "date": "2026-06-17",
+        "category": "Market"
+      },
+      {
+        "title": "머스크의 백악관 사임, 테슬라 및 다른 사업에 대한 의문 재점화",
+        "score": -2,
+        "reason": "일론 머스크의 백악관 사임으로 인해 테슬라 및 다른 사업에 대한 집중도가 재조명되며, 스페이스X의 최근 로켓 발사 부진과 맞물려 리더십에 대한 우려가 제기되고 있습니다.",
+        "source": "Reuters",
+        "date": "2025-05-29",
+        "category": "Regulatory|Leadership"
+      },
+      {
         "title": "미국 4개 주, 나스닥과 FTSE 러셀에 스페이스X 상장 패스트트랙 관련 질의",
         "score": -2,
         "reason": "미국 4개 주 투자 책임자들이 스페이스X의 잠재적 IPO와 관련된 상장 규정 변경에 대해 나스닥과 FTSE 러셀에 설명을 요구하며 투자자 위험에 대한 우려를 제기하여 규제 조사의 가능성을 시사합니다.",
         "source": "Reuters",
         "date": "2026-06-11",
-        "category": "Regulatory"
-      },
-      {
-        "title": "SpaceX, IPO 서류에서 테슬라와의 합병 가능성 시사",
-        "score": -2,
-        "reason": "SpaceX의 IPO 서류에 테슬라와의 합병 가능성이 언급되고 대규모 지분 발행 가능성이 시사되면서 기존 주주 가치 희석 및 일론 머스크의 다른 벤처에 대한 관심 분산 우려가 제기됩니다.",
-        "source": "TechCrunch",
-        "date": "2026-06-14",
-        "category": "Market"
-      },
-      {
-        "title": "스페이스X IPO, 다른 우주 관련 주식 하락에 영향",
-        "score": -1,
-        "reason": "스페이스X의 상장은 다른 우주 기업들의 주가 하락을 야기하며 투자자들의 관심이 스페이스X로 집중되어 소규모 기업들로부터 자본이 이탈하고 있음을 시사합니다.",
-        "source": "CFO Commentary Report",
-        "date": "2026-06-12",
-        "category": "Competition"
-      },
-      {
-        "title": "FAA, 스페이스X의 연간 1만 회 발사 목표 달성 전 신뢰성 개선 요구",
-        "score": -1,
-        "reason": "FAA가 스페이스X의 연간 1만 회 발사 목표 달성 전 로켓 신뢰성 개선을 요구하며 잠재적인 확장 지연 가능성을 시사했습니다.",
-        "source": "Reuters",
-        "date": "2026-05-22",
         "category": "Regulatory"
       }
     ],
@@ -124,50 +125,54 @@
       {
         "day": 1,
         "label": "내일",
-        "date": "6/19(금)",
-        "change_pct": -0.9,
+        "date": "6/22(월)",
+        "change_pct": -1.2,
         "signal": "매도",
-        "basePrice": 191.82,
-        "predictedPrice": 190.09
+        "basePrice": 185,
+        "predictedPrice": 182.78
       },
       {
         "day": 2,
         "label": "D+2",
-        "date": "6/22(월)",
-        "change_pct": -0.7,
-        "signal": "관망",
-        "basePrice": 191.82,
-        "predictedPrice": 190.48
+        "date": "6/23(화)",
+        "change_pct": -0.8,
+        "signal": "매도",
+        "basePrice": 185,
+        "predictedPrice": 183.52
       },
       {
         "day": 3,
         "label": "D+3",
-        "date": "6/23(화)",
-        "change_pct": 0.2,
+        "date": "6/24(수)",
+        "change_pct": -0.3,
         "signal": "관망",
-        "basePrice": 191.82,
-        "predictedPrice": 192.2
+        "basePrice": 185,
+        "predictedPrice": 184.45
       },
       {
         "day": 4,
         "label": "D+4",
-        "date": "6/24(수)",
-        "change_pct": 0.5,
+        "date": "6/25(목)",
+        "change_pct": 0.1,
         "signal": "관망",
-        "basePrice": 191.82,
-        "predictedPrice": 192.78
+        "basePrice": 185,
+        "predictedPrice": 185.18
       },
       {
         "day": 5,
         "label": "D+5",
-        "date": "6/25(목)",
-        "change_pct": -0.3,
+        "date": "6/26(금)",
+        "change_pct": 0.4,
         "signal": "관망",
-        "basePrice": 191.82,
-        "predictedPrice": 191.24
+        "basePrice": 185,
+        "predictedPrice": 185.74
       }
     ],
     "daily_prices": [
+      [
+        "2026-06-19",
+        185
+      ],
       [
         "2026-06-18",
         191.82
@@ -182,10 +187,6 @@
       ],
       [
         "2026-06-15",
-        160.95
-      ],
-      [
-        "2026-06-14",
         160.95
       ]
     ],
@@ -223,50 +224,50 @@
         "id": "cal-2026-06-24-starlink-mission-launch-falcon-9-"
       }
     ],
-    "movement_reason": "IPO 추가배정 지분희석 / 나스닥 상장규정 질의 / 테슬라 합병설 부담"
+    "movement_reason": "커서 인수 계약 / IPO 이후 주가 경고 / 머스크 백악관 사임"
   },
   "scenes": [
     {
       "index": 0,
       "title": "이번주",
       "lines": [
-        "SPCX 갑자기 *+19.18%* 왜죠?",
-        "*750억 달러* IPO가 터졌어요",
-        "시총 *1조 7,700억 달러* 평가요",
-        "초과배정에 *지분 희석* 우려도요"
+        "다들 조정 걱정했는데 *+14.94%* 급등이에요",
+        "*커서 인수*에 머스크 백악관 사임까지 겹쳤죠",
+        "*750억 달러* IPO로 사상 최대 조달 성공했어요",
+        "다만 매수 참고지수 *39까지* 뚝 떨어졌네요"
       ],
-      "body": "SPCX 갑자기 *+19.18%* 왜죠?\n*750억 달러* IPO가 터졌어요\n시총 *1조 7,700억 달러* 평가요\n초과배정에 *지분 희석* 우려도요"
+      "body": "다들 조정 걱정했는데 *+14.94%* 급등이에요\n*커서 인수*에 머스크 백악관 사임까지 겹쳤죠\n*750억 달러* IPO로 사상 최대 조달 성공했어요\n다만 매수 참고지수 *39까지* 뚝 떨어졌네요"
     },
     {
       "index": 1,
-      "title": "빅뉴스",
+      "title": "호재",
       "lines": [
-        "카테고리: 사상 최대 *IPO 성공*이에요",
-        "↳ 배경: 비상장 거인이 드디어 *상장* 했죠",
-        "↳ 데이터: 조달 *750억 달러* 역대 최대급",
-        "↳ 임팩트: 주가 한 주에 *+19.18%* 올랐어요",
-        "↳ 비교: 공모가 대비 *+22%* 여력 분석도요",
-        "↳ 시장은 IPO만 보지만 *커서 인수*가 핵심이에요"
+        "카테고리: *사상 최대 IPO* 성공적 데뷔",
+        "↳ 배경: 시총 *1조 7,700억 달러* 평가받았죠",
+        "↳ 데이터: 2025년 매출 *187억 달러* 기록했어요",
+        "↳ 임팩트: 한 주 만에 주가 *14.94% 점프*했네요",
+        "↳ 비교: 초과배정 포함 조달액 *862억 달러*까지",
+        "↳ 2030년 매출 *1조 달러* 목표 가시권이에요"
       ],
-      "body": "카테고리: 사상 최대 *IPO 성공*이에요\n   ↳ 배경: 비상장 거인이 드디어 *상장* 했죠\n   ↳ 데이터: 조달 *750억 달러* 역대 최대급\n   ↳ 임팩트: 주가 한 주에 *+19.18%* 올랐어요\n   ↳ 비교: 공모가 대비 *+22%* 여력 분석도요\n   ↳ 시장은 IPO만 보지만 *커서 인수*가 핵심이에요"
+      "body": "카테고리: *사상 최대 IPO* 성공적 데뷔\n   ↳ 배경: 시총 *1조 7,700억 달러* 평가받았죠\n   ↳ 데이터: 2025년 매출 *187억 달러* 기록했어요\n   ↳ 임팩트: 한 주 만에 주가 *14.94% 점프*했네요\n   ↳ 비교: 초과배정 포함 조달액 *862억 달러*까지\n   ↳ 2030년 매출 *1조 달러* 목표 가시권이에요"
     },
     {
       "index": 2,
-      "title": "다음주",
+      "title": "다음주전망",
       "lines": [
-        "*6/20 스타링크* 발사 예정이에요",
-        "*Falcon 9* 연속 미션 주목돼요",
-        "도달가 *약 $191* 흐름이 점쳐져요",
-        "*오른 날 2일* 내린 날 3일 예상요",
-        "*FAA 신뢰성* 요구가 변수예요",
+        "*6/20·24 스타링크* 발사 두 번 있어요",
+        "*Falcon 9* 연속 성공 여부가 관전 포인트죠",
+        "예상 도달가 *약 $186*, 변동률 *+0.4%* 흐름이에요",
+        "*상승 2일·하락 3일*로 숨 고르기 예상돼요",
+        "시장은 희석 우려하지만 *발사 성공률*이 핵심",
         "함께해 주셔서 감사해요"
       ],
-      "body": "*6/20 스타링크* 발사 예정이에요\n*Falcon 9* 연속 미션 주목돼요\n도달가 *약 $191* 흐름이 점쳐져요\n*오른 날 2일* 내린 날 3일 예상요\n*FAA 신뢰성* 요구가 변수예요\n함께해 주셔서 감사해요"
+      "body": "*6/20·24 스타링크* 발사 두 번 있어요\n*Falcon 9* 연속 성공 여부가 관전 포인트죠\n예상 도달가 *약 $186*, 변동률 *+0.4%* 흐름이에요\n*상승 2일·하락 3일*로 숨 고르기 예상돼요\n시장은 희석 우려하지만 *발사 성공률*이 핵심\n함께해 주셔서 감사해요"
     }
   ],
   "image_prompts": {
-    "0": "A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring Namsan Tower, 63 Building and Lotte Tower, with a majestic SpaceX Starship fully reusable super-heavy rocket launching skyward trailing brilliant Raptor engine plumes, Starlink satellite internet mega-constellation glowing across the sky, distant Mars colonization vision and lunar landing mission silhouettes, orbital refueling depot, Korean futuristic K-tech city ambiance in deep purple violet analytical mood, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "1": "A vibrant 16:9 landscape image of Seoul's Han River bridges glowing in fresh green bullish growth light, modern Korean skyline bathed in sunlit optimism, SpaceX Starship rising from Starbase as a fully reusable super-heavy rocket launching with powerful Raptor engines roaring, Starlink satellite internet mega-constellation forming bright trails, Mars colonization base and lunar landing mission imagery on the horizon, orbital refueling scene, K-tech infrastructure energetic dynamic atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "2": "A stunning 9:16 vertical futuristic Korean cityscape showing Han River night view, Seoul skyline and Gwanghwamun Plaza, dominated by a SpaceX Starship fully reusable super-heavy rocket launching vertically with brilliant Raptor engine flames, Starlink satellite internet mega-constellation arcing overhead, Mars colonization vision and lunar landing mission silhouettes, orbital refueling station glowing, advanced K-tech city scenery, inspirational magenta and gold futuristic mood, golden sun rays starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+    "0": "Seoul Han River night cityscape with SpaceX Falcon 9 rocket and Starship fully reusable super-heavy rocket launching majestically over the skyline, Starlink satellite internet mega-constellation glowing across the night sky, Raptor engines firing with brilliant blue plasma, distant Mars colonization vision and lunar landing missions, orbital refueling depot silhouette, Namsan Tower and Lotte Tower and 63 Building illuminated, K-tech futuristic purple violet analytical mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "Seoul Han River bridges bathed in vibrant green bullish growth light, SpaceX Starship fully reusable super-heavy rocket launching dynamically from Starbase-inspired platform, Starlink satellite internet mega-constellation streaming across morning sky, Raptor engines glowing with powerful thrust, Mars colonization and lunar landing missions visualized in background, orbital refueling concept, Korean modern skyline with sunlit skyscrapers, K-tech infrastructure energetic optimistic atmosphere, lush green parks reflecting prosperity, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "Vertical Korean futuristic cityscape featuring Han River night view, Seoul skyline and Gwanghwamun Plaza, SpaceX Starlink satellite internet mega-constellation glowing above, Starship fully reusable super-heavy rocket launching vertically into starry sky, Raptor engines blazing, Mars colonization and lunar landing missions vision, orbital refueling depot, advanced K-tech urban landscape, magenta and gold inspirational futuristic mood, golden sunrise rays, twinkling stars and sparkles, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
   }
 }
