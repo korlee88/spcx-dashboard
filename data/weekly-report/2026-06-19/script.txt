@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+SPCX 갑자기 *+19.18%* 왜죠?
+*750억 달러* IPO가 터졌어요
+시총 *1조 7,700억 달러* 평가요
+초과배정에 *지분 희석* 우려도요
+
+SCENE_1_TITLE: 빅뉴스
+SCENE_1:
+카테고리: 사상 최대 *IPO 성공*이에요
+   ↳ 배경: 비상장 거인이 드디어 *상장* 했죠
+   ↳ 데이터: 조달 *750억 달러* 역대 최대급
+   ↳ 임팩트: 주가 한 주에 *+19.18%* 올랐어요
+   ↳ 비교: 공모가 대비 *+22%* 여력 분석도요
+   ↳ 시장은 IPO만 보지만 *커서 인수*가 핵심이에요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+*6/20 스타링크* 발사 예정이에요
+*Falcon 9* 연속 미션 주목돼요
+도달가 *약 $191* 흐름이 점쳐져요
+*오른 날 2일* 내린 날 3일 예상요
+*FAA 신뢰성* 요구가 변수예요
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape view of Seoul's Han River night skyline featuring Namsan Tower, 63 Building and Lotte Tower, with a majestic SpaceX Starship fully reusable super-heavy rocket launching skyward trailing brilliant Raptor engine plumes, Starlink satellite internet mega-constellation glowing across the sky, distant Mars colonization vision and lunar landing mission silhouettes, orbital refueling depot, Korean futuristic K-tech city ambiance in deep purple violet analytical mood, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant 16:9 landscape image of Seoul's Han River bridges glowing in fresh green bullish growth light, modern Korean skyline bathed in sunlit optimism, SpaceX Starship rising from Starbase as a fully reusable super-heavy rocket launching with powerful Raptor engines roaring, Starlink satellite internet mega-constellation forming bright trails, Mars colonization base and lunar landing mission imagery on the horizon, orbital refueling scene, K-tech infrastructure energetic dynamic atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical futuristic Korean cityscape showing Han River night view, Seoul skyline and Gwanghwamun Plaza, dominated by a SpaceX Starship fully reusable super-heavy rocket launching vertically with brilliant Raptor engine flames, Starlink satellite internet mega-constellation arcing overhead, Mars colonization vision and lunar landing mission silhouettes, orbital refueling station glowing, advanced K-tech city scenery, inspirational magenta and gold futuristic mood, golden sun rays starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
