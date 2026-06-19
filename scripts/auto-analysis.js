@@ -7,7 +7,7 @@
 const fs   = require('fs');
 const path = require('path');
 const { loadMacroData, buildMacroContext, calculateEnhancedScore, fetchOptionsIV, fetchShortInterest } = require('./lib/scoring');
-const { loadTickerConfig, loadRulesConfig, buildSystemPrompt } = require('./lib/prompt');
+const { loadTickerConfig, loadRulesConfig, buildSystemPrompt, ipoFactNote } = require('./lib/prompt');
 
 const cfg      = loadTickerConfig();
 const rulesData = loadRulesConfig();
@@ -31,6 +31,7 @@ const MAX_SESSIONS = 90; // 최대 90개 (약 3주치)
 // ─── 시스템 프롬프트 (config/rules.json + config/ticker.json 기반 동적 생성) ──
 
 const SYSTEM_PROMPT = buildSystemPrompt(cfg, rulesData);
+const IPO_FACT       = ipoFactNote(cfg); // 선택 — Google Search grounding 프롬프트에도 주입(실시간 검색이 전제와 충돌 방지)
 
 // ─── 유틸 ────────────────────────────────────────────────────────────────────
 
@@ -93,7 +94,7 @@ async function collectNews() {
     tools: [{ google_search: {} }],
     contents: [{
       role: 'user',
-      parts: [{ text: `[필수 규칙] title과 summary는 반드시 한국어(Korean)로 작성. 영어 원문은 한국어로 번역할 것. source·category만 영어 유지.\n\nSearch for the latest ${cfg.company_en} (${TICKER}) and ${keyPeopleStr} news from today or past 24 hours that could impact ${TICKER} stock.\nOnly include articles from major financial/tech news outlets: Reuters, Bloomberg, CNBC, Wall Street Journal, Financial Times, Associated Press, MarketWatch, Barron's, Seeking Alpha, Electrek, The Verge, TechCrunch, Forbes, CNN Business, Fox Business.\nReturn ONLY a JSON array of exactly 10 most market-impactful items, strictly no duplicates, each from a different angle or event:\n[{"id":1,"title":"(한국어 번역 제목 예: ${cfg.company_ko}, 1분기 실적 예상치 하회)","summary":"(한국어 2~3문장 요약)","source":"Reuters","date":"${today}","category":"Earnings|Delivery|Product|Competition|Regulatory|Macro|Energy|Market|Legal"}]\n⚠️ title·summary에 영어 사용 절대 금지. 반드시 한국어로만 작성.\nReturn ONLY the JSON array, no other text.` }],
+      parts: [{ text: `${IPO_FACT ? IPO_FACT + '\n\n' : ''}[필수 규칙] title과 summary는 반드시 한국어(Korean)로 작성. 영어 원문은 한국어로 번역할 것. source·category만 영어 유지.\n\nSearch for the latest ${cfg.company_en} (${TICKER}) and ${keyPeopleStr} news from today or past 24 hours that could impact ${TICKER} stock.\nOnly include articles from major financial/tech news outlets: Reuters, Bloomberg, CNBC, Wall Street Journal, Financial Times, Associated Press, MarketWatch, Barron's, Seeking Alpha, Electrek, The Verge, TechCrunch, Forbes, CNN Business, Fox Business.\nReturn ONLY a JSON array of exactly 10 most market-impactful items, strictly no duplicates, each from a different angle or event:\n[{"id":1,"title":"(한국어 번역 제목 예: ${cfg.company_ko}, 1분기 실적 예상치 하회)","summary":"(한국어 2~3문장 요약)","source":"Reuters","date":"${today}","category":"Earnings|Delivery|Product|Competition|Regulatory|Macro|Energy|Market|Legal"}]\n⚠️ title·summary에 영어 사용 절대 금지. 반드시 한국어로만 작성.\nReturn ONLY the JSON array, no other text.` }],
     }],
     generationConfig: { maxOutputTokens: 8192, temperature: 0.1, thinkingConfig: { thinkingBudget: 0 } },
   });
@@ -139,7 +140,7 @@ async function collectKeyPersonSentiment(dateStr) {
       tools: [{ google_search: {} }],
       contents: [{
         role: 'user',
-        parts: [{ text: `Search X (Twitter) and web for ${handles} posts from the past 7 days (around ${dateStr}) related to ${topics}.\nAnalyze the overall tone and sentiment of their recent public communications about ${cfg.company_en}.\nReturn ONLY JSON:\n{"posts":[{"date":"YYYY-MM-DD","content":"(한국어 내용 요약)","sentiment":"bullish|bearish|neutral","engagement":"high|medium|low"}],"overall_sentiment":"bullish|bearish|neutral","sentiment_score":<integer -3 to +3>,"post_count":<number of found posts>,"reasoning":"(한국어 한 문장 설명)"}\nCRITICAL: Return ONLY the JSON object.` }],
+        parts: [{ text: `${IPO_FACT ? IPO_FACT + '\n\n' : ''}Search X (Twitter) and web for ${handles} posts from the past 7 days (around ${dateStr}) related to ${topics}.\nAnalyze the overall tone and sentiment of their recent public communications about ${cfg.company_en}.\nReturn ONLY JSON:\n{"posts":[{"date":"YYYY-MM-DD","content":"(한국어 내용 요약)","sentiment":"bullish|bearish|neutral","engagement":"high|medium|low"}],"overall_sentiment":"bullish|bearish|neutral","sentiment_score":<integer -3 to +3>,"post_count":<number of found posts>,"reasoning":"(한국어 한 문장 설명)"}\nCRITICAL: Return ONLY the JSON object.` }],
       }],
       generationConfig: { maxOutputTokens: 1024, temperature: 0.1, thinkingConfig: { thinkingBudget: 0 } },
     });

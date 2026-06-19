@@ -7,10 +7,11 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { loadTickerConfig } = require('./lib/prompt');
+const { loadTickerConfig, ipoFactNote } = require('./lib/prompt');
 
 const cfg    = loadTickerConfig();
 const TICKER = cfg.ticker;
+const IPO_FACT = ipoFactNote(cfg); // 선택 — Google Search grounding이 가상 상장 전제와 충돌하지 않도록 주입
 
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) { console.error('❌ GEMINI_API_KEY 환경변수가 없습니다.'); process.exit(1); }
@@ -59,7 +60,7 @@ async function fetchCalendarEvents() {
 
   const categories = cfg.calendar_event_categories || ['실적발표', '제품출시', '주주총회', '컨퍼런스', '규제', '기타'];
 
-  const prompt = `[필수 규칙] title과 description은 반드시 한국어(Korean)로 작성. titleEn과 source만 영어 유지.
+  const prompt = `${IPO_FACT ? IPO_FACT + '\n\n' : ''}[필수 규칙] title과 description은 반드시 한국어(Korean)로 작성. titleEn과 source만 영어 유지.
 
 Today is ${today} (KST). Search for ALL ${cfg.company_en} (${TICKER}) corporate events from ${startStr} to ${endStr} — including recent events that ALREADY occurred in the past 30 days (${startStr} ~ ${today}) as well as upcoming/expected ones.
 
