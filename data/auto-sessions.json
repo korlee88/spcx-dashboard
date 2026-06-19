@@ -1,6 +1,373 @@
 {
   "sessions": [
     {
+      "id": "auto-1781850286187",
+      "date": "2026-06-19",
+      "displayDate": "2026.06.19",
+      "kstTime": "15:22",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1781850185158,
+          "title": "스페이스X, IPO 이후 주가 50% 급등... 머스크의 도지코인 영향력은 감소",
+          "summary": "스페이스X(SPCX)는 6월 12일 IPO 이후 주가가 50% 급등하여 201.80달러에 도달했다. 이는 2025년 187억 달러의 강력한 매출과 600억 달러 규모의 AI 도구 인수 등 성장 전망에 힘입은 것이다. 반면 도지코인(DOGE)은 일론 머스크의 영향력이 감소하면서 소폭 상승 후 빠르게 하락했다.",
+          "source": "Pluang",
+          "date": "2026-06-17",
+          "category": "Market"
+        },
+        {
+          "id": 1781850185159,
+          "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+          "summary": "스페이스X 주가는 AI 코딩 스타트업 커서(Cursor)를 600억 달러에 전액 주식으로 인수한다는 소식에 투자자들의 우려가 커지면서 6% 이상 하락했다. 이로 인해 스페이스X의 시장 가치는 화요일 최고치 대비 약 6,200억 달러 감소한 2조 3,700억 달러를 기록했다.",
+          "source": "Forbes",
+          "date": "2026-06-18",
+          "category": "Acquisition|Market"
+        },
+        {
+          "id": 1781850185160,
+          "title": "스페이스X 상장으로 일론 머스크 세계 최초 억만장자 등극",
+          "summary": "스페이스X의 주가가 미국 증시 상장과 함께 급등하면서 일론 머스크는 세계 최초의 억만장자가 되었다. 스페이스X의 기업 가치는 2조 달러를 넘어섰고, 머스크의 스페이스X 지분 38%는 약 8천억 달러의 가치를 갖게 되었다.",
+          "source": "The Guardian",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781850185161,
+          "title": "스페이스X IPO 이후 주가 하락 가능성 경고",
+          "summary": "스페이스X의 역사적인 상장 이후 일주일도 채 되지 않아 한 분석가는 스페이스X 주가의 다음 움직임이 하락할 가능성이 높다고 경고했다. 프리덤 캐피탈 마켓의 기술 연구 책임자인 폴 믹스는 스페이스X의 공정 가치가 현재 거래 가격의 약 3분의 1인 주당 63달러로 하락할 수 있다고 추정했다.",
+          "source": "Business Insider",
+          "date": "2026-06-17",
+          "category": "Market"
+        },
+        {
+          "id": 1781850185162,
+          "title": "스페이스X, 600억 달러 규모 커서(Cursor) 인수 완료",
+          "summary": "스페이스X는 AI 코딩 스타트업 커서(Cursor)를 600억 달러에 인수하는 계약을 완료했다. 이 인수는 스페이스X가 AI 기업으로 전환하려는 노력의 일환으로, 커서의 우수한 AI 인재를 확보하는 데 중점을 두고 있다.",
+          "source": "Bloomberg Tech",
+          "date": "2026-06-17",
+          "category": "Acquisition"
+        },
+        {
+          "id": 1781850185163,
+          "title": "스페이스X, 사상 최대 규모의 월스트리트 데뷔",
+          "summary": "스페이스X는 주당 150달러로 거래를 시작하며 사상 최대 규모의 IPO를 기록했다. 이는 공모가보다 11% 높은 가격으로, 일론 머스크가 설립한 로켓 및 AI 회사의 가치를 약 2조 달러로 평가받게 했다.",
+          "source": "Bloomberg Businessweek",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1781850185164,
+          "title": "스페이스X IPO, 유럽 우주 산업 주식 상승 견인",
+          "summary": "일론 머스크의 스페이스X가 주식 시장 상장을 신청하면서 유럽 우주 산업 관련 주식들이 상승했다. 이는 스페이스X의 성공적인 데뷔가 해당 부문 전반의 기업 가치를 끌어올릴 것이라는 기대감 때문이다.",
+          "source": "Reuters",
+          "date": "2026-05-22",
+          "category": "Market"
+        },
+        {
+          "id": 1781850185165,
+          "title": "머스크의 백악관 사임, 테슬라 및 다른 사업에 대한 의문 재점화",
+          "summary": "일론 머스크가 트럼프 행정부와의 관계를 끊으면서 투자자들은 그가 테슬라와 스페이스X 등 자신의 사업에 다시 집중하기를 바라고 있다. 최근 스페이스X의 로켓 발사가 기대에 미치지 못하면서 머스크의 리더십에 대한 의문이 제기되고 있다.",
+          "source": "Reuters",
+          "date": "2025-05-29",
+          "category": "Regulatory|Leadership"
+        },
+        {
+          "id": 1781850185166,
+          "title": "스페이스X, 2025년 매출 187억 달러 기록 및 AI 도구 인수",
+          "summary": "스페이스X는 2025년에 187억 달러의 매출을 기록했으며, 600억 달러 규모의 AI 도구를 인수했다. 이는 회사의 강력한 성장과 AI 분야로의 확장을 보여주는 지표이다.",
+          "source": "Pluang",
+          "date": "2026-06-17",
+          "category": "Earnings|Product"
+        },
+        {
+          "id": 1781850185167,
+          "title": "스페이스X, 스타링크 사업 확장 및 잠재적 IPO",
+          "summary": "스페이스X의 가치 대부분은 고속 인터넷 서비스를 제공하는 스타링크(Starlink)에서 비롯된다. 스타링크는 2023년에 약 90억 달러의 매출을 기록했으며, 2024년에는 150억 달러로 증가할 것으로 예상된다. 스타링크는 소비자 및 군사적 중요성이 커지면서 내년에 별도의 IPO를 진행할 수도 있다.",
+          "source": "Seeking Alpha",
+          "date": "2023-12-07",
+          "category": "Product|Market"
+        }
+      ],
+      "analyses": {
+        "1781850185158": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 스페이스X의 IPO 이후 주가 급등을 언급하지만, 이는 이미 발생한 과거의 사건이며 새로운 촉매제가 아니므로 SPCX 주가에 대한 직접적인 영향은 중립적입니다.",
+          "key_factors": [
+            "IPO 이후 주가 급등",
+            "성장 전망"
+          ]
+        },
+        "1781850185159": {
+          "impact_score": -4,
+          "direction": "bearish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R09",
+            "R24"
+          ],
+          "reasoning": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+          "key_factors": [
+            "600억 달러 규모의 전액 주식 인수",
+            "6% 이상 주가 하락 및 6,200억 달러 시장 가치 감소",
+            "주식 희석 우려",
+            "AI 스타트업 커서 인수"
+          ]
+        },
+        "1781850185160": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 스페이스X의 상장과 일론 머스크의 재산에 대한 가상의 시나리오를 다루고 있으며, 실제 발생한 사건이 아니므로 현재 주식에 미치는 영향은 없습니다.",
+          "key_factors": []
+        },
+        "1781850185161": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R11",
+            "R20"
+          ],
+          "reasoning": "한 분석가가 스페이스X의 공정 가치가 현재 거래 가격보다 훨씬 낮을 수 있다고 경고하며 주가 하락 가능성을 제기했습니다.",
+          "key_factors": [
+            "분석가 주가 하락 경고",
+            "공정 가치 추정치 하향"
+          ]
+        },
+        "1781850185162": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "스페이스X의 AI 코딩 스타트업 인수는 우주 발사 및 위성 인터넷 사업과 직접적인 연관성이 낮아 단기적인 주가 영향은 미미할 것으로 예상됩니다.",
+          "key_factors": [
+            "AI 스타트업 인수",
+            "사업 다각화"
+          ]
+        },
+        "1781850185163": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO에 대한 가상 시나리오이며, 실제 SpaceX는 아직 상장되지 않았으므로 현재 주식에 직접적인 영향을 미치지 않습니다.",
+          "key_factors": [
+            "가상 시나리오",
+            "미상장 기업"
+          ]
+        },
+        "1781850185164": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "스페이스X의 IPO 신청 소식은 유럽 우주 산업 주식의 상승을 견인하며, 스페이스X의 성공적인 데뷔가 해당 부문 전반의 기업 가치를 높일 것이라는 기대감을 반영합니다.",
+          "key_factors": [
+            "IPO 신청",
+            "유럽 우주 산업 주식 상승",
+            "기업 가치 상승 기대감"
+          ]
+        },
+        "1781850185165": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R24"
+          ],
+          "reasoning": "일론 머스크의 백악관 사임으로 인해 테슬라 및 다른 사업에 대한 집중도가 재조명되며, 스페이스X의 최근 로켓 발사 부진과 맞물려 리더십에 대한 우려가 제기되고 있습니다.",
+          "key_factors": [
+            "Elon Musk's divided attention",
+            "SpaceX rocket launch underperformance"
+          ]
+        },
+        "1781850185166": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "스페이스X가 2025년에 187억 달러의 매출을 기록하고 600억 달러 규모의 AI 도구를 인수했다는 소식은 회사의 강력한 성장과 AI 분야로의 확장을 보여주며 긍정적인 영향을 미칩니다.",
+          "key_factors": [
+            "2025년 매출 187억 달러",
+            "600억 달러 규모 AI 도구 인수",
+            "AI 분야 확장"
+          ]
+        },
+        "1781850185167": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "스타링크의 매출 성장 예상과 잠재적 IPO 가능성은 스페이스X의 가치 상승에 긍정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "Starlink revenue growth",
+            "Potential Starlink IPO"
+          ]
+        }
+      },
+      "avgScore": -0.3,
+      "buyIndex": 39,
+      "direction": "bearish",
+      "topRules": [
+        "R24",
+        "R09",
+        "R11",
+        "R20"
+      ],
+      "bullish": 3,
+      "bearish": 3,
+      "neutral": 4,
+      "muskXSentiment": null,
+      "googleTrends": {
+        "current_score": 60,
+        "week_avg": 75,
+        "trend": "falling",
+        "spike": true,
+        "top_queries": [
+          "SpaceX IPO",
+          "SpaceX stock",
+          "Elon Musk SpaceX"
+        ],
+        "reasoning": "SpaceX는 지난주 IPO 이후 검색 관심도가 급증했지만, 최근 며칠 동안 주가 하락과 함께 관심도가 떨어지고 있습니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 0.17,
+        "velocity_label": "급감 (×0.2)",
+        "reason": "조회수 속도 급감 (×0.2) | 최근 3일 2,818,496회 / 이전 4~7일 17,055,435회 | 총 19,873,931회 (67개 영상)",
+        "video_count": 67,
+        "total_views": 19873931,
+        "hot_views": 2818496,
+        "baseline_views": 17055435,
+        "top_videos": [
+          {
+            "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-12T21:27:06Z",
+            "viewCount": 1306065
+          },
+          {
+            "title": "SpaceX上市，背后在玩什么资本游戏?",
+            "channel": "小Lin说",
+            "publishedAt": "2026-06-12T13:30:10Z",
+            "viewCount": 1265806
+          },
+          {
+            "title": "[26년 06월 16일 화]  트럼프 “이란 합의 공정하고 성공적일 것” ｜ 일본, 기준금리 인상 ｜스페이스X, &#39;커서&#39; 인수｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-16T21:46:27Z",
+            "viewCount": 1007340
+          },
+          {
+            "title": "SpaceX Went Public - A Disaster Waiting to Happen",
+            "channel": "ColdFusion",
+            "publishedAt": "2026-06-12T20:32:19Z",
+            "viewCount": 990477
+          },
+          {
+            "title": "미래에셋증권 배정 스페이스X 공모주 &#39;전량 취소&#39; (자막뉴스) / SBS",
+            "channel": "SBS 뉴스",
+            "publishedAt": "2026-06-13T03:45:03Z",
+            "viewCount": 971313
+          }
+        ],
+        "collected_at": "2026-06-19T06:22:54Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 5,
+        "Acquisition|Market": 1,
+        "Acquisition": 1,
+        "Regulatory|Leadership": 1,
+        "Earnings|Product": 1,
+        "Product|Market": 1
+      },
+      "macroCtx": {
+        "spyChg": -0.14,
+        "qqqChg": 0.48,
+        "vixClose": 16.399999618530273,
+        "wtiChg": 1.6,
+        "cnyChg": -0.01,
+        "competitorChg": -1.54,
+        "competitorRelStrength": -0.27,
+        "prevAssetChg": 7.72,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -1.54,
+        "bydRelStrength": -0.27,
+        "prevTslaChg": 7.72,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 47,
+        "r24Discount": 1,
+        "meanReversion": -5,
+        "googleTrends": -3,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 185,
+      "latestTslaPrice": 185,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/22(월)",
+          "change_pct": -1.2,
+          "signal": "매도",
+          "basePrice": 185,
+          "predictedPrice": 182.78
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/23(화)",
+          "change_pct": -0.8,
+          "signal": "매도",
+          "basePrice": 185,
+          "predictedPrice": 183.52
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/24(수)",
+          "change_pct": -0.3,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 184.45
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/25(목)",
+          "change_pct": 0.1,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.18
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/26(금)",
+          "change_pct": 0.4,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.74
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781850286187
+    },
+    {
       "id": "auto-1781762344151",
       "date": "2026-06-18",
       "displayDate": "2026.06.18",
@@ -2199,5 +2566,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-18 14:57 KST"
+  "lastUpdated": "2026-06-19 15:22 KST"
 }
