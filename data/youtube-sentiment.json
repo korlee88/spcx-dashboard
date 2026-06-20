@@ -1,43 +1,43 @@
 {
   "score": -1,
-  "velocity": 0.17,
-  "velocity_label": "급감 (×0.2)",
-  "reason": "조회수 속도 급감 (×0.2) | 최근 3일 2,818,496회 / 이전 4~7일 17,055,435회 | 총 19,873,931회 (67개 영상)",
-  "video_count": 67,
-  "total_views": 19873931,
-  "hot_views": 2818496,
-  "baseline_views": 17055435,
+  "velocity": 0.35,
+  "velocity_label": "급감 (×0.4)",
+  "reason": "조회수 속도 급감 (×0.4) | 최근 3일 3,107,258회 / 이전 4~7일 8,835,262회 | 총 11,942,520회 (71개 영상)",
+  "video_count": 71,
+  "total_views": 11942520,
+  "hot_views": 3107258,
+  "baseline_views": 8835262,
   "top_videos": [
     {
-      "title": "[26년 06월 12일 금]  스페이스X, 상장 예정 ｜ 로켓랩·코어위브·네비우스, 나스닥100 편입 ｜미국·이란, 합의 임박..? ｜ -  오선의 미국 증시 라이브",
-      "channel": "오선의 미국 증시 라이브",
-      "publishedAt": "2026-06-12T21:27:06Z",
-      "viewCount": 1306065
+      "title": "How SpaceX Humiliated Wall Street",
+      "channel": "Patrick Boyle",
+      "publishedAt": "2026-06-13T22:00:06Z",
+      "viewCount": 1210865
     },
     {
-      "title": "SpaceX上市，背后在玩什么资本游戏?",
-      "channel": "小Lin说",
-      "publishedAt": "2026-06-12T13:30:10Z",
-      "viewCount": 1265806
+      "title": "🔥 Маск теряет миллиарды Индия и Россия сказали жёсткое нет",
+      "channel": "мировые новости 55 • БУЛАВА",
+      "publishedAt": "2026-06-13T15:15:06Z",
+      "viewCount": 615786
     },
     {
-      "title": "[26년 06월 16일 화]  트럼프 “이란 합의 공정하고 성공적일 것” ｜ 일본, 기준금리 인상 ｜스페이스X, &#39;커서&#39; 인수｜ -  오선의 미국 증시 라이브",
-      "channel": "오선의 미국 증시 라이브",
-      "publishedAt": "2026-06-16T21:46:27Z",
-      "viewCount": 1007340
+      "title": "Iran Raises Concerns Over Starlink and X Operations Amid Regional Security Dispute",
+      "channel": "Modern News Studio",
+      "publishedAt": "2026-06-16T06:00:11Z",
+      "viewCount": 589476
     },
     {
-      "title": "SpaceX Went Public - A Disaster Waiting to Happen",
-      "channel": "ColdFusion",
-      "publishedAt": "2026-06-12T20:32:19Z",
-      "viewCount": 990477
+      "title": "Elon’s Dirty Secret : Whats wrong with SPACEX IPO? (Its worse than you Think) | Business Case Study",
+      "channel": "Think School",
+      "publishedAt": "2026-06-14T15:25:15Z",
+      "viewCount": 548092
     },
     {
-      "title": "미래에셋증권 배정 스페이스X 공모주 &#39;전량 취소&#39; (자막뉴스) / SBS",
-      "channel": "SBS 뉴스",
-      "publishedAt": "2026-06-13T03:45:03Z",
-      "viewCount": 971313
+      "title": "NASDAQ rule change: SpaceX Open Ai Anthropic ￼￼",
+      "channel": "Kenan Grace",
+      "publishedAt": "2026-06-13T18:10:46Z",
+      "viewCount": 496066
     }
   ],
-  "collected_at": "2026-06-19T06:22:54Z"
+  "collected_at": "2026-06-20T05:17:53Z"
 }
