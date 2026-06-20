@@ -645,6 +645,64 @@ def _build_prompt(summary):
     )
 
 
+# ── 대본 자체 검토(2차 패스) ─────────────────────────────────────────────────
+# 1차 생성 대본을 그대로 쓰지 않고, 같은 모델에 다시 보내 자가 교열을 시킨다.
+# 반복 표현·어색한 문구를 줄이고 미래 비전 전달력을 보강하는 게 목적.
+REVIEW_PROMPT_TEMPLATE = """당신은 아래 YouTube Shorts 나레이션 대본의 '교열 담당자'입니다.
+1차 초안을 검토하고, 문제가 있으면 고쳐서 **동일한 형식**으로 다시 출력하세요.
+
+=== 검토 체크리스트 ===
+1. 반복 표현: 같은 단어·어미·문장 패턴이 여러 줄에서 기계적으로 반복되지 않는가?
+   (예: "~돼요"/"~예요"가 연속 3줄 이상, 같은 핵심 단어가 여러 씬에서 중복) → 다른 어미·동의어로 다양화한다.
+2. 어색한 문구: 번역체이거나 문법적으로 어색하거나 뜻이 모호한 문장이 있는가? → 자연스러운 구어체로 다시 쓴다.
+3. 미래 비전 전달력: 씬2(다음주 전망)와 이미지 프롬프트가 {company_ko}의 미래 기술·사업 비전을
+   충분히 구체적이고 인상적으로 전달하는가? 아래 미래 비전 키워드를 참고해 막연한 표현이 있으면
+   더 생생하고 구체적인 표현으로 보강한다 (단, 사실관계를 새로 지어내지 말고 1차 초안의 데이터·수치는 유지):
+   {future_tech}
+4. 형식 규칙은 1차 생성과 동일하게 유지한다: 각 줄 글자수 제한, *별표* 강조 표기(줄당 1~2개),
+   점수(+N점 등) 미표기, 단정적 매수·매도 권유 금지, SCENE_n_TITLE/SCENE_n/IMAGE_PROMPT_n 마커 구조 보존.
+
+문제가 없는 줄은 그대로 두고, 문제가 있는 줄만 고치세요. 줄 수·씬 구성을 바꾸지 마세요.
+
+=== 1차 초안 ===
+{draft}
+
+=== 출력 ===
+위 체크리스트를 반영한 최종 버전을 1차 초안과 정확히 동일한 마커 구조로만 출력하세요.
+(SCENE_0_TITLE, SCENE_0, SCENE_1_TITLE, SCENE_1, SCENE_2_TITLE, SCENE_2, IMAGE_PROMPT_0, IMAGE_PROMPT_1, IMAGE_PROMPT_2)
+설명·코멘트 없이 최종 대본만 출력합니다."""
+
+
+def review_script(raw, summary):
+    """1차 생성 대본을 같은 계열 모델에 재검토시켜 반복·어색한 문구를 교정하고
+    미래 비전 전달력을 보강한다. 실패하거나 출력 형식이 깨지면 1차 초안을 그대로 쓴다
+    (재검토는 품질 보강용 — 영상 생성 자체를 막아서는 안 된다)."""
+    review_prompt = REVIEW_PROMPT_TEMPLATE.format(
+        company_ko=COMPANY_KO,
+        future_tech=FUTURE_TECH_EN or "(미래 비전 키워드 미설정)",
+        draft=raw,
+    )
+    try:
+        if _last_model == "Claude Opus 4" and ANTHROPIC_API_KEY:
+            revised = generate_script_opus(review_prompt)
+        elif GEMINI_API_KEY:
+            revised = generate_script_gemini(review_prompt)
+        elif ANTHROPIC_API_KEY:
+            revised = generate_script_opus(review_prompt)
+        else:
+            return raw
+    except Exception as e:
+        print(f"   ⚠ 대본 재검토 실패({e}) — 1차 초안 유지", file=sys.stderr)
+        return raw
+
+    required_markers = ("SCENE_0_TITLE:", "SCENE_0:", "SCENE_1_TITLE:", "SCENE_1:",
+                         "SCENE_2_TITLE:", "SCENE_2:")
+    if not all(m in revised for m in required_markers):
+        print("   ⚠ 재검토 출력 형식 불완전 — 1차 초안 유지", file=sys.stderr)
+        return raw
+    return revised
+
+
 def generate_script_opus(prompt):
     import anthropic
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -1959,7 +2017,9 @@ def main():
         scenes = [{"index": i, "title": f"씬 {i}", "lines": [], "body": ""} for i in range(0, 3)]
     else:
         print("✍ 대본 생성 중...")
-        raw    = generate_script(summary)
+        raw = generate_script(summary)
+        print("🔎 대본 재검토 중 (반복·어색한 문구·미래 비전 전달력)...")
+        raw = review_script(raw, summary)
         scenes = parse_script(raw)
         img_prompts = parse_image_prompts(raw)
 
