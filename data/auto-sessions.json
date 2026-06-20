@@ -1,6 +1,387 @@
 {
   "sessions": [
     {
+      "id": "auto-1781932806433",
+      "date": "2026-06-20",
+      "displayDate": "2026.06.20",
+      "kstTime": "14:17",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1781932691208,
+          "title": "SpaceX, IPO 열기 식으며 주가 하락",
+          "summary": "SpaceX 주가는 목요일에 6% 이상 하락하며, 상장 후 잠시 세계 5대 기업에 들었던 열기가 식는 모습을 보였습니다. 주가는 여전히 공모가인 135달러보다 30% 이상 높지만, 이틀 연속 하락세를 보였습니다.",
+          "source": "Reuters",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691209,
+          "title": "SpaceX, 200억 달러 규모 채권 발행 추진",
+          "summary": "SpaceX는 다음 주 초부터 투자자들과 만나 200억 달러 이상의 채권 발행을 논의할 예정입니다. 이는 회사의 첫 투자 등급 미국 달러 채권 발행이 될 것이며, 주로 2027년 9월 만기인 200억 달러 규모의 브릿지론을 재융자하는 데 사용될 것입니다.",
+          "source": "Bloomberg",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691210,
+          "title": "SpaceX, AI 코딩 에이전트 Cursor 개발사 Anysphere 600억 달러에 인수",
+          "summary": "SpaceX는 기업 AI 도구 시장에서의 입지를 강화하기 위해 인기 AI 코딩 에이전트 Cursor를 개발한 스타트업 Anysphere를 600억 달러 규모의 주식으로 인수할 것이라고 발표했습니다. 이 인수는 SpaceX의 AI 전략을 강화하고 수직 통합을 통해 비용 및 품질 우위를 확보할 것으로 예상됩니다.",
+          "source": "Forbes",
+          "date": "2026-06-18",
+          "category": "Product"
+        },
+        {
+          "id": 1781932691211,
+          "title": "SpaceX 주가, IPO 이후 급등세 꺾이며 6,000억 달러 증발",
+          "summary": "SpaceX 주가는 수요일 최고점 대비 20% 하락하며 약 6,200억 달러의 시가총액이 증발했습니다. 이는 Anysphere 인수 발표 이후 투자자들이 AI 확장 비용과 현재 기업 가치에 대한 의문을 제기하면서 투자 심리가 변화했기 때문입니다.",
+          "source": "Forbes",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691212,
+          "title": "SpaceX, S&P 500 편입 종목 중 가장 비싼 주식으로 평가",
+          "summary": "SpaceX는 2027년 예상 매출액 대비 주가수익비율이 39.2배에 달하며, S&P 500 편입 종목 중 가장 비싼 주식으로 평가받고 있습니다. 이는 투자자들이 기존의 가치 평가 방식보다는 일론 머스크의 비전에 더 큰 비중을 두는 'FOMO' 심리에 영향을 받은 것으로 분석됩니다.",
+          "source": "MarketWatch",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691213,
+          "title": "SpaceX, 2026년 1분기 43억 달러 순손실 기록",
+          "summary": "SpaceX는 2026년 1분기에 43억 달러의 순손실을 기록했으며, 이는 AI 데이터 센터 확장 비용 증가에 따른 것입니다. 2025년 전체 순손실은 49억 4천만 달러, 매출은 186억 7천만 달러였습니다.",
+          "source": "CNBC",
+          "date": "2026-06-20",
+          "category": "Earnings"
+        },
+        {
+          "id": 1781932691214,
+          "title": "SpaceX, IPO 이후 평균 매수자 손익분기점 근접",
+          "summary": "SpaceX 주가가 급락하면서 IPO 이후 공개 시장에서 주식을 매수한 평균 투자자들은 거의 모든 수익을 잃고 손익분기점에 근접했습니다. 주가는 IPO 가격인 135달러에서 화요일 한때 225달러 이상으로 치솟았으나, 이후 20% 하락했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-19",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691215,
+          "title": "SpaceX, AI 사업 확장으로 수익성 악화 우려",
+          "summary": "SpaceX의 Starlink 사업부는 높은 성장률과 24%의 영업이익률을 기록하며 수익성이 좋지만, xAI를 포함한 AI 사업부의 손실(63억 5천만 달러)이 이를 상쇄하고 있습니다. 2026년 1분기 자본 지출의 76%가 AI 사업부에 투입되는 등 AI에 대한 막대한 투자가 수익성 악화의 주된 원인으로 지적됩니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-18",
+          "category": "Earnings"
+        },
+        {
+          "id": 1781932691216,
+          "title": "SpaceX, '매그니피센트 7' 시대 종식시키고 새로운 기술주 그룹 형성",
+          "summary": "SpaceX의 성공적인 나스닥 상장으로 시가총액이 '매그니피센트 7' 중 세 기업을 넘어섰습니다. 이는 월스트리트에서 'MANGOS' (Meta, Anthropic, Nvidia, Google, OpenAI, SpaceX)와 같은 새로운 기술주 그룹에 대한 논의를 촉발하고 있습니다.",
+          "source": "Forbes",
+          "date": "2026-06-16",
+          "category": "Market"
+        },
+        {
+          "id": 1781932691217,
+          "title": "일론 머스크, 2030년까지 SpaceX 매출 1조 달러 달성 전망",
+          "summary": "일론 머스크는 SpaceX가 2030년까지 1조 달러의 매출을 올릴 수 있을 것이라고 언급했습니다. 이는 회사가 상장된 지 이틀 만에 나온 발언으로, SpaceX의 가치가 2조 달러를 넘어선 시점이었습니다.",
+          "source": "Reuters",
+          "date": "2026-06-15",
+          "category": "Product"
+        }
+      ],
+      "analyses": {
+        "1781932691208": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "IPO 이후 주가가 이틀 연속 하락하며 초기 상승세가 꺾이는 모습을 보여 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "주가 하락",
+            "IPO 열기 식음"
+          ]
+        },
+        "1781932691209": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 200억 달러 규모의 투자 등급 채권을 발행하여 기존 브릿지론을 재융자하는 것은 재무 구조를 안정화하고 장기적인 자금 조달 기반을 마련하는 긍정적인 신호입니다.",
+          "key_factors": [
+            "채권 발행을 통한 재융자",
+            "투자 등급 채권"
+          ]
+        },
+        "1781932691210": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R23"
+          ],
+          "reasoning": "SpaceX의 AI 코딩 에이전트 개발사 인수는 기업 AI 도구 시장에서의 입지를 강화하고 수직 통합을 통한 비용 및 품질 우위를 확보할 것으로 예상되어 긍정적입니다.",
+          "key_factors": [
+            "AI 전략 강화",
+            "수직 통합",
+            "기업 AI 도구 시장 진출"
+          ]
+        },
+        "1781932691211": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX 주가가 Anysphere 인수 발표 이후 투자 심리 변화로 인해 최고점 대비 20% 하락하며 시가총액이 크게 감소했습니다.",
+          "key_factors": [
+            "Anysphere 인수 발표",
+            "AI 확장 비용 우려",
+            "기업 가치에 대한 의문"
+          ]
+        },
+        "1781932691212": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 S&P 500 편입 종목 중 가장 비싼 주식으로 평가받는다는 소식은 투자자들의 FOMO 심리에 기반한 과대평가 우려를 제기하며 잠재적인 하방 압력을 시사합니다.",
+          "key_factors": [
+            "고평가 우려",
+            "FOMO 심리"
+          ]
+        },
+        "1781932691213": {
+          "impact_score": -3,
+          "direction": "bearish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R02"
+          ],
+          "reasoning": "SpaceX가 2026년 1분기에 43억 달러의 상당한 순손실을 기록했으며, 이는 AI 데이터 센터 확장 비용 증가에 기인하여 주가에 부정적인 영향을 미칠 것입니다.",
+          "key_factors": [
+            "순손실",
+            "AI 데이터 센터 확장 비용"
+          ]
+        },
+        "1781932691214": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX 주가가 IPO 이후 상승분을 대부분 반납하며 평균 매수자들의 손익분기점에 근접했다는 소식은 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "주가 하락",
+            "투자자 손익분기점 근접"
+          ]
+        },
+        "1781932691215": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R24"
+          ],
+          "reasoning": "SpaceX의 AI 사업부 손실과 막대한 투자가 Starlink의 수익성을 상쇄하며 전체적인 수익성 악화 우려를 제기합니다.",
+          "key_factors": [
+            "xAI 손실",
+            "AI 사업부 자본 지출",
+            "Starlink 수익성 상쇄"
+          ]
+        },
+        "1781932691216": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX의 성공적인 나스닥 상장과 높은 시가총액은 새로운 기술주 그룹 논의를 촉발하며 시장에서 긍정적인 인식을 강화합니다.",
+          "key_factors": [
+            "성공적인 나스닥 상장",
+            "높은 시가총액",
+            "새로운 기술주 그룹 논의"
+          ]
+        },
+        "1781932691217": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R22"
+          ],
+          "reasoning": "일론 머스크의 2030년까지 1조 달러 매출 달성 전망 발언은 회사의 미래 성장 잠재력에 대한 긍정적인 신호로 해석될 수 있습니다.",
+          "key_factors": [
+            "CEO 긍정적 발언",
+            "장기 매출 전망"
+          ]
+        }
+      },
+      "avgScore": -0.3,
+      "buyIndex": 42,
+      "direction": "bearish",
+      "topRules": [
+        "R23",
+        "R02",
+        "R24",
+        "R22"
+      ],
+      "bullish": 4,
+      "bearish": 6,
+      "neutral": 0,
+      "muskXSentiment": {
+        "posts": [
+          {
+            "date": "2026-06-15",
+            "content": "일론 머스크는 X(트위터)에 2030년까지 SpaceX가 약 1조 달러의 매출을 달성할 수 있을 것이라고 게시했습니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          }
+        ],
+        "overall_sentiment": "bullish",
+        "sentiment_score": 2,
+        "post_count": 1,
+        "reasoning": "일론 머스크의 SpaceX 매출 목표에 대한 게시물은 회사의 미래 성장에 대한 긍정적인 전망을 제시하며 강세 심리를 나타냅니다."
+      },
+      "googleTrends": {
+        "current_score": 65,
+        "week_avg": 70,
+        "trend": "falling",
+        "spike": true,
+        "top_queries": [
+          "SpaceX IPO",
+          "SpaceX stock",
+          "Elon Musk SpaceX"
+        ],
+        "reasoning": "SpaceX는 지난 7일 동안 높은 검색 관심을 보였지만, 최근 IPO 이후 주가 하락과 Cursor 인수 발표로 인해 검색 관심이 감소하는 추세입니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 0.35,
+        "velocity_label": "급감 (×0.4)",
+        "reason": "조회수 속도 급감 (×0.4) | 최근 3일 3,107,258회 / 이전 4~7일 8,835,262회 | 총 11,942,520회 (71개 영상)",
+        "video_count": 71,
+        "total_views": 11942520,
+        "hot_views": 3107258,
+        "baseline_views": 8835262,
+        "top_videos": [
+          {
+            "title": "How SpaceX Humiliated Wall Street",
+            "channel": "Patrick Boyle",
+            "publishedAt": "2026-06-13T22:00:06Z",
+            "viewCount": 1210865
+          },
+          {
+            "title": "🔥 Маск теряет миллиарды Индия и Россия сказали жёсткое нет",
+            "channel": "мировые новости 55 • БУЛАВА",
+            "publishedAt": "2026-06-13T15:15:06Z",
+            "viewCount": 615786
+          },
+          {
+            "title": "Iran Raises Concerns Over Starlink and X Operations Amid Regional Security Dispute",
+            "channel": "Modern News Studio",
+            "publishedAt": "2026-06-16T06:00:11Z",
+            "viewCount": 589476
+          },
+          {
+            "title": "Elon’s Dirty Secret : Whats wrong with SPACEX IPO? (Its worse than you Think) | Business Case Study",
+            "channel": "Think School",
+            "publishedAt": "2026-06-14T15:25:15Z",
+            "viewCount": 548092
+          },
+          {
+            "title": "NASDAQ rule change: SpaceX Open Ai Anthropic ￼￼",
+            "channel": "Kenan Grace",
+            "publishedAt": "2026-06-13T18:10:46Z",
+            "viewCount": 496066
+          }
+        ],
+        "collected_at": "2026-06-20T05:17:53Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 6,
+        "Product": 2,
+        "Earnings": 2
+      },
+      "macroCtx": {
+        "spyChg": -0.14,
+        "qqqChg": 0.48,
+        "vixClose": 16.780000686645508,
+        "wtiChg": 1.51,
+        "cnyChg": 0,
+        "competitorChg": -1.54,
+        "competitorRelStrength": -0.27,
+        "prevAssetChg": 7.72,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -1.54,
+        "bydRelStrength": -0.27,
+        "prevTslaChg": 7.72,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 47,
+        "r24Discount": 1,
+        "meanReversion": -5,
+        "muskXSentiment": 3,
+        "googleTrends": -3,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 185,
+      "latestTslaPrice": 185,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/22(월)",
+          "change_pct": -0.9,
+          "signal": "매도",
+          "basePrice": 185,
+          "predictedPrice": 183.34
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/22(월)",
+          "change_pct": -0.7,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 183.71
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/23(화)",
+          "change_pct": 0.2,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.37
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/24(수)",
+          "change_pct": 0.4,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.74
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/25(목)",
+          "change_pct": 0.1,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.18
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1781932806433
+    },
+    {
       "id": "auto-1781850286187",
       "date": "2026-06-19",
       "displayDate": "2026.06.19",
@@ -2567,5 +2948,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-19 15:22 KST"
+  "lastUpdated": "2026-06-20 14:17 KST"
 }
