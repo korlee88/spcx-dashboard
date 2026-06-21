@@ -1,0 +1,255 @@
+{
+  "generated_at": "2026-06-22",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 IPO 후 조정 걱정했지만 *+14.94%* 반등했죠",
+  "subtitle": "2026-06-14 ~ 2026-06-21 · 스페이스X 주가, 커서(Cursor) 인수 계약으로 6",
+  "summary": {
+    "week_start": "2026-06-14",
+    "week_end": "2026-06-21",
+    "session_count": 8,
+    "total_analyzed": 72,
+    "bullish_count": 20,
+    "bearish_count": 21,
+    "buy_indices": [
+      53,
+      42,
+      39,
+      47,
+      54,
+      60,
+      55,
+      58
+    ],
+    "avg_buy_index": 51,
+    "latest_buy_index": 53,
+    "price_start": 160.95,
+    "price_end": 185,
+    "latest_price": 185,
+    "today_price": 185,
+    "today_change_pct": 0.0,
+    "week_change_pct": 14.94,
+    "biggest_impact": {
+      "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+      "score": -4,
+      "reason": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+      "source": "Forbes",
+      "date": "2026-06-18",
+      "category": "Acquisition|Market",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "스페이스X, 사상 최대 규모 IPO로 750억 달러 조달 및 머스크 세계 최초 억만장자 등극",
+        "score": 3,
+        "reason": "스페이스X가 사상 최대 규모의 IPO를 통해 750억 달러를 조달하고 1조 7,700억 달러의 가치를 인정받았다는 소식은 회사에 대한 강력한 시장 신뢰와 상당한 자본 유입을 의미하며, 이는 미래 성장과 확장에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Fox Business",
+        "date": "2026-06-14",
+        "category": "Market"
+      },
+      {
+        "title": "SpaceX, Cursor 인수 완료 및 200억 달러 채권 발행 준비",
+        "score": 2,
+        "reason": "SpaceX가 AI 코딩 플랫폼 Cursor를 인수하여 기술 역량을 강화하고, 200억 달러 규모의 채권 발행을 통해 IPO 직후 브릿지론을 재융자하는 것은 재무 건전성을 개선하고 미래 성장을 위한 자금을 확보하는 긍정적인 신호입니다.",
+        "source": "Simply Wall St News",
+        "date": "2026-06-20",
+        "category": "Product|Market"
+      },
+      {
+        "title": "SpaceX, 2030년까지 1조 달러 매출 목표 제시",
+        "score": 2,
+        "reason": "일론 머스크의 2030년까지 1조 달러 매출 목표 언급은 회사 성장에 대한 긍정적인 전망을 제시하지만, 구체적인 계획이나 확정된 수치가 아니므로 중간 정도의 긍정적 영향을 미칩니다.",
+        "source": "MarketWatch",
+        "date": "2026-06-19",
+        "category": "Earnings"
+      },
+      {
+        "title": "SpaceX, AI 코딩 에이전트 Cursor 개발사 Anysphere 600억 달러에 인수",
+        "score": 2,
+        "reason": "SpaceX의 AI 코딩 에이전트 개발사 인수는 기업 AI 도구 시장에서의 입지를 강화하고 수직 통합을 통한 비용 및 품질 우위를 확보할 것으로 예상되어 긍정적입니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Product"
+      },
+      {
+        "title": "스페이스X, 2025년 매출 187억 달러 기록 및 AI 도구 인수",
+        "score": 2,
+        "reason": "스페이스X가 2025년에 187억 달러의 매출을 기록하고 600억 달러 규모의 AI 도구를 인수했다는 소식은 회사의 강력한 성장과 AI 분야로의 확장을 보여주며 긍정적인 영향을 미칩니다.",
+        "source": "Pluang",
+        "date": "2026-06-17",
+        "category": "Earnings|Product"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+        "score": -4,
+        "reason": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Acquisition|Market"
+      },
+      {
+        "title": "SpaceX, 2026년 1분기 43억 달러 순손실 기록",
+        "score": -3,
+        "reason": "SpaceX가 2026년 1분기에 43억 달러의 상당한 순손실을 기록했으며, 이는 AI 데이터 센터 확장 비용 증가에 기인하여 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "CNBC",
+        "date": "2026-06-20",
+        "category": "Earnings"
+      },
+      {
+        "title": "스페이스X, IPO 초과 배정 옵션 행사로 조달 금액 862억 달러로 증가",
+        "score": -3,
+        "reason": "스페이스X가 IPO 초과 배정 옵션을 행사하여 추가 주식을 매각함으로써 총 조달 금액이 증가했지만, 이는 기존 주주들에게 희석 효과를 가져와 주가에 부정적인 영향을 미칠 수 있습니다.",
+        "source": "Bloomberg",
+        "date": "2026-06-15",
+        "category": "Market"
+      },
+      {
+        "title": "SpaceX 주가 급락, Cursor 거래로 투자자 우려 증폭",
+        "score": -2,
+        "reason": "SpaceX의 AI 코딩 스타트업 Cursor 인수는 회사의 핵심 사업 집중도에 대한 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Market|Product"
+      },
+      {
+        "title": "SpaceX 주가, IPO 이후 급등세 꺾이며 6,000억 달러 증발",
+        "score": -2,
+        "reason": "SpaceX 주가가 Anysphere 인수 발표 이후 투자 심리 변화로 인해 최고점 대비 20% 하락하며 시가총액이 크게 감소했습니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Market"
+      }
+    ],
+    "forecasts": [
+      {
+        "day": 1,
+        "label": "내일",
+        "date": "6/22(월)",
+        "change_pct": 0.7,
+        "signal": "관망",
+        "basePrice": 185,
+        "predictedPrice": 186.3
+      },
+      {
+        "day": 2,
+        "label": "D+2",
+        "date": "6/23(화)",
+        "change_pct": 0.2,
+        "signal": "관망",
+        "basePrice": 185,
+        "predictedPrice": 185.37
+      },
+      {
+        "day": 3,
+        "label": "D+3",
+        "date": "6/24(수)",
+        "change_pct": -0.3,
+        "signal": "관망",
+        "basePrice": 185,
+        "predictedPrice": 184.45
+      },
+      {
+        "day": 4,
+        "label": "D+4",
+        "date": "6/25(목)",
+        "change_pct": 0.5,
+        "signal": "관망",
+        "basePrice": 185,
+        "predictedPrice": 185.93
+      },
+      {
+        "day": 5,
+        "label": "D+5",
+        "date": "6/26(금)",
+        "change_pct": 0.1,
+        "signal": "관망",
+        "basePrice": 185,
+        "predictedPrice": 185.18
+      }
+    ],
+    "daily_prices": [
+      [
+        "2026-06-21",
+        185
+      ],
+      [
+        "2026-06-20",
+        185
+      ],
+      [
+        "2026-06-19",
+        185
+      ],
+      [
+        "2026-06-18",
+        191.82
+      ],
+      [
+        "2026-06-17",
+        201.8
+      ]
+    ],
+    "overall_signal": "중립",
+    "trends": null,
+    "next_events": [
+      {
+        "date": "2026-06-24",
+        "title": "스타링크 미션 발사 (Falcon 9)",
+        "titleEn": "Starlink Mission Launch (Falcon 9)",
+        "category": "발사일정",
+        "categoryEn": "Launch Schedule",
+        "time": null,
+        "timezone": null,
+        "confirmed": false,
+        "source": "SpaceX",
+        "sourceUrl": "https://www.spacex.com/launches/",
+        "description": "Falcon 9 로켓이 캘리포니아 SLC-4E에서 스타링크 위성을 발사할 예정입니다.",
+        "importance": "low",
+        "id": "cal-2026-06-24-starlink-mission-launch-falcon-9-"
+      }
+    ],
+    "movement_reason": "커서 인수 계약 / 1분기 순손실 기록"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "이번주",
+      "lines": [
+        "다들 IPO 후 조정 걱정했지만 *+14.94%* 반등했죠",
+        "*커서 인수* 호재와 1분기 손실이 엇갈렸어요",
+        "*IPO 750억 달러* 조달, 머스크 첫 조만장자래요",
+        "*1분기 43억 달러* 순손실은 부담입니다"
+      ],
+      "body": "다들 IPO 후 조정 걱정했지만 *+14.94%* 반등했죠\n*커서 인수* 호재와 1분기 손실이 엇갈렸어요\n*IPO 750억 달러* 조달, 머스크 첫 조만장자래요\n*1분기 43억 달러* 순손실은 부담입니다"
+    },
+    {
+      "index": 1,
+      "title": "호재분석",
+      "lines": [
+        "카테고리: *750억 달러* IPO 사상 최대 조달",
+        "↳ 배경: 기업가치 *1조 7,700억 달러* 평가됐죠",
+        "↳ 데이터: 초과배정 포함 총 *862억 달러* 모았어요",
+        "↳ 임팩트: 머스크가 세계 첫 *조만장자* 등극",
+        "↳ 비교: 2025년 매출 *187억 달러* 기록 중",
+        "↳ 2030년 *1조 달러* 매출 목표 주목하세요"
+      ],
+      "body": "카테고리: *750억 달러* IPO 사상 최대 조달\n   ↳ 배경: 기업가치 *1조 7,700억 달러* 평가됐죠\n   ↳ 데이터: 초과배정 포함 총 *862억 달러* 모았어요\n   ↳ 임팩트: 머스크가 세계 첫 *조만장자* 등극\n   ↳ 비교: 2025년 매출 *187억 달러* 기록 중\n   ↳ 2030년 *1조 달러* 매출 목표 주목하세요"
+    },
+    {
+      "index": 2,
+      "title": "다음주",
+      "lines": [
+        "24일 *스타링크 위성* 추가 발사가 예정됐어요",
+        "*Falcon 9* 재사용 성공 여부가 관전 포인트죠",
+        "다음주 예상 도달가는 *약 $185* 흐름입니다",
+        "*5일 중 4일* 상승 예측, 보합세 점쳐져요",
+        "시장은 희석 우려하지만, 화성 유인선 로드맵이 관건",
+        "함께해 주셔서 감사합니다!"
+      ],
+      "body": "24일 *스타링크 위성* 추가 발사가 예정됐어요\n*Falcon 9* 재사용 성공 여부가 관전 포인트죠\n다음주 예상 도달가는 *약 $185* 흐름입니다\n*5일 중 4일* 상승 예측, 보합세 점쳐져요\n시장은 희석 우려하지만, 화성 유인선 로드맵이 관건\n함께해 주셔서 감사합니다!"
+    }
+  ],
+  "image_prompts": {}
+}
