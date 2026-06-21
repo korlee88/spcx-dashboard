@@ -1,6 +1,392 @@
 {
   "sessions": [
     {
+      "id": "auto-1782022089840",
+      "date": "2026-06-21",
+      "displayDate": "2026.06.21",
+      "kstTime": "15:05",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1782021978757,
+          "title": "SpaceX, 상장 후 첫 하락세 기록",
+          "summary": "SpaceX(SPCX) 주가는 상장 후 강세를 보이다가 6월 17일 첫 전일 하락을 기록하며 4.95% 하락한 191.82달러로 마감했습니다. 이는 이전 최고치인 225.64달러에서 약 15% 하락한 수치입니다.",
+          "source": "TradingKey",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1782021978758,
+          "title": "일론 머스크, SpaceX 지분 대규모 재편성 및 부여",
+          "summary": "일론 머스크는 SpaceX의 대규모 지분 재편성을 보고했으며, 주로 Elon Musk Revocable Trust 및 기타 신탁을 통해 이루어졌습니다. 이는 IPO 및 이전 5대1 주식 분할과 관련하여 여러 종류의 우선주 및 클래스 B 보통주를 클래스 A 보통주로 전환하는 것을 포함합니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-18",
+          "category": "Market"
+        },
+        {
+          "id": 1782021978759,
+          "title": "SpaceX, Cursor 인수 완료 및 200억 달러 채권 발행 준비",
+          "summary": "SpaceX는 AI 코딩 플랫폼 Cursor로 알려진 Anysphere의 600억 달러 규모의 전액 주식 인수를 완료했습니다. 또한, IPO 직후 브릿지론을 재융자하기 위해 200억 달러 규모의 투자 등급 채권 발행을 준비하고 있습니다.",
+          "source": "Simply Wall St News",
+          "date": "2026-06-20",
+          "category": "Product|Market"
+        },
+        {
+          "id": 1782021978760,
+          "title": "SpaceX 주가 급락, Cursor 거래로 투자자 우려 증폭",
+          "summary": "SpaceX 주가는 600억 달러 규모의 AI 코딩 스타트업 Cursor 인수가 분석가들의 우려를 불러일으키면서 하락세를 보였습니다. 이는 화요일 최고치인 225달러 이상에서 20% 하락한 수치입니다.",
+          "source": "Forbes",
+          "date": "2026-06-18",
+          "category": "Market|Product"
+        },
+        {
+          "id": 1782021978761,
+          "title": "SpaceX 시가총액 2.5조 달러 돌파, 아마존 추월",
+          "summary": "SpaceX(SPCX)의 시가총액은 월요일에 2.52조 달러를 기록하며 대만 반도체 제조 회사(TSMC)를 제치고 세계에서 6번째로 큰 기업이 되었습니다.",
+          "source": "MarketWatch",
+          "date": "2026-06-19",
+          "category": "Market"
+        },
+        {
+          "id": 1782021978762,
+          "title": "일론 머스크, SpaceX IPO로 세계 최초의 억만장자 등극",
+          "summary": "SpaceX의 주가 급등으로 일론 머스크는 세계 최초의 억만장자가 되었습니다. 그의 SpaceX 지분 38%는 현재 약 8천억 달러의 가치를 지니고 있으며, 회사 전체 가치는 2조 달러를 넘어섰습니다.",
+          "source": "The Guardian",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1782021978763,
+          "title": "SpaceX, IPO 이후 주가 상승세 둔화 조짐",
+          "summary": "SpaceX 주가는 지난주 기록적인 IPO 이후 상승세가 둔화되는 조짐을 보이며 목요일 개장 전 거래에서 보합세를 유지했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-20",
+          "category": "Market"
+        },
+        {
+          "id": 1782021978764,
+          "title": "SpaceX, 로엘로프 보타 이사회에 합류",
+          "summary": "SpaceX는 일론 머스크의 오랜 친구이자 동맹인 로엘로프 보타를 이사회에 독립 이사 및 감사 위원회 위원으로 추가했습니다.",
+          "source": "CNBC",
+          "date": "2026-06-20",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1782021978765,
+          "title": "SpaceX, 2030년까지 1조 달러 매출 목표 제시",
+          "summary": "일론 머스크는 X(이전 트위터)에 SpaceX가 2030년까지 약 1조 달러의 매출을 달성할 수 있을 것이라고 밝혔습니다.",
+          "source": "MarketWatch",
+          "date": "2026-06-19",
+          "category": "Earnings"
+        },
+        {
+          "id": 1782021978766,
+          "title": "SpaceX, 재무 결과 및 뉴스 발표 방식 변경",
+          "summary": "SpaceX는 분기별 및 연간 재무 결과와 기타 뉴스를 전선 서비스를 통하지 않고 자체 웹사이트와 X(이전 트위터) 계정을 통해서만 발표할 것이라고 밝혔습니다.",
+          "source": "MarketWatch",
+          "date": "2026-06-19",
+          "category": "Regulatory"
+        }
+      ],
+      "analyses": {
+        "1782021978757": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX 주가가 상장 후 첫 하락세를 기록하며 이전 최고치 대비 15% 하락한 것은 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "주가 하락",
+            "상장 후 첫 하락"
+          ]
+        },
+        "1782021978758": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 주로 내부적인 지분 재편성에 관한 것으로, 이미 발생한 IPO 및 주식 분할과 관련된 기술적인 조정이며 시장에 미치는 직접적인 영향은 중립적입니다.",
+          "key_factors": [
+            "내부 지분 재편성",
+            "IPO 및 주식 분할 관련",
+            "기술적 조정"
+          ]
+        },
+        "1782021978759": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 AI 코딩 플랫폼 Cursor를 인수하여 기술 역량을 강화하고, 200억 달러 규모의 채권 발행을 통해 IPO 직후 브릿지론을 재융자하는 것은 재무 건전성을 개선하고 미래 성장을 위한 자금을 확보하는 긍정적인 신호입니다.",
+          "key_factors": [
+            "AI 코딩 플랫폼 Cursor 인수",
+            "200억 달러 투자 등급 채권 발행"
+          ]
+        },
+        "1782021978760": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "high",
+          "triggered_rules": [
+            "R24"
+          ],
+          "reasoning": "SpaceX의 AI 코딩 스타트업 Cursor 인수는 회사의 핵심 사업 집중도에 대한 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다.",
+          "key_factors": [
+            "Cursor 인수",
+            "핵심 사업 집중도 우려"
+          ]
+        },
+        "1782021978761": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 이미 발생한 시가총액 변화를 보고하는 것으로, 새로운 촉매제가 아니며 주가에 대한 직접적인 영향은 중립적입니다.",
+          "key_factors": [
+            "시가총액 변화",
+            "시장 순위"
+          ]
+        },
+        "1782021978762": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO와 관련된 과거 사실을 언급하며 일론 머스크의 개인적인 재산 증가에 초점을 맞추고 있어, 현재 SPCX 주가에 직접적인 영향을 미 미치지 않습니다.",
+          "key_factors": [
+            "IPO 완료",
+            "일론 머스크 개인 재산"
+          ]
+        },
+        "1782021978763": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 IPO 이후 주가 상승세 둔화 조짐을 언급하지만, 이는 이미 알려진 정보의 반복이며 새로운 촉매제가 없어 주가에 중립적인 영향을 미칩니다.",
+          "key_factors": [
+            "IPO 이후 주가 흐름",
+            "정보의 반복성"
+          ]
+        },
+        "1782021978764": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "일론 머스크의 오랜 동맹인 로엘로프 보타의 이사회 합류는 회사 지배구조 강화 및 투자자 신뢰도 향상에 긍정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "이사회 구성 강화",
+            "지배구조 개선"
+          ]
+        },
+        "1782021978765": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R22"
+          ],
+          "reasoning": "일론 머스크의 2030년까지 1조 달러 매출 목표 언급은 회사 성장에 대한 긍정적인 전망을 제시하지만, 구체적인 계획이나 확정된 수치가 아니므로 중간 정도의 긍정적 영향을 미칩니다.",
+          "key_factors": [
+            "CEO 긍정적 발언",
+            "장기 매출 목표 제시"
+          ]
+        },
+        "1782021978766": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "회사가 재무 결과 발표 방식을 변경하는 것은 투자자 접근성에 영향을 미칠 수 있지만, 본질적으로 기업의 재무 상태나 운영에 직접적인 영향을 미치지 않아 주가에 중립적입니다.",
+          "key_factors": [
+            "정보 접근성",
+            "커뮤니케이션 전략"
+          ]
+        }
+      },
+      "avgScore": 0.2,
+      "buyIndex": 53,
+      "direction": "neutral",
+      "topRules": [
+        "R24",
+        "R22"
+      ],
+      "bullish": 3,
+      "bearish": 2,
+      "neutral": 5,
+      "muskXSentiment": {
+        "posts": [
+          {
+            "date": "2026-06-14",
+            "content": "일론 머스크는 X(트위터)에 스페이스X가 2030년까지 연간 1조 달러의 매출을 올릴 수 있을 것이라고 게시했습니다. 이는 2025년 매출인 187억 달러에 비해 매우 큰 수치입니다.",
+            "sentiment": "bullish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-14",
+            "content": "일론 머스크는 2015년에 했던 '화산 은신처를 갖겠다'는 약속을 다시 언급하며, 스페이스X의 성공적인 IPO 이후 이를 실현할 때가 되었다고 농담했습니다.",
+            "sentiment": "bullish",
+            "engagement": "medium"
+          },
+          {
+            "date": "2026-06-13",
+            "content": "마이클 세일러는 X(트위터)에서 일론 머스크와 SPCX의 역사적인 IPO를 축하하며, 'Mag 8' 기업 중 25%가 이제 비트코인을 보유하고 있다고 언급했습니다.",
+            "sentiment": "bullish",
+            "engagement": "medium"
+          }
+        ],
+        "overall_sentiment": "bullish",
+        "sentiment_score": 2,
+        "post_count": 3,
+        "reasoning": "일론 머스크의 최근 게시물들은 스페이스X의 미래 매출에 대한 낙관적인 예측과 IPO 성공을 축하하는 내용을 담고 있어 전반적으로 긍정적인 분위기를 보입니다."
+      },
+      "googleTrends": {
+        "current_score": 85,
+        "week_avg": 70,
+        "trend": "rising",
+        "spike": true,
+        "top_queries": [
+          "SpaceX IPO",
+          "SpaceX stock",
+          "Starlink"
+        ],
+        "reasoning": "SpaceX는 최근 IPO, Google과의 AI 컴퓨팅 계약, 그리고 Starlink 관련 뉴스로 인해 검색 관심도가 급증했습니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 0.31,
+        "velocity_label": "급감 (×0.3)",
+        "reason": "조회수 속도 급감 (×0.3) | 최근 3일 4,141,011회 / 이전 4~7일 13,576,388회 | 총 17,717,399회 (69개 영상)",
+        "video_count": 69,
+        "total_views": 17717399,
+        "hot_views": 4141011,
+        "baseline_views": 13576388,
+        "top_videos": [
+          {
+            "title": "진짜 젓가락으로 로켓을 잡네? 스페이스X 역대급 공중 포획 성공 😮",
+            "channel": "짤소리",
+            "publishedAt": "2026-06-18T04:55:01Z",
+            "viewCount": 4748226
+          },
+          {
+            "title": "[26년 06월 16일 화]  트럼프 “이란 합의 공정하고 성공적일 것” ｜ 일본, 기준금리 인상 ｜스페이스X, &#39;커서&#39; 인수｜ -  오선의 미국 증시 라이브",
+            "channel": "오선의 미국 증시 라이브",
+            "publishedAt": "2026-06-16T21:46:27Z",
+            "viewCount": 1009768
+          },
+          {
+            "title": "Россия Развернула Глушилку Starlink❌ Наступление На Доброполье Ускоряется⚔️Военные Сводки 17.06.2026",
+            "channel": "Военные Сводки",
+            "publishedAt": "2026-06-17T18:00:06Z",
+            "viewCount": 699704
+          },
+          {
+            "title": "Iran Raises Concerns Over Starlink and X Operations Amid Regional Security Dispute",
+            "channel": "Modern News Studio",
+            "publishedAt": "2026-06-16T06:00:11Z",
+            "viewCount": 621996
+          },
+          {
+            "title": "Elon’s Dirty Secret : Whats wrong with SPACEX IPO? (Its worse than you Think) | Business Case Study",
+            "channel": "Think School",
+            "publishedAt": "2026-06-14T15:25:15Z",
+            "viewCount": 564127
+          }
+        ],
+        "collected_at": "2026-06-21T06:05:41Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 5,
+        "Product|Market": 1,
+        "Market|Product": 1,
+        "Regulatory": 2,
+        "Earnings": 1
+      },
+      "macroCtx": {
+        "spyChg": -0.14,
+        "qqqChg": 0.48,
+        "vixClose": 16.780000686645508,
+        "wtiChg": 1.51,
+        "cnyChg": 0,
+        "competitorChg": -1.54,
+        "competitorRelStrength": -0.27,
+        "prevAssetChg": 7.72,
+        "assetTrend3w": null,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -1.54,
+        "bydRelStrength": -0.27,
+        "prevTslaChg": 7.72,
+        "tslaTrend3w": null
+      },
+      "scoringLayers": {
+        "base": 52,
+        "r24Discount": 0,
+        "meanReversion": -5,
+        "muskXSentiment": 3,
+        "googleTrends": 4,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 185,
+      "latestTslaPrice": 185,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/22(월)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 186.3
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/23(화)",
+          "change_pct": 0.2,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.37
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/24(수)",
+          "change_pct": -0.3,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 184.45
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/25(목)",
+          "change_pct": 0.5,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.93
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "6/26(금)",
+          "change_pct": 0.1,
+          "signal": "관망",
+          "basePrice": 185,
+          "predictedPrice": 185.18
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1782022089840
+    },
+    {
       "id": "auto-1781932806433",
       "date": "2026-06-20",
       "displayDate": "2026.06.20",
@@ -2948,5 +3334,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-20 14:17 KST"
+  "lastUpdated": "2026-06-21 15:05 KST"
 }
