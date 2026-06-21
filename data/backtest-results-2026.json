@@ -545,16 +545,116 @@
       "match": null,
       "strongSignal": false,
       "error": "뉴스 수집 실패: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 25.826851868s."
+    },
+    {
+      "weekStart": "2026-06-15",
+      "weekEnd": "2026-06-21",
+      "quarter": "q2",
+      "news": [
+        {
+          "title": "SpaceX, 상장 후 이틀 연속 주가 급등, 애프터마켓에서 200달러 돌파",
+          "source": "MK",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX IPO, 소매 주문 700억 달러 이상 유치",
+          "source": "Reuters",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX (SPCX) 주가, IPO 이후 19% 급등 후 상승세 유지 가능할까?",
+          "source": "TradingKey",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX의 2.26조 달러 가치, 기술주 시장을 견고하게 유지",
+          "source": "Investing.com",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX 주가 변동, 시장의 관심 집중",
+          "source": "Intellectia.AI",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 역사상 최대 규모 IPO로 시장의 판도를 바꾸다",
+          "source": "Money Morning",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX의 다음 행보는? IPO 이후 실적 발표와 내부자 매도 임박",
+          "source": "Investor Daily",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX의 시장 데뷔가 월스트리트 상승을 주도",
+          "source": "The Straits Times",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX (SPCX) 주가 급등, 이란 핵협상 타결 소식에 시장 전반 상승",
+          "source": "Benzinga",
+          "category": "Market"
+        }
+      ],
+      "newsCount": 9,
+      "analysis": {
+        "avgScore": 0.4,
+        "buyIndex": 51,
+        "direction": "bullish",
+        "bullish": 3,
+        "bearish": 1,
+        "neutral": 5,
+        "topRules": [
+          "R22"
+        ],
+        "failCount": 0,
+        "scoringLayers": {
+          "base": 54,
+          "meanReversion": -5,
+          "competitorOutperform": 2
+        },
+        "macroCtx": {
+          "spyChg": -0.68,
+          "qqqChg": 0.34,
+          "vixClose": 16.399999618530273,
+          "wtiChg": -4.74,
+          "cnyChg": 0.04,
+          "competitorChg": -0.67,
+          "competitorRelStrength": 8.39,
+          "prevAssetChg": 7.3,
+          "assetTrend3w": null,
+          "rsi": null,
+          "macd": null,
+          "bb": null,
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": -0.67,
+          "bydRelStrength": 8.39,
+          "prevTslaChg": 7.3,
+          "tslaTrend3w": null
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": {
+        "pctChange": 7.72,
+        "actual": "bullish",
+        "open": 171.74,
+        "close": 185
+      },
+      "match": true,
+      "strongSignal": false,
+      "error": null
     }
   ],
   "lastUpdated": "",
-  "generatedAt": "2026-06-15 04:50 KST",
+  "generatedAt": "2026-06-22 04:55 KST",
   "year": 2026,
   "stats": {
-    "totalWeeks": 23,
-    "analyzedWeeks": 0,
-    "accuracy": 0,
+    "totalWeeks": 24,
+    "analyzedWeeks": 1,
+    "accuracy": 100,
     "strongAccuracy": 0,
-    "avgScore": 0
+    "avgScore": 0.4
   }
 }
