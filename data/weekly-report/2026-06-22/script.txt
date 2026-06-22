@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+다들 IPO 후 조정 걱정했지만 *+14.94%* 반등했죠
+*커서 인수* 호재와 1분기 손실이 엇갈렸어요
+*IPO 750억 달러* 조달, 머스크 첫 조만장자래요
+*1분기 43억 달러* 순손실은 부담입니다
+
+SCENE_1_TITLE: 호재분석
+SCENE_1:
+카테고리: *750억 달러* IPO 사상 최대 조달
+   ↳ 배경: 기업가치 *1조 7,700억 달러* 평가됐죠
+   ↳ 데이터: 초과배정 포함 총 *862억 달러* 모았어요
+   ↳ 임팩트: 머스크가 세계 첫 *조만장자* 등극
+   ↳ 비교: 2025년 매출 *187억 달러* 기록 중
+   ↳ 2030년 *1조 달러* 매출 목표 주목하세요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+24일 *스타링크 위성* 추가 발사가 예정됐어요
+*Falcon 9* 재사용 성공 여부가 관전 포인트죠
+다음주 예상 도달가는 *약 $185* 흐름입니다
+*5일 중 4일* 상승 예측, 보합세 점쳐져요
+시장은 희석 우려하지만, 화성 유인선 로드맵이 관건
+함께해 주셔서 감사합니다!
+
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape · Seoul Han River night skyline with Namsan Tower, 63 Building, Lotte Tower silhouettes under a deep purple violet sky, SpaceX Falcon 9 rocket ascending with bright exhaust plume, Starship fully reusable super-heavy rocket launching in background, Starlink satellite internet mega-constellation glowing across orbit, Raptor engines igniting, distant Mars colonization vision and lunar landing missions, orbital refueling silhouettes, K-tech futuristic analytics mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape · Seoul Han River bridge bathed in vibrant green bullish growth light, modern sunlit skyline backdrop, SpaceX Starship fully reusable super-heavy rocket launching from Starbase with dynamic flames, Starlink satellite internet mega-constellation streaming across blue sky, Raptor engines glowing intensely, Mars colonization habitat and lunar landing missions visible in horizon, orbital refueling scene, K-tech infrastructure bright energetic atmosphere, Korean city vibrant prosperity vibes, lens flare, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+
+IMAGE_PROMPT_2: [씬2 — 9:16 vertical · Korean futuristic megacity at golden hour, Han River night view, Seoul skyline and Gwanghwamun Square below, Starlink satellite internet mega-constellation arcing across magenta gold sky, SpaceX Starship fully reusable super-heavy rocket launching vertically with brilliant Raptor engines plume, Mars colonization dome and lunar landing missions glowing on horizon, orbital refueling silhouettes, advanced K-tech cityscape, golden sun rays, starlight sparkles, inspirational visionary mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]
