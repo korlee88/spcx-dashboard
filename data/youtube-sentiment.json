@@ -1,43 +1,43 @@
 {
   "score": -1,
-  "velocity": 0.13,
+  "velocity": 0.09,
   "velocity_label": "급감 (×0.1)",
-  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 2,674,444회 / 이전 4~7일 20,652,134회 | 총 23,326,578회 (67개 영상)",
-  "video_count": 67,
-  "total_views": 23326578,
-  "hot_views": 2674444,
-  "baseline_views": 20652134,
+  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 2,203,397회 / 이전 4~7일 23,199,616회 | 총 25,403,013회 (68개 영상)",
+  "video_count": 68,
+  "total_views": 25403013,
+  "hot_views": 2203397,
+  "baseline_views": 23199616,
   "top_videos": [
     {
       "title": "진짜 젓가락으로 로켓을 잡네? 스페이스X 역대급 공중 포획 성공 😮",
       "channel": "짤소리",
       "publishedAt": "2026-06-18T04:55:01Z",
-      "viewCount": 6699929
+      "viewCount": 7940959
     },
     {
       "title": "Elon Musk Gave Birth To 4,400 Millionaires As He Becomes World&#39;s 1st Trillionaire #shorts",
       "channel": "FactTechz",
       "publishedAt": "2026-06-17T00:30:40Z",
-      "viewCount": 3050599
+      "viewCount": 3089569
     },
     {
       "title": "SpaceX Super Heavy Booster Landing Comparison 😳 #shorts",
       "channel": "Nebulith",
       "publishedAt": "2026-06-18T11:38:23Z",
-      "viewCount": 1019564
+      "viewCount": 1328960
     },
     {
       "title": "[26년 06월 16일 화]  트럼프 “이란 합의 공정하고 성공적일 것” ｜ 일본, 기준금리 인상 ｜스페이스X, &#39;커서&#39; 인수｜ -  오선의 미국 증시 라이브",
       "channel": "오선의 미국 증시 라이브",
       "publishedAt": "2026-06-16T21:46:27Z",
-      "viewCount": 1010344
+      "viewCount": 1010826
     },
     {
       "title": "Россия Развернула Глушилку Starlink❌ Наступление На Доброполье Ускоряется⚔️Военные Сводки 17.06.2026",
       "channel": "Военные Сводки",
       "publishedAt": "2026-06-17T18:00:06Z",
-      "viewCount": 720172
+      "viewCount": 734527
     }
   ],
-  "collected_at": "2026-06-22T06:31:25Z"
+  "collected_at": "2026-06-23T05:04:15Z"
 }
