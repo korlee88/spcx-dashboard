@@ -1,6 +1,416 @@
 {
   "sessions": [
     {
+      "id": "auto-1782277465177",
+      "date": "2026-06-24",
+      "displayDate": "2026.06.24",
+      "kstTime": "14:03",
+      "source": "auto",
+      "newsCount": 10,
+      "analyzedCount": 10,
+      "news": [
+        {
+          "id": 1782277435629,
+          "title": "SpaceX, 상장 첫 주 시장 광풍 일으키며 주가 40% 급등",
+          "summary": "SpaceX는 6월 12일 IPO 이후 첫 주 동안 주가가 거의 40% 급등하며 시장에서 큰 관심을 받았습니다. 이는 개인 투자자와 옵션 트레이더들이 일론 머스크가 이끄는 이 회사에 투자하기 위해 몰려들었기 때문입니다. 이러한 주가 상승으로 SpaceX의 시가총액은 한때 2조 달러를 넘어섰습니다.",
+          "source": "Reuters",
+          "date": "2026-06-22",
+          "category": "Market"
+        },
+        {
+          "id": 1782277435630,
+          "title": "일론 머스크, SpaceX IPO로 억만장자 등극 임박",
+          "summary": "SpaceX의 역사적인 IPO는 일론 머스크를 세계 최초의 억만장자로 만들었습니다. SpaceX의 기업 가치는 1조 7,700억 달러로 평가되었으며, 머스크의 순자산은 1조 1천억 달러를 초과할 것으로 예상됩니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1782277435631,
+          "title": "SpaceX, AI 데이터 센터 계약 관련 머스크 발언으로 새로운 의문 제기",
+          "summary": "일론 머스크가 주요 AI 데이터 센터 계약에 대해 과거와 다르게 공개적으로 설명하면서 SpaceX는 새로운 조사를 받고 있습니다. 이는 회사의 투명성과 향후 AI 전략에 대한 의문을 제기할 수 있습니다.",
+          "source": "Cheddar",
+          "date": "2026-05-29",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1782277435632,
+          "title": "SpaceX, 상장 후 세 번째 거래일에도 상승세 이어가며 아마존 시가총액 추월",
+          "summary": "SpaceX는 상장 후 세 번째 거래일에도 주가가 상승하여 아마존닷컴의 시가총액을 넘어섰습니다. 이는 제한된 유통 주식 수로 인해 주가 변동성이 커진 것으로 분석됩니다.",
+          "source": "Bloomberg Businessweek",
+          "date": "2026-06-16",
+          "category": "Market"
+        },
+        {
+          "id": 1782277435633,
+          "title": "SpaceX, Cursor 인수 완료하며 AI 역량 강화",
+          "summary": "SpaceX는 AI 코딩 분야의 Cursor를 600억 달러에 인수하는 계약을 완료했습니다. 이 인수는 SpaceX의 AI 역량을 강화하고, AI 산업에서의 입지를 확대하는 데 기여할 것으로 예상됩니다.",
+          "source": "Bloomberg Tech",
+          "date": "2026-06-17",
+          "category": "Product"
+        },
+        {
+          "id": 1782277435634,
+          "title": "SpaceX, 기록적인 750억 달러 IPO 이후 첫 거래에서 급등",
+          "summary": "SpaceX 주식은 750억 달러 규모의 기록적인 IPO 이후 첫 거래일인 금요일에 급등했습니다. 주가는 공모가보다 31% 높은 176.52달러까지 치솟았으며, 이는 회사의 시가총액을 2조 달러 이상으로 끌어올렸습니다.",
+          "source": "Bloomberg",
+          "date": "2026-06-12",
+          "category": "Market"
+        },
+        {
+          "id": 1782277435635,
+          "title": "SpaceX, 첫 주 상장 후 시장을 움직이는 주요 이벤트들",
+          "summary": "SpaceX의 성공적인 IPO는 시장의 큰 관심을 받았지만, 투자자들은 연방공개시장위원회(FOMC) 금리 결정과 같은 다른 주요 시장 움직임에도 주목하고 있습니다. 이는 SpaceX 주가에도 영향을 미칠 수 있는 거시 경제적 요인입니다.",
+          "source": "MarketWatch",
+          "date": "2026-06-18",
+          "category": "Macro"
+        },
+        {
+          "id": 1782277435636,
+          "title": "SpaceX, 신규 클라우드 컴퓨팅 계약 체결로 63억 달러 규모 잠재적 계약 확보",
+          "summary": "SpaceX는 Reflection과 잠재적으로 63억 달러 규모의 신규 클라우드 컴퓨팅 계약을 체결했습니다. 이는 SpaceX의 '네오클라우드' 사업으로의 전환을 보여주며, Nvidia 및 Intel과 같은 기업에도 긍정적인 영향을 미칠 수 있습니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-24",
+          "category": "Product"
+        },
+        {
+          "id": 1782277435637,
+          "title": "SpaceX, MSCI 최저 ESG 등급 획득",
+          "summary": "SpaceX는 MSCI로부터 우크라이나 침공 이후 러시아와 동일한 최저 ESG 등급을 받았습니다. 이는 투자자들이 회사의 환경, 사회, 지배구조 측면에 대한 우려를 가질 수 있음을 시사합니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-23",
+          "category": "Regulatory"
+        },
+        {
+          "id": 1782277435638,
+          "title": "SpaceX, 첫 채권 발행 발표",
+          "summary": "SpaceX는 첫 채권 발행을 발표했습니다. 이는 회사가 IPO 이후 자금 조달을 다각화하고 있음을 나타내며, 투자자들에게 새로운 투자 기회를 제공할 수 있습니다.",
+          "source": "Seeking Alpha",
+          "date": "2026-06-24",
+          "category": "Market"
+        }
+      ],
+      "analyses": {
+        "1782277435629": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX의 IPO 이후 첫 주 동안 주가가 40% 급등하며 시장의 강한 관심과 투자자 유입을 보여주었으나, 이는 이미 발생한 과거의 시장 반응에 대한 보도이므로 점수를 보수적으로 조정했습니다.",
+          "key_factors": [
+            "IPO 이후 주가 급등",
+            "개인 투자자 및 옵션 트레이더 유입",
+            "시가총액 증가"
+          ]
+        },
+        "1782277435630": {
+          "impact_score": 0,
+          "direction": "neutral",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "이 뉴스는 SpaceX의 IPO와 관련된 과거 사실을 언급하며, 이미 시장에 반영된 정보이므로 주가에 새로운 영향을 미 미치지 않습니다.",
+          "key_factors": [
+            "IPO 완료",
+            "시장 반영 정보"
+          ]
+        },
+        "1782277435631": {
+          "impact_score": -2,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R05",
+            "R08",
+            "R24"
+          ],
+          "reasoning": "일론 머스크의 AI 데이터 센터 계약 관련 발언이 투명성 및 AI 전략에 대한 의문을 제기하며 새로운 조사를 받을 가능성이 있어 주가에 부정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "일론 머스크 발언",
+            "AI 데이터 센터 계약",
+            "투명성 의문",
+            "규제 조사 가능성"
+          ]
+        },
+        "1782277435632": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "상장 초기 주가 상승은 긍정적이지만, 제한된 유통 주식 수로 인한 변동성이라는 분석은 상승세의 지속 가능성에 대한 불확실성을 내포합니다.",
+          "key_factors": [
+            "상장 초기 주가 상승",
+            "제한된 유통 주식 수"
+          ]
+        },
+        "1782277435633": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 AI 코딩 기업 Cursor를 인수하여 AI 역량을 강화하고 산업 입지를 확대할 것으로 예상되어 긍정적입니다.",
+          "key_factors": [
+            "AI 역량 강화",
+            "AI 산업 입지 확대",
+            "Cursor 인수"
+          ]
+        },
+        "1782277435634": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "high",
+          "triggered_rules": [],
+          "reasoning": "SpaceX 주식이 기록적인 IPO 이후 첫 거래에서 공모가 대비 31% 급등하여 시장의 긍정적인 반응을 보였습니다.",
+          "key_factors": [
+            "IPO 첫 거래 급등",
+            "공모가 대비 31% 상승"
+          ]
+        },
+        "1782277435635": {
+          "impact_score": 1,
+          "direction": "bullish",
+          "confidence": "low",
+          "triggered_rules": [
+            "R21"
+          ],
+          "reasoning": "연방공개시장위원회(FOMC) 금리 결정은 SpaceX 주가에 영향을 미칠 수 있는 거시 경제적 요인으로, 금리 인하 신호는 성장주에 긍정적일 수 있습니다.",
+          "key_factors": [
+            "FOMC 금리 결정",
+            "거시 경제적 요인"
+          ]
+        },
+        "1782277435636": {
+          "impact_score": 2,
+          "direction": "bullish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R17",
+            "R23"
+          ],
+          "reasoning": "SpaceX가 Reflection과 63억 달러 규모의 잠재적 클라우드 컴퓨팅 계약을 체결하여 새로운 시장으로의 확장을 보여주며 이는 매출 성장에 긍정적인 영향을 미칠 수 있습니다.",
+          "key_factors": [
+            "신규 클라우드 컴퓨팅 계약",
+            "63억 달러 잠재적 가치",
+            "네오클라우드 사업 확장"
+          ]
+        },
+        "1782277435637": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [],
+          "reasoning": "SpaceX가 MSCI로부터 최저 ESG 등급을 획득하여 투자자들의 환경, 사회, 지배구조 측면에 대한 우려를 불러일으킬 수 있습니다.",
+          "key_factors": [
+            "MSCI ESG 등급",
+            "투자자 우려"
+          ]
+        },
+        "1782277435638": {
+          "impact_score": -1,
+          "direction": "bearish",
+          "confidence": "medium",
+          "triggered_rules": [
+            "R09"
+          ],
+          "reasoning": "SpaceX의 첫 채권 발행은 IPO 이후 자금 조달 다각화를 의미하지만, 이는 부채 증가로 이어져 투자자들에게는 잠재적인 위험으로 인식될 수 있습니다.",
+          "key_factors": [
+            "자금 조달 다각화",
+            "부채 증가"
+          ]
+        }
+      },
+      "avgScore": 0.6,
+      "buyIndex": 65,
+      "direction": "bullish",
+      "topRules": [
+        "R05",
+        "R08",
+        "R24",
+        "R21",
+        "R17"
+      ],
+      "bullish": 6,
+      "bearish": 3,
+      "neutral": 1,
+      "muskXSentiment": {
+        "posts": [
+          {
+            "date": "2026-06-17",
+            "content": "Elon Musk는 SpaceX의 매출이 5년 이내에 50배 증가할 것이라고 예측했습니다.",
+            "sentiment": "bullish",
+            "engagement": "medium"
+          },
+          {
+            "date": "2026-06-18",
+            "content": "SpaceX는 AI 코딩 스타트업 Cursor를 600억 달러에 인수한다고 발표했으며, 이는 주가 하락을 야기했습니다.",
+            "sentiment": "bearish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-22",
+            "content": "SpaceX 주가는 IPO 이후 3일 연속 하락하여 27% 급락했습니다.",
+            "sentiment": "bearish",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-23",
+            "content": "SpaceX 주가는 화요일에 약 1% 상승하며 3일 연속 하락세를 멈췄지만, 여전히 IPO 가격보다 낮습니다.",
+            "sentiment": "neutral",
+            "engagement": "high"
+          },
+          {
+            "date": "2026-06-24",
+            "content": "SpaceX 주가는 IPO 이후 20% 이상 상승했지만, 최근 하락세가 지속될지 여부가 관건입니다.",
+            "sentiment": "neutral",
+            "engagement": "medium"
+          }
+        ],
+        "overall_sentiment": "bearish",
+        "sentiment_score": -1,
+        "post_count": 5,
+        "reasoning": "Elon Musk의 SpaceX 관련 최근 공개 커뮤니케이션은 IPO 이후 주가 하락과 대규모 인수로 인한 투자자 우려로 인해 전반적으로 부정적인 분위기를 보입니다. 긍정적인 매출 예측에도 불구하고, 주가 하락과 관련된 뉴스가 더 지배적입니다."
+      },
+      "googleTrends": {
+        "current_score": 50,
+        "week_avg": 65,
+        "trend": "falling",
+        "spike": true,
+        "top_queries": [
+          "SpaceX stock",
+          "SPCX",
+          "Elon Musk"
+        ],
+        "reasoning": "SpaceX는 지난 7일 동안 주가가 크게 하락하여 검색 관심도가 떨어졌지만, IPO와 관련된 뉴스로 인해 여전히 높은 관심을 받고 있습니다."
+      },
+      "youtubeInterest": {
+        "score": -1,
+        "velocity": 0.08,
+        "velocity_label": "급감 (×0.1)",
+        "reason": "조회수 속도 급감 (×0.1) | 최근 3일 1,775,135회 / 이전 4~7일 21,017,038회 | 총 22,792,173회 (68개 영상)",
+        "video_count": 68,
+        "total_views": 22792173,
+        "hot_views": 1775135,
+        "baseline_views": 21017038,
+        "top_videos": [
+          {
+            "title": "진짜 젓가락으로 로켓을 잡네? 스페이스X 역대급 공중 포획 성공 😮",
+            "channel": "짤소리",
+            "publishedAt": "2026-06-18T04:55:01Z",
+            "viewCount": 9063250
+          },
+          {
+            "title": "SpaceX Super Heavy Booster Landing Comparison 😳 #shorts",
+            "channel": "Nebulith",
+            "publishedAt": "2026-06-18T11:38:23Z",
+            "viewCount": 2488164
+          },
+          {
+            "title": "Россия Развернула Глушилку Starlink❌ Наступление На Доброполье Ускоряется⚔️Военные Сводки 17.06.2026",
+            "channel": "Военные Сводки",
+            "publishedAt": "2026-06-17T18:00:06Z",
+            "viewCount": 744864
+          },
+          {
+            "title": "国外没网手搓一个卫星wifi #shorts #starlink #vlog #开箱 #评测",
+            "channel": "加拿大俩哥特",
+            "publishedAt": "2026-06-18T14:00:06Z",
+            "viewCount": 733346
+          },
+          {
+            "title": "ELON&#39;S STARLINK IN INDIA, DIGITAL INDIA !!! #elonmusk",
+            "channel": "NFG Facts",
+            "publishedAt": "2026-06-17T15:45:15Z",
+            "viewCount": 539442
+          }
+        ],
+        "collected_at": "2026-06-24T05:03:45Z"
+      },
+      "newsCategories": {
+        "total": 10,
+        "Market": 5,
+        "Regulatory": 2,
+        "Product": 2,
+        "Macro": 1
+      },
+      "macroCtx": {
+        "spyChg": -0.03,
+        "qqqChg": -0.29,
+        "vixClose": 19.489999771118164,
+        "wtiChg": -0.68,
+        "cnyChg": 0.19,
+        "competitorChg": -0.94,
+        "competitorRelStrength": 4.3,
+        "prevAssetChg": -11.32,
+        "assetTrend3w": 4.07,
+        "rsi": null,
+        "macd": null,
+        "bb": null,
+        "isDeliveryWeek": false,
+        "isEarningsWeek": false,
+        "bydChg": -0.94,
+        "bydRelStrength": 4.3,
+        "prevTslaChg": -11.32,
+        "tslaTrend3w": 4.07
+      },
+      "scoringLayers": {
+        "base": 56,
+        "meanReversion": 10,
+        "muskXSentiment": -1,
+        "googleTrends": 1,
+        "youtubeInterest": -1
+      },
+      "latestPrice": 156.11,
+      "latestTslaPrice": 156.11,
+      "dailyForecasts": [
+        {
+          "day": 1,
+          "label": "내일",
+          "date": "6/25(목)",
+          "change_pct": 1.2,
+          "signal": "매수",
+          "basePrice": 156.11,
+          "predictedPrice": 157.98
+        },
+        {
+          "day": 2,
+          "label": "D+2",
+          "date": "6/26(금)",
+          "change_pct": 0.9,
+          "signal": "매수",
+          "basePrice": 156.11,
+          "predictedPrice": 157.51
+        },
+        {
+          "day": 3,
+          "label": "D+3",
+          "date": "6/29(월)",
+          "change_pct": 0.7,
+          "signal": "관망",
+          "basePrice": 156.11,
+          "predictedPrice": 157.2
+        },
+        {
+          "day": 4,
+          "label": "D+4",
+          "date": "6/30(화)",
+          "change_pct": 0.5,
+          "signal": "관망",
+          "basePrice": 156.11,
+          "predictedPrice": 156.89
+        },
+        {
+          "day": 5,
+          "label": "D+5",
+          "date": "7/1(수)",
+          "change_pct": 0.3,
+          "signal": "관망",
+          "basePrice": 156.11,
+          "predictedPrice": 156.58
+        }
+      ],
+      "modelVersion": "3.1",
+      "timestamp": 1782277465177
+    },
+    {
       "id": "auto-1782191202761",
       "date": "2026-06-23",
       "displayDate": "2026.06.23",
@@ -4016,5 +4426,5 @@
       "timestamp": 1781322349378
     }
   ],
-  "lastUpdated": "2026-06-23 14:04 KST"
+  "lastUpdated": "2026-06-24 14:03 KST"
 }
