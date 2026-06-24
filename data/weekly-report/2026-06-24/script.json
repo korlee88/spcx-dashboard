@@ -1,15 +1,15 @@
 {
   "generated_at": "2026-06-24",
   "generated_by": "Claude Opus 4",
-  "title": "어, SPCX가 왜 갑자기 *-3.95%* 빠졌을까요?",
-  "subtitle": "2026-06-16 ~ 2026-06-23 · 스페이스X 주가, 커서(Cursor) 인수 계약으로 6",
+  "title": "SPCX가 한 주 만에 *-23.39%* 급락했어요",
+  "subtitle": "2026-06-17 ~ 2026-06-23 · 스페이스X 주가, 커서(Cursor) 인수 계약으로 6",
   "summary": {
-    "week_start": "2026-06-16",
+    "week_start": "2026-06-17",
     "week_end": "2026-06-23",
-    "session_count": 8,
-    "total_analyzed": 72,
-    "bullish_count": 20,
-    "bearish_count": 19,
+    "session_count": 7,
+    "total_analyzed": 65,
+    "bullish_count": 18,
+    "bearish_count": 18,
     "buy_indices": [
       44,
       55,
@@ -17,17 +17,16 @@
       42,
       39,
       47,
-      54,
-      60
+      54
     ],
-    "avg_buy_index": 49,
+    "avg_buy_index": 48,
     "latest_buy_index": 44,
-    "price_start": 160.95,
+    "price_start": 201.8,
     "price_end": 154.6,
     "latest_price": 154.6,
     "today_price": 154.6,
     "today_change_pct": -16.43,
-    "week_change_pct": -3.95,
+    "week_change_pct": -23.39,
     "biggest_impact": {
       "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
       "score": -4,
@@ -40,28 +39,12 @@
     },
     "top_bullish": [
       {
-        "title": "스페이스X, 사상 최대 규모 IPO로 750억 달러 조달 및 머스크 세계 최초 억만장자 등극",
-        "score": 3,
-        "reason": "스페이스X가 사상 최대 규모의 IPO를 통해 750억 달러를 조달하고 1조 7,700억 달러의 가치를 인정받았다는 소식은 회사에 대한 강력한 시장 신뢰와 상당한 자본 유입을 의미하며, 이는 미래 성장과 확장에 긍정적인 영향을 미칠 것입니다.",
-        "source": "Fox Business",
-        "date": "2026-06-14",
-        "category": "Market"
-      },
-      {
         "title": "SpaceX, Cursor 인수 완료 및 AI 전략 강화",
         "score": 2,
         "reason": "SpaceX가 600억 달러 규모의 Cursor 인수를 완료하여 AI 코딩 분야에서의 입지를 강화하고 새로운 시장 진출 가능성을 열어주어 긍정적인 영향을 미칠 것으로 예상됩니다.",
         "source": "Bloomberg",
         "date": "2026-06-17",
         "category": "Product"
-      },
-      {
-        "title": "SpaceX, 상장 후 아마존 시가총액 추월하며 세계 5위 기업 등극",
-        "score": 2,
-        "reason": "SpaceX가 상장 후 아마존 시가총액을 추월하며 세계 5위 기업으로 등극했다는 소식은 시장에서 긍정적인 투자 심리를 유발할 것입니다.",
-        "source": "Bloomberg Businessweek",
-        "date": "2026-06-16",
-        "category": "Market"
       },
       {
         "title": "스페이스X, 상장 후 아마존 시가총액 추월하며 급등",
@@ -72,12 +55,28 @@
         "category": "Market|Acquisition"
       },
       {
-        "title": "스페이스X, 상장 후 주가 200달러 돌파 임박",
+        "title": "SpaceX, Cursor 인수 완료 및 200억 달러 채권 발행 준비",
         "score": 2,
-        "reason": "스페이스X의 주가가 상장 후 급등세를 보이며 200달러 돌파를 앞두고 있으며, 일론 머스크 CEO의 2030년까지 매출 1조 달러 달성 가능성 언급이 투자자 기대를 높이고 있습니다.",
-        "source": "MK",
-        "date": "2026-06-15",
-        "category": "Market"
+        "reason": "SpaceX가 AI 코딩 플랫폼 Cursor를 인수하여 기술 역량을 강화하고, 200억 달러 규모의 채권 발행을 통해 IPO 직후 브릿지론을 재융자하는 것은 재무 건전성을 개선하고 미래 성장을 위한 자금을 확보하는 긍정적인 신호입니다.",
+        "source": "Simply Wall St News",
+        "date": "2026-06-20",
+        "category": "Product|Market"
+      },
+      {
+        "title": "SpaceX, 2030년까지 1조 달러 매출 목표 제시",
+        "score": 2,
+        "reason": "일론 머스크의 2030년까지 1조 달러 매출 목표 언급은 회사 성장에 대한 긍정적인 전망을 제시하지만, 구체적인 계획이나 확정된 수치가 아니므로 중간 정도의 긍정적 영향을 미칩니다.",
+        "source": "MarketWatch",
+        "date": "2026-06-19",
+        "category": "Earnings"
+      },
+      {
+        "title": "SpaceX, AI 코딩 에이전트 Cursor 개발사 Anysphere 600억 달러에 인수",
+        "score": 2,
+        "reason": "SpaceX의 AI 코딩 에이전트 개발사 인수는 기업 AI 도구 시장에서의 입지를 강화하고 수직 통합을 통한 비용 및 품질 우위를 확보할 것으로 예상되어 긍정적입니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Product"
       }
     ],
     "top_bearish": [
@@ -98,14 +97,6 @@
         "category": "Earnings"
       },
       {
-        "title": "스페이스X, IPO 초과 배정 옵션 행사로 조달 금액 862억 달러로 증가",
-        "score": -3,
-        "reason": "스페이스X가 IPO 초과 배정 옵션을 행사하여 추가 주식을 매각함으로써 총 조달 금액이 증가했지만, 이는 기존 주주들에게 희석 효과를 가져와 주가에 부정적인 영향을 미칠 수 있습니다.",
-        "source": "Bloomberg",
-        "date": "2026-06-15",
-        "category": "Market"
-      },
-      {
         "title": "SpaceX, IPO 이후 200억 달러 규모 채권 발행 추진",
         "score": -2,
         "reason": "SpaceX가 IPO 이후 200억 달러 규모의 채권 발행을 추진한다는 소식은 부채 증가로 인해 주당 가치에 부정적인 영향을 미칠 수 있습니다.",
@@ -114,12 +105,20 @@
         "category": "Market"
       },
       {
-        "title": "스페이스X, AI 데이터 센터 계약 관련 머스크 발언 후 새로운 의문 제기",
+        "title": "SpaceX 주가 급락, Cursor 거래로 투자자 우려 증폭",
         "score": -2,
-        "reason": "일론 머스크의 AI 데이터 센터 계약 관련 발언이 회사의 투명성에 대한 의문을 제기하며 새로운 조사를 촉발하여 주가에 부정적인 영향을 미칠 수 있습니다.",
-        "source": "Cheddar",
-        "date": "2026-05-29",
-        "category": "Regulatory|Product"
+        "reason": "SpaceX의 AI 코딩 스타트업 Cursor 인수는 회사의 핵심 사업 집중도에 대한 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Market|Product"
+      },
+      {
+        "title": "SpaceX 주가, IPO 이후 급등세 꺾이며 6,000억 달러 증발",
+        "score": -2,
+        "reason": "SpaceX 주가가 Anysphere 인수 발표 이후 투자 심리 변화로 인해 최고점 대비 20% 하락하며 시가총액이 크게 감소했습니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Market"
       }
     ],
     "forecasts": [
@@ -240,50 +239,50 @@
         "id": "cal-2026-07-07-nasdaq-100-index-inclusion-evaluation"
       }
     ],
-    "movement_reason": "이번 주 스페이스X 주가 하락의 핵심 원인은 다음과 같습니다.\n\n커서 인수 계약 / 1분기 순손실 / 대규모 채권 발행"
+    "movement_reason": "커서 인수 계약 / 1분기 순손실 / 대규모 채권 발행"
   },
   "scenes": [
     {
       "index": 0,
       "title": "이번주",
       "lines": [
-        "어, SPCX가 왜 갑자기 *-3.95%* 빠졌을까요?",
-        "*커서 인수*에 채권 발행까지 겹쳤거든요",
-        "상장 후 *아마존 시총*마저 따돌렸답니다",
-        "*1분기 43억 달러* 순손실은 아쉽네요"
+        "SPCX가 한 주 만에 *-23.39%* 급락했어요",
+        "*600억 달러* 커서 인수가 발목을 잡았죠",
+        "시총은 한때 *아마존 추월*까지 갔답니다",
+        "1분기 *43억 달러* 순손실도 부담입니다"
       ],
-      "body": "어, SPCX가 왜 갑자기 *-3.95%* 빠졌을까요?\n*커서 인수*에 채권 발행까지 겹쳤거든요\n상장 후 *아마존 시총*마저 따돌렸답니다\n*1분기 43억 달러* 순손실은 아쉽네요"
+      "body": "SPCX가 한 주 만에 *-23.39%* 급락했어요\n*600억 달러* 커서 인수가 발목을 잡았죠\n시총은 한때 *아마존 추월*까지 갔답니다\n1분기 *43억 달러* 순손실도 부담입니다"
     },
     {
       "index": 1,
       "title": "호재분석",
       "lines": [
-        "카테고리: 사상 최대 *750억 달러* IPO 성공",
-        "↳ 배경: 기업가치 *1조 7,700억 달러* 평가",
-        "↳ 데이터: 초과배정 포함 *862억 달러* 조달",
-        "↳ 임팩트: 주가 한때 *200달러* 돌파 직전",
-        "↳ 비교: *세계 5위* 아마존 시총 제쳤죠",
-        "↳ 머스크 매출 *1조 달러* 비전도 주목"
+        "카테고리: *Cursor 인수 완료*로 AI 전략 강화",
+        "↳ 배경: AI 코딩 시장에 *600억 달러* 베팅",
+        "↳ 데이터: *200억 달러* 채권 발행도 병행",
+        "↳ 임팩트: 상장 직후 *아마존 시총* 돌파",
+        "↳ 비교: 2030년 *1조 달러* 매출 목표 제시",
+        "↳ 시장은 희석을 우려하나 본질은 수직통합"
       ],
-      "body": "카테고리: 사상 최대 *750억 달러* IPO 성공\n   ↳ 배경: 기업가치 *1조 7,700억 달러* 평가\n   ↳ 데이터: 초과배정 포함 *862억 달러* 조달\n   ↳ 임팩트: 주가 한때 *200달러* 돌파 직전\n   ↳ 비교: *세계 5위* 아마존 시총 제쳤죠\n   ↳ 머스크 매출 *1조 달러* 비전도 주목"
+      "body": "카테고리: *Cursor 인수 완료*로 AI 전략 강화\n   ↳ 배경: AI 코딩 시장에 *600억 달러* 베팅\n   ↳ 데이터: *200억 달러* 채권 발행도 병행\n   ↳ 임팩트: 상장 직후 *아마존 시총* 돌파\n   ↳ 비교: 2030년 *1조 달러* 매출 목표 제시\n   ↳ 시장은 희석을 우려하나 본질은 수직통합"
     },
     {
       "index": 2,
-      "title": "다음주전망",
+      "title": "다음주",
       "lines": [
-        "7월 *스타십 13차* 궤도 재사용 시험비행",
-        "성공 시 *나스닥100 편입* 평가에 호재죠",
-        "누적 *+0.1%*, 목표가 *$155* 흐름 전망",
-        "*5일 중 3일* 상승, 2일은 조정 가능성",
-        "시장은 희석 우려, 관건은 *2분기 실적*",
-        "함께해 주셔서 감사합니다"
+        "*스타십 13차* 시험 비행이 임박했어요",
+        "완전 재사용 로켓 성공이 *2분기 실적* 좌우",
+        "다음 주말 *+0.1%*, 약 *$155* 전망입니다",
+        "*3일 상승·2일 하락* 흐름이 점쳐져요",
+        "*나스닥100* 편입 평가도 주요 변수죠",
+        "함께해 주셔서 감사합니다!"
       ],
-      "body": "7월 *스타십 13차* 궤도 재사용 시험비행\n성공 시 *나스닥100 편입* 평가에 호재죠\n누적 *+0.1%*, 목표가 *$155* 흐름 전망\n*5일 중 3일* 상승, 2일은 조정 가능성\n시장은 희석 우려, 관건은 *2분기 실적*\n함께해 주셔서 감사합니다"
+      "body": "*스타십 13차* 시험 비행이 임박했어요\n완전 재사용 로켓 성공이 *2분기 실적* 좌우\n다음 주말 *+0.1%*, 약 *$155* 전망입니다\n*3일 상승·2일 하락* 흐름이 점쳐져요\n*나스닥100* 편입 평가도 주요 변수죠\n함께해 주셔서 감사합니다!"
     }
   ],
   "image_prompts": {
-    "0": "Seoul Han River night skyline panorama with Namsan Tower, 63 Building and Lotte Tower glowing under a deep purple violet futuristic sky, SpaceX Falcon 9 rocket silhouette ascending, Starship fully reusable super-heavy rocket launching with bright Raptor engine plumes, Starlink satellite internet mega-constellation arcing across the sky, subtle Mars colonization vision, orbital refueling hints, K-tech analytics holographic charts floating, glowing city lights bokeh, cinematic atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "1": "Seoul Han River bridge bathed in vibrant green bullish growth light, sunlit modern Korean skyline rising in the background, SpaceX Starship fully reusable super-heavy rocket launching from Starbase with powerful Raptor engines firing, Starlink satellite internet mega-constellation streaking upward, lunar landing mission and Mars colonization vision in distant horizon, orbital refueling depot glimmer, K-tech infrastructure bright energetic vibrant atmosphere, dynamic upward momentum, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
-    "2": "Vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline and Gwanghwamun Square bathed in magenta and gold inspirational light, SpaceX Starlink satellite internet mega-constellation glowing across the sky, Starship fully reusable super-heavy rocket launching with brilliant Raptor engine flames, Mars colonization and lunar landing mission vision in upper sky, orbital refueling scene, advanced K-tech urban scenery, golden sunlight starlight sparkles, dreamy aspirational future mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+    "0": "A dramatic financial trading floor scene with red downward arrows and falling stock chart silhouettes, a giant rocket icon dimmed in the background, businesspeople reviewing acquisition documents on glowing screens, cinematic lighting, somber blue-red tone, no text or logos",
+    "1": "A futuristic AI coding laboratory merged with a SpaceX-style mission control room, holographic neural network diagrams floating above engineer workstations, a sleek reusable rocket silhouette visible through a panoramic window, vertical integration concept, cinematic blue and orange lighting, no text or logos",
+    "2": "A massive fully reusable super-heavy Starship rocket on a launch pad at golden hour, Raptor engines glowing, steam venting, countdown atmosphere with mission crew silhouettes, Mars and lunar imagery faintly visible in the sky, hopeful cinematic tone, no text or logos"
   }
 }

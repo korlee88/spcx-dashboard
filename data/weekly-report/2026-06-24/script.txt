@@ -1,30 +1,30 @@
 SCENE_0_TITLE: 이번주
 SCENE_0:
-어, SPCX가 왜 갑자기 *-3.95%* 빠졌을까요?
-*커서 인수*에 채권 발행까지 겹쳤거든요
-상장 후 *아마존 시총*마저 따돌렸답니다
-*1분기 43억 달러* 순손실은 아쉽네요
+SPCX가 한 주 만에 *-23.39%* 급락했어요
+*600억 달러* 커서 인수가 발목을 잡았죠
+시총은 한때 *아마존 추월*까지 갔답니다
+1분기 *43억 달러* 순손실도 부담입니다
 
 SCENE_1_TITLE: 호재분석
 SCENE_1:
-카테고리: 사상 최대 *750억 달러* IPO 성공
-   ↳ 배경: 기업가치 *1조 7,700억 달러* 평가
-   ↳ 데이터: 초과배정 포함 *862억 달러* 조달
-   ↳ 임팩트: 주가 한때 *200달러* 돌파 직전
-   ↳ 비교: *세계 5위* 아마존 시총 제쳤죠
-   ↳ 머스크 매출 *1조 달러* 비전도 주목
+카테고리: *Cursor 인수 완료*로 AI 전략 강화
+   ↳ 배경: AI 코딩 시장에 *600억 달러* 베팅
+   ↳ 데이터: *200억 달러* 채권 발행도 병행
+   ↳ 임팩트: 상장 직후 *아마존 시총* 돌파
+   ↳ 비교: 2030년 *1조 달러* 매출 목표 제시
+   ↳ 시장은 희석을 우려하나 본질은 수직통합
 
-SCENE_2_TITLE: 다음주전망
+SCENE_2_TITLE: 다음주
 SCENE_2:
-7월 *스타십 13차* 궤도 재사용 시험비행
-성공 시 *나스닥100 편입* 평가에 호재죠
-누적 *+0.1%*, 목표가 *$155* 흐름 전망
-*5일 중 3일* 상승, 2일은 조정 가능성
-시장은 희석 우려, 관건은 *2분기 실적*
-함께해 주셔서 감사합니다
+*스타십 13차* 시험 비행이 임박했어요
+완전 재사용 로켓 성공이 *2분기 실적* 좌우
+다음 주말 *+0.1%*, 약 *$155* 전망입니다
+*3일 상승·2일 하락* 흐름이 점쳐져요
+*나스닥100* 편입 평가도 주요 변수죠
+함께해 주셔서 감사합니다!
 
-IMAGE_PROMPT_0: Seoul Han River night skyline panorama with Namsan Tower, 63 Building and Lotte Tower glowing under a deep purple violet futuristic sky, SpaceX Falcon 9 rocket silhouette ascending, Starship fully reusable super-heavy rocket launching with bright Raptor engine plumes, Starlink satellite internet mega-constellation arcing across the sky, subtle Mars colonization vision, orbital refueling hints, K-tech analytics holographic charts floating, glowing city lights bokeh, cinematic atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+IMAGE_PROMPT_0: A dramatic financial trading floor scene with red downward arrows and falling stock chart silhouettes, a giant rocket icon dimmed in the background, businesspeople reviewing acquisition documents on glowing screens, cinematic lighting, somber blue-red tone, no text or logos
 
-IMAGE_PROMPT_1: Seoul Han River bridge bathed in vibrant green bullish growth light, sunlit modern Korean skyline rising in the background, SpaceX Starship fully reusable super-heavy rocket launching from Starbase with powerful Raptor engines firing, Starlink satellite internet mega-constellation streaking upward, lunar landing mission and Mars colonization vision in distant horizon, orbital refueling depot glimmer, K-tech infrastructure bright energetic vibrant atmosphere, dynamic upward momentum, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+IMAGE_PROMPT_1: A futuristic AI coding laboratory merged with a SpaceX-style mission control room, holographic neural network diagrams floating above engineer workstations, a sleek reusable rocket silhouette visible through a panoramic window, vertical integration concept, cinematic blue and orange lighting, no text or logos
 
-IMAGE_PROMPT_2: Vertical futuristic Korean cityscape featuring Han River night view, Seoul skyline and Gwanghwamun Square bathed in magenta and gold inspirational light, SpaceX Starlink satellite internet mega-constellation glowing across the sky, Starship fully reusable super-heavy rocket launching with brilliant Raptor engine flames, Mars colonization and lunar landing mission vision in upper sky, orbital refueling scene, advanced K-tech urban scenery, golden sunlight starlight sparkles, dreamy aspirational future mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
+IMAGE_PROMPT_2: A massive fully reusable super-heavy Starship rocket on a launch pad at golden hour, Raptor engines glowing, steam venting, countdown atmosphere with mission crew silhouettes, Mars and lunar imagery faintly visible in the sky, hopeful cinematic tone, no text or logos
