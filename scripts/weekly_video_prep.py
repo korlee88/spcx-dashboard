@@ -705,7 +705,8 @@ def review_script(raw, summary):
         return raw
 
     required_markers = ("SCENE_0_TITLE:", "SCENE_0:", "SCENE_1_TITLE:", "SCENE_1:",
-                         "SCENE_2_TITLE:", "SCENE_2:")
+                         "SCENE_2_TITLE:", "SCENE_2:",
+                         "IMAGE_PROMPT_0:", "IMAGE_PROMPT_1:", "IMAGE_PROMPT_2:")
     if not all(m in revised for m in required_markers):
         print("   ⚠ 재검토 출력 형식 불완전 — 1차 초안 유지", file=sys.stderr)
         return raw
@@ -951,9 +952,19 @@ def fetch_wiki_image(article: str, out_path: Path) -> bool:
     return False
 
 
-def fetch_wiki_image_with_fallback(articles, out_path: Path) -> bool:
-    """후보 기사 목록 중 가로형 이미지를 찾을 때까지 순서대로 시도."""
-    for article in (articles if isinstance(articles, list) else [articles]):
+def fetch_wiki_image_with_fallback(articles, out_path: Path, rotate_seed: str = "") -> bool:
+    """후보 기사 목록 중 가로형 이미지를 찾을 때까지 순서대로 시도.
+
+    Nano Banana(AI 생성)가 막혀 있으면 매번 이 경로로 폴백하는데, 후보 목록을 항상
+    같은 순서로 시도하면 1번 후보(거의 항상 성공)의 사진이 매주 그대로 반복된다.
+    rotate_seed(생성일+씬 인덱스)로 시작 인덱스를 회전시켜, 후보가 여러 개일 때
+    주마다 다른 사진이 1순위로 시도되게 한다 — 전부 실패하면 결국 같은 순서로
+    한 바퀴 돌아 기존과 동일한 신뢰도를 유지한다."""
+    arts = articles if isinstance(articles, list) else [articles]
+    if rotate_seed and len(arts) > 1:
+        start = sum(ord(c) for c in rotate_seed) % len(arts)
+        arts = arts[start:] + arts[:start]
+    for article in arts:
         if fetch_wiki_image(article, out_path):
             return True
     return False
@@ -1951,8 +1962,8 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
                 continue
             print(f"      씬{idx} Nano Banana 실패 → Wikipedia 폴백", file=sys.stderr)
 
-        # 2순위: Wikipedia
-        ok = fetch_wiki_image_with_fallback(articles, bg_path)
+        # 2순위: Wikipedia (생성일+씬 인덱스로 후보 순서 회전 — 매주 같은 사진 반복 방지)
+        ok = fetch_wiki_image_with_fallback(articles, bg_path, rotate_seed=f"{out_dir.name}-{idx}")
         if ok:
             bg_paths[idx] = bg_path
             label = (articles[0] if isinstance(articles, list) else articles)[:20]
