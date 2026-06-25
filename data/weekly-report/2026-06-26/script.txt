@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 이번주
+SCENE_0:
+SPCX 한 주 만에 *-19.43%* 급락했어요
+*43억 달러* 순손실에 채권 우려 겹쳤죠
+데뷔 채권엔 *890억 달러* 수요 몰렸고요
+*600억 달러* 인수가 주가엔 부담됐네요
+
+SCENE_1_TITLE: 호재분석
+SCENE_1:
+카테고리: 데뷔 채권에 *890억 달러* 수요
+   ↳ 배경: IPO 직후 첫 *채권 발행* 도전
+   ↳ 데이터: 목표 *200억 달러* 발행 추진중
+   ↳ 임팩트: 자금조달 다각화로 *재무 안정* 강화
+   ↳ 비교: 빅테크 데뷔채권 대비 *4배 초과* 수요
+   ↳ 스타십·스타링크 투자 여력 확대 기대돼요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+7월 *스타십 13차* 시험비행 대기 중이에요
+성공시 *완전 재사용* 로켓 신뢰도 도약하죠
+다음주 예상 도달가 약 *$156* 흐름이고요
+*5일 중 4일* 상승, 1일 하락 점쳐져요
+*7/7 나스닥100* 편입 평가가 변수입니다
+함께해 주셔서 감사합니다
+
+IMAGE_PROMPT_0: Scene 0 — 16:9 landscape, a tense and dramatic visualization of SpaceX facing financial turbulence this week, a Falcon 9 rocket standing on the launchpad under heavy stormy clouds symbolizing quarterly net loss and bond issuance concerns, faint glowing bond certificates dissolving into sparks in the sky, cracked balance sheet motifs floating like debris, distant silhouette of a grounded Starship under maintenance scaffolding, Raptor engines glowing dim orange in cold shadow, Seoul Han River night skyline with Namsan Tower and Lotte Tower in the background, K-tech purple and deep violet futuristic analytical mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: Scene 1 — 16:9 landscape, a triumphant visualization of SpaceX's debut bond drawing massive 89 billion dollar demand, towering vault doors opening to reveal golden rivers of capital flowing toward a sleek Starship on the launch tower, swarms of investor figures gathered around glowing bond ledgers floating in mid-air, a comparison chart of skyscraper-sized bars dwarfing big tech peers four times over, Starlink satellite constellation faintly orbiting above as a symbol of future deployment, Han River bridges glowing emerald green symbolizing growth, Seoul sunlit modern skyline vibrant and optimistic, cinematic golden hour lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: Scene 2 — 9:16 vertical, a forward-looking visionary scene anticipating Starship's 13th test flight and Nasdaq 100 inclusion evaluation, a fully reusable Starship super-heavy rocket ascending through magenta and gold twilight sky with Raptor engines blazing brilliant blue plumes, Super Heavy booster returning to chopstick arms in the background showing reusability, Starlink mega-constellation weaving luminous threads across orbit, orbital refueling depot reflecting starlight near a crescent Moon and distant Mars horizon, calendar-like glowing orbs marking upcoming July milestones floating in the sky, Seoul Han River night skyline with Gwanghwamun Plaza below, magenta and gold inspirational futuristic mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

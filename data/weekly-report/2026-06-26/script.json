@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-06-26",
+  "generated_by": "Claude Opus 4",
+  "title": "SPCX 한 주 만에 *-19.43%* 급락했어요",
+  "subtitle": "2026-06-18 ~ 2026-06-25 · SpaceX, 200억 달러 규모 채권 발행 계획으로 ",
+  "summary": {
+    "week_start": "2026-06-18",
+    "week_end": "2026-06-25",
+    "session_count": 8,
+    "total_analyzed": 75,
+    "bullish_count": 21,
+    "bearish_count": 21,
+    "buy_indices": [
+      64,
+      65,
+      44,
+      55,
+      53,
+      42,
+      39,
+      47
+    ],
+    "avg_buy_index": 51,
+    "latest_buy_index": 64,
+    "price_start": 191.82,
+    "price_end": 154.54,
+    "latest_price": 154.54,
+    "today_price": 154.54,
+    "today_change_pct": -1.01,
+    "week_change_pct": -19.43,
+    "biggest_impact": {
+      "title": "SpaceX, 200억 달러 규모 채권 발행 계획으로 시가총액 6천억 달러 감소",
+      "score": -3,
+      "reason": "SpaceX가 AI 및 인프라 확장을 위한 자금 조달을 위해 200억 달러 규모의 채권 발행 계획을 발표하면서 주가가 하락하고 시가총액이 6천억 달러 이상 감소하여 투자자들에게 부정적인 영향을 미쳤습니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-06-23",
+      "category": "Market|Financing",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "SpaceX, 데뷔 채권 발행에 890억 달러 수요 확보",
+        "score": 2,
+        "reason": "SpaceX가 채권 시장 데뷔에서 대규모 수요를 확보하여 상당한 자금을 조달할 계획이며, 이는 회사의 재정 건전성과 성장 잠재력에 대한 시장의 강한 신뢰를 보여줍니다.",
+        "source": "Bloomberg",
+        "date": "2026-06-23",
+        "category": "Financing"
+      },
+      {
+        "title": "SpaceX, 주요 지수 편입 및 애널리스트 커버리지 시작 예정",
+        "score": 2,
+        "reason": "SpaceX가 주요 지수에 편입되고 애널리스트 커버리지가 시작되면 패시브 자금 유입과 투자자 관심 증가로 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Reuters",
+        "date": "2026-06-23",
+        "category": "Market"
+      },
+      {
+        "title": "SpaceX, 신규 클라우드 컴퓨팅 계약 체결로 63억 달러 규모 잠재적 계약 확보",
+        "score": 2,
+        "reason": "SpaceX가 Reflection과 63억 달러 규모의 잠재적 클라우드 컴퓨팅 계약을 체결하여 새로운 시장으로의 확장을 보여주며 이는 매출 성장에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-06-24",
+        "category": "Product"
+      },
+      {
+        "title": "SpaceX, 상장 첫 주 시장 광풍 일으키며 주가 40% 급등",
+        "score": 2,
+        "reason": "SpaceX의 IPO 이후 첫 주 동안 주가가 40% 급등하며 시장의 강한 관심과 투자자 유입을 보여주었으나, 이는 이미 발생한 과거의 시장 반응에 대한 보도이므로 점수를 보수적으로 조정했습니다.",
+        "source": "Reuters",
+        "date": "2026-06-22",
+        "category": "Market"
+      },
+      {
+        "title": "SpaceX, Cursor 인수 완료 및 200억 달러 채권 발행 준비",
+        "score": 2,
+        "reason": "SpaceX가 AI 코딩 플랫폼 Cursor를 인수하여 기술 역량을 강화하고, 200억 달러 규모의 채권 발행을 통해 IPO 직후 브릿지론을 재융자하는 것은 재무 건전성을 개선하고 미래 성장을 위한 자금을 확보하는 긍정적인 신호입니다.",
+        "source": "Simply Wall St News",
+        "date": "2026-06-20",
+        "category": "Product|Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "SpaceX, 200억 달러 규모 채권 발행 계획으로 시가총액 6천억 달러 감소",
+        "score": -3,
+        "reason": "SpaceX가 AI 및 인프라 확장을 위한 자금 조달을 위해 200억 달러 규모의 채권 발행 계획을 발표하면서 주가가 하락하고 시가총액이 6천억 달러 이상 감소하여 투자자들에게 부정적인 영향을 미쳤습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-06-23",
+        "category": "Market|Financing"
+      },
+      {
+        "title": "SpaceX, MSCI 최저 ESG 등급 획득",
+        "score": -1,
+        "reason": "SpaceX가 MSCI로부터 최저 ESG 등급을 획득하여 투자자들의 환경, 사회, 지배구조 측면에 대한 우려를 불러일으킬 수 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-06-23",
+        "category": "Regulatory"
+      },
+      {
+        "title": "SpaceX, 첫 채권 발행 발표",
+        "score": -1,
+        "reason": "SpaceX의 첫 채권 발행은 IPO 이후 자금 조달 다각화를 의미하지만, 이는 부채 증가로 이어져 투자자들에게는 잠재적인 위험으로 인식될 수 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-06-24",
+        "category": "Market"
+      },
+      {
+        "title": "스페이스X 주가, 커서(Cursor) 인수 계약으로 6천억 달러 하락",
+        "score": -4,
+        "reason": "스페이스X가 AI 스타트업 커서를 600억 달러에 전액 주식으로 인수하면서 주식 희석 우려와 함께 시장 가치가 크게 하락했으며, 이는 일론 머스크의 다른 벤처에 대한 관심 분산 위험을 증가시킵니다.",
+        "source": "Forbes",
+        "date": "2026-06-18",
+        "category": "Acquisition|Market"
+      },
+      {
+        "title": "SpaceX, 2026년 1분기 43억 달러 순손실 기록",
+        "score": -3,
+        "reason": "SpaceX가 2026년 1분기에 43억 달러의 상당한 순손실을 기록했으며, 이는 AI 데이터 센터 확장 비용 증가에 기인하여 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "CNBC",
+        "date": "2026-06-20",
+        "category": "Earnings"
+      }
+    ],
+    "forecasts": [
+      {
+        "day": 1,
+        "label": "내일",
+        "date": "6/26(금)",
+        "change_pct": 1.2,
+        "signal": "매수",
+        "basePrice": 154.54,
+        "predictedPrice": 156.39
+      },
+      {
+        "day": 2,
+        "label": "D+2",
+        "date": "6/29(월)",
+        "change_pct": 0.9,
+        "signal": "매수",
+        "basePrice": 154.54,
+        "predictedPrice": 155.93
+      },
+      {
+        "day": 3,
+        "label": "D+3",
+        "date": "6/30(화)",
+        "change_pct": 0.5,
+        "signal": "관망",
+        "basePrice": 154.54,
+        "predictedPrice": 155.31
+      },
+      {
+        "day": 4,
+        "label": "D+4",
+        "date": "7/1(수)",
+        "change_pct": -0.2,
+        "signal": "관망",
+        "basePrice": 154.54,
+        "predictedPrice": 154.23
+      },
+      {
+        "day": 5,
+        "label": "D+5",
+        "date": "7/2(목)",
+        "change_pct": 0.7,
+        "signal": "관망",
+        "basePrice": 154.54,
+        "predictedPrice": 155.62
+      }
+    ],
+    "daily_prices": [
+      [
+        "2026-06-25",
+        154.54
+      ],
+      [
+        "2026-06-24",
+        156.11
+      ],
+      [
+        "2026-06-23",
+        154.6
+      ],
+      [
+        "2026-06-22",
+        185
+      ],
+      [
+        "2026-06-21",
+        185
+      ]
+    ],
+    "overall_signal": "중립",
+    "trends": null,
+    "next_events": [
+      {
+        "date": "2026-07",
+        "title": "스타십 13차 시험 비행",
+        "titleEn": "Starship Flight 13 Test Flight",
+        "category": "발사일정",
+        "categoryEn": "Launch Schedule",
+        "time": null,
+        "timezone": null,
+        "confirmed": false,
+        "source": "RocketLaunch.org",
+        "sourceUrl": null,
+        "description": "스타십 13차 시험 비행은 7월 중으로 예정되어 있으며, 이는 스타십 V3의 두 번째 비행이 될 것입니다.",
+        "importance": "high",
+        "id": "cal-2026-07-starship-flight-13-test-flight"
+      },
+      {
+        "date": "2026-07",
+        "title": "2026년 2분기 실적 발표",
+        "titleEn": "Q2 2026 Earnings Release",
+        "category": "실적발표",
+        "categoryEn": "Earnings",
+        "time": null,
+        "timezone": null,
+        "confirmed": false,
+        "source": "Benzinga",
+        "sourceUrl": null,
+        "description": "SpaceX는 2026년 2분기 실적을 7월 말 또는 8월 초에 발표할 것으로 예상됩니다.",
+        "importance": "high",
+        "id": "cal-2026-07-q2-2026-earnings-release"
+      },
+      {
+        "date": "2026-07-07",
+        "title": "나스닥 100 지수 편입 평가",
+        "titleEn": "Nasdaq 100 Index Inclusion Evaluation",
+        "category": "규제",
+        "categoryEn": "Regulatory",
+        "time": null,
+        "timezone": null,
+        "confirmed": true,
+        "source": "TMGM",
+        "sourceUrl": null,
+        "description": "SpaceX는 상장 후 15번째 거래일인 7월 7일에 나스닥 100 지수 편입 여부를 평가받을 예정입니다.",
+        "importance": "high",
+        "id": "cal-2026-07-07-nasdaq-100-index-inclusion-evaluation"
+      }
+    ],
+    "movement_reason": "1분기 순손실 기록 / 채권 발행 우려 / 인수 계약 악재"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "이번주",
+      "lines": [
+        "SPCX 한 주 만에 *-19.43%* 급락했어요",
+        "*43억 달러* 순손실에 채권 우려 겹쳤죠",
+        "데뷔 채권엔 *890억 달러* 수요 몰렸고요",
+        "*600억 달러* 인수가 주가엔 부담됐네요"
+      ],
+      "body": "SPCX 한 주 만에 *-19.43%* 급락했어요\n*43억 달러* 순손실에 채권 우려 겹쳤죠\n데뷔 채권엔 *890억 달러* 수요 몰렸고요\n*600억 달러* 인수가 주가엔 부담됐네요"
+    },
+    {
+      "index": 1,
+      "title": "호재분석",
+      "lines": [
+        "카테고리: 데뷔 채권에 *890억 달러* 수요",
+        "↳ 배경: IPO 직후 첫 *채권 발행* 도전",
+        "↳ 데이터: 목표 *200억 달러* 발행 추진중",
+        "↳ 임팩트: 자금조달 다각화로 *재무 안정* 강화",
+        "↳ 비교: 빅테크 데뷔채권 대비 *4배 초과* 수요",
+        "↳ 스타십·스타링크 투자 여력 확대 기대돼요"
+      ],
+      "body": "카테고리: 데뷔 채권에 *890억 달러* 수요\n   ↳ 배경: IPO 직후 첫 *채권 발행* 도전\n   ↳ 데이터: 목표 *200억 달러* 발행 추진중\n   ↳ 임팩트: 자금조달 다각화로 *재무 안정* 강화\n   ↳ 비교: 빅테크 데뷔채권 대비 *4배 초과* 수요\n   ↳ 스타십·스타링크 투자 여력 확대 기대돼요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "7월 *스타십 13차* 시험비행 대기 중이에요",
+        "성공시 *완전 재사용* 로켓 신뢰도 도약하죠",
+        "다음주 예상 도달가 약 *$156* 흐름이고요",
+        "*5일 중 4일* 상승, 1일 하락 점쳐져요",
+        "*7/7 나스닥100* 편입 평가가 변수입니다",
+        "함께해 주셔서 감사합니다"
+      ],
+      "body": "7월 *스타십 13차* 시험비행 대기 중이에요\n성공시 *완전 재사용* 로켓 신뢰도 도약하죠\n다음주 예상 도달가 약 *$156* 흐름이고요\n*5일 중 4일* 상승, 1일 하락 점쳐져요\n*7/7 나스닥100* 편입 평가가 변수입니다\n함께해 주셔서 감사합니다"
+    }
+  ],
+  "image_prompts": {
+    "0": "Scene 0 — 16:9 landscape, a tense and dramatic visualization of SpaceX facing financial turbulence this week, a Falcon 9 rocket standing on the launchpad under heavy stormy clouds symbolizing quarterly net loss and bond issuance concerns, faint glowing bond certificates dissolving into sparks in the sky, cracked balance sheet motifs floating like debris, distant silhouette of a grounded Starship under maintenance scaffolding, Raptor engines glowing dim orange in cold shadow, Seoul Han River night skyline with Namsan Tower and Lotte Tower in the background, K-tech purple and deep violet futuristic analytical mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "Scene 1 — 16:9 landscape, a triumphant visualization of SpaceX's debut bond drawing massive 89 billion dollar demand, towering vault doors opening to reveal golden rivers of capital flowing toward a sleek Starship on the launch tower, swarms of investor figures gathered around glowing bond ledgers floating in mid-air, a comparison chart of skyscraper-sized bars dwarfing big tech peers four times over, Starlink satellite constellation faintly orbiting above as a symbol of future deployment, Han River bridges glowing emerald green symbolizing growth, Seoul sunlit modern skyline vibrant and optimistic, cinematic golden hour lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "Scene 2 — 9:16 vertical, a forward-looking visionary scene anticipating Starship's 13th test flight and Nasdaq 100 inclusion evaluation, a fully reusable Starship super-heavy rocket ascending through magenta and gold twilight sky with Raptor engines blazing brilliant blue plumes, Super Heavy booster returning to chopstick arms in the background showing reusability, Starlink mega-constellation weaving luminous threads across orbit, orbital refueling depot reflecting starlight near a crescent Moon and distant Mars horizon, calendar-like glowing orbs marking upcoming July milestones floating in the sky, Seoul Han River night skyline with Gwanghwamun Plaza below, magenta and gold inspirational futuristic mood, cinematic vertical composition, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
