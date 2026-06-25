@@ -1,43 +1,43 @@
 {
   "score": -1,
-  "velocity": 0.08,
-  "velocity_label": "급감 (×0.1)",
-  "reason": "조회수 속도 급감 (×0.1) | 최근 3일 1,775,135회 / 이전 4~7일 21,017,038회 | 총 22,792,173회 (68개 영상)",
+  "velocity": 0.21,
+  "velocity_label": "급감 (×0.2)",
+  "reason": "조회수 속도 급감 (×0.2) | 최근 3일 2,894,315회 / 이전 4~7일 13,499,487회 | 총 16,393,802회 (68개 영상)",
   "video_count": 68,
-  "total_views": 22792173,
-  "hot_views": 1775135,
-  "baseline_views": 21017038,
+  "total_views": 16393802,
+  "hot_views": 2894315,
+  "baseline_views": 13499487,
   "top_videos": [
-    {
-      "title": "진짜 젓가락으로 로켓을 잡네? 스페이스X 역대급 공중 포획 성공 😮",
-      "channel": "짤소리",
-      "publishedAt": "2026-06-18T04:55:01Z",
-      "viewCount": 9063250
-    },
     {
       "title": "SpaceX Super Heavy Booster Landing Comparison 😳 #shorts",
       "channel": "Nebulith",
       "publishedAt": "2026-06-18T11:38:23Z",
-      "viewCount": 2488164
-    },
-    {
-      "title": "Россия Развернула Глушилку Starlink❌ Наступление На Доброполье Ускоряется⚔️Военные Сводки 17.06.2026",
-      "channel": "Военные Сводки",
-      "publishedAt": "2026-06-17T18:00:06Z",
-      "viewCount": 744864
+      "viewCount": 5109395
     },
     {
       "title": "国外没网手搓一个卫星wifi #shorts #starlink #vlog #开箱 #评测",
       "channel": "加拿大俩哥特",
       "publishedAt": "2026-06-18T14:00:06Z",
-      "viewCount": 733346
+      "viewCount": 785971
     },
     {
-      "title": "ELON&#39;S STARLINK IN INDIA, DIGITAL INDIA !!! #elonmusk",
-      "channel": "NFG Facts",
-      "publishedAt": "2026-06-17T15:45:15Z",
-      "viewCount": 539442
+      "title": "Who Can Turn Starlink On Or Off Over India? 💀#shorts",
+      "channel": "Think Wings",
+      "publishedAt": "2026-06-19T12:55:35Z",
+      "viewCount": 532561
+    },
+    {
+      "title": "The next 6 months of SpaceX might be a bumpy ride… #spacex #elonmusk #stockmarket #ipo #investing",
+      "channel": "Your Rich BFF",
+      "publishedAt": "2026-06-18T14:46:21Z",
+      "viewCount": 397471
+    },
+    {
+      "title": "🔥 Россия жмёт Starlink, нытики в шоке «не считается!»",
+      "channel": "мировые новости 55 • БУЛАВА",
+      "publishedAt": "2026-06-20T11:15:27Z",
+      "viewCount": 381012
     }
   ],
-  "collected_at": "2026-06-24T05:03:45Z"
+  "collected_at": "2026-06-25T05:07:18Z"
 }
