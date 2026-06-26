@@ -2,9 +2,12 @@ name: 자동 분석 (매일 1회)
 
 # KST(UTC+9) 기준 — 매일 10:00 실행 (tsla-dashboard 08:00 · rklb-dashboard 09:00과 Gemini 쿼터 분산)
 # UTC 01:00 = KST 10:00
+#
+# ⏸ 일시 중지 (2026-06-26): RKLB 기준으로 영상 제작 파이프라인 재정비 중 — 자동 스케줄 중단.
+#   재개 시 아래 schedule 블록 주석 해제.
 on:
-  schedule:
-    - cron: '0 1 * * *'    # 매일 KST 10:00
+  # schedule:
+  #   - cron: '0 1 * * *'    # 매일 KST 10:00
   workflow_dispatch:        # 수동 실행 (테스트용)
 
 jobs:
