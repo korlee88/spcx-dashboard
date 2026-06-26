@@ -1,43 +1,43 @@
 {
   "score": -1,
-  "velocity": 0.21,
+  "velocity": 0.23,
   "velocity_label": "급감 (×0.2)",
-  "reason": "조회수 속도 급감 (×0.2) | 최근 3일 2,894,315회 / 이전 4~7일 13,499,487회 | 총 16,393,802회 (68개 영상)",
-  "video_count": 68,
-  "total_views": 16393802,
-  "hot_views": 2894315,
-  "baseline_views": 13499487,
+  "reason": "조회수 속도 급감 (×0.2) | 최근 3일 1,800,937회 / 이전 4~7일 7,794,321회 | 총 9,595,258회 (66개 영상)",
+  "video_count": 66,
+  "total_views": 9595258,
+  "hot_views": 1800937,
+  "baseline_views": 7794321,
   "top_videos": [
     {
-      "title": "SpaceX Super Heavy Booster Landing Comparison 😳 #shorts",
-      "channel": "Nebulith",
-      "publishedAt": "2026-06-18T11:38:23Z",
-      "viewCount": 5109395
-    },
-    {
-      "title": "国外没网手搓一个卫星wifi #shorts #starlink #vlog #开箱 #评测",
-      "channel": "加拿大俩哥特",
-      "publishedAt": "2026-06-18T14:00:06Z",
-      "viewCount": 785971
+      "title": "SpaceX launches &#39;Starfall&#39; reentry capsule for first time, sticks landing",
+      "channel": "VideoFromSpace",
+      "publishedAt": "2026-06-23T11:08:18Z",
+      "viewCount": 594450
     },
     {
       "title": "Who Can Turn Starlink On Or Off Over India? 💀#shorts",
       "channel": "Think Wings",
       "publishedAt": "2026-06-19T12:55:35Z",
-      "viewCount": 532561
-    },
-    {
-      "title": "The next 6 months of SpaceX might be a bumpy ride… #spacex #elonmusk #stockmarket #ipo #investing",
-      "channel": "Your Rich BFF",
-      "publishedAt": "2026-06-18T14:46:21Z",
-      "viewCount": 397471
+      "viewCount": 569438
     },
     {
       "title": "🔥 Россия жмёт Starlink, нытики в шоке «не считается!»",
       "channel": "мировые новости 55 • БУЛАВА",
       "publishedAt": "2026-06-20T11:15:27Z",
-      "viewCount": 381012
+      "viewCount": 398871
+    },
+    {
+      "title": "The UNTHINKABLE is About to Happen to SpaceX Stock",
+      "channel": "Tom Nash",
+      "publishedAt": "2026-06-19T21:20:41Z",
+      "viewCount": 345804
+    },
+    {
+      "title": "Огонь в Москве, анти-Starlink и штурм Лимана",
+      "channel": "Ширяев и Ширяев",
+      "publishedAt": "2026-06-20T06:10:12Z",
+      "viewCount": 345717
     }
   ],
-  "collected_at": "2026-06-25T05:07:18Z"
+  "collected_at": "2026-06-26T05:10:34Z"
 }
