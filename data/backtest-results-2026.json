@@ -645,16 +645,103 @@
       "match": true,
       "strongSignal": false,
       "error": null
+    },
+    {
+      "weekStart": "2026-06-22",
+      "weekEnd": "2026-06-28",
+      "quarter": "q2",
+      "news": [
+        {
+          "title": "SpaceX, 상장 첫 주 시장 광풍 촉발… 주가 40% 급등",
+          "source": "Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, IPO 이후 주가 변동성 분석: 2조 달러 가치 평가에 대한 우려",
+          "source": "Intellectia.AI",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 고등급 채권 발행 시작",
+          "source": "Bloomberg",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX 주가, IPO 이후 20% 급등: 일론 머스크의 회사는 확실한 매수 종목인가?",
+          "source": "The Motley Fool",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, IPO 이후 주가 정점 찍었나? 역사적 데이터가 말하는 것",
+          "source": "The Motley Fool",
+          "category": "Market"
+        },
+        {
+          "title": "SpaceX, 2.5조 달러 가치 평가에서 매수할 가치가 있는가?",
+          "source": "The Motley Fool",
+          "category": "Market"
+        }
+      ],
+      "newsCount": 6,
+      "analysis": {
+        "avgScore": -0.5,
+        "buyIndex": 32,
+        "direction": "bearish",
+        "bullish": 1,
+        "bearish": 3,
+        "neutral": 2,
+        "topRules": [
+          "R09"
+        ],
+        "failCount": 0,
+        "scoringLayers": {
+          "base": 45,
+          "macroOverlay": -7,
+          "meanReversion": -5,
+          "wtiDown": -3,
+          "competitorOutperform": 2
+        },
+        "macroCtx": {
+          "spyChg": -2.5,
+          "qqqChg": -4.78,
+          "vixClose": 18.40999984741211,
+          "wtiChg": -12.29,
+          "cnyChg": 0.32,
+          "competitorChg": -20.98,
+          "competitorRelStrength": 8.02,
+          "prevAssetChg": 7.72,
+          "assetTrend3w": null,
+          "rsi": null,
+          "macd": null,
+          "bb": null,
+          "isDeliveryWeek": false,
+          "isEarningsWeek": false,
+          "bydChg": -20.98,
+          "bydRelStrength": 8.02,
+          "prevTslaChg": 7.72,
+          "tslaTrend3w": null
+        },
+        "modelVersion": "2.0"
+      },
+      "movement": {
+        "pctChange": -12.96,
+        "actual": "bearish",
+        "open": 176.04,
+        "close": 153.23
+      },
+      "match": true,
+      "strongSignal": false,
+      "error": null
     }
   ],
   "lastUpdated": "",
-  "generatedAt": "2026-06-22 04:55 KST",
+  "generatedAt": "2026-06-29 04:40 KST",
   "year": 2026,
   "stats": {
-    "totalWeeks": 24,
-    "analyzedWeeks": 1,
+    "totalWeeks": 25,
+    "analyzedWeeks": 2,
     "accuracy": 100,
     "strongAccuracy": 0,
-    "avgScore": 0.4
+    "avgScore": 0
   }
 }
